@@ -1,0 +1,8 @@
+{
+  "local_passed": 18,
+  "remote_passed": 18,
+  "live_read_only_preflight": true,
+  "freeze_preserved": true,
+  "no_trial_replay": true,
+  "unknown_code_auto_repair": false
+}

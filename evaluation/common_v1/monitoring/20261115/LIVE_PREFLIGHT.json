@@ -1,0 +1,84 @@
+{
+  "at": 1794679263.1349335,
+  "beijing": "2026-11-15 02:01:03",
+  "phase": "running_auto_network_admission",
+  "completed": 660,
+  "planned": 1770,
+  "infrastructure_errors": 14,
+  "active_deployment": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/recovery/network_admission_v3_20261115",
+  "coordinator_pids": [
+    116746
+  ],
+  "service_holder_pids": [
+    117148,
+    117150
+  ],
+  "active_cases": [
+    ".B1:T4:T4C1_EM_T03_I00:R02.archiving",
+    "B0:T4:T4C1_EM_T03_I00:R03",
+    "B0:T5:T5AV1_NS_F05_P0_I02:R03",
+    "B0:T7:T7AC1_NS_T04_N_I00:R03",
+    "B1:T4:T4C1_EM_T03_I00:R02",
+    "B1:T7:T7AC1_NS_T04_N_I00:R02",
+    "B1:T8:T8EN4_NS_N05_I01:R02"
+  ],
+  "parsing_in_progress": [],
+  "action": "observe",
+  "seconds_since_last_finished": 1.6049392223358154,
+  "relaunches": 0,
+  "automatic_code_patching": false,
+  "formal_case_retries": 0,
+  "severity": "ok",
+  "eta": {
+    "observed": 660,
+    "planned": 1770,
+    "done_by_method": {
+      "B0": 311,
+      "B1": 349
+    },
+    "remaining_by_method": {
+      "B0": 529,
+      "B1": 581
+    },
+    "windows": [
+      {
+        "minutes": 15,
+        "counts": {
+          "B0": 31,
+          "B1": 30
+        },
+        "cases_per_minute": {
+          "B0": 2.066666666666667,
+          "B1": 2.0
+        },
+        "remaining_minutes": 290.5
+      },
+      {
+        "minutes": 30,
+        "counts": {
+          "B0": 70,
+          "B1": 67
+        },
+        "cases_per_minute": {
+          "B0": 2.3333333333333335,
+          "B1": 2.2333333333333334
+        },
+        "remaining_minutes": 260.14925373134326
+      }
+    ],
+    "phase": "running_auto_network_admission",
+    "estimate_is_conditional": true,
+    "statistical_confidence_interval": false,
+    "caveat": "Recent throughput-window spread; long outages or unknown bugs can delay completion.",
+    "state": "estimated",
+    "remaining_seconds": 16519.4776119403,
+    "collection_finish_earliest": "2026-11-15 06:21:12",
+    "collection_finish_latest": "2026-11-15 06:51:33",
+    "report_finish_earliest": "2026-11-15 06:51:12",
+    "report_finish_latest": "2026-11-15 07:51:33",
+    "offline_judge_allowance_minutes": [
+      30,
+      60
+    ]
+  }
+}
