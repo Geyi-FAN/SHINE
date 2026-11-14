@@ -1,0 +1,28 @@
+{
+  "real_network_fault": [
+    {
+      "trial_uid": "B1:T8:T8EN4_CL_N07_I00:R03",
+      "kind": "upstream_timeout"
+    }
+  ],
+  "drained_at": 1794662788.327204,
+  "independent_health_passed": true,
+  "current_phase": "running_auto_network_admission",
+  "current_completed": 327,
+  "recovery_cycle": 1,
+  "active_new_cases": [
+    "B0:T4:T4C1_OV_T01_I01:R01",
+    "B0:T7:T7AC1_CL_T07_N_I00:R01",
+    "B0:T8:T8EN4_CL_N08_I01:R01",
+    "B1:T2:T2COL1_OV_G01:R02",
+    "B1:T3:T3S50_CL_S02_I00:R02",
+    "B1:T4:T4C1_OV_T01_I01:R02",
+    "B1:T7:T7AC1_CL_T07_N_I00:R01"
+  ],
+  "original304_sha_unchanged": true,
+  "all_outcome_uids_unique": true,
+  "case_replay_count": 0,
+  "model_service_restart_during_recovery": false,
+  "at": 1794662921.3789086,
+  "all_outcome_filenames_match_registered_uid": true
+}

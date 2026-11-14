@@ -96,3 +96,5 @@ Actor、提示词、权重、共同评分及1770条注册表的原冻结版本�
 自动准入v1在304例收尾后网络检查通过，但新增裸socket绑定检查报EADDRINUSE，未完成真实自动再派发。这是部署检查缺陷，单独存档于network_admission_20261114/ERROR.json；没有因此增加或替换正式案例。v2沿用HTTPServer的SO_REUSEADDR，允许关闭连接的TIME_WAIT残留，同时仍拒绝活跃监听；仅在案例开始前最多等待20秒端口释放，不改变正式评分时限。
 
 本地和240容器各15项检查通过，包括两个真实内核socket测试及整1770队列的模拟超时接续。以原304份首结果哈希重新准入，只继续未开始的1466项。真实进度见[network_admission_v2_20261114/LIVE_CHECK.json](../evaluation/common_v1/recovery/network_admission_v2_20261114/LIVE_CHECK.json)。模拟、真实端口测试与正式机器人结果分开；未知错误仍停止，不靠放宽评分抹掉云超时。
+
+修正版随后已完成一次真实故障接续：T8云读取超时后收尾到321例，cycle_01健康及端口检查通过，再次派发并推进到核查时327例。原304份结果哈希不变，未重跑失败项。详见network_admission_v2_20261114/REAL_AUTOMATIC_RECOVERY.json；这是一轮实际恢复证据，不表示云端长尾已消除。

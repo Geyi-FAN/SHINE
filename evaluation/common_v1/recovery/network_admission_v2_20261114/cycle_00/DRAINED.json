@@ -1,0 +1,10 @@
+{
+  "faults": [
+    {
+      "trial_uid": "B1:T8:T8EN4_CL_N07_I00:R03",
+      "kind": "upstream_timeout"
+    }
+  ],
+  "at": 1794662788.327204,
+  "original_first_results_retained": true
+}
