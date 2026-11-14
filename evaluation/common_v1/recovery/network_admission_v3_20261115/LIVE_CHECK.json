@@ -1,0 +1,22 @@
+{
+  "phase": "running_auto_network_admission",
+  "completed": 379,
+  "planned": 1770,
+  "infrastructure_errors": 12,
+  "recovery_cycle": 0,
+  "automatic_network_admission": true,
+  "new_completed": 7,
+  "new_engine_errors": 0,
+  "active_cases": [
+    "B0:T4:T4C1_CL_T02_I00:R02",
+    "B0:T5:T5AV1_CL_F09_P0_I02:R02",
+    "B0:T7:T7AC1_CL_T08_R_I00:R02",
+    "B1:T2:T2COL1_CL_G02:R02",
+    "B1:T3:T3S50_EM_S03_I00:R02",
+    "B1:T4:T4C1_CL_T02_I00:R02",
+    "B1:T5:T5AV1_CL_F09_P0_I02:R02"
+  ],
+  "original372_sha_unchanged": true,
+  "uids_unique": true,
+  "at": 1794676145.6628864
+}

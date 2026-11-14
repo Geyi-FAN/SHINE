@@ -1,0 +1,24 @@
+{
+  "completed": 372,
+  "planned": 1770,
+  "remaining": 1398,
+  "reviewed_faults": {
+    "B1:T7:T7AC1_CL_T07_N_I00:R01": "upstream_timeout",
+    "B1:T2:T2COL1_EM_G01:R01": "upstream_timeout",
+    "B1:T8:T8EN4_CL_N08_I01:R02": "upstream_timeout",
+    "B1:T2:T2COL1_NS_G01:R03": "dns_failure",
+    "B1:T8:T8EN4_CL_N06_I02:R02": "upstream_timeout",
+    "B1:T8:T8EN4_CL_N07_I00:R03": "upstream_timeout",
+    "B1:T4:T4C1_CL_T02_I00:R01": "upstream_timeout",
+    "B1:T1:T1COL1_CL_G05_I02:R03": "dns_failure",
+    "B1:T2:T2COL1_NS_G01:R02": "upstream_http_error",
+    "B1:T8:T8EN4_CL_N07_I00:R02": "upstream_timeout",
+    "B1:T3:T3S50_EM_S03_I00:R01": "unfinished_agent_request_at_client_deadline",
+    "B1:T5:T5AV1_CL_F06_P1_I02:R03": "unfinished_agent_request_at_client_deadline"
+  },
+  "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
+  "source_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "no_partial_cases": true,
+  "original_actor_scorer_frozen": true,
+  "at": 1794675836.509657
+}

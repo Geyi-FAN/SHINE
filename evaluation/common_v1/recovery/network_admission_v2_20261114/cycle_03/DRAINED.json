@@ -1,0 +1,14 @@
+{
+  "faults": [
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S03_I00:R01",
+      "kind": null
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_CL_T02_I00:R01",
+      "kind": "upstream_timeout"
+    }
+  ],
+  "at": 1794663695.4903278,
+  "original_first_results_retained": true
+}
