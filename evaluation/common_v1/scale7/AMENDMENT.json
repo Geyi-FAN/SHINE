@@ -1,0 +1,34 @@
+{
+  "kind": "deployment_only_scale_from4_to7",
+  "user_authorization": "all server240 GPUs authorized on2026-11-14",
+  "retained": 47,
+  "remaining": 1723,
+  "source_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "old_trial_results_replayed": false,
+  "original_registered_trials": 1770,
+  "physical_gpus": [
+    1,
+    2,
+    3,
+    4,
+    0,
+    5,
+    6
+  ],
+  "old4_slots": "original four-lane mixed-method phase",
+  "new7_slots": "B1 only in slots0..3; B0 in extra4..6 and idle primary slots",
+  "max_concurrent_speech_accounts": 4,
+  "max_concurrent_planning_requests": 4,
+  "latency_stratification_required": true,
+  "scale_scripts_sha256": {
+    "coordinator7.py": "b8f8649b6a507067ed689272524dfb2847f78e76149d54f6db170bbe97049e72",
+    "create_extra.py": "1b215ab0c6aa4d8bc5d4704e165d8d1acb7c93c60a5e3891f310ab4bd96a9d99",
+    "hold_extra_services.py": "75d854a57f1c1ebabebd2d821ea6e9a91c9cd705ea75f7aa88bde4140f22d45f",
+    "probe_renderer.py": "e4432f0dae6a0a136c43c021de248f0f67e7f78fa4e16a121801dd3698627dac",
+    "probe_host.py": "d6450cc375d2c0aacfc698170b2ea168c436b5c1ea69a736195dea9d28274e40",
+    "hold_primary_services.py": "7031c47762f2c78914dabe4163ad69ca3857f44c0d190246399585b1f8ba4d85",
+    "one_case_scaled.py": "6635db582f8de80d6bd82f4f64546600cdbe74d481fa4af603a0534a257e3f09"
+  },
+  "gpu_map_sha256": "cb68ba5b2a4d0cc936948e2c4914973e90707cfef594a653261f55c917316520",
+  "at": 1794655744.4972374
+}

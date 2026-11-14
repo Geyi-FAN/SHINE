@@ -1,0 +1,105 @@
+{
+  "physical_gpus": [
+    1,
+    2,
+    3,
+    4,
+    0,
+    5,
+    6
+  ],
+  "gpu_uuids": [
+    "GPU-c96e0724-baec-23c6-91fb-c918c2877d87",
+    "GPU-4b8df744-94d4-eb41-64a5-cde0f27066d2",
+    "GPU-c352ed45-8f9b-2ed2-77fa-ab9617ea6aca",
+    "GPU-7f915c28-fdce-b761-a4aa-205f16eebf7b",
+    "GPU-fb1e5622-4cf0-b3a0-884c-86d124225b5e",
+    "GPU-71511ac9-bf3e-06c9-2620-216537ef126c",
+    "GPU-31e6bf57-3d2c-d29a-f58d-82b74d177d59"
+  ],
+  "renderer_egl_by_lane": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    2,
+    1
+  ],
+  "renderer_mapping_verified": true,
+  "actual_probe_rows": {
+    "1": {
+      "egl": 1,
+      "host_pid": 9794,
+      "uuid": "GPU-c96e0724-baec-23c6-91fb-c918c2877d87",
+      "ready": {
+        "egl": 1,
+        "container_pid": 4787,
+        "image_max_delta": 0,
+        "image_mean_delta": 0.0
+      }
+    },
+    "2": {
+      "egl": 0,
+      "host_pid": 9827,
+      "uuid": "GPU-4b8df744-94d4-eb41-64a5-cde0f27066d2",
+      "ready": {
+        "egl": 0,
+        "container_pid": 4799,
+        "image_max_delta": 0,
+        "image_mean_delta": 0.0
+      }
+    },
+    "3": {
+      "egl": 2,
+      "host_pid": 9811,
+      "uuid": "GPU-c352ed45-8f9b-2ed2-77fa-ab9617ea6aca",
+      "ready": {
+        "egl": 2,
+        "container_pid": 4793,
+        "image_max_delta": 0,
+        "image_mean_delta": 0.0
+      }
+    },
+    "4": {
+      "egl": 3,
+      "host_pid": 9845,
+      "uuid": "GPU-7f915c28-fdce-b761-a4aa-205f16eebf7b",
+      "ready": {
+        "egl": 3,
+        "container_pid": 4805,
+        "image_max_delta": 0,
+        "image_mean_delta": 0.0
+      }
+    }
+  },
+  "extra_probe_rows": {
+    "0": {
+      "egl": 0,
+      "gpu_uuid": "GPU-fb1e5622-4cf0-b3a0-884c-86d124225b5e",
+      "host_pid": 89913,
+      "initial_scene_verified": true
+    },
+    "2": {
+      "egl": 2,
+      "gpu_uuid": "GPU-71511ac9-bf3e-06c9-2620-216537ef126c",
+      "host_pid": 89951,
+      "initial_scene_verified": true
+    },
+    "1": {
+      "egl": 1,
+      "gpu_uuid": "GPU-31e6bf57-3d2c-d29a-f58d-82b74d177d59",
+      "host_pid": 89932,
+      "initial_scene_verified": true
+    }
+  },
+  "container_by_lane": [
+    "common-oracle-baselines-20261114",
+    "common-oracle-baselines-20261114",
+    "common-oracle-baselines-20261114",
+    "common-oracle-baselines-20261114",
+    "common-baselines-extra056-20261114",
+    "common-baselines-extra056-20261114",
+    "common-baselines-extra056-20261114"
+  ]
+}

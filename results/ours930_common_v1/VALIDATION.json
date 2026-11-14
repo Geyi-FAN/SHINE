@@ -1,0 +1,15 @@
+{
+  "common_scoring_version": "three-method-common-oracle-v1-20261114",
+  "original_nonQA_trials": 840,
+  "graded": 840,
+  "errors": 0,
+  "changed_metric_verdicts": 0,
+  "T8_speech_action_separation": [
+    24,
+    24
+  ],
+  "QA90": "original frozen GLM-4.6V v4/r3 first judgments retained:87/90, no regeneration",
+  "common_progress_sha256": "b4dec3be028a2818cbdfcfd7c472c2222f2737b7e168725868ce5fe8ceab71b5",
+  "frozen_source_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "new_rollouts_or_training_for_Ours": 0
+}

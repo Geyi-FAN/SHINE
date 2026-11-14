@@ -1,0 +1,10 @@
+{
+  "name": "common-baselines-extra056-20261114",
+  "id": "e720ef59c3830f9e2d064e0cd0e439a36a06e52bf8b60d89ddfa9d63269958e0",
+  "physical_gpus": [
+    0,
+    5,
+    6
+  ],
+  "no_other_containers_restarted": true
+}
