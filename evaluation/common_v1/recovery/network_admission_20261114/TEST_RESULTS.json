@@ -1,0 +1,6 @@
+{
+  "local_passed": 13,
+  "remote_container_passed": 13,
+  "includes_mock_full1770_with_one_timeout": true,
+  "formal_trials_not_retried": true
+}
