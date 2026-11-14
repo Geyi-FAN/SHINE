@@ -61,3 +61,7 @@ tmux attach -t common_baselines_auto_net_v3_20261115
 根部署目录的STATUS.json和PROGRESS.md在当前服务器为只读镜像。running表示派发；draining表示正在收尾；network_health_admission表示检查网络；stopped表示无法自动恢复或明确停止。历史异常计数不会清零。
 
 T6固定模型首次判分等待完整1770项结束；没有重判原Ours，也没有挑选新B1的最好回答。论文应披露部署恢复修订和网络异常，不能将部分或混合阶段的结果说成全程条件完全相同的最终成绩。
+
+## 真实接续检查
+
+v3已在新的真实云请求错误后完成一次自动收尾、健康检查及继续派发，原372份首结果哈希不变。见RECOVERY_CHECK.json、cycle_00/DRAINED.json和cycle_01/HEALTH_00.json。它证明调度已实际继续，不代表云错误被消除，也不把失败案例改成成功。

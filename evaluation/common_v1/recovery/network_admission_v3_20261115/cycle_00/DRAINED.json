@@ -1,0 +1,10 @@
+{
+  "faults": [
+    {
+      "trial_uid": "B1:T2:T2COL1_CL_G02:R02",
+      "kind": "upstream_http_error"
+    }
+  ],
+  "at": 1794676233.4812975,
+  "original_first_results_retained": true
+}

@@ -1,0 +1,19 @@
+{
+  "phase": "running_auto_network_admission",
+  "completed": 396,
+  "planned": 1770,
+  "infrastructure_errors": 13,
+  "recovery_cycle": 1,
+  "new_finished": 24,
+  "old372_unchanged": true,
+  "uids_unique": true,
+  "original_formal_results_replayed": 0,
+  "last_wave_faults": [
+    {
+      "trial_uid": "B1:T2:T2COL1_CL_G02:R02",
+      "kind": "upstream_http_error"
+    }
+  ],
+  "next_health_passed": true,
+  "at": 1794676384.8292034
+}
