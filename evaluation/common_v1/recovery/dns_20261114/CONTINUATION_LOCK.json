@@ -1,0 +1,25 @@
+{
+  "retained": 256,
+  "remaining": 1514,
+  "failed_trials_retained": [
+    "B1:T2:T2COL1_NS_G01:R03",
+    "B1:T8:T8EN4_CL_N06_I02:R02",
+    "B1:T1:T1COL1_CL_G05_I02:R03",
+    "B1:T2:T2COL1_NS_G01:R02"
+  ],
+  "dns_patch_sha256": "0c1d764130e0bccc6bfb94ea75c3bd2036c95eace40cdefe3194bf443cc9445d",
+  "no_trial_or_generation_retry": true,
+  "source_sha256": {
+    "test_resume.py": "c4aa459a0efe7a54ddc8a1e54840207769093e83e8bdc7273adb7a15265085fa",
+    "health_and_audit.py": "ada5e61e019f707bd02fd12d75a5e6cc635604cf300afea2eec0c2754f17a6aa",
+    "services.py": "dd3738936e80376e711d556441a3aaa04016ba36bac61778b69a163570a7cc27",
+    "resume.py": "8ad9707d9f953b0cff88368536205a7fa0d87b45a634e99f0cb5845e3a8db288"
+  },
+  "original_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
+  "gpu_map_sha256": "cb68ba5b2a4d0cc936948e2c4914973e90707cfef594a653261f55c917316520",
+  "original_seven_lane_amendment_preserved": true,
+  "concurrency_unchanged": 7,
+  "planning_and_speech_concurrency": 4,
+  "at": 1794659866.1779873
+}

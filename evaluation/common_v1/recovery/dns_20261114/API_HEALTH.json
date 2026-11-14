@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "probes": [
+    {
+      "unscored_preflight_input": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/preflight15_r7/cases/PREFLIGHT:B1:T1:T1COL1_NS_G00_I00:R01/agent_calls/request_1794654487278423246_a0f646b9/request.json",
+      "request_sha256": "e5266cc0efd7bfe3c627449e21c64c3b727faf080ee52cd153ef99b5b93bafa5",
+      "model": "Qwen3.8-27B",
+      "max_tokens": 1800,
+      "registered_trial": false,
+      "formal_case_replayed": false,
+      "requests": 1,
+      "started": 1794659765.1828015,
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 66,
+        "prompt_tokens": 3802,
+        "total_tokens": 3868,
+        "completion_tokens_details": {},
+        "prompt_tokens_details": {
+          "cached_tokens": 2432,
+          "text_tokens": 3670,
+          "image_tokens": 132
+        }
+      },
+      "response_keys": [
+        "complete_task",
+        "intent",
+        "native_skill",
+        "policy_prompt_template",
+        "route",
+        "say"
+      ],
+      "elapsed_s": 3.6467237300239503
+    },
+    {
+      "unscored_preflight_input": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/preflight15_r7/cases/PREFLIGHT:B1:T2:T2COL1_OV_G08:R01/agent_calls/request_1794654449795184072_4a5c35de/request.json",
+      "request_sha256": "a9700783d71fc5ad811a873dabda62137aac1306a5aedaacf903c2aead610d0f",
+      "model": "Qwen3.8-27B",
+      "max_tokens": 1800,
+      "registered_trial": false,
+      "formal_case_replayed": false,
+      "requests": 1,
+      "started": 1794659765.1882439,
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 67,
+        "prompt_tokens": 3810,
+        "total_tokens": 3877,
+        "completion_tokens_details": {},
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 3678,
+          "image_tokens": 132
+        }
+      },
+      "response_keys": [
+        "complete_task",
+        "intent",
+        "native_skill",
+        "policy_prompt_template",
+        "route",
+        "say"
+      ],
+      "elapsed_s": 5.221312586974818
+    },
+    {
+      "unscored_preflight_input": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/preflight15_r7/cases/PREFLIGHT:B1:T3:T3S50_CL_S01_I00:R01/agent_calls/request_1794654410253154559_0a55dbdc/request.json",
+      "request_sha256": "4ee3df25a54edc7676f82a057c01adaec6b1ac14f78d780414c3fc9b73577df8",
+      "model": "Qwen3.8-27B",
+      "max_tokens": 1800,
+      "registered_trial": false,
+      "formal_case_replayed": false,
+      "requests": 1,
+      "started": 1794659765.1894398,
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 66,
+        "prompt_tokens": 3805,
+        "total_tokens": 3871,
+        "completion_tokens_details": {},
+        "prompt_tokens_details": {
+          "cached_tokens": 2432,
+          "text_tokens": 3673,
+          "image_tokens": 132
+        }
+      },
+      "response_keys": [
+        "complete_task",
+        "intent",
+        "native_skill",
+        "policy_prompt_template",
+        "route",
+        "say"
+      ],
+      "elapsed_s": 3.346437292988412
+    },
+    {
+      "unscored_preflight_input": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/preflight15_r7/cases/PREFLIGHT:B1:T4:T4C1_OV_T06_I00:R01/agent_calls/request_1794654488442471820_4e433d13/request.json",
+      "request_sha256": "4642063412b334eb49f3c94f8857488e201eaf1d9656e7ed619ea1f13aa5b1e6",
+      "model": "Qwen3.8-27B",
+      "max_tokens": 1800,
+      "registered_trial": false,
+      "formal_case_replayed": false,
+      "requests": 1,
+      "started": 1794659765.195841,
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 65,
+        "prompt_tokens": 3809,
+        "total_tokens": 3874,
+        "completion_tokens_details": {},
+        "prompt_tokens_details": {
+          "cached_tokens": 2432,
+          "text_tokens": 3677,
+          "image_tokens": 132
+        }
+      },
+      "response_keys": [
+        "complete_task",
+        "intent",
+        "native_skill",
+        "policy_prompt_template",
+        "route",
+        "say",
+        "task_id"
+      ],
+      "elapsed_s": 3.292300557019189
+    }
+  ],
+  "max_concurrent": 4,
+  "source": "same frozen model/settings; four distinct unscored preflight inputs",
+  "no_formal_cases_replayed": true,
+  "at": 1794659770.4101999
+}

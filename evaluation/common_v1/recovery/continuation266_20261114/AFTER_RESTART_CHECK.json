@@ -1,0 +1,17 @@
+{
+  "phase": "running_scaled7_dns_fixed",
+  "completed": 270,
+  "planned": 1770,
+  "infrastructure_errors": 5,
+  "new_completed": 4,
+  "new_engine_errors": 0,
+  "new_agent_requests": 11,
+  "new_agent_errors": 0,
+  "new_agent_received": 11,
+  "retained_all_sha_unchanged": true,
+  "by_method": {
+    "B0": 1,
+    "B1": 3
+  },
+  "at": 1794660815.8119578
+}

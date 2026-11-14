@@ -1,0 +1,33 @@
+{
+  "completed": 247,
+  "planned": 1770,
+  "by_method": {
+    "B0": 112,
+    "B1": 135
+  },
+  "unique_uids": 247,
+  "partial_started": [],
+  "unstarted": 1523,
+  "agent_request_count": 428,
+  "agent_errors": [
+    {
+      "trial_uid": "B1:T2:T2COL1_NS_G01:R02",
+      "file": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/formal1770_v1/cases/B1:T2:T2COL1_NS_G01:R02/agent_calls/request_1794657848994439605_1a26b0db/transport.json",
+      "http_status": 500,
+      "status": "error",
+      "started": 1794657848.996918,
+      "sent_at": 1794657848.9976504,
+      "elapsed_s": 18.046797323971987,
+      "upstream_s": null,
+      "queue_s": 0.0007329119835048914,
+      "error": "HTTPError",
+      "detail": "{\"error\":{\"message\":\"InternalServerError: OpenAIException - Connection error. Error happened to model=Qwen3.8-27B. Received Model Group=Qwen3.8-27B\\nAvailable Model Group Fallbacks=None\\nError doing the fallback: InternalServerError: OpenAIException - Connection error. Error happened to model=Qwen3.8-27B\",\"type\":null,\"param\":null,\"code\":\"500\"}}",
+      "actual_model": null,
+      "retries": 0
+    }
+  ],
+  "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
+  "source_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "all_first_attempts_retained": true,
+  "at": 1794659091.9232545
+}

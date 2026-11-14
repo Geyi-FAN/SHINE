@@ -1,0 +1,58 @@
+{
+  "probes": [
+    {
+      "index": 0,
+      "vision": false,
+      "started": 1794659091.9526176,
+      "registered_trial": false,
+      "retries": 0,
+      "model": "Qwen3.8-27B",
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "elapsed_s": 2.851653632009402
+    },
+    {
+      "index": 1,
+      "vision": true,
+      "started": 1794659091.956341,
+      "registered_trial": false,
+      "retries": 0,
+      "model": "Qwen3.8-27B",
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "elapsed_s": 0.8238969490048476
+    },
+    {
+      "index": 2,
+      "vision": false,
+      "started": 1794659091.954027,
+      "registered_trial": false,
+      "retries": 0,
+      "model": "Qwen3.8-27B",
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "elapsed_s": 1.148414357972797
+    },
+    {
+      "index": 3,
+      "vision": true,
+      "started": 1794659091.9592795,
+      "registered_trial": false,
+      "retries": 0,
+      "model": "Qwen3.8-27B",
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "elapsed_s": 0.783144869026728
+    }
+  ],
+  "passed": true,
+  "max_concurrent": 4,
+  "original_credential_no": "01",
+  "independent_health_checks": true,
+  "no_formal_requests_retried": true,
+  "at": 1794659094.8048677
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "draining_after_error",
+  "completed": 261,
+  "planned": 1770,
+  "infrastructure_errors": 5,
+  "new_completed": 5,
+  "new_engine_errors": 1,
+  "new_agent_requests": 10,
+  "new_agent_errors": 0,
+  "new_agent_received": 10,
+  "retained_all_sha_unchanged": true,
+  "by_method": {
+    "B0": 2,
+    "B1": 3
+  },
+  "at": 1794660030.7008395
+}

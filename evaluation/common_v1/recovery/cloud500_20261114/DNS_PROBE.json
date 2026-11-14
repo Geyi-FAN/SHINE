@@ -1,0 +1,471 @@
+{
+  "probes": [
+    {
+      "server": "1.1.1.1",
+      "host": "llmapi.paratera.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.048822948010638356
+    },
+    {
+      "server": "1.1.1.1",
+      "host": "llmapi.paratera.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.052798520016949624
+    },
+    {
+      "server": "1.1.1.1",
+      "host": "llmapi.paratera.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.05509455397259444
+    },
+    {
+      "server": "1.1.1.1",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "8.140.217.18",
+        "39.96.213.166",
+        "8.152.159.24",
+        "39.96.198.249"
+      ],
+      "elapsed_s": 0.04968161100987345
+    },
+    {
+      "server": "1.1.1.1",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.213.166",
+        "8.152.159.24",
+        "39.96.198.249",
+        "8.140.217.18"
+      ],
+      "elapsed_s": 0.05991439998615533
+    },
+    {
+      "server": "1.1.1.1",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.198.249",
+        "8.140.217.18",
+        "39.96.213.166",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.05198489601025358
+    },
+    {
+      "server": "8.8.8.8",
+      "host": "llmapi.paratera.com",
+      "trial": 0,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.0025979910278693
+    },
+    {
+      "server": "8.8.8.8",
+      "host": "llmapi.paratera.com",
+      "trial": 1,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.0028270600014366
+    },
+    {
+      "server": "8.8.8.8",
+      "host": "llmapi.paratera.com",
+      "trial": 2,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.0030096379923634
+    },
+    {
+      "server": "8.8.8.8",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 0,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.0029094689525664
+    },
+    {
+      "server": "8.8.8.8",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 1,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.002717320981901
+    },
+    {
+      "server": "8.8.8.8",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 2,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.0026030510198325
+    },
+    {
+      "server": "8.8.4.4",
+      "host": "llmapi.paratera.com",
+      "trial": 0,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.002472682041116
+    },
+    {
+      "server": "8.8.4.4",
+      "host": "llmapi.paratera.com",
+      "trial": 1,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.0025019720196724
+    },
+    {
+      "server": "8.8.4.4",
+      "host": "llmapi.paratera.com",
+      "trial": 2,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.0023764219949953
+    },
+    {
+      "server": "8.8.4.4",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 0,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.0022767129703425
+    },
+    {
+      "server": "8.8.4.4",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 1,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.002329273032956
+    },
+    {
+      "server": "8.8.4.4",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 2,
+      "passed": false,
+      "error": "TimeoutError: timed out",
+      "elapsed_s": 2.002219592977781
+    },
+    {
+      "server": "127.0.0.53",
+      "host": "llmapi.paratera.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.0026438409695401788
+    },
+    {
+      "server": "127.0.0.53",
+      "host": "llmapi.paratera.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.00029839802300557494
+    },
+    {
+      "server": "127.0.0.53",
+      "host": "llmapi.paratera.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.00028475798899307847
+    },
+    {
+      "server": "127.0.0.53",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18"
+      ],
+      "elapsed_s": 0.03201509598875418
+    },
+    {
+      "server": "127.0.0.53",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18"
+      ],
+      "elapsed_s": 0.02961863297969103
+    },
+    {
+      "server": "127.0.0.53",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18"
+      ],
+      "elapsed_s": 0.000346678018104285
+    },
+    {
+      "server": "223.5.5.5",
+      "host": "llmapi.paratera.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.014806626015342772
+    },
+    {
+      "server": "223.5.5.5",
+      "host": "llmapi.paratera.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.006479924020823091
+    },
+    {
+      "server": "223.5.5.5",
+      "host": "llmapi.paratera.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.06623372598551214
+    },
+    {
+      "server": "223.5.5.5",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "8.140.217.18",
+        "39.96.198.249",
+        "8.152.159.24",
+        "39.96.213.166"
+      ],
+      "elapsed_s": 0.0061600570334121585
+    },
+    {
+      "server": "223.5.5.5",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "8.140.217.18",
+        "39.96.198.249",
+        "8.152.159.24",
+        "39.96.213.166"
+      ],
+      "elapsed_s": 0.00356621399987489
+    },
+    {
+      "server": "223.5.5.5",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "8.152.159.24",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18"
+      ],
+      "elapsed_s": 0.00843286101007834
+    },
+    {
+      "server": "119.29.29.29",
+      "host": "llmapi.paratera.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.010932083008810878
+    },
+    {
+      "server": "119.29.29.29",
+      "host": "llmapi.paratera.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.011867977038491517
+    },
+    {
+      "server": "119.29.29.29",
+      "host": "llmapi.paratera.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.01056688599055633
+    },
+    {
+      "server": "119.29.29.29",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "8.140.217.18",
+        "39.96.198.249",
+        "8.152.159.24",
+        "39.96.213.166"
+      ],
+      "elapsed_s": 0.010547735961154103
+    },
+    {
+      "server": "119.29.29.29",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.213.166",
+        "39.96.198.249",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.009686932025942951
+    },
+    {
+      "server": "119.29.29.29",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "8.140.217.18",
+        "39.96.198.249",
+        "8.152.159.24",
+        "39.96.213.166"
+      ],
+      "elapsed_s": 0.012778130010701716
+    },
+    {
+      "server": "114.114.114.114",
+      "host": "llmapi.paratera.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.026840951992198825
+    },
+    {
+      "server": "114.114.114.114",
+      "host": "llmapi.paratera.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.030455606000032276
+    },
+    {
+      "server": "114.114.114.114",
+      "host": "llmapi.paratera.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.02679313294356689
+    },
+    {
+      "server": "114.114.114.114",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 0,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.198.249",
+        "8.152.159.24",
+        "39.96.213.166"
+      ],
+      "elapsed_s": 0.02964876202167943
+    },
+    {
+      "server": "114.114.114.114",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 1,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.213.166",
+        "39.96.198.249",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.029701552004553378
+    },
+    {
+      "server": "114.114.114.114",
+      "host": "dashscope.aliyuncs.com",
+      "trial": 2,
+      "passed": true,
+      "rcode": 0,
+      "addresses": [
+        "39.96.198.249",
+        "8.152.159.24",
+        "8.140.217.18"
+      ],
+      "elapsed_s": 0.027518788003362715
+    }
+  ],
+  "before_resolv_conf": "# Dynamic resolv.conf(5) file for glibc resolver(3) generated by resolvconf(8)\n#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN\n# 127.0.0.53 is the systemd-resolved stub resolver.\n# run \"systemd-resolve --status\" to see details about the actual nameservers.\n\nnameserver 1.1.1.1\nnameserver 8.8.8.8 \nnameserver 8.8.4.4\nnameserver 127.0.0.53\n",
+  "at": 1794659529.79879
+}

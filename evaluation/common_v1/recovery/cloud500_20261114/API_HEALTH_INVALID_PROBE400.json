@@ -1,0 +1,58 @@
+{
+  "probes": [
+    {
+      "index": 0,
+      "vision": false,
+      "started": 1794659045.8344092,
+      "registered_trial": false,
+      "retries": 0,
+      "model": "Qwen3.8-27B",
+      "passed": false,
+      "http_status": 400,
+      "detail": "{\"error\":{\"message\":\"OpenAIException - <400> InternalError.Algo.InvalidParameter: 'messages' must contain the word 'json' in some form, to use 'response_format' of type 'json_object'. Error happened to model=Qwen3.8-27B\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"400\"}}",
+      "elapsed_s": 7.186653473996557
+    },
+    {
+      "index": 1,
+      "vision": true,
+      "started": 1794659045.8381088,
+      "registered_trial": false,
+      "retries": 0,
+      "model": "Qwen3.8-27B",
+      "passed": false,
+      "http_status": 400,
+      "detail": "{\"error\":{\"message\":\"OpenAIException - <400> InternalError.Algo.InvalidParameter: 'messages' must contain the word 'json' in some form, to use 'response_format' of type 'json_object'. Error happened to model=Qwen3.8-27B\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"400\"}}",
+      "elapsed_s": 3.2687085539801046
+    },
+    {
+      "index": 2,
+      "vision": false,
+      "started": 1794659045.8357966,
+      "registered_trial": false,
+      "retries": 0,
+      "model": "Qwen3.8-27B",
+      "passed": false,
+      "http_status": 400,
+      "detail": "{\"error\":{\"message\":\"OpenAIException - <400> InternalError.Algo.InvalidParameter: 'messages' must contain the word 'json' in some form, to use 'response_format' of type 'json_object'. Error happened to model=Qwen3.8-27B\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"400\"}}",
+      "elapsed_s": 1.5144962390186265
+    },
+    {
+      "index": 3,
+      "vision": true,
+      "started": 1794659045.8411129,
+      "registered_trial": false,
+      "retries": 0,
+      "model": "Qwen3.8-27B",
+      "passed": false,
+      "http_status": 400,
+      "detail": "{\"error\":{\"message\":\"OpenAIException - <400> InternalError.Algo.InvalidParameter: 'messages' must contain the word 'json' in some form, to use 'response_format' of type 'json_object'. Error happened to model=Qwen3.8-27B\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"400\"}}",
+      "elapsed_s": 12.581426073040348
+    }
+  ],
+  "passed": false,
+  "max_concurrent": 4,
+  "original_credential_no": "01",
+  "independent_health_checks": true,
+  "no_formal_requests_retried": true,
+  "at": 1794659058.4231951
+}

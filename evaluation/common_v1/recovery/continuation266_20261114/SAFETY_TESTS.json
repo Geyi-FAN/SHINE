@@ -1,0 +1,6 @@
+{
+  "local_passed": 7,
+  "remote_container_passed": 7,
+  "tests": "test_resume.py",
+  "registered_trials_replayed": 0
+}

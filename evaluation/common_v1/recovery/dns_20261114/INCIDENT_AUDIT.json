@@ -1,0 +1,37 @@
+{
+  "completed": 256,
+  "planned": 1770,
+  "unstarted": 1514,
+  "known_infrastructure_trials": [
+    "B1:T1:T1COL1_CL_G05_I02:R03",
+    "B1:T2:T2COL1_NS_G01:R02",
+    "B1:T2:T2COL1_NS_G01:R03",
+    "B1:T8:T8EN4_CL_N06_I02:R02"
+  ],
+  "infrastructure_errors": [
+    {
+      "trial_uid": "B1:T2:T2COL1_NS_G01:R03",
+      "error": "URLError(gaierror(-3, 'Temporary failure in name resolution'))"
+    },
+    {
+      "trial_uid": "B1:T8:T8EN4_CL_N06_I02:R02",
+      "error": "TimeoutError('The read operation timed out')"
+    },
+    {
+      "trial_uid": "B1:T1:T1COL1_CL_G05_I02:R03",
+      "error": "URLError(gaierror(-3, 'Temporary failure in name resolution'))"
+    },
+    {
+      "trial_uid": "B1:T2:T2COL1_NS_G01:R02",
+      "error": "RuntimeError('cloud01 HTTP 500: {\"error\":{\"message\":\"InternalServerError: OpenAIException - Connection error. Error happened to model=Qwen3.8-27B. Received Model Group=Qwen3.8-27B\\\\nAvailable Model Group Fallbacks=None\\\\nError doing the fallback: InternalServerError: OpenAIException - Connection error. Error happened to model=Qwen3.8-27B\",\"type\":null,\"param\":null,\"code\":\"500\"}}')"
+    }
+  ],
+  "by_method": {
+    "B0": 117,
+    "B1": 139
+  },
+  "partial_started": [],
+  "source_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
+  "at": 1794659764.0172732
+}

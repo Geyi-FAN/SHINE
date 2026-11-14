@@ -1,0 +1,19 @@
+{
+  "retained": 247,
+  "remaining": 1523,
+  "failed_trial_retained": "B1:T2:T2COL1_NS_G01:R02",
+  "no_trial_or_generation_retry": true,
+  "source_sha256": {
+    "test_resume.py": "162e6bf969c2a18195b6e7ae9a2eeec8d4601b905f7a058e353673dc7928de12",
+    "services.py": "007b30704f6e4034ae0383df62bf7ee3e6a3d59868293382c0dba93b6c7c5801",
+    "resume.py": "57c8ad2befbdf8966ba3fb8b7ecf5a5efecb4741420e188f357334f2b45ae45b",
+    "diagnose.py": "8f8c111b746047fbd614d5f08c864e4d0bd22dc89e83fd70f9d11feed6e9d1c5"
+  },
+  "original_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
+  "gpu_map_sha256": "cb68ba5b2a4d0cc936948e2c4914973e90707cfef594a653261f55c917316520",
+  "original_seven_lane_amendment_preserved": true,
+  "concurrency_unchanged": 7,
+  "planning_and_speech_concurrency": 4,
+  "at": 1794659291.7782905
+}

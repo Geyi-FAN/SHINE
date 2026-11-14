@@ -1,0 +1,341 @@
+{
+  "probes": [
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.07584568398306146
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.012620819034054875
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.011144900985527784
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.011031311994884163
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.06332228501560166
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.015260307991411537
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.022504081018269062
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.006881844950839877
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.0092123260255903
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.009257716010324657
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.06943230499746278
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.009435274987481534
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.06554484594380483
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.011893025017343462
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.06075353396590799
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.0036568400100804865
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.06748007098212838
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.01666378800291568
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.017755387001670897
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.008846249023918062
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.05968274298356846
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.005998142994940281
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.05546709697227925
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.009904591017402709
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.9062158750020899
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.0041970969759859145
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.014821231947280467
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.00696765398606658
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.01078500400763005
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.01258932997006923
+    },
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "ips": [
+        "115.190.35.43"
+      ],
+      "elapsed_s": 0.0068548949784599245
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "ips": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ],
+      "elapsed_s": 0.009361754986457527
+    }
+  ],
+  "passed": true
+}
