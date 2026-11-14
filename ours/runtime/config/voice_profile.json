@@ -1,0 +1,19 @@
+{
+  "schema": "audio_switch_voice_profile.v1",
+  "flags": {
+    "ROBOT_FAST_STOP": "1",
+    "ROBOT_AUDIO_RELISTEN": "1",
+    "ROBOT_AUDIO_GROUNDING_STREAM": "1",
+    "VOICE_PRIORITY_STOP": "1",
+    "C3R_PROFILE": "recovery",
+    "ROBOT_BOUNDED_RESULT_SPEECH": "1"
+  },
+  "instruction_prompt": "config/instruction_prompt.txt",
+  "receipt_seed": "config/receipt_seed",
+  "reason": "Shared audio-only relisten; public supported-vocabulary trigger when privacy-redacted scene inventory is absent; bounded750ms wait for same-input independent ASR final. No reference text or scene sent to ASR. Shared bounded result speech for every category: unchanged verified text; at most two buffered 6s attempts, no audible replay.",
+  "required_receipt_texts": [
+    "任务指令已下发。",
+    "已排队。",
+    "机械臂已开始执行当前任务。"
+  ]
+}

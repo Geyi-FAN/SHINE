@@ -1,0 +1,6 @@
+{
+  "reason": "Runtime planner-input ownership adapter was absent from r1/r2 source closure",
+  "source": "/mnt/disk_2/geyi/voice_c3r_integration_20261102/integration",
+  "dynamic_path": "SingleOwnerBridge.start -> GatewayPlanner.generate -> F28dExecutionAdapter.planner_input",
+  "previous_evidence_preserved": true
+}

@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "reviewed_restore_cases": [
+    {
+      "case_id": "NEW_B_s2_P3_a000",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "NEW_B_s4_P3_a000",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "NEW_E_s2_P3_a000",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T00_SWITCH_T03_C4_R05",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T01_SWITCH_T03_C4_R00",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T04_SWITCH_T03_C4_R09",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T08_SWITCH_T03_C6_R05",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T08_SWITCH_T03_C6_R06",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T08_SWITCH_T03_C6_R09",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "NEW_A_s2_P2_a000",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T00_SWITCH_T03_C4_R06",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T00_SWITCH_T03_C4_R08",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T00_SWITCH_T03_C4_R09",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T01_SWITCH_T03_C4_R07",
+      "restore_matches": true,
+      "native_matches": true
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T02_SWITCH_T03_C4_R02",
+      "restore_matches": true,
+      "native_matches": true
+    }
+  ],
+  "target_geometry_cases": [
+    "V2_R329_T05_P0_T09_SWITCH_T05_P0_R05",
+    "V2_R329_T03_C6_T05_SWITCH_T03_C6_R08",
+    "V2_R329_T05_P0_T09_SWITCH_T05_P0_R02",
+    "V2_R329_T05_P0_T09_SWITCH_T05_P0_R00",
+    "V2_R329_T03_C6_T05_SWITCH_T03_C6_R09"
+  ],
+  "production_results_written": false
+}

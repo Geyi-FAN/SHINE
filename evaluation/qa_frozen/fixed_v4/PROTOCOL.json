@@ -1,0 +1,102 @@
+{
+  "version": "T6-fixed-hybrid-judge-v4-20261109",
+  "semantic_model": "GLM-4.6V",
+  "underlying_model_protocol": {
+    "version": "T6-reference-aligned-model-judge-v3-20261109",
+    "status": "frozen_before_format_repairs",
+    "semantic_judge": {
+      "provider": "Paratera",
+      "model": "GLM-4.6V",
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 1400,
+      "thinking": {
+        "type": "disabled"
+      },
+      "credential_alias": "agent_04",
+      "api_timeout_seconds": 150,
+      "semantic_calls_per_case": "one initial, at most one schema-only repair",
+      "automatic_retry": "schema-invalid only; final response, never best-of",
+      "model_family_independent_of_Qwen": true,
+      "immutable_provider_revision": null
+    },
+    "denominators": {
+      "planned": 90,
+      "asked": 90,
+      "setup_failures_reported_separately": true,
+      "unknown_judgments_remain_in_registered_denominator": true,
+      "no_per_case_best_judge_selection": true
+    },
+    "audio": {
+      "first_correct_audio_from_question_end_seconds": 20,
+      "complete_correct_audio_from_question_end_seconds": 40,
+      "sink": "clocked_PCM_receiver_not_physical_speaker",
+      "require_pcm_hash_output_id_epoch_and_playback_ack": true,
+      "wrong_fact_spoken_cannot_be_erased_by_correction": true
+    },
+    "control": {
+      "observe_from_question_end_seconds": 45,
+      "require_no_unauthorized_control_or_identity_change": true,
+      "natural_progress_or_completion_is_allowed": true
+    },
+    "semantic_inputs": [
+      "original_question_text",
+      "actual_ASR_text",
+      "all_ordered_actually_bound_spoken_outputs",
+      "actual_QA_input_images_with_temporal_identity",
+      "time_aligned_private_reference_facts_only_for_offline_judge",
+      "verified_scene_inventory",
+      "readonly_current_task_status"
+    ],
+    "forbidden_inputs": [
+      "old_assistant_labels",
+      "old_success_scores",
+      "case_specific_expected_answer_prose",
+      "model_supported_self_review",
+      "future_scene_state",
+      "method_name",
+      "planner_hidden_reasoning",
+      "benchmark_case_id"
+    ],
+    "uncertainty": "Accept an evidence-supported visibility limitation that answers what can be observed. Do not accept a generic refusal when evidence resolves the asked proposition. Distinguish partial-open from closed and commanded destination from current location.",
+    "semantic_verdicts": [
+      "pass",
+      "fail",
+      "insufficient_evidence"
+    ],
+    "technical_verdicts": [
+      "model_error",
+      "parse_error",
+      "schema_error",
+      "input_error",
+      "returned_model_mismatch"
+    ],
+    "reliability_audit": {
+      "selection": "first10_by_sha256_anonymous_packet_id",
+      "repeated_calls": 1,
+      "keep_first_call_primary": true,
+      "disagreement_not_overwritten": true
+    },
+    "claim_limit": "Model-assisted semantic grading, not human double-blind. API model alias may drift; returned ID/raw response/date are archived. Human independent calibration is not claimed. Freeze requests and regrade all methods with the same version after any protocol change.",
+    "reference_alignment": "Visual QA at actual request frame; asynchronous status notices at their own spoken time",
+    "clarifications": [
+      "destination question accepts explicit destination in current-task phrasing",
+      "open predicate does not imply fully-open or max travel",
+      "a correct negative visual observation may carry a restrained caveat",
+      "drawer containment implies nonempty; do not reward contradictory uncertainty"
+    ],
+    "first_call_cache": "primary90 raw requests/responses reused for all90, unmodified",
+    "valid_fail_or_insufficient_evidence_never_retried": true,
+    "format_repair_prompt_sha256": "3b56c124915ca7387f80fef9ee57c290a5443f8e47127c58799418927f64819c"
+  },
+  "underlying_model_summary_sha256": "5cc8bbec0b0b41037d5393a707298332e543217d4497c2a65ee7718ddffda013",
+  "deterministic_guards": "explicit referent substitution => fail; occupant/empty uncertainty conflict => independent review",
+  "guard_source_sha256": "ad46ec3a12a1f4f3a295e3af8002acae412f2089ce12ff8c11829c7a4b6caea4",
+  "script_sha256": "a327221436a33d579de42352e450f8761ea4c827fca28ac65b4039af98b4bb5e",
+  "old_assistant_labels_read": false,
+  "all90_uniformly_processed": true,
+  "semantic_API_calls_added": 0,
+  "human_independent_review_completed": false,
+  "frozen_at": 1794227707.6868045,
+  "policy": "Never use Codex to silently replace model semantic labels. Pending remains in denominator; no score-based retries."
+}

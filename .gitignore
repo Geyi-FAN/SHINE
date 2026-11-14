@@ -1,0 +1,17 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+private/
+*.token
+*.pem
+*.key
+runs/
+logs/
+checkpoints/
+*.safetensors
+*.mp4
+*.wav
+*.pcm
+*.npz

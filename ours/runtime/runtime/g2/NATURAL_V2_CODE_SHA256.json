@@ -1,0 +1,13 @@
+{
+  "files": {
+    "g2/bootstrap.py": "eaa3f61cb31d4cc23551716964171c066966e76e7d79ca71faff9da71f11d5fc",
+    "g2/bridge.py": "c7e5d73a582e960cd2700c0dfafcf320dfa7cf257c9009169d93b68611156044",
+    "g2/natural_source.py": "375af6c533385a8e2739bbb891bdd2f00524c7afab90bcadb88428d8992745a7",
+    "g2/run_case.py": "63ed4526335485d36942f4e7a752599c04da1a6d3312f05b037c134e5e803229",
+    "g2/schedule.py": "3051dde2927852ce89a36a27bf8d8540a8051b534b28a6c55e38b78a044a0ed5",
+    "g2/test_bridge.py": "e07cd81462124b2b581d26a2f61f93a052a341f7a2ae7bfef170ccd5c099729d"
+  },
+  "previous_manifest": "g2/POST_FIXED32_CODE_SHA256.json",
+  "change": "Post-instruction score row numbering; retain global physical clock; persist physical trace before scoring",
+  "all_eight_rerun": true
+}

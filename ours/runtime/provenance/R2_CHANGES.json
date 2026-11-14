@@ -1,0 +1,9 @@
+{
+  "base_commit": "82667c798c255d6d73ecff281913035234909577",
+  "changes": [
+    "Explicit authenticated headless replay flag at voice launcher; no device/auth bypass",
+    "Pi05 always uses full C3r Agent subgoal format; Smol-derived Native plaintext route is not admitted"
+  ],
+  "real_paired_diagnostic": "pending",
+  "r1_original_preserved": true
+}

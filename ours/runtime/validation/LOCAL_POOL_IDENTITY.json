@@ -1,0 +1,10 @@
+{
+  "expected": "Qwen3.8-27B-FP8",
+  "reported": [
+    "Qwen3.8-27B-FP8",
+    "Qwen3.8-27B"
+  ],
+  "matched": true,
+  "read_only": true,
+  "model_generation_calls": 0
+}

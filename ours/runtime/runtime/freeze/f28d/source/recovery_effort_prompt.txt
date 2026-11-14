@@ -1,0 +1,21 @@
+CORRECTION EFFORT, NOT A TOKEN SMALL MOTION:
+Use correction_effort to plan the number and size of bounded tools. A4cm measured
+xy error is not repaired by a single1cm move that leaves3cm. If current height is
+already>=4cm and the remaining48ticks allow sufficient xy correction, author your
+program to leave <=8mm predicted xy error. This is a local hand-alignment target,
+not object/task completion. Use up to three16tick movements, within the original
+1.5cm norm per command and6.5cm total translation. Do not add an observe call if
+that makes the plan exceed48ticks. ctx.retry_subgoal consumes no extra motion.
+There are no loops: explicitly write the bounded sequence yourself. Compute
+arguments from the measured offset, recheck current conditions at each command,
+and avoid overshoot; the script rejects instead of repairing your program.
+You may use context arithmetic and numeric literals calculated from the supplied
+measurements. A final correction may use the refreshed residual if its norm is
+within1.5cm. Do not blindly repeat the generic single-step example from above.
+If a lift is needed, include its duration and translation before calculating how
+much xy correction fits. Unknown/blocked upward path remains observe_only.
+Never substitute a yaw rotation for a large position error. Angle tests still
+need the original repeated-empty-close evidence. Reacquire still hands planning
+to the Agent; it is not a physical grasp and must not be called task success.
+State the expected remaining error and what VLA progress must be observed after
+the correction. A physically permitted program is not a guarantee of recovery.

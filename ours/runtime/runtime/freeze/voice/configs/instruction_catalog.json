@@ -1,0 +1,1287 @@
+{
+  "schema": "p1_instruction_catalog.v1",
+  "training_manifest": "../pi05_revision_p1/data/episodes.json",
+  "manifest_sha256": "b19fddda64c1a8300700e0c73da7f0f1aefe1c14f2637fb318ab848f80138c86",
+  "trajectory_count": 1070,
+  "kind_counts": {
+    "revision": 640,
+    "normal": 430
+  },
+  "raw_revision_result_count": 640,
+  "unique_training_instructions": 50,
+  "entries": [
+    {
+      "id": "a0714f4d9199",
+      "instruction": "Close the middle drawer first, then open the top drawer and put the bowl inside.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [3],
+      "chinese_examples": [
+        "先关闭中间抽屉，再打开顶层抽屉并放碗。",
+        "关好中间抽屉，再打开上层抽屉并把碗放进去。如果开抽屉前需要放下手里的东西，先放回它原来的位置。"
+      ]
+    },
+    {
+      "id": "0837cdb96163",
+      "instruction": "Close the middle drawer first, then push the plate to the front of the stove.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [5],
+      "chinese_examples": ["先关闭中间抽屉，再盘子推到炉子前。"]
+    },
+    {
+      "id": "23e39b9d075c",
+      "instruction": "Close the middle drawer first, then put the bowl on the plate.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [8],
+      "chinese_examples": ["先关闭中间抽屉，再碗放盘子。", "关好中间抽屉，再把碗放到盘子上。"]
+    },
+    {
+      "id": "0e959ab827ed",
+      "instruction": "Close the middle drawer first, then put the bowl on the stove.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [1],
+      "chinese_examples": ["先关闭中间抽屉，再碗放炉子。", "关好中间抽屉，再把碗放到炉子上。"]
+    },
+    {
+      "id": "705096f8e8f5",
+      "instruction": "Close the middle drawer first, then put the bowl on top of the cabinet.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [4],
+      "chinese_examples": ["先关闭中间抽屉，再碗放柜顶。", "关好中间抽屉，再把碗放到柜顶。"]
+    },
+    {
+      "id": "3b7647d9a629",
+      "instruction": "Close the middle drawer first, then put the cream cheese in the bowl.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [6],
+      "chinese_examples": ["先关闭中间抽屉，再奶酪放碗里。", "关好中间抽屉，再把奶酪放到碗里。"]
+    },
+    {
+      "id": "9259e0b9313e",
+      "instruction": "Close the middle drawer first, then put the wine bottle on the rack.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [9],
+      "chinese_examples": ["先关闭中间抽屉，再酒瓶放酒架。", "关好中间抽屉，再把酒瓶放到酒架上。"]
+    },
+    {
+      "id": "10f96cee7544",
+      "instruction": "Close the middle drawer first, then put the wine bottle on top of the cabinet.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [2],
+      "chinese_examples": ["先关闭中间抽屉，再酒瓶放柜顶。", "关好中间抽屉，再把酒瓶放到柜顶。"]
+    },
+    {
+      "id": "07cb6ae0fdc0",
+      "instruction": "Close the middle drawer first, then turn on the stove.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [7],
+      "chinese_examples": ["先关闭中间抽屉，再打开炉灶。", "关好中间抽屉，再打开炉灶。"]
+    },
+    {
+      "id": "14536785ec11",
+      "instruction": "Close the middle drawer, then open the top drawer and put the bowl inside.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [3],
+      "chinese_examples": [
+        "关好中间抽屉，再打开上层抽屉并把碗放进去。如果开抽屉前需要放下手里的东西，先放回它原来的位置。"
+      ]
+    },
+    {
+      "id": "04050d6ab6c3",
+      "instruction": "Close the middle drawer, then push the plate to the front of the stove.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [5],
+      "chinese_examples": ["关好中间抽屉，再把盘子推到炉子前。"]
+    },
+    {
+      "id": "f89324c0003e",
+      "instruction": "Close the top drawer first, then open the middle drawer.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [0],
+      "chinese_examples": ["先关上顶层抽屉，再打开中间抽屉。"]
+    },
+    {
+      "id": "c8d3b1a88441",
+      "instruction": "Close the top drawer first, then push the plate to the front of the stove.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [5],
+      "chinese_examples": ["先关上顶层抽屉，再盘子推到炉子前。"]
+    },
+    {
+      "id": "452d12d2f850",
+      "instruction": "Close the top drawer first, then put the bowl on the plate.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [8],
+      "chinese_examples": ["先关上顶层抽屉，再碗放盘子。"]
+    },
+    {
+      "id": "8b503d082101",
+      "instruction": "Close the top drawer first, then put the bowl on top of the cabinet.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [4],
+      "chinese_examples": ["先关上顶层抽屉，再碗放柜顶。"]
+    },
+    {
+      "id": "030b15de8a7e",
+      "instruction": "Close the top drawer first, then put the cream cheese in the bowl.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [6],
+      "chinese_examples": ["先关上顶层抽屉，再奶酪放碗里。"]
+    },
+    {
+      "id": "680bbe70ba2e",
+      "instruction": "Close the top drawer first, then put the wine bottle on top of the cabinet.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [2],
+      "chinese_examples": ["先关上顶层抽屉，再酒瓶放柜顶。"]
+    },
+    {
+      "id": "f11c24344fd1",
+      "instruction": "Continue opening the middle drawer.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [0],
+      "target_tasks": [0],
+      "chinese_examples": ["继续打开中间抽屉。"]
+    },
+    {
+      "id": "cf8907ceb500",
+      "instruction": "Continue pushing the plate to the front of the stove.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [5],
+      "target_tasks": [5],
+      "chinese_examples": ["继续把盘子推到炉子前。", "继续：盘子推到炉子前。"]
+    },
+    {
+      "id": "cad6668bdb7b",
+      "instruction": "Continue putting the bowl in the top drawer.",
+      "count": 8,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [3],
+      "chinese_examples": ["继续打开上层抽屉并把碗放进去。", "继续：打开顶层抽屉并放碗。"]
+    },
+    {
+      "id": "26c8a0db9788",
+      "instruction": "Continue putting the bowl on the plate.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [8],
+      "target_tasks": [8],
+      "chinese_examples": ["继续把碗放到盘子上。"]
+    },
+    {
+      "id": "7266fa032a3c",
+      "instruction": "Continue putting the bowl on the stove.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [1],
+      "target_tasks": [1],
+      "chinese_examples": ["继续把碗放到炉子上。"]
+    },
+    {
+      "id": "d6be6834c801",
+      "instruction": "Continue putting the bowl on top of the cabinet.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [4],
+      "target_tasks": [4],
+      "chinese_examples": ["继续把碗放到柜顶。"]
+    },
+    {
+      "id": "f63041ffd1bb",
+      "instruction": "Continue putting the cream cheese in the bowl.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [6],
+      "target_tasks": [6],
+      "chinese_examples": ["继续把奶酪放到碗里。"]
+    },
+    {
+      "id": "b82bfb60e143",
+      "instruction": "Continue putting the wine bottle on the rack.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [9],
+      "target_tasks": [9],
+      "chinese_examples": ["继续把酒瓶放到酒架上。"]
+    },
+    {
+      "id": "6360b5c559f0",
+      "instruction": "Continue putting the wine bottle on top of the cabinet.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [2],
+      "target_tasks": [2],
+      "chinese_examples": ["继续把酒瓶放到柜顶。"]
+    },
+    {
+      "id": "f3384003b22f",
+      "instruction": "Continue turning on the stove.",
+      "count": 4,
+      "kinds": ["revision"],
+      "source_tasks": [7],
+      "target_tasks": [7],
+      "chinese_examples": ["继续打开炉灶。", "继续：打开炉灶。"]
+    },
+    {
+      "id": "62b39e85e965",
+      "instruction": "Leave the bowl inside the top drawer. Close the top drawer, then open the middle drawer of the cabinet.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [0],
+      "chinese_examples": ["碗留在上层抽屉里。关好上层抽屉，再打开中间抽屉。"]
+    },
+    {
+      "id": "db64b452c5ea",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then open the middle drawer.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [0],
+      "chinese_examples": ["先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再打开中间抽屉。"]
+    },
+    {
+      "id": "532a05d6644f",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then push the plate to the front of the stove.",
+      "count": 1,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [5],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再把盘子推到炉子前。"
+      ]
+    },
+    {
+      "id": "068ee532169e",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then put the bowl on the plate.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [8],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再把碗放到盘子上。"
+      ]
+    },
+    {
+      "id": "3b0ac1f90d7e",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then put the bowl on the stove.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [1],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再把碗放到炉子上。"
+      ]
+    },
+    {
+      "id": "96737c1689aa",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then put the bowl on top of the cabinet.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [4],
+      "chinese_examples": ["先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再把碗放到柜顶。"]
+    },
+    {
+      "id": "ae2c8a18608f",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then put the cream cheese in the bowl.",
+      "count": 1,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [6],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再把奶酪放到碗里。"
+      ]
+    },
+    {
+      "id": "7148248dbc35",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then put the wine bottle on the rack.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [9],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再把酒瓶放到酒架上。"
+      ]
+    },
+    {
+      "id": "58b53624dd72",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then put the wine bottle on top of the cabinet.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [2],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再把酒瓶放到柜顶。"
+      ]
+    },
+    {
+      "id": "562ebf0bf81a",
+      "instruction": "Return the bowl to its starting position, close the top drawer, then turn on the stove.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [7],
+      "chinese_examples": ["先把碗放回这次任务开始时的位置并松手，再关好上层抽屉，再打开炉灶。"]
+    },
+    {
+      "id": "a7a8c2776ce0",
+      "instruction": "Take the bowl out of the top drawer and put it on the stove.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [1],
+      "chinese_examples": ["改为：碗放炉子。"]
+    },
+    {
+      "id": "3c947d0c33f4",
+      "instruction": "Take the bowl out of the top drawer and put it on top of the cabinet.",
+      "count": 2,
+      "kinds": ["revision"],
+      "source_tasks": [3],
+      "target_tasks": [4],
+      "chinese_examples": ["改为：碗放柜顶。"]
+    },
+    {
+      "id": "88562c24a090",
+      "instruction": "That is done. Leave the result as it is.",
+      "count": 20,
+      "kinds": ["revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "chinese_examples": ["这样就可以了，保持现在的结果。"]
+    },
+    {
+      "id": "ad9355012a4d",
+      "instruction": "open the middle drawer of the cabinet",
+      "count": 95,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [0],
+      "chinese_examples": ["打开中间抽屉。", "改为：打开中间抽屉。"]
+    },
+    {
+      "id": "7bfd2c166341",
+      "instruction": "open the top drawer and put the bowl inside",
+      "count": 84,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [3],
+      "chinese_examples": ["打开上层抽屉并把碗放进去。", "改为：打开顶层抽屉并放碗。"]
+    },
+    {
+      "id": "e1bde17bec61",
+      "instruction": "push the plate to the front of the stove",
+      "count": 81,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [5],
+      "chinese_examples": ["把盘子推到炉子前。", "改为：盘子推到炉子前。"]
+    },
+    {
+      "id": "318b25699d48",
+      "instruction": "put the bowl on the plate",
+      "count": 99,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [8],
+      "chinese_examples": [
+        "先把酒瓶放回这次任务开始时的位置并松手，再把碗放到盘子上。",
+        "把碗放到盘子上。",
+        "改为：碗放盘子。"
+      ]
+    },
+    {
+      "id": "dae7a0759a09",
+      "instruction": "put the bowl on the stove",
+      "count": 102,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [1],
+      "chinese_examples": [
+        "先把酒瓶放回这次任务开始时的位置并松手，再把碗放到炉子上。",
+        "把碗放到炉子上。",
+        "改为：碗放炉子。"
+      ]
+    },
+    {
+      "id": "80efb5cae583",
+      "instruction": "put the bowl on top of the cabinet",
+      "count": 94,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [4],
+      "chinese_examples": [
+        "先把酒瓶放回这次任务开始时的位置并松手，再把碗放到柜顶。",
+        "把碗放到柜顶。",
+        "改为：碗放柜顶。"
+      ]
+    },
+    {
+      "id": "9bc00c896c31",
+      "instruction": "put the cream cheese in the bowl",
+      "count": 94,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [6],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再把奶酪放到碗里。",
+        "先把酒瓶放回这次任务开始时的位置并松手，再把奶酪放到碗里。",
+        "把奶酪放到碗里。"
+      ]
+    },
+    {
+      "id": "37a511c614c8",
+      "instruction": "put the wine bottle on the rack",
+      "count": 91,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [9],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再把酒瓶放到酒架上。",
+        "把酒瓶放到酒架上。",
+        "改为：酒瓶放酒架。"
+      ]
+    },
+    {
+      "id": "72ff4c898048",
+      "instruction": "put the wine bottle on top of the cabinet",
+      "count": 100,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [2],
+      "chinese_examples": [
+        "先把碗放回这次任务开始时的位置并松手，再把酒瓶放到柜顶。",
+        "把酒瓶放到柜顶。",
+        "改为：酒瓶放柜顶。"
+      ]
+    },
+    {
+      "id": "c0d1b2f3264d",
+      "instruction": "turn on the stove",
+      "count": 106,
+      "kinds": ["normal", "revision"],
+      "source_tasks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "target_tasks": [7],
+      "chinese_examples": ["打开炉灶。", "改为：打开炉灶。"]
+    }
+  ],
+  "libero_languages": [
+    {
+      "suite": "libero_10",
+      "file": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.bddl",
+      "bddl_language": "turn on the stove and put the moka pot on it",
+      "benchmark_language": "turn on the stove and put the moka pot on it"
+    },
+    {
+      "suite": "libero_10",
+      "file": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl",
+      "bddl_language": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "benchmark_language": "put the black bowl in the bottom drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_10",
+      "file": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl",
+      "bddl_language": "put the yellow and white mug in the microwave and close it",
+      "benchmark_language": "put the yellow and white mug in the microwave and close it"
+    },
+    {
+      "suite": "libero_10",
+      "file": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+      "bddl_language": "put both moka pots on the stove",
+      "benchmark_language": "put both moka pots on the stove"
+    },
+    {
+      "suite": "libero_10",
+      "file": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.bddl",
+      "bddl_language": "put both the alphabet soup and the cream cheese box in the basket",
+      "benchmark_language": "put both the alphabet soup and the cream cheese box in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "file": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+      "bddl_language": "put both the alphabet soup and the tomato sauce in the basket",
+      "benchmark_language": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "file": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.bddl",
+      "bddl_language": "put both the cream cheese box and the butter in the basket",
+      "benchmark_language": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "file": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+      "bddl_language": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "benchmark_language": "put the white mug on the left plate and put the yellow and white mug on the right plate"
+    },
+    {
+      "suite": "libero_10",
+      "file": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl",
+      "bddl_language": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "benchmark_language": "put the white mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_10",
+      "file": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the back compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the back compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE10_close_the_top_drawer_of_the_cabinet.bddl",
+      "bddl_language": "close the top drawer of the cabinet",
+      "benchmark_language": "close the top drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE10_close_the_top_drawer_of_the_cabinet_and_put_the_black_bowl_on_top_of_it.bddl",
+      "bddl_language": "close the top drawer of the cabinet and put the black bowl on top of it",
+      "benchmark_language": "close the top drawer of the cabinet and put the black bowl on top of it"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE10_put_the_black_bowl_in_the_top_drawer_of_the_cabinet.bddl",
+      "bddl_language": "put the black bowl in the top drawer of the cabinet",
+      "benchmark_language": "put the black bowl in the top drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE10_put_the_butter_at_the_back_in_the_top_drawer_of_the_cabinet_and_close_it.bddl",
+      "bddl_language": "put the butter at the back in the top drawer of the cabinet and close it",
+      "benchmark_language": "put the butter at the back in the top drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE10_put_the_butter_at_the_front_in_the_top_drawer_of_the_cabinet_and_close_it.bddl",
+      "bddl_language": "put the butter at the front in the top drawer of the cabinet and close it",
+      "benchmark_language": "put the butter at the front in the top drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE10_put_the_chocolate_pudding_in_the_top_drawer_of_the_cabinet_and_close_it.bddl",
+      "bddl_language": "put the chocolate pudding in the top drawer of the cabinet and close it",
+      "benchmark_language": "put the chocolate pudding in the top drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE1_open_the_bottom_drawer_of_the_cabinet.bddl",
+      "bddl_language": "open the bottom drawer of the cabinet",
+      "benchmark_language": "open the bottom drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE1_open_the_top_drawer_of_the_cabinet.bddl",
+      "bddl_language": "open the top drawer of the cabinet",
+      "benchmark_language": "open the top drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE1_open_the_top_drawer_of_the_cabinet_and_put_the_bowl_in_it.bddl",
+      "bddl_language": "open the top drawer of the cabinet and put the bowl in it",
+      "benchmark_language": "open the top drawer of the cabinet and put the bowl in it"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE1_put_the_black_bowl_on_the_plate.bddl",
+      "bddl_language": "put the black bowl on the plate",
+      "benchmark_language": "put the black bowl on the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE1_put_the_black_bowl_on_top_of_the_cabinet.bddl",
+      "bddl_language": "put the black bowl on top of the cabinet",
+      "benchmark_language": "put the black bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE2_open_the_top_drawer_of_the_cabinet.bddl",
+      "bddl_language": "open the top drawer of the cabinet",
+      "benchmark_language": "open the top drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE2_put_the_black_bowl_at_the_back_on_the_plate.bddl",
+      "bddl_language": "put the black bowl at the back on the plate",
+      "benchmark_language": "put the black bowl at the back on the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE2_put_the_black_bowl_at_the_front_on_the_plate.bddl",
+      "bddl_language": "put the black bowl at the front on the plate",
+      "benchmark_language": "put the black bowl at the front on the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE2_put_the_middle_black_bowl_on_the_plate.bddl",
+      "bddl_language": "put the black bowl in the middle on the plate",
+      "benchmark_language": "put the middle black bowl on the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE2_put_the_middle_black_bowl_on_top_of_the_cabinet.bddl",
+      "bddl_language": "put the middle black bowl on top of the cabinet",
+      "benchmark_language": "put the middle black bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE2_stack_the_black_bowl_at_the_front_on_the_black_bowl_in_the_middle.bddl",
+      "bddl_language": "stack the black bowl at the front on the black bowl in the middle",
+      "benchmark_language": "stack the black bowl at the front on the black bowl in the middle"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE2_stack_the_middle_black_bowl_on_the_back_black_bowl.bddl",
+      "bddl_language": "stack the black bowl in the middle on the black bowl at the front",
+      "benchmark_language": "stack the middle black bowl on the back black bowl"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE3_put_the_frying_pan_on_the_stove.bddl",
+      "bddl_language": "put the frying pan on the stove",
+      "benchmark_language": "put the frying pan on the stove"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE3_put_the_moka_pot_on_the_stove.bddl",
+      "bddl_language": "put the moka pot on the stove",
+      "benchmark_language": "put the moka pot on the stove"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE3_turn_on_the_stove.bddl",
+      "bddl_language": "turn on the stove",
+      "benchmark_language": "turn on the stove"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_frying_pan_on_it.bddl",
+      "bddl_language": "turn on the stove and put the frying pan on it",
+      "benchmark_language": "turn on the stove and put the frying pan on it"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet.bddl",
+      "bddl_language": "close the bottom drawer of the cabinet",
+      "benchmark_language": "close the bottom drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet_and_open_the_top_drawer.bddl",
+      "bddl_language": "close the bottom drawer of the cabinet and open the top drawer",
+      "benchmark_language": "close the bottom drawer of the cabinet and open the top drawer"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet.bddl",
+      "bddl_language": "put the black bowl in the bottom drawer of the cabinet",
+      "benchmark_language": "put the black bowl in the bottom drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE4_put_the_black_bowl_on_top_of_the_cabinet.bddl",
+      "bddl_language": "put the black bowl on top of the cabinet",
+      "benchmark_language": "put the black bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE4_put_the_wine_bottle_in_the_bottom_drawer_of_the_cabinet.bddl",
+      "bddl_language": "put the wine bottle in the bottom drawer of the cabinet",
+      "benchmark_language": "put the wine bottle in the bottom drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE4_put_the_wine_bottle_on_the_wine_rack.bddl",
+      "bddl_language": "put the wine bottle on the wine rack",
+      "benchmark_language": "put the wine bottle on the wine rack"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE5_close_the_top_drawer_of_the_cabinet.bddl",
+      "bddl_language": "close the top drawer of the cabinet",
+      "benchmark_language": "close the top drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE5_put_the_black_bowl_in_the_top_drawer_of_the_cabinet.bddl",
+      "bddl_language": "put the black bowl in the top drawer of the cabinet",
+      "benchmark_language": "put the black bowl in the top drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE5_put_the_black_bowl_on_the_plate.bddl",
+      "bddl_language": "put the black bowl on the plate",
+      "benchmark_language": "put the black bowl on the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE5_put_the_black_bowl_on_top_of_the_cabinet.bddl",
+      "bddl_language": "put the black bowl on top of the cabinet",
+      "benchmark_language": "put the black bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE5_put_the_ketchup_in_the_top_drawer_of_the_cabinet.bddl",
+      "bddl_language": "put the ketchup in the top drawer of the cabinet",
+      "benchmark_language": "put the ketchup in the top drawer of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE6_close_the_microwave.bddl",
+      "bddl_language": "close the microwave",
+      "benchmark_language": "close the microwave"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_to_the_front_of_the_white_mug.bddl",
+      "bddl_language": "put the yellow and white mug to the front of the white mug",
+      "benchmark_language": "put the yellow and white mug to the front of the white mug"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE7_open_the_microwave.bddl",
+      "bddl_language": "open the microwave",
+      "benchmark_language": "open the microwave"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE7_put_the_white_bowl_on_the_plate.bddl",
+      "bddl_language": "put the white bowl on the plate",
+      "benchmark_language": "put the white bowl on the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE7_put_the_white_bowl_to_the_right_of_the_plate.bddl",
+      "bddl_language": "put the white bowl to the right of the plate",
+      "benchmark_language": "put the white bowl to the right of the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE8_put_the_right_moka_pot_on_the_stove.bddl",
+      "bddl_language": "put the right moka pot on the stove",
+      "benchmark_language": "put the right moka pot on the stove"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE8_turn_off_the_stove.bddl",
+      "bddl_language": "turn off the stove",
+      "benchmark_language": "turn off the stove"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE9_put_the_frying_pan_on_the_cabinet_shelf.bddl",
+      "bddl_language": "put the frying pan on the cabinet shelf",
+      "benchmark_language": "put the frying pan on the cabinet shelf"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE9_put_the_frying_pan_on_top_of_the_cabinet.bddl",
+      "bddl_language": "put the frying pan on top of the cabinet",
+      "benchmark_language": "put the frying pan on top of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE9_put_the_frying_pan_under_the_cabinet_shelf.bddl",
+      "bddl_language": "put the frying pan under the cabinet shelf",
+      "benchmark_language": "put the frying pan under the cabinet shelf"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE9_put_the_white_bowl_on_top_of_the_cabinet.bddl",
+      "bddl_language": "put the white bowl on top of the cabinet",
+      "benchmark_language": "put the white bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE9_turn_on_the_stove.bddl",
+      "bddl_language": "turn on the stove",
+      "benchmark_language": "turn on the stove"
+    },
+    {
+      "suite": "libero_90",
+      "file": "KITCHEN_SCENE9_turn_on_the_stove_and_put_the_frying_pan_on_it.bddl",
+      "bddl_language": "turn on the stove and put the frying pan on it",
+      "benchmark_language": "turn on the stove and put the frying pan on it"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE1_pick_up_the_alphabet_soup_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the alphabet soup and put it in the basket",
+      "benchmark_language": "pick up the alphabet soup and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE1_pick_up_the_cream_cheese_box_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the cream cheese box and put it in the basket",
+      "benchmark_language": "pick up the cream cheese box and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE1_pick_up_the_ketchup_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the ketchup and put it in the basket",
+      "benchmark_language": "pick up the ketchup and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE1_pick_up_the_tomato_sauce_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the tomato sauce and put it in the basket",
+      "benchmark_language": "pick up the tomato sauce and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE2_pick_up_the_alphabet_soup_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the alphabet soup and put it in the basket",
+      "benchmark_language": "pick up the alphabet soup and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE2_pick_up_the_butter_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the butter and put it in the basket",
+      "benchmark_language": "pick up the butter and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE2_pick_up_the_milk_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the milk and put it in the basket",
+      "benchmark_language": "pick up the milk and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE2_pick_up_the_orange_juice_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the orange juice and put it in the basket",
+      "benchmark_language": "pick up the orange juice and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE2_pick_up_the_tomato_sauce_and_put_it_in_the_basket.bddl",
+      "bddl_language": "pick up the tomato sauce and put it in the basket",
+      "benchmark_language": "pick up the tomato sauce and put it in the basket"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE3_pick_up_the_alphabet_soup_and_put_it_in_the_tray.bddl",
+      "bddl_language": "pick up the alphabet soup and put it in the tray",
+      "benchmark_language": "pick up the alphabet soup and put it in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE3_pick_up_the_butter_and_put_it_in_the_tray.bddl",
+      "bddl_language": "pick up the butter and put it in the tray",
+      "benchmark_language": "pick up the butter and put it in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE3_pick_up_the_cream_cheese_and_put_it_in_the_tray.bddl",
+      "bddl_language": "pick up the cream cheese and put it in the tray",
+      "benchmark_language": "pick up the cream cheese and put it in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE3_pick_up_the_ketchup_and_put_it_in_the_tray.bddl",
+      "bddl_language": "pick up the ketchup and put it in the tray",
+      "benchmark_language": "pick up the ketchup and put it in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE3_pick_up_the_tomato_sauce_and_put_it_in_the_tray.bddl",
+      "bddl_language": "pick up the tomato sauce and put it in the tray",
+      "benchmark_language": "pick up the tomato sauce and put it in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE4_pick_up_the_black_bowl_on_the_left_and_put_it_in_the_tray.bddl",
+      "bddl_language": "pick up the black bowl on the left and put it in the tray",
+      "benchmark_language": "pick up the black bowl on the left and put it in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE4_pick_up_the_chocolate_pudding_and_put_it_in_the_tray.bddl",
+      "bddl_language": "pick up the chocolate pudding and put it in the tray",
+      "benchmark_language": "pick up the chocolate pudding and put it in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE4_pick_up_the_salad_dressing_and_put_it_in_the_tray.bddl",
+      "bddl_language": "pick up the salad dressing and put it in the tray",
+      "benchmark_language": "pick up the salad dressing and put it in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE4_stack_the_left_bowl_on_the_right_bowl_and_place_them_in_the_tray.bddl",
+      "bddl_language": "stack the left bowl on the right bowl and place them in the tray",
+      "benchmark_language": "stack the left bowl on the right bowl and place them in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE4_stack_the_right_bowl_on_the_left_bowl_and_place_them_in_the_tray.bddl",
+      "bddl_language": "stack the right bowl on the left bowl and place them in the tray",
+      "benchmark_language": "stack the right bowl on the left bowl and place them in the tray"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE5_put_the_red_mug_on_the_left_plate.bddl",
+      "bddl_language": "put the red mug on the left plate",
+      "benchmark_language": "put the red mug on the left plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE5_put_the_red_mug_on_the_right_plate.bddl",
+      "bddl_language": "put the red mug on the right plate",
+      "benchmark_language": "put the red mug on the right plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate.bddl",
+      "bddl_language": "put the white mug on the left plate",
+      "benchmark_language": "put the white mug on the left plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE5_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+      "bddl_language": "put the yellow and white mug on the right plate",
+      "benchmark_language": "put the yellow and white mug on the right plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE6_put_the_chocolate_pudding_to_the_left_of_the_plate.bddl",
+      "bddl_language": "put the chocolate pudding to the left of the plate",
+      "benchmark_language": "put the chocolate pudding to the left of the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE6_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl",
+      "bddl_language": "put the chocolate pudding to the right of the plate",
+      "benchmark_language": "put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE6_put_the_red_mug_on_the_plate.bddl",
+      "bddl_language": "put the red mug on the plate",
+      "benchmark_language": "put the red mug on the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate.bddl",
+      "bddl_language": "put the white mug on the plate",
+      "benchmark_language": "put the white mug on the plate"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the front compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the front compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the left compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the left compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the right compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the right compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE1_pick_up_the_yellow_and_white_mug_and_place_it_to_the_right_of_the_caddy.bddl",
+      "bddl_language": "pick up the yellow and white mug and place it to the right of the caddy",
+      "benchmark_language": "pick up the yellow and white mug and place it to the right of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the back compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the back compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the front compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the front compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the left compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the left compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the right compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the right compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the front compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the front compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the left compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the left compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy.bddl",
+      "bddl_language": "pick up the book and place it in the right compartment of the caddy",
+      "benchmark_language": "pick up the book and place it in the right compartment of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE3_pick_up_the_red_mug_and_place_it_to_the_right_of_the_caddy.bddl",
+      "bddl_language": "pick up the red mug and place it to the right compartment of the caddy",
+      "benchmark_language": "pick up the red mug and place it to the right of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE3_pick_up_the_white_mug_and_place_it_to_the_right_of_the_caddy.bddl",
+      "bddl_language": "pick up the white mug and place it to the right compartment of the caddy",
+      "benchmark_language": "pick up the white mug and place it to the right of the caddy"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE4_pick_up_the_book_in_the_middle_and_place_it_on_the_cabinet_shelf.bddl",
+      "bddl_language": "pick up the book in the middle and place it on the cabinet shelf",
+      "benchmark_language": "pick up the book in the middle and place it on the cabinet shelf"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE4_pick_up_the_book_on_the_left_and_place_it_on_top_of_the_shelf.bddl",
+      "bddl_language": "pick up the book on the left and place it on top of the shelf",
+      "benchmark_language": "pick up the book on the left and place it on top of the shelf"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE4_pick_up_the_book_on_the_right_and_place_it_on_the_cabinet_shelf.bddl",
+      "bddl_language": "pick up the book on the right and place it on the cabinet shelf",
+      "benchmark_language": "pick up the book on the right and place it on the cabinet shelf"
+    },
+    {
+      "suite": "libero_90",
+      "file": "STUDY_SCENE4_pick_up_the_book_on_the_right_and_place_it_under_the_cabinet_shelf.bddl",
+      "bddl_language": "pick up the book on the right and place it under the cabinet shelf",
+      "benchmark_language": "pick up the book on the right and place it under the cabinet shelf"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "open_the_middle_drawer_of_the_cabinet.bddl",
+      "bddl_language": "Open the middle layer of the drawer",
+      "benchmark_language": "open the middle drawer of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "open_the_top_drawer_and_put_the_bowl_inside.bddl",
+      "bddl_language": "Open the top layer of the drawer and put the bowl inside",
+      "benchmark_language": "open the top drawer and put the bowl inside"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "push_the_plate_to_the_front_of_the_stove.bddl",
+      "bddl_language": "Push the plate to the front of the stove",
+      "benchmark_language": "push the plate to the front of the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "put_the_bowl_on_the_plate.bddl",
+      "bddl_language": "Put the bowl on the plate",
+      "benchmark_language": "put the bowl on the plate"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "put_the_bowl_on_the_stove.bddl",
+      "bddl_language": "Put the bowl on the stove",
+      "benchmark_language": "put the bowl on the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "put_the_bowl_on_top_of_the_cabinet.bddl",
+      "bddl_language": "Put the bowl on the top of the drawer",
+      "benchmark_language": "put the bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "put_the_cream_cheese_in_the_bowl.bddl",
+      "bddl_language": "Put the cream cheese on the bowl",
+      "benchmark_language": "put the cream cheese in the bowl"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "put_the_wine_bottle_on_the_rack.bddl",
+      "bddl_language": "Put the wine bottle on the rack",
+      "benchmark_language": "put the wine bottle on the rack"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+      "bddl_language": "Put the wine bottle on the top of the drawer",
+      "benchmark_language": "put the wine bottle on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "file": "turn_on_the_stove.bddl",
+      "bddl_language": "Turn on the stove",
+      "benchmark_language": "turn on the stove"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the alphabet soup and place it in the basket",
+      "benchmark_language": "pick up the alphabet soup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the bbq sauce and place it in the basket",
+      "benchmark_language": "pick up the bbq sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_butter_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the butter and place it in the basket",
+      "benchmark_language": "pick up the butter and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the chocolate pudding and place it in the basket",
+      "benchmark_language": "pick up the chocolate pudding and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the cream cheese and place it in the basket",
+      "benchmark_language": "pick up the cream cheese and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the ketchup and place it in the basket",
+      "benchmark_language": "pick up the ketchup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_milk_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the milk and place it in the basket",
+      "benchmark_language": "pick up the milk and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the orange juice and place it in the basket",
+      "benchmark_language": "pick up the orange juice and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the salad dressing and place it in the basket",
+      "benchmark_language": "pick up the salad dressing and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "file": "pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+      "bddl_language": "Pick the tomato sauce and place it in the basket",
+      "benchmark_language": "pick up the tomato sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "benchmark_language": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl from table center and place it on the plate",
+      "benchmark_language": "pick up the black bowl from table center and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+      "benchmark_language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl next to the cookies box and place it on the plate",
+      "benchmark_language": "pick up the black bowl next to the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl next to the plate and place it on the plate",
+      "benchmark_language": "pick up the black bowl next to the plate and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl next to the ramekin and place it on the plate",
+      "benchmark_language": "pick up the black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl on the cookies box and place it on the plate",
+      "benchmark_language": "pick up the black bowl on the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl on the ramekin and place it on the plate",
+      "benchmark_language": "pick up the black bowl on the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl on the stove and place it on the plate",
+      "benchmark_language": "pick up the black bowl on the stove and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "file": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+      "bddl_language": "Pick the akita black bowl on the wooden cabinet and place it on the plate",
+      "benchmark_language": "pick up the black bowl on the wooden cabinet and place it on the plate"
+    }
+  ]
+}

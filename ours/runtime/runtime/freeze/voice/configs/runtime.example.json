@@ -1,0 +1,12 @@
+{
+  "evaluation_root": "../pi0.5_test_1001/evaluation_portable",
+  "pi05_project": "../pi05_revision_p1",
+  "pi05_python": "../openpi/.venv/bin/python",
+  "node": "runtime/node/bin/node",
+  "checkpoint": "../pi05_revision_p1/checkpoints/pi05_revision_p1/p1_full_20261003/11050",
+  "pi05_gpu": "2",
+  "robot_gpu": "3",
+  "xla_memory_fraction": ".65",
+  "expected_experiment": "p1_full_20261003",
+  "expected_checkpoint_step": "11050"
+}

@@ -1,0 +1,665 @@
+{
+  "schema": "e3.agent_skill_catalog.v1",
+  "version": "agent_aligned_v4_20261028",
+  "point_roles": [
+    "bowl",
+    "cheese",
+    "bottle",
+    "plate",
+    "middle_handle",
+    "top_handle",
+    "stove_button",
+    "return_target",
+    "release_target",
+    "destination"
+  ],
+  "coordinates": {
+    "grounder_input": "MAIN224 <y,x>",
+    "policy_text": "MAIN256 <y,x>",
+    "missing": "unavailable"
+  },
+  "forbidden_agent_fields": [
+    "instruction",
+    "grounded",
+    "coordinates",
+    "completion_thresholds",
+    "task_rewrite"
+  ],
+  "notes": [
+    "具体模板仅限已登记对象／目的地，禁止任意文本填槽。",
+    "is_final由计划位置确定；operation为物理类型，legacy_kind保留兼容。",
+    "这是选择、校验与渲染接口，不包含LLM服务或异常恢复。"
+  ],
+  "skills": [
+    {
+      "template_id": "S01",
+      "operation": "grasp",
+      "legacy_kind": "grasp",
+      "subject_id": "akita_black_bowl_1",
+      "destination_id": null,
+      "instruction_original": "grasp and lift the bowl clear of its support",
+      "instruction_grounded_original": "grasp and lift the bowl now at {bowl} clear of its support",
+      "instruction_zh": "抓住并抬起碗，使其脱离支撑物",
+      "instruction_sha256": "f53fda4ac45a2d377023ab6ae9a0374852a462f000691815700f71b947bf6776",
+      "stage_defaults": {
+        "kind": "grasp",
+        "text": "grasp and lift the bowl clear of its support",
+        "grounded": "grasp and lift the bowl now at {bowl} clear of its support",
+        "stable_frames": 5,
+        "object": "akita_black_bowl_1"
+      },
+      "entry_state": "目标可接近；未持有其他物体；已抓起同一目标时沿用入口已满足检查。",
+      "end_state": "双指接触且无外部支撑，按V3确认。",
+      "position_sources": {
+        "bowl": {
+          "entity_id": "akita_black_bowl_1",
+          "time_source": "current",
+          "purpose": "object_localization"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S02",
+      "operation": "place",
+      "legacy_kind": "target",
+      "subject_id": "akita_black_bowl_1",
+      "destination_id": "flat_stove_1_cook_region",
+      "instruction_original": "place the bowl on the stove and release it stably",
+      "instruction_grounded_original": "place the bowl on the stove at {destination} and release it stably",
+      "instruction_zh": "把碗放到炉灶上，并稳定释放",
+      "instruction_sha256": "0cb3ae1dd77d8ed239f809fdeb2155b3cb89581eeb2cd62a36d9a02bd470df9b",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "place the bowl on the stove and release it stably",
+        "grounded": "place the bowl on the stove at {destination} and release it stably",
+        "stable_frames": 5,
+        "object": "akita_black_bowl_1",
+        "clause_id": "target"
+      },
+      "entry_state": "已持有指定物体，目的地可达；抽屉放置需先打开。",
+      "end_state": "满足原生目标和既有释放、开度、低速度条件。",
+      "position_sources": {
+        "destination": {
+          "entity_id": "flat_stove_1_cook_region",
+          "time_source": "current",
+          "purpose": "placement_or_push_destination"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S03",
+      "operation": "grasp",
+      "legacy_kind": "grasp",
+      "subject_id": "wine_bottle_1",
+      "destination_id": null,
+      "instruction_original": "grasp and lift the wine bottle clear of its support",
+      "instruction_grounded_original": "grasp and lift the wine bottle now at {bottle} clear of its support",
+      "instruction_zh": "抓住并抬起酒瓶，使其脱离支撑物",
+      "instruction_sha256": "1df4ee95cfeec1e3aaaf070ae7d442298ac85b97a74834a2672c7f46813ff32d",
+      "stage_defaults": {
+        "kind": "grasp",
+        "text": "grasp and lift the wine bottle clear of its support",
+        "grounded": "grasp and lift the wine bottle now at {bottle} clear of its support",
+        "stable_frames": 5,
+        "object": "wine_bottle_1"
+      },
+      "entry_state": "目标可接近；未持有其他物体；已抓起同一目标时沿用入口已满足检查。",
+      "end_state": "双指接触且无外部支撑，按V3确认。",
+      "position_sources": {
+        "bottle": {
+          "entity_id": "wine_bottle_1",
+          "time_source": "current",
+          "purpose": "object_localization"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S04",
+      "operation": "place",
+      "legacy_kind": "target",
+      "subject_id": "wine_bottle_1",
+      "destination_id": "wooden_cabinet_1_top_side",
+      "instruction_original": "place the wine bottle on top of the cabinet and release it stably",
+      "instruction_grounded_original": "place the wine bottle on top of the cabinet at {destination} and release it stably",
+      "instruction_zh": "把酒瓶放到柜顶，并稳定释放",
+      "instruction_sha256": "61f4c5b047bfb31cbf7f3263da280d87e02131aace32575e99310aaec43924b9",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "place the wine bottle on top of the cabinet and release it stably",
+        "grounded": "place the wine bottle on top of the cabinet at {destination} and release it stably",
+        "stable_frames": 5,
+        "object": "wine_bottle_1",
+        "clause_id": "target"
+      },
+      "entry_state": "已持有指定物体，目的地可达；抽屉放置需先打开。",
+      "end_state": "满足原生目标和既有释放、开度、低速度条件。",
+      "position_sources": {
+        "destination": {
+          "entity_id": "wooden_cabinet_1_top_side",
+          "time_source": "current",
+          "purpose": "placement_or_push_destination"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S05",
+      "operation": "open",
+      "legacy_kind": "open_top",
+      "subject_id": "wooden_cabinet_1:top_drawer",
+      "destination_id": null,
+      "instruction_original": "open the top drawer using its handle",
+      "instruction_grounded_original": "open the top drawer using its handle",
+      "instruction_zh": "通过把手打开上层抽屉",
+      "instruction_sha256": "bbd06456ad65e0dcf96aea0c478b24d8c9a62eac13aa3a5ee64725e931c3fb87",
+      "stage_defaults": {
+        "kind": "open_top",
+        "text": "open the top drawer using its handle",
+        "grounded": "open the top drawer using its handle",
+        "stable_frames": 5,
+        "joint": "top"
+      },
+      "entry_state": "未悬空持有其他物体；有支撑接触可在接近把手时解除。",
+      "end_state": "指定抽屉满足V3打开或关闭条件；仅原文含disengage时承诺脱离柜体。",
+      "position_sources": {},
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S06",
+      "operation": "place",
+      "legacy_kind": "target",
+      "subject_id": "akita_black_bowl_1",
+      "destination_id": "wooden_cabinet_1_top_region",
+      "instruction_original": "place the bowl inside the top drawer and release it stably",
+      "instruction_grounded_original": "place the bowl inside the top drawer at {destination} and release it stably",
+      "instruction_zh": "把碗放进上层抽屉，并稳定释放",
+      "instruction_sha256": "e278a5aa1cfb4546ace4f3f263e8fd859c56c8317ef59ef19ac2af679697ab8a",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "place the bowl inside the top drawer and release it stably",
+        "grounded": "place the bowl inside the top drawer at {destination} and release it stably",
+        "stable_frames": 5,
+        "object": "akita_black_bowl_1",
+        "clause_id": "target"
+      },
+      "entry_state": "已持有指定物体，目的地可达；抽屉放置需先打开。",
+      "end_state": "满足原生目标和既有释放、开度、低速度条件。",
+      "position_sources": {
+        "destination": {
+          "entity_id": "wooden_cabinet_1_top_region",
+          "time_source": "current",
+          "purpose": "placement_or_push_destination"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S07",
+      "operation": "place",
+      "legacy_kind": "target",
+      "subject_id": "akita_black_bowl_1",
+      "destination_id": "wooden_cabinet_1_top_side",
+      "instruction_original": "place the bowl on top of the cabinet and release it stably",
+      "instruction_grounded_original": "place the bowl on top of the cabinet at {destination} and release it stably",
+      "instruction_zh": "把碗放到柜顶，并稳定释放",
+      "instruction_sha256": "966c610fad4070a371cf1d5a309b35c1edc8ecff92d8562b132e9fe62b404036",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "place the bowl on top of the cabinet and release it stably",
+        "grounded": "place the bowl on top of the cabinet at {destination} and release it stably",
+        "stable_frames": 5,
+        "object": "akita_black_bowl_1",
+        "clause_id": "target"
+      },
+      "entry_state": "已持有指定物体，目的地可达；抽屉放置需先打开。",
+      "end_state": "满足原生目标和既有释放、开度、低速度条件。",
+      "position_sources": {
+        "destination": {
+          "entity_id": "wooden_cabinet_1_top_side",
+          "time_source": "current",
+          "purpose": "placement_or_push_destination"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S08",
+      "operation": "push",
+      "legacy_kind": "target",
+      "subject_id": "plate_1",
+      "destination_id": "main_table_stove_front_region",
+      "instruction_original": "push the plate to the front of the stove",
+      "instruction_grounded_original": "push the plate to the front of the stove at {destination}",
+      "instruction_zh": "把盘子推到炉灶前方",
+      "instruction_sha256": "0a7ea60ac8e402f5fe068abc11d9fd2dc8a8db5a1e635e6fad015d10c726e0c7",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "push the plate to the front of the stove",
+        "grounded": "push the plate to the front of the stove at {destination}",
+        "stable_frames": 5,
+        "object": "plate_1",
+        "clause_id": "target"
+      },
+      "entry_state": "盘子有支撑且目标区域明确；允许正常接触过渡。",
+      "end_state": "目标区域成立且满足V3现有停止／交接guard。",
+      "position_sources": {
+        "destination": {
+          "entity_id": "main_table_stove_front_region",
+          "time_source": "current",
+          "purpose": "placement_or_push_destination"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S09",
+      "operation": "grasp",
+      "legacy_kind": "grasp",
+      "subject_id": "cream_cheese_1",
+      "destination_id": null,
+      "instruction_original": "grasp and lift the cream cheese clear of its support",
+      "instruction_grounded_original": "grasp and lift the cream cheese now at {cheese} clear of its support",
+      "instruction_zh": "抓住并抬起奶油奶酪，使其脱离支撑物",
+      "instruction_sha256": "f25f8bf218691bdce020f58088e1900965cfbabbd37330a5eeddad9d207e07d1",
+      "stage_defaults": {
+        "kind": "grasp",
+        "text": "grasp and lift the cream cheese clear of its support",
+        "grounded": "grasp and lift the cream cheese now at {cheese} clear of its support",
+        "stable_frames": 5,
+        "object": "cream_cheese_1"
+      },
+      "entry_state": "目标可接近；未持有其他物体；已抓起同一目标时沿用入口已满足检查。",
+      "end_state": "双指接触且无外部支撑，按V3确认。",
+      "position_sources": {
+        "cheese": {
+          "entity_id": "cream_cheese_1",
+          "time_source": "current",
+          "purpose": "object_localization"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S10",
+      "operation": "place",
+      "legacy_kind": "target",
+      "subject_id": "cream_cheese_1",
+      "destination_id": "akita_black_bowl_1:interior",
+      "instruction_original": "place the cream cheese in the bowl at its current interior point and release it stably",
+      "instruction_grounded_original": "place the cream cheese in the bowl at its current interior point {destination} and release it stably",
+      "instruction_zh": "把奶油奶酪放进碗当前所在位置的内部，并稳定释放",
+      "instruction_sha256": "02e5916320514328b34d349525b9414752f6006666abf2a2f7807368378bb648",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "place the cream cheese in the bowl at its current interior point and release it stably",
+        "grounded": "place the cream cheese in the bowl at its current interior point {destination} and release it stably",
+        "stable_frames": 5,
+        "object": "cream_cheese_1",
+        "clause_id": "target"
+      },
+      "entry_state": "已持有指定物体，目的地可达；抽屉放置需先打开。",
+      "end_state": "满足原生目标和既有释放、开度、低速度条件。",
+      "position_sources": {
+        "destination": {
+          "entity_id": "akita_black_bowl_1:interior",
+          "time_source": "current",
+          "purpose": "placement_or_push_destination"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S11",
+      "operation": "activate",
+      "legacy_kind": "target",
+      "subject_id": "flat_stove_1",
+      "destination_id": null,
+      "instruction_original": "turn on the stove using its switch and disengage from the stove",
+      "instruction_grounded_original": "turn on the stove using its switch at {stove_button} and disengage from the stove",
+      "instruction_zh": "操作开关打开炉灶，并脱离炉灶接触",
+      "instruction_sha256": "f15c2a82bfe97d2b858dc18b43c4a1ebbbd84dc935bcc38a9dfaa876cc956499",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "turn on the stove using its switch and disengage from the stove",
+        "grounded": "turn on the stove using its switch at {stove_button} and disengage from the stove",
+        "stable_frames": 5,
+        "clause_id": "target"
+      },
+      "entry_state": "未持有其他物体，炉灶开关可操作。",
+      "end_state": "炉灶开启且脱离炉灶接触。",
+      "position_sources": {
+        "stove_button": {
+          "entity_id": "flat_stove_1_button",
+          "time_source": "current_or_valid_static_cache",
+          "purpose": "switch_localization"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S12",
+      "operation": "place",
+      "legacy_kind": "target",
+      "subject_id": "akita_black_bowl_1",
+      "destination_id": "plate_1:support_surface",
+      "instruction_original": "place the bowl on the plate and release it stably",
+      "instruction_grounded_original": "place the bowl on the plate at {destination} and release it stably",
+      "instruction_zh": "把碗放到盘子上，并稳定释放",
+      "instruction_sha256": "3e7391d1300c24087d752bd55d593a1c8534ef0f011fb6110c40988aa48e72d7",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "place the bowl on the plate and release it stably",
+        "grounded": "place the bowl on the plate at {destination} and release it stably",
+        "stable_frames": 5,
+        "object": "akita_black_bowl_1",
+        "clause_id": "target"
+      },
+      "entry_state": "已持有指定物体，目的地可达；抽屉放置需先打开。",
+      "end_state": "满足原生目标和既有释放、开度、低速度条件。",
+      "position_sources": {
+        "destination": {
+          "entity_id": "plate_1:support_surface",
+          "time_source": "current",
+          "purpose": "placement_or_push_destination"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S13",
+      "operation": "place",
+      "legacy_kind": "target",
+      "subject_id": "wine_bottle_1",
+      "destination_id": "wine_rack_1_top_region",
+      "instruction_original": "place the wine bottle on the rack and release it stably",
+      "instruction_grounded_original": "place the wine bottle on the rack at {destination} and release it stably",
+      "instruction_zh": "把酒瓶放到酒架上，并稳定释放",
+      "instruction_sha256": "9e811112a9fa68982a88a8144ba9a497c235c933a90ea9bfe8f8be8503c70d79",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "place the wine bottle on the rack and release it stably",
+        "grounded": "place the wine bottle on the rack at {destination} and release it stably",
+        "stable_frames": 5,
+        "object": "wine_bottle_1",
+        "clause_id": "target"
+      },
+      "entry_state": "已持有指定物体，目的地可达；抽屉放置需先打开。",
+      "end_state": "满足原生目标和既有释放、开度、低速度条件。",
+      "position_sources": {
+        "destination": {
+          "entity_id": "wine_rack_1_top_region",
+          "time_source": "current",
+          "purpose": "placement_or_push_destination"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S14",
+      "operation": "close",
+      "legacy_kind": "close",
+      "subject_id": "wooden_cabinet_1:middle_drawer",
+      "destination_id": null,
+      "instruction_original": "close the middle drawer using its handle",
+      "instruction_grounded_original": "close the middle drawer using its handle",
+      "instruction_zh": "通过把手关闭中层抽屉",
+      "instruction_sha256": "92ffbac02957756f53c7446872ecbf6f47909eabf1f6bb9f8da352215385c809",
+      "stage_defaults": {
+        "kind": "close",
+        "text": "close the middle drawer using its handle",
+        "grounded": "close the middle drawer using its handle",
+        "stable_frames": 5,
+        "joint": "middle",
+        "clause_id": "close"
+      },
+      "entry_state": "未悬空持有其他物体；有支撑接触可在接近把手时解除。",
+      "end_state": "指定抽屉满足V3打开或关闭条件；仅原文含disengage时承诺脱离柜体。",
+      "position_sources": {},
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S15",
+      "operation": "open",
+      "legacy_kind": "target",
+      "subject_id": "wooden_cabinet_1:middle_drawer",
+      "destination_id": null,
+      "instruction_original": "open the middle drawer using its handle and disengage from the cabinet",
+      "instruction_grounded_original": "open the middle drawer using its handle and disengage from the cabinet",
+      "instruction_zh": "通过把手打开中层抽屉，并脱离柜体接触",
+      "instruction_sha256": "22cddab9c1f26c6502c2fe1a1bbc74d4eaa218dd6bb591a524d77111383e8d0a",
+      "stage_defaults": {
+        "kind": "target",
+        "text": "open the middle drawer using its handle and disengage from the cabinet",
+        "grounded": "open the middle drawer using its handle and disengage from the cabinet",
+        "stable_frames": 5,
+        "clause_id": "target"
+      },
+      "entry_state": "未悬空持有其他物体；有支撑接触可在接近把手时解除。",
+      "end_state": "指定抽屉满足V3打开或关闭条件；仅原文含disengage时承诺脱离柜体。",
+      "position_sources": {},
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S16",
+      "operation": "return",
+      "legacy_kind": "return",
+      "subject_id": "akita_black_bowl_1",
+      "destination_id": "source_episode_start:akita_black_bowl_1",
+      "instruction_original": "return the bowl to its episode-start position, release it stably",
+      "instruction_grounded_original": "return the bowl to its episode-start position at {return_target}, release it stably",
+      "instruction_zh": "把碗放回本回合起始位置，并稳定释放",
+      "instruction_sha256": "4575237c157bc1a0449ea450fb01624bba65894c8e69f77ea6e2472affdd306d",
+      "stage_defaults": {
+        "kind": "return",
+        "text": "return the bowl to its episode-start position, release it stably",
+        "grounded": "return the bowl to its episode-start position at {return_target}, release it stably",
+        "stable_frames": 5,
+        "object": "akita_black_bowl_1",
+        "clause_id": "restore"
+      },
+      "entry_state": "已持有指定物体；若空手，先选择对应grasp模板。",
+      "end_state": "回到源回合初始位置、有支撑、释放且低速度；仅带move clear的模板要求既有撤离距离。",
+      "position_sources": {
+        "return_target": {
+          "entity_id": "akita_black_bowl_1",
+          "time_source": "source_episode_start",
+          "purpose": "return_position"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S17",
+      "operation": "return",
+      "legacy_kind": "return",
+      "subject_id": "wine_bottle_1",
+      "destination_id": "source_episode_start:wine_bottle_1",
+      "instruction_original": "return the wine bottle to its episode-start position, release it stably",
+      "instruction_grounded_original": "return the wine bottle to its episode-start position at {return_target}, release it stably",
+      "instruction_zh": "把酒瓶放回本回合起始位置，并稳定释放",
+      "instruction_sha256": "adff2cd2807bfdb66cbfa86108430963f9a84d9e29889e1215de8355c0a69339",
+      "stage_defaults": {
+        "kind": "return",
+        "text": "return the wine bottle to its episode-start position, release it stably",
+        "grounded": "return the wine bottle to its episode-start position at {return_target}, release it stably",
+        "stable_frames": 5,
+        "object": "wine_bottle_1",
+        "clause_id": "restore"
+      },
+      "entry_state": "已持有指定物体；若空手，先选择对应grasp模板。",
+      "end_state": "回到源回合初始位置、有支撑、释放且低速度；仅带move clear的模板要求既有撤离距离。",
+      "position_sources": {
+        "return_target": {
+          "entity_id": "wine_bottle_1",
+          "time_source": "source_episode_start",
+          "purpose": "return_position"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S18",
+      "operation": "close",
+      "legacy_kind": "close",
+      "subject_id": "wooden_cabinet_1:top_drawer",
+      "destination_id": null,
+      "instruction_original": "close the top drawer using its handle",
+      "instruction_grounded_original": "close the top drawer using its handle",
+      "instruction_zh": "通过把手关闭上层抽屉",
+      "instruction_sha256": "4efb5d6af593025f75a3f90f72ba1a42678229018fa8d2ed5decccfe1d0ce9d6",
+      "stage_defaults": {
+        "kind": "close",
+        "text": "close the top drawer using its handle",
+        "grounded": "close the top drawer using its handle",
+        "stable_frames": 5,
+        "joint": "top",
+        "clause_id": "close"
+      },
+      "entry_state": "未悬空持有其他物体；有支撑接触可在接近把手时解除。",
+      "end_state": "指定抽屉满足V3打开或关闭条件；仅原文含disengage时承诺脱离柜体。",
+      "position_sources": {},
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S19",
+      "operation": "return",
+      "legacy_kind": "return",
+      "subject_id": "cream_cheese_1",
+      "destination_id": "source_episode_start:cream_cheese_1",
+      "instruction_original": "return the cream cheese to its episode-start position, release it stably",
+      "instruction_grounded_original": "return the cream cheese to its episode-start position at {return_target}, release it stably",
+      "instruction_zh": "把奶油奶酪放回本回合起始位置，并稳定释放",
+      "instruction_sha256": "02f3e471230b968731364d0c5a77dfa10dfb407c9c4669a0b50ed91bc7765d1c",
+      "stage_defaults": {
+        "kind": "return",
+        "text": "return the cream cheese to its episode-start position, release it stably",
+        "grounded": "return the cream cheese to its episode-start position at {return_target}, release it stably",
+        "stable_frames": 5,
+        "object": "cream_cheese_1",
+        "clause_id": "restore"
+      },
+      "entry_state": "已持有指定物体；若空手，先选择对应grasp模板。",
+      "end_state": "回到源回合初始位置、有支撑、释放且低速度；仅带move clear的模板要求既有撤离距离。",
+      "position_sources": {
+        "return_target": {
+          "entity_id": "cream_cheese_1",
+          "time_source": "source_episode_start",
+          "purpose": "return_position"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S20",
+      "operation": "return",
+      "legacy_kind": "return",
+      "subject_id": "akita_black_bowl_1",
+      "destination_id": "source_episode_start:akita_black_bowl_1",
+      "instruction_original": "return the bowl to its episode-start position, release it stably and move the gripper clear",
+      "instruction_grounded_original": "return the bowl to its episode-start position at {return_target}, release it stably and move the gripper clear",
+      "instruction_zh": "把碗放回本回合起始位置，并稳定释放，然后让夹爪离开",
+      "instruction_sha256": "3e7935a0aaafbcda22926a5cb3d31b004d32a615bd3c753973f3c29806f57b13",
+      "stage_defaults": {
+        "kind": "return",
+        "text": "return the bowl to its episode-start position, release it stably and move the gripper clear",
+        "grounded": "return the bowl to its episode-start position at {return_target}, release it stably and move the gripper clear",
+        "stable_frames": 5,
+        "object": "akita_black_bowl_1",
+        "clause_id": "restore"
+      },
+      "entry_state": "已持有指定物体；若空手，先选择对应grasp模板。",
+      "end_state": "回到源回合初始位置、有支撑、释放且低速度；仅带move clear的模板要求既有撤离距离。",
+      "position_sources": {
+        "return_target": {
+          "entity_id": "akita_black_bowl_1",
+          "time_source": "source_episode_start",
+          "purpose": "return_position"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S21",
+      "operation": "return",
+      "legacy_kind": "return",
+      "subject_id": "wine_bottle_1",
+      "destination_id": "source_episode_start:wine_bottle_1",
+      "instruction_original": "return the wine bottle to its episode-start position, release it stably and move the gripper clear",
+      "instruction_grounded_original": "return the wine bottle to its episode-start position at {return_target}, release it stably and move the gripper clear",
+      "instruction_zh": "把酒瓶放回本回合起始位置，并稳定释放，然后让夹爪离开",
+      "instruction_sha256": "6202615b32ce9f9548dc1c2fff35fef1826bf94996178637fe9e037e1ac80406",
+      "stage_defaults": {
+        "kind": "return",
+        "text": "return the wine bottle to its episode-start position, release it stably and move the gripper clear",
+        "grounded": "return the wine bottle to its episode-start position at {return_target}, release it stably and move the gripper clear",
+        "stable_frames": 5,
+        "object": "wine_bottle_1",
+        "clause_id": "restore"
+      },
+      "entry_state": "已持有指定物体；若空手，先选择对应grasp模板。",
+      "end_state": "回到源回合初始位置、有支撑、释放且低速度；仅带move clear的模板要求既有撤离距离。",
+      "position_sources": {
+        "return_target": {
+          "entity_id": "wine_bottle_1",
+          "time_source": "source_episode_start",
+          "purpose": "return_position"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    },
+    {
+      "template_id": "S22",
+      "operation": "return",
+      "legacy_kind": "return",
+      "subject_id": "cream_cheese_1",
+      "destination_id": "source_episode_start:cream_cheese_1",
+      "instruction_original": "return the cream cheese to its episode-start position, release it stably and move the gripper clear",
+      "instruction_grounded_original": "return the cream cheese to its episode-start position at {return_target}, release it stably and move the gripper clear",
+      "instruction_zh": "把奶油奶酪放回本回合起始位置，并稳定释放，然后让夹爪离开",
+      "instruction_sha256": "37c56a6791c33802db73cc651349876da8d374358174cdbdcb6d874dbe5bcd2b",
+      "stage_defaults": {
+        "kind": "return",
+        "text": "return the cream cheese to its episode-start position, release it stably and move the gripper clear",
+        "grounded": "return the cream cheese to its episode-start position at {return_target}, release it stably and move the gripper clear",
+        "stable_frames": 5,
+        "object": "cream_cheese_1",
+        "clause_id": "restore"
+      },
+      "entry_state": "已持有指定物体；若空手，先选择对应grasp模板。",
+      "end_state": "回到源回合初始位置、有支撑、释放且低速度；仅带move clear的模板要求既有撤离距离。",
+      "position_sources": {
+        "return_target": {
+          "entity_id": "cream_cheese_1",
+          "time_source": "source_episode_start",
+          "purpose": "return_position"
+        }
+      },
+      "persistent_constraints": "绑定完整Task及其preserve_*条款，不按模板新增保持条件；不得省略完整Task。",
+      "completion_protocol": "V3现有物理guard；中间阶段确认5步，最终target满足guard后的新控制步即可停止，最终close确认5步；评分独立。"
+    }
+  ]
+}

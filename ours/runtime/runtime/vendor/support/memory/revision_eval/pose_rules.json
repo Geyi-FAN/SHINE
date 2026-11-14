@@ -1,0 +1,16 @@
+{
+  "schema": "omnivla.sgs_pose_rules.v1",
+  "method": "For each placement target, evaluate 50 successful official LIBERO-GOAL training demonstrations at the first reward frame plus four frames. Use the mean object local-z axis and max(20 degrees, empirical p95 angle + 5 degrees). These values are frozen before evaluating the trained checkpoint.",
+  "axis": "object local z axis in world coordinates",
+  "rules": {
+    "1": {"reference_axis": [0.00020, 0.01271, 0.99992], "max_angle_deg": 20.0},
+    "2": {"reference_axis": [-0.12188, -0.01766, 0.99239], "max_angle_deg": 21.075},
+    "3": {"reference_axis": [-0.01995, -0.11631, 0.99301], "max_angle_deg": 47.855},
+    "4": {"reference_axis": [-0.00070, -0.00028, 1.00000], "max_angle_deg": 20.0},
+    "5": {"reference_axis": [0.01612, 0.02138, 0.99964], "max_angle_deg": 20.0},
+    "8": {"reference_axis": [-0.00973, -0.01756, 0.99980], "max_angle_deg": 20.0},
+    "9": {"reference_axis": [0.08044, -0.85241, 0.51664], "max_angle_deg": 23.227}
+  },
+  "no_orientation_rule": [0, 6, 7]
+}
+

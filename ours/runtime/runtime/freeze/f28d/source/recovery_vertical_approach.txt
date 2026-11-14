@@ -1,0 +1,26 @@
+VERTICAL APPROACH EXTENSION, SAME TOOL BOUNDS:
+A small horizontal error does not mean the hand has reached the object. Read
+hand_height_above_target_m: for example, 0.135m means13.5cm above it, NOT1.35cm.
+If the current measured diagnosis is vertical_standoff, lower_approach is the
+ONLY newly permitted intent. Return expected_progress=reduce_target_vertical_gap.
+Use only bounded WORLD-z downward moves, each dz_m>=-0.010m, within48 total
+planned ticks, always preserving the original>=3cm hand-above-target limit.
+The hand must be qualified empty, the object visible and supported, and the
+approach corridor visibly clear. Recheck these current conditions at each tool.
+For any downward move, explicitly include approach_path_clear=true in the JSON,
+based on current images. If you cannot support this claim, do not propose descent.
+Do not descend merely because a remembered object point exists. If the path,
+identity or depth is uncertain, output observe_only with the concrete uncertainty.
+Use no rotation, horizontal detour, finger closing, target change or completion
+declaration for this intent. After the bounded approach, resume the SAME VLA.
+
+For an already justified align intent with a large xy offset and excessive
+height, a small simultaneous dz_m within[-0.010,0] per move is allowed ONLY if
+the current target and unobstructed approach path justify it and the original
+height/translation guards pass. It is optional, not automatic permission.
+Such a combined step still has horizontal norm<=0.015m and dz>=-0.010m;
+the full3D displacement counts toward the existing0.065m cumulative limit.
+Reducing xy error while remaining13cm above the object can leave the grasp
+unresolved. State what height remains and what progress the resumed VLA must
+show; never label a closer hand as a completed grasp. Treat correction history
+as real measured outcomes, not a command to repeat the previous policy.

@@ -1,0 +1,102 @@
+{
+  "version": "T2-current40-repack-v1-20261107",
+  "planned_groups": 40,
+  "synthetic_groups": 40,
+  "human_groups_pending": 0,
+  "base_scripts": 10,
+  "turns_per_group": 3,
+  "planned_turn_references": 120,
+  "initial_audio_files": 10,
+  "synthetic_control_turn_positions": 80,
+  "human_control_recordings_pending": 0,
+  "full_state_cross_product": false,
+  "case_repetitions": 1,
+  "state_selection": "fixed original T2 state fold goal_id modulo3; same actual asset for each goal in all categories; preserve previously approved easy cheese state",
+  "state_files_in_pack": 4,
+  "first_turn": "canonical English, clean fixed audio shared across all six types; no Chinese task wording",
+  "acoustic_manipulation": "pause and resume only",
+  "conditions": {
+    "CL": "多音色清晰",
+    "NS": "噪声背景",
+    "EM": "情感表达",
+    "OV": "重叠语音"
+  },
+  "family_assignment": "A goals0,2,3,7,8; B goals1,4,5,6,9; fixed across conditions; each emotion has oneA and oneB; hard4/9 retain validated Pause/Resume pair",
+  "family_balance_per_category": {
+    "A": 5,
+    "B": 5
+  },
+  "noise": "Noise is mixed inside pause/resume WAVs. No continuous background_audio field in the executed forty cases; no noise injected during silent gaps.",
+  "overlap": "Serena main/Aiden bystander, main louder15dB, >=60% target-active overlap; no environmental noise stacked",
+  "emotion": "five mild preset styles, two goals each; Serena, clean",
+  "mixed": "Excluded from current forty. Preserved only in previous data/history outside this package.",
+  "preparation": {
+    "correct_original_task_required": true,
+    "real_policy_motion_and_frozen_trigger_required": true,
+    "retry_until_trigger": true,
+    "retry_limit": null,
+    "reset_same_initial_state_each_retry": true,
+    "same_initial_waveform_each_retry": true,
+    "archive_all_attempts": true,
+    "cloud_access_denied": "suspend preparations until service recovery; do not fabricate enrollment",
+    "preparation_failures_in_primary_t2_denominator": false
+  },
+  "enrolment": {
+    "event": "first PCM frame of pause actually transmitted after verified trigger",
+    "retry_after_enrolment": false,
+    "no_success_replacement": true,
+    "completion_race": "retain formal case and report existing scorer verdict; never recycle as preparation"
+  },
+  "budgets": {
+    "whole_successful_attempt_policy_actions": 1200,
+    "whole_successful_attempt_wall_s": 600,
+    "pause_from_audio_end_s": 5,
+    "pause_hold_s": 3,
+    "resume_accept_from_audio_end_s": 20,
+    "resume_first_actual_action_from_audio_end_s": 45,
+    "receipt_pcm_from_audio_end_s": 10,
+    "terminal_hold_physical_steps": 40,
+    "budget_reset_on_resume": false
+  },
+  "metrics": {
+    "primary": [
+      "interaction",
+      "target",
+      "instruction"
+    ],
+    "auxiliary": [
+      "joint"
+    ],
+    "per_condition_enrolled_denominator": 10,
+    "synthetic_enrolled_denominator": 40,
+    "all_enrolled_denominator_after_human": null,
+    "interaction_scope": "pause/resume control requirements from enrollment; preparation/start command evidence reported separately",
+    "preparation_reports": [
+      "first_attempt_trigger_coverage",
+      "successful_preparations/all_preparation_attempts",
+      "attempt_count_and_time_per_case",
+      "initial_asr_and_rejected_task_evidence"
+    ],
+    "conditional_score_warning": "conditional on correct preparation, not unconditional end-to-end success"
+  },
+  "model_inputs": "actual audio waves/allowed observation only; no target IDs, expected transcript, private evaluator state or next standard subgoal",
+  "video": {
+    "preview": "offline listening/subtitle preview only; never a simulated robot success video or benchmark input",
+    "real_rollout": "40 actual historical reference robot videos included; no new rollout generated",
+    "real_artifacts": [
+      "result.json",
+      "recordings/<episode>/control_ticks.jsonl",
+      "recordings/<episode>/environment.mp4",
+      "pause_observations.jsonl",
+      "voice/sessions/*.jsonl",
+      "client/output_*.wav"
+    ]
+  },
+  "status": "offline data repack; reference40 completed 2026-11-04; no new cloud or robot run",
+  "semantic_data_version": "T2-four-conditions-v2-20261104",
+  "excluded_conditions": [
+    "MX",
+    "HU"
+  ],
+  "pending_human_groups_outside_this_release": 10
+}

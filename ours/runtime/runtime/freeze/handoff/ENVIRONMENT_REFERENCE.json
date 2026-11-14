@@ -1,0 +1,28 @@
+{
+  "values": {
+    "HYBRID_EXECUTOR": "smolvla_e3_v4",
+    "HYBRID_COMPLETION": "S1",
+    "P012_ARM": "P2",
+    "P2_REFINE_VARIANT": "R11",
+    "HYBRID_FINAL_PROTOCOL": "D1",
+    "S1_OBSERVE_ARM": "B",
+    "HYBRID_AGENT_MODEL": "Qwen3.8-27B",
+    "HYBRID_KNOWN_CLOSED_EPISODE_START": "1",
+    "REPAIR_TASK_LANGUAGE": "1",
+    "REPAIR_DRAWER_GUARD": "1",
+    "REPAIR_ROI_YOLO": "1",
+    "REPAIR_STAGNATION_OBSERVATION": "1",
+    "REPAIR_CONTAINER_GUARD": "1",
+    "REPAIR_GRASP_GUARD": "1",
+    "REPAIR_STRONG_GRASP_JOINT": "1",
+    "REPAIR_CLOSE_CANDIDATE_HOLD": "1",
+    "REPAIR_LOST_OWNERSHIP": "1",
+    "PLANNING_HANDOFF_REPAIR": "1",
+    "PLANNING_RELATION_REPAIR": "1",
+    "HYBRID_DET_CONF": "0.1",
+    "HYBRID_KPT_CONF": "0.1",
+    "S1_POINT_CONF": "0.35"
+  },
+  "source_worker": "/mnt/disk_4/geyi/F1_switch308_20261031/evolution/studies/F28d_fp8_stable308_20261031/scripts/worker.py",
+  "note": "Reference documentation, not a runnable launcher. Some values are measured defaults from result.detector_settings. Known-closed initialization prior applies only when that episode setup is actually guaranteed. D1 is overridden by the published BenchmarkTerminal in the authoritative308 worker."
+}

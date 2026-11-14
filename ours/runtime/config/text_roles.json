@@ -1,0 +1,17 @@
+{
+  "schema": "role_local_routes_v1",
+  "model": "Qwen3.8-27B",
+  "cloud_fallback": false,
+  "transport_retries": 0,
+  "timeout_seconds": 600,
+  "roles": {
+    "planning": {
+      "api_base_url": "http://127.0.0.1:18686/v1",
+      "api_key_file": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/our_T3_T1_T6_repair_20261109/private/client.key"
+    },
+    "wording": {
+      "api_base_url": "http://127.0.0.1:18686/v1",
+      "api_key_file": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/our_T3_T1_T6_repair_20261109/private/client.key"
+    }
+  }
+}

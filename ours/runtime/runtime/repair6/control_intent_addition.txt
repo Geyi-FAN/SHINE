@@ -1,0 +1,5 @@
+    // A hold-only tail preserves current grasp; it does not locate, pick up,
+    // place, release or otherwise manipulate the noun mentioned by ASR.
+    // Negations, questions, conditionals and deferred stops were rejected above.
+    if (/^(?:please\s+)?(?:stop|pause)(?:\s+(?:the\s+)?(?:current\s+)?(?:robot|arm|task|motion|execution))?(?:\s+now)?\s*[,;.!]?\s+(?:and\s+)?keep\s+(?:(?:the\s+)?(?:queued|waiting|deferred)\s+task\s+(?:waiting|pending|queued)|holding\s+(?:it|(?:the\s+)?(?:bowl|ball|cream cheese|cheese|wine bottle|bottle|object))|(?:the\s+)?(?:gripper|hand)\s+(?:still|in place)|(?:your|the current)\s+position)[.!\s]*$/i.test(t))
+        return 'pause';

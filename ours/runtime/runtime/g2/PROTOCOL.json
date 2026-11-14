@@ -1,0 +1,33 @@
+{
+  "version": "G2-realtime-gateway-v3",
+  "f28d_parent": "924e2313a94612d23c6c258b80e7a5381848687a",
+  "fixed_cases": 32,
+  "actor_weights": "SmolVLA E3 v4 raw 30000",
+  "agent": "F28d FP8 four local roles",
+  "control_hz": 20,
+  "authorized_control_budget": 1200,
+  "async_wait_holds": "advance real physics; separately recorded, no policy/recovery-budget reset",
+  "explicit_user_pause": "no env.step, no mj_step, simulation time and complete state remain unchanged",
+  "wall_budget_seconds": 900,
+  "scoring": "published original v2.5 plus explicit invariants, private evaluator, all actual physics ticks including async hold",
+  "historical_comparison": "original synchronous308 is contextual, not same scheduler",
+  "natural_tests": "added after fixed32; actual source task, no pre-pause, no switch reset; source failures stay in denominator",
+  "max_parallel_workers": 4,
+  "cloud_fallback": false,
+  "resource_strategy": "four existing raw-E3 policy services19866-19869; one lightweight renderer/YOLO per GPU4-7; other jobs untouched",
+  "clock_contract": "kernel frame is ordered observation/control index, may skip one label on resume; authoritative action budget counts every actual kernel control, independent of labels; physics ticks and capture times recorded separately",
+  "development_attempts": "v1 partially dispatched, all preserved, excluded from final32",
+  "late_observation_guard": "fast RGB/proprio continuity; if inconclusive, fresh image-only YOLO and same frozen S1 object/drawer/gripper prerequisites; no GT stage answers",
+  "output_root": "/mnt/disk_4/geyi/voice_f28d_G2_20261101",
+  "final_candidate_version": "G2_gateway_v2",
+  "final_runs": [
+    "G2_fixed32_v2",
+    "pause_final_planning",
+    "pause_final_verifier",
+    "G2_natural8_v2"
+  ],
+  "parent_core_unchanged": true,
+  "natural_scoring_clock": "Score row step starts at 1 after instruction switch; world_physics_step and actual simulation time are preserved, no environment reset",
+  "natural_development_error": "G2_natural8_v1 retained as invalid instrumentation attempt: global step numbering rejected by scorer; all eight rerun as G2_natural8_v2",
+  "fixed32_original_protocol": "g2/PROTOCOL_fixed32_v2.json"
+}

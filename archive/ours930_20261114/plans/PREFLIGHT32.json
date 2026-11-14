@@ -1,0 +1,1409 @@
+{
+  "planned": 32,
+  "rows": [
+    {
+      "case_uid": "T1:T1COL1_CL_G09_I00",
+      "branch": "T1",
+      "case_id": "T1COL1_CL_G09_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T1_G09",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T1COL1_CL_G09_I00_U01",
+          "role": "core",
+          "audio_path": "data/T1/audio/01_clear_multivoice/T1COL1_CL_G09.wav",
+          "audio_sha256": "1f6da27a4517db6defad4e7f2f41341db5644d592fc047cd39d49bdfaee36a2b",
+          "trigger": "fresh_idle_ready"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T1/dataset/selected40.private.json",
+      "protocol": "data/T1/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T1/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T1:T1COL1_CL_G09_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 27,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T1:T1COL1_NS_G00_I00",
+      "branch": "T1",
+      "case_id": "T1COL1_NS_G00_I00",
+      "condition": "NS",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T1_G00",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T1COL1_NS_G00_I00_U01",
+          "role": "core",
+          "audio_path": "data/T1/audio/02_background_noise/T1COL1_NS_G00.wav",
+          "audio_sha256": "5b11118f2e5c4b80f907cb53dbf0c877b5e69414fc15b460c88b9bf9afdf2bbd",
+          "trigger": "fresh_idle_ready"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T1/dataset/selected40.private.json",
+      "protocol": "data/T1/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T1/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T1:T1COL1_NS_G00_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 30,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T1:T1COL1_EM_G07_I01",
+      "branch": "T1",
+      "case_id": "T1COL1_EM_G07_I01",
+      "condition": "EM",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T1_G07",
+      "state_id": "LIVE8787_I01",
+      "inputs": [
+        {
+          "turn_id": "T1COL1_EM_G07_I01_U01",
+          "role": "core",
+          "audio_path": "data/T1/audio/03_emotion/T1COL1_EM_G07.wav",
+          "audio_sha256": "b3c91d5ceb50ef06e5719ac7c0977b2da269b1915ba6a4e59c7d4c00d2baf01f",
+          "trigger": "fresh_idle_ready"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T1/dataset/selected40.private.json",
+      "protocol": "data/T1/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T1/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T1:T1COL1_EM_G07_I01:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 81,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T1:T1COL1_CL_G03_I00",
+      "branch": "T1",
+      "case_id": "T1COL1_CL_G03_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T1_G03",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T1COL1_CL_G03_I00_U01",
+          "role": "core",
+          "audio_path": "data/T1/audio/01_clear_multivoice/T1COL1_CL_G03.wav",
+          "audio_sha256": "80e443e58d976db6b3e2d5b05d79d347dae646127d64b98e0e4f2f4acc2882f5",
+          "trigger": "fresh_idle_ready"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T1/dataset/selected40.private.json",
+      "protocol": "data/T1/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T1/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T1:T1COL1_CL_G03_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 9,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T2:T2COL1_CL_G09",
+      "branch": "T2",
+      "case_id": "T2COL1_CL_G09",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T2_G09",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T2COL1_CL_G09_start",
+          "role": "start",
+          "audio_path": "data/T2/audio/00_initial_english/T2COL1_INIT_G09.wav",
+          "audio_sha256": "1f6da27a4517db6defad4e7f2f41341db5644d592fc047cd39d49bdfaee36a2b",
+          "trigger": null
+        },
+        {
+          "turn_id": "T2COL1_CL_G09_pause",
+          "role": "pause",
+          "audio_path": "data/T2/audio/01_clear_multivoice/T2COL1_CL_G09_pause.wav",
+          "audio_sha256": "10493019c9bd581de5b7b28b8c6015e0ee9117d5b7be915adcceb577810f68a4",
+          "trigger": null
+        },
+        {
+          "turn_id": "T2COL1_CL_G09_resume",
+          "role": "resume",
+          "audio_path": "data/T2/audio/01_clear_multivoice/T2COL1_CL_G09_resume.wav",
+          "audio_sha256": "6a5012358a9c64517e71570e3b91e21e610813f3268b7509bc22cc4d7eb7246c",
+          "trigger": null
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T2/dataset/eval_plan40.private.json",
+      "protocol": "data/T2/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T2/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T2:T2COL1_CL_G09:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 228,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T2:T2COL1_CL_G00",
+      "branch": "T2",
+      "case_id": "T2COL1_CL_G00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T2_G00",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T2COL1_CL_G00_start",
+          "role": "start",
+          "audio_path": "data/T2/audio/00_initial_english/T2COL1_INIT_G00.wav",
+          "audio_sha256": "372b28508435bb396a58dc9178bca2ffe0973871c69f5be8471b5768414f22a8",
+          "trigger": null
+        },
+        {
+          "turn_id": "T2COL1_CL_G00_pause",
+          "role": "pause",
+          "audio_path": "data/T2/audio/01_clear_multivoice/T2COL1_CL_G00_pause.wav",
+          "audio_sha256": "1d1bc422de6bd889f24da9b4935ebd0ba98a473cb95a178232174877125e0a58",
+          "trigger": null
+        },
+        {
+          "turn_id": "T2COL1_CL_G00_resume",
+          "role": "resume",
+          "audio_path": "data/T2/audio/01_clear_multivoice/T2COL1_CL_G00_resume.wav",
+          "audio_sha256": "8ffb2571c7149dee4830ca611aa9a45f7182424995652358f9ac1c3ce1cdf768",
+          "trigger": null
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T2/dataset/eval_plan40.private.json",
+      "protocol": "data/T2/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T2/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T2:T2COL1_CL_G00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 120,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T2:T2COL1_OV_G08",
+      "branch": "T2",
+      "case_id": "T2COL1_OV_G08",
+      "condition": "OV",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T2_G08",
+      "state_id": "LIVE8787_I02",
+      "inputs": [
+        {
+          "turn_id": "T2COL1_OV_G08_start",
+          "role": "start",
+          "audio_path": "data/T2/audio/00_initial_english/T2COL1_INIT_G08.wav",
+          "audio_sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+          "trigger": null
+        },
+        {
+          "turn_id": "T2COL1_OV_G08_pause",
+          "role": "pause",
+          "audio_path": "data/T2/audio/06_overlapping_speech/T2COL1_OV_G08_pause.wav",
+          "audio_sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+          "trigger": null
+        },
+        {
+          "turn_id": "T2COL1_OV_G08_resume",
+          "role": "resume",
+          "audio_path": "data/T2/audio/06_overlapping_speech/T2COL1_OV_G08_resume.wav",
+          "audio_sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+          "trigger": null
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T2/dataset/eval_plan40.private.json",
+      "protocol": "data/T2/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T2/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T2:T2COL1_OV_G08:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 225,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T2:T2COL1_CL_G03",
+      "branch": "T2",
+      "case_id": "T2COL1_CL_G03",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T2_G03",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T2COL1_CL_G03_start",
+          "role": "start",
+          "audio_path": "data/T2/audio/00_initial_english/T2COL1_INIT_G03.wav",
+          "audio_sha256": "80e443e58d976db6b3e2d5b05d79d347dae646127d64b98e0e4f2f4acc2882f5",
+          "trigger": null
+        },
+        {
+          "turn_id": "T2COL1_CL_G03_pause",
+          "role": "pause",
+          "audio_path": "data/T2/audio/01_clear_multivoice/T2COL1_CL_G03_pause.wav",
+          "audio_sha256": "1d1bc422de6bd889f24da9b4935ebd0ba98a473cb95a178232174877125e0a58",
+          "trigger": null
+        },
+        {
+          "turn_id": "T2COL1_CL_G03_resume",
+          "role": "resume",
+          "audio_path": "data/T2/audio/01_clear_multivoice/T2COL1_CL_G03_resume.wav",
+          "audio_sha256": "8ffb2571c7149dee4830ca611aa9a45f7182424995652358f9ac1c3ce1cdf768",
+          "trigger": null
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T2/dataset/eval_plan40.private.json",
+      "protocol": "data/T2/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T2/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T2:T2COL1_CL_G03:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 156,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T3:T3S50_CL_S10_I00",
+      "branch": "T3",
+      "case_id": "T3S50_CL_S10_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T3S50_CL_S10",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "U0",
+          "role": "source",
+          "audio_path": "data/T3/audio/U0/T3S50_U0_S10.wav",
+          "audio_sha256": "fd4c4eab676ba30abfccf608c118334dd3445aec9be40c2e5fe80e76915fc978",
+          "trigger": "source_ready"
+        },
+        {
+          "turn_id": "U1",
+          "role": "switch",
+          "audio_path": "data/T3/audio/U1/CL/T3S50_CL_S10.wav",
+          "audio_sha256": "93aa4433082716618f7888074fffefced484116dd5ad32c5637c39fe69998f4a",
+          "trigger": "private_trigger"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T3/private/cases.private.json",
+      "protocol": "data/T3/private/PROTOCOL.json",
+      "source_episode_file": "data/T3/manifests/cases.schedule.json",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T3:T3S50_CL_S10_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 351,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T3:T3S50_OV_S04_I00",
+      "branch": "T3",
+      "case_id": "T3S50_OV_S04_I00",
+      "condition": "OV",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T3S50_OV_S04",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "U0",
+          "role": "source",
+          "audio_path": "data/T3/audio/U0/T3S50_U0_S04.wav",
+          "audio_sha256": "20ed98ae54c30567fb6af513381f4ade6f4975b0203b3a481d969c508b5315ba",
+          "trigger": "source_ready"
+        },
+        {
+          "turn_id": "U1",
+          "role": "switch",
+          "audio_path": "data/T3/audio/U1/OV/T3S50_OV_S04.wav",
+          "audio_sha256": "0f199a0b72a2f706e7a0cfe18f4bd2c5086b8d2db6bfb182108ee8e36ec1ff6a",
+          "trigger": "private_trigger"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T3/private/cases.private.json",
+      "protocol": "data/T3/private/PROTOCOL.json",
+      "source_episode_file": "data/T3/manifests/cases.schedule.json",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T3:T3S50_OV_S04_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 276,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T3:T3S50_EM_S07_I00",
+      "branch": "T3",
+      "case_id": "T3S50_EM_S07_I00",
+      "condition": "EM",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T3S50_EM_S07",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "U0",
+          "role": "source",
+          "audio_path": "data/T3/audio/U0/T3S50_U0_S07.wav",
+          "audio_sha256": "9006d542732d1a43ca10877151118ad04750fa74f16f183a63128bbe11a6b34b",
+          "trigger": "source_ready"
+        },
+        {
+          "turn_id": "U1",
+          "role": "switch",
+          "audio_path": "data/T3/audio/U1/EM/T3S50_EM_S07.wav",
+          "audio_sha256": "4e72358adbe70be1765e34ed9ee7d249b3081496355e4f940becc0c138cf637b",
+          "trigger": "private_trigger"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T3/private/cases.private.json",
+      "protocol": "data/T3/private/PROTOCOL.json",
+      "source_episode_file": "data/T3/manifests/cases.schedule.json",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T3:T3S50_EM_S07_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 315,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T3:T3S50_CL_S01_I00",
+      "branch": "T3",
+      "case_id": "T3S50_CL_S01_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T3S50_CL_S01",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "U0",
+          "role": "source",
+          "audio_path": "data/T3/audio/U0/T3S50_U0_S01.wav",
+          "audio_sha256": "a1c7fb528ccf8a3fb42a14cce6e41b793a11502f58ec316f4e95402fb60651bc",
+          "trigger": "source_ready"
+        },
+        {
+          "turn_id": "U1",
+          "role": "switch",
+          "audio_path": "data/T3/audio/U1/CL/T3S50_CL_S01.wav",
+          "audio_sha256": "2bd27f49bb3e04da41dd874e2e7962692b540c6827ed310a7bc36ee4ff613381",
+          "trigger": "private_trigger"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T3/private/cases.private.json",
+      "protocol": "data/T3/private/PROTOCOL.json",
+      "source_episode_file": "data/T3/manifests/cases.schedule.json",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T3:T3S50_CL_S01_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 240,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T4:T4C1_CL_T01_I01",
+      "branch": "T4",
+      "case_id": "T4C1_CL_T01_I01",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T4E10_T01",
+      "state_id": "LIVE8787_I01",
+      "inputs": [
+        {
+          "turn_id": "T4C1_CL_T01_I01_H01",
+          "role": "context",
+          "audio_path": "data/T4/audio/00_source_context/T4E10_U_307ff0962472dfbe.wav",
+          "audio_sha256": "74299e42f5d0ef5cbb4dcb1e5cf4a4395ffc17545c648d32eb6fae78361f5bc8",
+          "trigger": null
+        },
+        {
+          "turn_id": "T4C1_CL_T01_I01_U01",
+          "role": "query",
+          "audio_path": "data/T4/audio/01_clear_multivoice/T4C1_CL_T01.wav",
+          "audio_sha256": "114366bb1bfab1777fd4811ddb656dc7d709665b3683c8624ab9667831155115",
+          "trigger": "private_source_phase"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T4/dataset/selected40.private.json",
+      "protocol": "data/T4/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T4/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T4:T4C1_CL_T01_I01:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 372,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T4:T4C1_OV_T06_I00",
+      "branch": "T4",
+      "case_id": "T4C1_OV_T06_I00",
+      "condition": "OV",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T4E10_T06",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T4C1_OV_T06_I00_H01",
+          "role": "context",
+          "audio_path": "data/T4/audio/00_source_context/T4E10_U_0d905503b36e45d5.wav",
+          "audio_sha256": "aaf4633687587f08f4f0d380cf94cb50208fd3f7c3d944402d8d1b99235968a3",
+          "trigger": null
+        },
+        {
+          "turn_id": "T4C1_OV_T06_I00_U01",
+          "role": "query",
+          "audio_path": "data/T4/audio/06_overlapping_speech/T4C1_OV_T06.wav",
+          "audio_sha256": "99d71f6ef88da9be7f3f368cca30345ab4aa99f5f0fa6f6a93fd3a823c4a41a4",
+          "trigger": "private_source_phase"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T4/dataset/selected40.private.json",
+      "protocol": "data/T4/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T4/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T4:T4C1_OV_T06_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 441,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T4:T4C1_CL_T00_I00",
+      "branch": "T4",
+      "case_id": "T4C1_CL_T00_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T4E10_T00",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T4C1_CL_T00_I00_H01",
+          "role": "context",
+          "audio_path": "data/T4/audio/00_source_context/T4E10_U_8be8a4ec94ebf29e.wav",
+          "audio_sha256": "f6ade31e939432ed735e96ae88add82c0f2bd6e37d2f1ccf78864e9fd69f1e0c",
+          "trigger": null
+        },
+        {
+          "turn_id": "T4C1_CL_T00_I00_U01",
+          "role": "query",
+          "audio_path": "data/T4/audio/01_clear_multivoice/T4C1_CL_T00.wav",
+          "audio_sha256": "d71bef4b01ceffa326fad5b4b4b9d4b4f91c3df3f818d6d0df0106fbf23e6431",
+          "trigger": "private_source_phase"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T4/dataset/selected40.private.json",
+      "protocol": "data/T4/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T4/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T4:T4C1_CL_T00_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 360,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T4:T4C1_EM_T02_I00",
+      "branch": "T4",
+      "case_id": "T4C1_EM_T02_I00",
+      "condition": "EM",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T4E10_T02",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T4C1_EM_T02_I00_H01",
+          "role": "context",
+          "audio_path": "data/T4/audio/00_source_context/T4E10_U_d9af37e5cdc3caac.wav",
+          "audio_sha256": "e9d6cd131b14805d238d07bb271e790083166e487660ed7e7f4dee7f5bdc6347",
+          "trigger": null
+        },
+        {
+          "turn_id": "T4C1_EM_T02_I00_U01",
+          "role": "query",
+          "audio_path": "data/T4/audio/03_emotion/T4C1_EM_T02.wav",
+          "audio_sha256": "eb96698f7f7c9ddfc896e0e9f3f09fabc0f793026c4b738711cd3a59a0c2e9e0",
+          "trigger": "private_source_phase"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T4/dataset/selected40.private.json",
+      "protocol": "data/T4/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T4/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T4:T4C1_EM_T02_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 390,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T5:T5AV1_NS_F02_P1_I02",
+      "branch": "T5",
+      "case_id": "T5AV1_NS_F02_P1_I02",
+      "condition": "NS",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T5C_F02_P1",
+      "state_id": "LIVE8787_I02",
+      "inputs": [
+        {
+          "turn_id": "T5C_F02_P1_U01",
+          "role": "initial",
+          "audio_path": "data/T5/audio/02_background_noise/T5AV1_NS_F02_01.wav",
+          "audio_sha256": "83c2ae5bc49625f85d760f29c89ac610133bcff2219536f33cbf6300f4fe329e",
+          "trigger": "precondition_ready"
+        },
+        {
+          "turn_id": "T5AV1_NS_F02_02",
+          "role": "conditional_candidate",
+          "audio_path": "data/T5/audio/02_background_noise/T5AV1_NS_F02_02.wav",
+          "audio_sha256": "4570a6d7f571f78848411b4d7743c5ba8d8c3be354205a9607abcee243a5cc40",
+          "trigger": "only_as_selected_by_original_dialogue_policy"
+        },
+        {
+          "turn_id": "T5AV1_NS_F02_03",
+          "role": "conditional_candidate",
+          "audio_path": "data/T5/audio/02_background_noise/T5AV1_NS_F02_03.wav",
+          "audio_sha256": "2f539fc3abeb629c4c82a9b8f5e7a867b5fd1620cace59b64c0eceb773262963",
+          "trigger": "only_as_selected_by_original_dialogue_policy"
+        },
+        {
+          "turn_id": "T5AV1_NS_F02_04",
+          "role": "conditional_candidate",
+          "audio_path": "data/T5/audio/02_background_noise/T5AV1_NS_F02_04.wav",
+          "audio_sha256": "438f90ca2708f338cc9f6343645ecd14c41eebd63c51efa8857a05ebcbbd52db",
+          "trigger": "only_as_selected_by_original_dialogue_policy"
+        },
+        {
+          "turn_id": "T5AV1_NS_F02_05",
+          "role": "conditional_candidate",
+          "audio_path": "data/T5/audio/02_background_noise/T5AV1_NS_F02_05.wav",
+          "audio_sha256": "0bc8c1b60e785b660031dafbbe5824c1ce8824ccc24c085d9d3082c0ef451710",
+          "trigger": "only_as_selected_by_original_dialogue_policy"
+        }
+      ],
+      "input_policy": "branching_original_policy",
+      "evaluator_case_file": "data/T5/dataset/selected40.private.json",
+      "protocol": "data/T5/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T5/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T5:T5AV1_NS_F02_P1_I02:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 513,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T5:T5AV1_CL_F06_P1_I02",
+      "branch": "T5",
+      "case_id": "T5AV1_CL_F06_P1_I02",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T5C_F06_P1",
+      "state_id": "LIVE8787_I02",
+      "inputs": [
+        {
+          "turn_id": "T5C_F06_P1_U01",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F06_01.wav",
+          "audio_sha256": "37ccff60450d6b9bfe3031cc1079fc62da3efa6dcda864dc8df3b6c26aaaa959",
+          "trigger": "precondition_ready"
+        },
+        {
+          "turn_id": "T5C_F06_P1_U02",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F06_02.wav",
+          "audio_sha256": "49fae3f7382caa562825a5f837a620abf754bde7daa14c4cb1c9537b77408dc5",
+          "trigger": "correct_initial_confirmation_question_actually_played"
+        },
+        {
+          "turn_id": "T5C_F06_P1_U03",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F06_03.wav",
+          "audio_sha256": "ae58bc5371331c0384d85622e1accf331afc6fa47f7b8c1656fa1aaceaf8f93b",
+          "trigger": "correct_replacement_confirmation_question_actually_played"
+        }
+      ],
+      "input_policy": "branching_original_policy",
+      "evaluator_case_file": "data/T5/dataset/selected40.private.json",
+      "protocol": "data/T5/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T5/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T5:T5AV1_CL_F06_P1_I02:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 495,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T5:T5AV1_CL_F08_P0_I02",
+      "branch": "T5",
+      "case_id": "T5AV1_CL_F08_P0_I02",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T5C_F08_P0",
+      "state_id": "LIVE8787_I02",
+      "inputs": [
+        {
+          "turn_id": "T5C_F08_P0_U01",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_01.wav",
+          "audio_sha256": "0f9bec217e8573113be80c5025f016110508b75e642efe06d3e66c3b7c7f98a8",
+          "trigger": "precondition_ready"
+        },
+        {
+          "turn_id": "T5C_F08_P0_U02",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_02.wav",
+          "audio_sha256": "efb8638bbd0a9a2ad66b3094645c15d01cf169525d8075f7d573e45f0dda465b",
+          "trigger": "correct_confirmation_question_actually_played"
+        },
+        {
+          "turn_id": "T5C_F08_P0_U03",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_02.wav",
+          "audio_sha256": "efb8638bbd0a9a2ad66b3094645c15d01cf169525d8075f7d573e45f0dda465b",
+          "trigger": "first_authorized_acceptance_receipt_actually_played_plus_1.5s"
+        }
+      ],
+      "input_policy": "branching_original_policy",
+      "evaluator_case_file": "data/T5/dataset/selected40.private.json",
+      "protocol": "data/T5/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T5/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T5:T5AV1_CL_F08_P0_I02:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 501,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T5:T5AV1_CL_F10_P0_I02",
+      "branch": "T5",
+      "case_id": "T5AV1_CL_F10_P0_I02",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T5C_F10_P0",
+      "state_id": "LIVE8787_I02",
+      "inputs": [
+        {
+          "turn_id": "T5C_F10_P0_U01",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F10_01.wav",
+          "audio_sha256": "306e89f87887df6d7f42b3e4a038fd52ffb8b00d6e0feceef5d2a847055abfbe",
+          "trigger": "precondition_ready"
+        },
+        {
+          "turn_id": "T5C_F10_P0_U02",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F10_02.wav",
+          "audio_sha256": "b09259e1cb2f3c0f4888c43ae7b72e916cbb0d08771ee1ed7e455086bf942d7d",
+          "trigger": "correct_confirmation_question_actually_played"
+        },
+        {
+          "turn_id": "T5C_F10_P0_U03",
+          "role": "initial",
+          "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F10_03.wav",
+          "audio_sha256": "e4879ec268ca939884fca500b4a017e269c8bb1ceb681a6a57084b5b74c2ac7a",
+          "trigger": "truthful_cancel_receipt_actually_played_plus_1.5s"
+        }
+      ],
+      "input_policy": "branching_original_policy",
+      "evaluator_case_file": "data/T5/dataset/selected40.private.json",
+      "protocol": "data/T5/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T5/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": false,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T5:T5AV1_CL_F10_P0_I02:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 507,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T6:T6Q_EXTRA_P2_S1__MV90V2_V03_B01",
+      "branch": "T6",
+      "case_id": "T6Q_EXTRA_P2_S1__MV90V2_V03_B01",
+      "condition": "NS",
+      "language": "en",
+      "repetitions": 1,
+      "base_dialogue_id": "T6_EXTRA_P2",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T6Q_EXTRA_P2_S1__MV90V2_V03_B01",
+          "role": "question",
+          "audio_path": "data/T6/audio/T6Q_EXTRA_P2_S1__MV90V2_V03_B01.wav",
+          "audio_sha256": "888e37bd5b66c43f7d1cd0703ee9f7cbf39caab8d02f61dcec13fe96cd43c71e",
+          "trigger": "validated_live_execution_gate"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T6/dataset/selected90.private.json",
+      "protocol": "data/T6/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T6/episodes.jsonl",
+      "metric_applicability": {
+        "qa": true,
+        "interaction": false,
+        "target": false,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T6:T6Q_EXTRA_P2_S1__MV90V2_V03_B01:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 640,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T6:T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+      "branch": "T6",
+      "case_id": "T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+      "condition": "NS",
+      "language": "en",
+      "repetitions": 1,
+      "base_dialogue_id": "T6_BOWL_PLATE_PLATE",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+          "role": "question",
+          "audio_path": "data/T6/audio/T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01.wav",
+          "audio_sha256": "1dc481dd97dc3669fe18dae9a057d892d0caadb4b819aafe5f9859f81ea5f562",
+          "trigger": "validated_live_execution_gate"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T6/dataset/selected90.private.json",
+      "protocol": "data/T6/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T6/episodes.jsonl",
+      "metric_applicability": {
+        "qa": true,
+        "interaction": false,
+        "target": false,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T6:T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 676,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T6:T6Q_BOWL_CONTENTS_P0_S2__MV90V2_V04_B01",
+      "branch": "T6",
+      "case_id": "T6Q_BOWL_CONTENTS_P0_S2__MV90V2_V04_B01",
+      "condition": "NS",
+      "language": "en",
+      "repetitions": 1,
+      "base_dialogue_id": "T6_BOWL_CONTENTS_P0",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T6Q_BOWL_CONTENTS_P0_S2__MV90V2_V04_B01",
+          "role": "question",
+          "audio_path": "data/T6/audio/T6Q_BOWL_CONTENTS_P0_S2__MV90V2_V04_B01.wav",
+          "audio_sha256": "c7e923544720f7e104645033f8887932a8fbc74aa134774c386a92fb3fab6296",
+          "trigger": "validated_live_execution_gate"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T6/dataset/selected90.private.json",
+      "protocol": "data/T6/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T6/episodes.jsonl",
+      "metric_applicability": {
+        "qa": true,
+        "interaction": false,
+        "target": false,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T6:T6Q_BOWL_CONTENTS_P0_S2__MV90V2_V04_B01:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 635,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T6:T6Q_DRAWER_CONTENTS_P1_S0__MV90V2_V03_B02",
+      "branch": "T6",
+      "case_id": "T6Q_DRAWER_CONTENTS_P1_S0__MV90V2_V03_B02",
+      "condition": "NS",
+      "language": "en",
+      "repetitions": 1,
+      "base_dialogue_id": "T6_DRAWER_CONTENTS_P1",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T6Q_DRAWER_CONTENTS_P1_S0__MV90V2_V03_B02",
+          "role": "question",
+          "audio_path": "data/T6/audio/T6Q_DRAWER_CONTENTS_P1_S0__MV90V2_V03_B02.wav",
+          "audio_sha256": "39059ad89e1480fb425e6c31ceab4c3a7fe6769711aa7383cabc0541a32755a3",
+          "trigger": "validated_live_execution_gate"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T6/dataset/selected90.private.json",
+      "protocol": "data/T6/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T6/episodes.jsonl",
+      "metric_applicability": {
+        "qa": true,
+        "interaction": false,
+        "target": false,
+        "instruction": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T6:T6Q_DRAWER_CONTENTS_P1_S0__MV90V2_V03_B02:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 637,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T7:T7AC1_CL_T02_R_I00",
+      "branch": "T7",
+      "case_id": "T7AC1_CL_T02_R_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T7_T02",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T7AC1_CL_T02_R_I00_U01",
+          "role": "start_predecessor",
+          "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T02_R_I00_U01.wav",
+          "audio_sha256": "9a6f51a3c9fc454c4f175b296906ba008a0c31e544e0883ed70eff35b55aa3f9",
+          "trigger": "fresh_episode_idle"
+        },
+        {
+          "turn_id": "T7AC1_CL_T02_R_I00_U02",
+          "role": "queue_successor",
+          "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T02_R_I00_U02.wav",
+          "audio_sha256": "799abbb1a54be4b72d67f23d7d341a0c7fda38e71e5e821de9a383fb6c675a71",
+          "trigger": "predecessor_started_and_unfinished"
+        },
+        {
+          "turn_id": "T7AC1_CL_T02_R_I00_U03",
+          "role": "replace_successor",
+          "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T02_R_I00_U03.wav",
+          "audio_sha256": "cfa2766e210f5ab81fa0bc78610713c65ba9ce20118bc57e2cdfa4ba3038a220",
+          "trigger": "registered_pending_while_predecessor_running"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T7/dataset/selected40.private.json",
+      "protocol": "policies/T7_MAIN_TABLE.json",
+      "source_episode_file": "data/T7/episodes.jsonl",
+      "metric_applicability": {
+        "interaction45": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_protocol": "data/T7/dataset/PROTOCOL.json",
+      "source_repetitions": 1,
+      "trial_uid": "T7:T7AC1_CL_T02_R_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 696,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T7:T7AC1_OV_T05_N_I00",
+      "branch": "T7",
+      "case_id": "T7AC1_OV_T05_N_I00",
+      "condition": "OV",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T7_T05",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T7AC1_OV_T05_N_I00_U01",
+          "role": "start_predecessor",
+          "audio_path": "data/T7/audio/04_overlapping_speech/T7AC1_OV_T05_N_I00_U01.wav",
+          "audio_sha256": "4b79dd058676b5ebb94da05993a7049f54d330844f65a81acb303d51a3fb3611",
+          "trigger": "fresh_episode_idle"
+        },
+        {
+          "turn_id": "T7AC1_OV_T05_N_I00_U02",
+          "role": "queue_successor",
+          "audio_path": "data/T7/audio/04_overlapping_speech/T7AC1_OV_T05_N_I00_U02.wav",
+          "audio_sha256": "939739cd5021e755d3a7a72a1cb53d9ad95bfee6bc8bf708058d47472f6ab5b7",
+          "trigger": "predecessor_started_and_unfinished"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T7/dataset/selected40.private.json",
+      "protocol": "policies/T7_MAIN_TABLE.json",
+      "source_episode_file": "data/T7/episodes.jsonl",
+      "metric_applicability": {
+        "interaction45": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_protocol": "data/T7/dataset/PROTOCOL.json",
+      "source_repetitions": 1,
+      "trial_uid": "T7:T7AC1_OV_T05_N_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 795,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T7:T7AC1_CL_T09_C_I00",
+      "branch": "T7",
+      "case_id": "T7AC1_CL_T09_C_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T7_T09",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T7AC1_CL_T09_C_I00_U01",
+          "role": "start_predecessor",
+          "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T09_C_I00_U01.wav",
+          "audio_sha256": "ed9c5287b6cded1821693680343e7e002a87a9d8bd21cca38997165d30bbc244",
+          "trigger": "fresh_episode_idle"
+        },
+        {
+          "turn_id": "T7AC1_CL_T09_C_I00_U02",
+          "role": "queue_successor",
+          "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T09_C_I00_U02.wav",
+          "audio_sha256": "0d9195cf520217b8ff7266caced2e38bd425d4050eb8605573f4bb0d48c8d917",
+          "trigger": "predecessor_started_and_unfinished"
+        },
+        {
+          "turn_id": "T7AC1_CL_T09_C_I00_U03",
+          "role": "cancel_successor",
+          "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T09_C_I00_U03.wav",
+          "audio_sha256": "a63c9457d348120e2e65fe6f2a6b26ff5c210204bf65c62550f1e760ada4183f",
+          "trigger": "registered_pending_while_predecessor_running"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T7/dataset/selected40.private.json",
+      "protocol": "policies/T7_MAIN_TABLE.json",
+      "source_episode_file": "data/T7/episodes.jsonl",
+      "metric_applicability": {
+        "interaction45": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_protocol": "data/T7/dataset/PROTOCOL.json",
+      "source_repetitions": 1,
+      "trial_uid": "T7:T7AC1_CL_T09_C_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 717,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T7:T7AC1_CL_T04_N_I00",
+      "branch": "T7",
+      "case_id": "T7AC1_CL_T04_N_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T7_T04",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T7AC1_CL_T04_N_I00_U01",
+          "role": "start_predecessor",
+          "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U01.wav",
+          "audio_sha256": "056d24539909189b3d7775b07180923ca66dfd9ea5d59eaaaaab960237ef5de0",
+          "trigger": "fresh_episode_idle"
+        },
+        {
+          "turn_id": "T7AC1_CL_T04_N_I00_U02",
+          "role": "queue_successor",
+          "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U02.wav",
+          "audio_sha256": "bc13e2f508fa244bd2b0929f2657d8321851313cf6463a59ddb1263a27a84c38",
+          "trigger": "predecessor_started_and_unfinished"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T7/dataset/selected40.private.json",
+      "protocol": "policies/T7_MAIN_TABLE.json",
+      "source_episode_file": "data/T7/episodes.jsonl",
+      "metric_applicability": {
+        "interaction45": true,
+        "target": true,
+        "instruction": true
+      },
+      "source_protocol": "data/T7/dataset/PROTOCOL.json",
+      "source_repetitions": 1,
+      "trial_uid": "T7:T7AC1_CL_T04_N_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 702,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T8:T8EN4_CL_N01_I00",
+      "branch": "T8",
+      "case_id": "T8EN4_CL_N01_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T8_N01",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T8EN4_CL_N01_I00_U01",
+          "role": "core",
+          "audio_path": "data/T8/audio/01_clear_multivoice/T8EN4_CL_N01.wav",
+          "audio_sha256": "9f6f2d9ed5513d9d95d82cdd61c1fa5da588e1023f34995c21b7092ae61548c8",
+          "trigger": "idle_empty_gripper_no_pending_task_or_dialogue"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T8/dataset/selected40.private.json",
+      "protocol": "data/T8/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T8/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": false,
+        "instruction": false,
+        "dual_channel": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T8:T8EN4_CL_N01_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 810,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T8:T8EN4_CL_N02_I01",
+      "branch": "T8",
+      "case_id": "T8EN4_CL_N02_I01",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T8_N02",
+      "state_id": "LIVE8787_I01",
+      "inputs": [
+        {
+          "turn_id": "T8EN4_CL_N02_I01_U01",
+          "role": "core",
+          "audio_path": "data/T8/audio/01_clear_multivoice/T8EN4_CL_N02.wav",
+          "audio_sha256": "4251f3351ccc6ed3c15151a7fca6e8b128e528626b72752fe96fadf9f7f2e898",
+          "trigger": "idle_empty_gripper_no_pending_task_or_dialogue"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T8/dataset/selected40.private.json",
+      "protocol": "data/T8/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T8/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": false,
+        "instruction": false,
+        "dual_channel": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T8:T8EN4_CL_N02_I01:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 813,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T8:T8EN4_CL_N08_I01",
+      "branch": "T8",
+      "case_id": "T8EN4_CL_N08_I01",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T8_N08",
+      "state_id": "LIVE8787_I01",
+      "inputs": [
+        {
+          "turn_id": "T8_PRE_SOURCE",
+          "role": "setup",
+          "audio_path": "data/T8/setup_audio/T8_PRE_SOURCE.wav",
+          "audio_sha256": "ee0fc68bc860516ea9bebad492e6fe50e88155fbae03b9bb980340ea6b85d060",
+          "trigger": "fresh_idle_episode"
+        },
+        {
+          "turn_id": "T8EN4_CL_N08_I01_U01",
+          "role": "core",
+          "audio_path": "data/T8/audio/01_clear_multivoice/T8EN4_CL_N08.wav",
+          "audio_sha256": "cbe56469164de3cd438eb41841531e9adc0d1f2ce116da6a846486facc7a5f22",
+          "trigger": "original_task_actual_receipt_playback_onset_plus_0.3s_and_actual_policy_started_no_held_requirement"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T8/dataset/selected40.private.json",
+      "protocol": "data/T8/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T8/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": false,
+        "dual_channel": true
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T8:T8EN4_CL_N08_I01:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 831,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    },
+    {
+      "case_uid": "T8:T8EN4_CL_N10T_I00",
+      "branch": "T8",
+      "case_id": "T8EN4_CL_N10T_I00",
+      "condition": "CL",
+      "language": "en",
+      "repetitions": 3,
+      "base_dialogue_id": "T8_N10T",
+      "state_id": "LIVE8787_I00",
+      "inputs": [
+        {
+          "turn_id": "T8_PRE_SOURCE",
+          "role": "setup",
+          "audio_path": "data/T8/setup_audio/T8_PRE_SOURCE.wav",
+          "audio_sha256": "ee0fc68bc860516ea9bebad492e6fe50e88155fbae03b9bb980340ea6b85d060",
+          "trigger": "fresh_idle_episode"
+        },
+        {
+          "turn_id": "T8EN4_CL_N10T_I00_U01",
+          "role": "core",
+          "audio_path": "data/T8/audio/01_clear_multivoice/T8EN4_CL_N10T.wav",
+          "audio_sha256": "a65365ec759e0d464f8644ce2ad1077046eb6779ba9defb847f1903ea37e619c",
+          "trigger": "original_task_actual_receipt_playback_onset_plus_0.3s_and_actual_policy_started_no_held_requirement"
+        }
+      ],
+      "input_policy": "original_branch_triggers",
+      "evaluator_case_file": "data/T8/dataset/selected40.private.json",
+      "protocol": "data/T8/dataset/PROTOCOL.json",
+      "source_episode_file": "data/T8/episodes.jsonl",
+      "metric_applicability": {
+        "interaction": true,
+        "target": true,
+        "instruction": false,
+        "dual_channel": false
+      },
+      "source_repetitions": 1,
+      "trial_uid": "T8:T8EN4_CL_N10T_I00:R01",
+      "repetition_index": 1,
+      "repetition_id": "R01",
+      "independent_episode_reset": true,
+      "reset_inside_case": false,
+      "original_index": 837,
+      "engineering_selection": "prespecified failures and success guards; not representative formal score"
+    }
+  ],
+  "formal": false,
+  "original_audio_and_budgets": true
+}

@@ -1,0 +1,1296 @@
+[
+  {
+    "destination": "runtime/freeze/voice/robot_gateway/grounding.py",
+    "sources": [
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/python/grounding.py"
+    ],
+    "reason": "AST definition merge preserving unrelated methods: action_clauses,slots,validate_pronoun_source",
+    "sha256": "bfeec2025556395914cb7a008edfd58023122d99ba472fc233125886ceef9619"
+  },
+  {
+    "destination": "runtime/freeze/voice/robot_gateway/grounding.py",
+    "sources": [
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/authority/grounding.py"
+    ],
+    "reason": "AST definition merge preserving unrelated methods: command_content,explicit_object_correction,explicit_object_selection,validate_grounding",
+    "sha256": "bfeec2025556395914cb7a008edfd58023122d99ba472fc233125886ceef9619"
+  },
+  {
+    "destination": "runtime/freeze/voice/robot_gateway/semantics.py",
+    "sources": [
+      "/tmp/tmp5p0f3aq2/merged.py"
+    ],
+    "reason": "AST definition merge preserving unrelated methods: inspect_semantics",
+    "sha256": "11e7522425de30edc8bc98c145f5cfa68f349f4527943f897330d21300584184"
+  },
+  {
+    "destination": "runtime/freeze/voice/robot_gateway/semantics.py",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/freeze/voice/robot_gateway/semantics.py",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/python/semantics.py",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/authority/semantics.py"
+    ],
+    "reason": "Clean three-way AST-normalized merge",
+    "sha256": "11e7522425de30edc8bc98c145f5cfa68f349f4527943f897330d21300584184"
+  },
+  {
+    "destination": "runtime/freeze/voice/robot_gateway/clarification.py",
+    "sources": [
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/authority/clarification.py"
+    ],
+    "reason": "Cumulative F01-F10 clarification evidence and current proposal",
+    "sha256": "692ded11e73451afca207184bbcb6b6852034da8c0d080cf65f733c8d6db6611"
+  },
+  {
+    "destination": "runtime/freeze/voice/robot_gateway/core.py",
+    "sources": [
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/authority/core_methods.py"
+    ],
+    "reason": "AST definition merge preserving unrelated methods: record_interaction,_resolve_proposal,_command",
+    "sha256": "1fd19628809a1b47dd2449d47f871097088079acc33c83c59c5dc7b38a5954bc"
+  },
+  {
+    "destination": "runtime/freeze/voice/robot_gateway/native_execution.py",
+    "sources": [
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/authority/native_candidate.py"
+    ],
+    "reason": "AST definition merge preserving unrelated methods: native_candidate",
+    "sha256": "0cfefee13a5ca1a9928b37cc0200e076fde816cac8d4a39f6cd8d3a8758b3841"
+  },
+  {
+    "destination": "runtime/freeze/voice/robot_gateway/speech_relisten.py",
+    "sources": [
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/python/speech_relisten.py"
+    ],
+    "reason": "Object identity correction retains actual action and source evidence",
+    "sha256": "b45f317bdbf6487ee1844998b9c054369d8e7270cc1f6415b4dd8510b99fd68c"
+  },
+  {
+    "destination": "voice/dist/tools/robot-stop-onset-rebind.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-stop-onset-rebind.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/tools/robot-stop-onset-rebind.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "b0fa08b42611fbcdf8a7ae724f66f2e53bb065f309623cbcba75d729bf0be71a"
+  },
+  {
+    "destination": "voice/dist/tools/robot-fast-stop.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-fast-stop.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/tools/robot-fast-stop.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "b166134a487197eafa660e036365e8d4af193fb6b9caa21e3ae287bc506eef75"
+  },
+  {
+    "destination": "voice/dist/tools/robot-mixed-control.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-mixed-control.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/tools/robot-mixed-control.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "e20c0ca693b27dcaf200354774357e9085b2832b050c0ccc334afe9ae46b0a19"
+  },
+  {
+    "destination": "voice/dist/tools/robot-stop-lease.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-stop-lease.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/tools/robot-stop-lease.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "923a734a6a37aca72945b70c4d419ed7ca1a86df4b23d955ed6e618a5790ba7e"
+  },
+  {
+    "destination": "voice/dist/tools/robot-control-semantics.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-control-semantics.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/tools/robot-control-semantics.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "be255216eeaf8898559dac5c2eae8f0c41a9fc3a5bda40505bd46eecd19697be"
+  },
+  {
+    "destination": "voice/dist/tools/robot-turn.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-turn.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/tools/robot-turn.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "da8714a77a4b4f5f3856bed4bba6a3e21d1b94476128ecb54314468a4f6306f3"
+  },
+  {
+    "destination": "voice/dist/tools/robot.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/tools/robot.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "8fff882bad6a790f708cb28129d37df3f3d95fc1d415219c55a9913a8106e8aa"
+  },
+  {
+    "destination": "voice/dist/tools/robot-object-evidence.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-object-evidence.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/tools/robot-object-evidence.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "7f53cd6569d14f1cbdcd68ebcccbde125e0df24ab84017b3c368decc2afde9d6"
+  },
+  {
+    "destination": "voice/dist/orchestrator/live-session.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/orchestrator/live-session.js",
+      "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104/runtime/daemon/dist/orchestrator/live-session.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "477dac0294ec7ac42b618ea9447cfa1504410fa9b3a8ad95f5d641d4c9db62d0"
+  },
+  {
+    "destination": "voice/dist/tools/robot-stop-onset-rebind.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-stop-onset-rebind.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot-stop-onset-rebind.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "b0fa08b42611fbcdf8a7ae724f66f2e53bb065f309623cbcba75d729bf0be71a"
+  },
+  {
+    "destination": "voice/dist/tools/robot-fast-stop.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-fast-stop.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot-fast-stop.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "b166134a487197eafa660e036365e8d4af193fb6b9caa21e3ae287bc506eef75"
+  },
+  {
+    "destination": "voice/dist/tools/robot-mixed-control.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-mixed-control.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot-mixed-control.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "e20c0ca693b27dcaf200354774357e9085b2832b050c0ccc334afe9ae46b0a19"
+  },
+  {
+    "destination": "voice/dist/tools/robot-stop-lease.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-stop-lease.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot-stop-lease.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "923a734a6a37aca72945b70c4d419ed7ca1a86df4b23d955ed6e618a5790ba7e"
+  },
+  {
+    "destination": "voice/dist/tools/robot-control-semantics.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-control-semantics.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot-control-semantics.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "be255216eeaf8898559dac5c2eae8f0c41a9fc3a5bda40505bd46eecd19697be"
+  },
+  {
+    "destination": "voice/dist/tools/robot-entry-guard.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-entry-guard.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot-entry-guard.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "4d653cfded078c9e177c2fec30e51e57581581cb527c4a24c5d660d55035203a"
+  },
+  {
+    "destination": "voice/dist/tools/robot-turn.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-turn.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot-turn.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "f458759fe6e5f1e2dfb0ef22e26d1785bb4e8c42a24bbe8b1c0f43a785c316d0"
+  },
+  {
+    "destination": "voice/dist/tools/robot.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "9032ff160d402b42416158faa70ffd84799d3dc945f32f42fdcf1f6b60a23be6"
+  },
+  {
+    "destination": "voice/dist/tools/robot-current-reference.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/tools/robot-current-reference.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/tools/robot-current-reference.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "1c40487b8c8addeaf6144417aa5deac94c4e7b53fbf140d21fa38737af5c68d5"
+  },
+  {
+    "destination": "voice/dist/orchestrator/live-session.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/orchestrator/live-session.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/orchestrator/live-session.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "552c9a22b46829358c5c18566c2945ce0dfd734601ec546f7e05ac92fc09ef4c"
+  },
+  {
+    "destination": "voice/dist/orchestrator/post-control-listening.js",
+    "sources": [
+      "/mnt/disk_2/geyi/voice_c3r_integration_20261102/artifacts/repair8_audio_daemon/dist/orchestrator/post-control-listening.js",
+      "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/daemon/dist/orchestrator/post-control-listening.js"
+    ],
+    "reason": "Three-way actual-JS merge over T7/T6 base; preserve all reviewed inputs",
+    "sha256": "344804e92caf5ec4847bf61140081875a4b8904464e6f99fc0ddb53e38694e4d"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/agent_transport.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/agent_transport.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "c26a5ce628e73ed269d133cbda76d3d61bb1a3859d8b24f00f12555d4ecc1803"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_addendum.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_addendum.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "6686a0d0681ccbb8f228702f10c7430e5e29c9e94ee0933087ac049e870dcbaf"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/execution_profile.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/execution_profile.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "75aab9bb033940df082843055811dcd8e9bb7e7adad8aa9a9d1701daad559baa"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_motion_contract.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_motion_contract.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "9e589ec7e3d8cd408e63faaf396ca62a7146f4bf99c82918bbea91b562ab6376"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/prompt_s1.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/prompt_s1.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "2c4f85f8847a7c9b3c9f8f28124940a0390ba67838efa2d2a232369f621203e6"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_m2.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_m2.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "d6b967be93a6bef7acdadfa027e255eaf8dbeab41435456068624afa556e7872"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_code_prompt_v2.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_code_prompt_v2.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "d7399d033ca6779e1385c0d970a8aa16c48e8e50a61e4e5b651605c880f83fad"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_reentry.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_reentry.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "95e99a5270b07e6ff6f886e1b4aaaf4cc42c7e1e678e309225175a6c48c223f5"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R1.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R1.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "edc39d203d0d29ed37f780e0f10f1d1d2a5eab322bfd14a5265a4df8d1d70725"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/cap_recovery.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/cap_recovery.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "3476a65f3b79ac88f4a35ff8b8a0f6a1ed2e77e065360b76e97540e815dcba6d"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/depth_sensor.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/depth_sensor.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "979d25c53f1755ec3395fd21ba00ced92cb681fd9ed9301da13784bcb3d2bb71"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R7.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R7.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "caa2b07bcc368edf7f582cace7d17b6a6abcb13aefc660ef859fb7879041f882"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/serve_policy.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/serve_policy.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "a1a2350d6f2b433ff3590656f43485408e8451e59f26b36d8188701cd27bdada"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_addendum.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_addendum.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "3f01f03fdd8befea62c1f1b5323946b96b35b1c40cc94fd9f0d0ddc313a20cd7"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R8.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R8.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "caa2b07bcc368edf7f582cace7d17b6a6abcb13aefc660ef859fb7879041f882"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_vertical.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_vertical.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "a1e8eb190e6e5c5ea82c6ec1a184d298de8d0c99b75007428da693ea57d3fcdb"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/stage_lifecycle.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/stage_lifecycle.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "5995d1d8cb5c4d15a669d1a420fcee8672786965051cedec1fec644887c23b0e"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/container_guard.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/container_guard.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "866d2dd2f0695cf27c6dff5df299f5fb6b1b942624a2bc55a3a291a530e8199a"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R5.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R5.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "edc39d203d0d29ed37f780e0f10f1d1d2a5eab322bfd14a5265a4df8d1d70725"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/extended_completion.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/extended_completion.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "ca0153e92a399cbed3be856f71b0f3121d6df6573d46ae3aa2d74ca35bff296c"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/yolo_worker.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/yolo_worker.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "1478dd45e91fce328197911586ede2ad8044b451103bced53bdee105726fe1a2"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/scene_memory_old.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/scene_memory_old.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "2cc7bbfa035a88cacbacf40bdad49cf0d6c21ead7c4b5a1158479c3f7eac5030"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_runtime.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_runtime.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e4cc1229c12e7009d7c6522c67672fd75755d54fc3932046e55b89ee99897da6"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/episode_handle_reference.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/episode_handle_reference.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "4fc9de66c9ccec8f22a0daf7a422da3d9a8fbb7d67f76c2dd48024cd6fa0af21"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/plan_scope.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/plan_scope.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "47594710a2d73916c8bcefd360fc4cb9261df312ff0a696b318e56dae1aeb310"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_code_prompt.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_code_prompt.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "639452f3c3be81335564fd616c2587bff73a4823e23818058ae3efae723bbbce"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_hold.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_hold.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "3ff47173558a0823bbcddcba7f117cec2d819d1e90e8e798452bb8f71459f7c0"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/terminal_gate.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/terminal_gate.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "824b95eed2b76db8e34b7690b583c87149093c0787899dc6887ba74940ab940c"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/replay_confidence.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/replay_confidence.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "2f6e23913319581bab87aa443b48025a9df723ff427ea7eef8f32c8c2a7fe6fb"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/episode_history.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/episode_history.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "0b65d37061e2f58892424679fa58e74509621b92b3e7b3306e50923dbef3842b"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_gate.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_gate.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e3514bb9db837b7c789e5820d11cfa99fe35181db8723ad209dcafb3b6958ec0"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/task_language.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/task_language.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "f6ea1d60aab68fd6d201e72d4ad5e3a7f810703d012ceb969f1b0263fddd74a4"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/text_transport.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/text_transport.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "93ad350a5dd80a60f086e5140dda0c151ba3e1929a54b865d557e1fb352db464"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/extended_completion_frozen.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/extended_completion_frozen.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "0208f4206c7960ae63424bec4a16f82c66e1deddcd41a6cbe072708bd6f91981"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/empty_hand_evidence.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/empty_hand_evidence.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e65660a3b2236fa691453b0947583c27d13123d7d9430fd50c39487df4283ddb"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/observed_state_memory.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/observed_state_memory.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "749f6e6851cc54b16e9d6cb9f8ada99d33074e507a7f63c7a3505f3d58e0a89d"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/grasp_guard.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/grasp_guard.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "406ffe3c3fff466216e9cec61d647b0219f49ec302a6f8ce95d92f9860ca99e1"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R4.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R4.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "69858767ad78606d44224c2563341c4f830d826a0f5f5d6e67a6fe9d47a55225"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/completion_proof.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/completion_proof.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "39608593dfcd4c682965ac9ee7e28eea883f8ac0d99bb04d269fb56c7bad0733"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_revision.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_revision.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "5e00016af8004ba41f9ed8afa08d51795b5516aca679d9560d247d82382b1d13"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/planning_relation_memory.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/planning_relation_memory.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "83dfd4471ec7f6629ef8a3b0a75d00fde55438f4a8a5fe8f9de781d3255a515d"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_vertical_approach.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_vertical_approach.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "0a554f03b7888cdfe63874db4da882dd579df8cf1af212b983cae303375c1a81"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_conditions.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_conditions.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "f5b8bc1d17f29fedeae7ace6718a98ea694790fe908de2d9969662d7f124e084"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/hold_gate.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/hold_gate.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "2c1abde8a85f793291e5ee6bb6be2cfdb5185bf3e84842278bd676ac60503f8a"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_extended_completion.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_extended_completion.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "978a5260d543d3a12ce2372e047a130aadb32395fe51a024a313983e758df6d4"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/smolvla_e3_skills.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/smolvla_e3_skills.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "0f3dd10115757f02b057bc79e29fef866ec6b00c250b0b48572b9049936c7f70"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/planning_semantics.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/planning_semantics.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "3b40d1a8bf96bcb10102ccca179e94568c6cad31f296bc70ef590d054db15ac7"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/local_transport.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/local_transport.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "f712cab472a57fafb8fd0eb9735e94ad42adead785638eea1827f9bf417e24eb"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_response_memo.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_response_memo.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "f9cfeece7772361789dd098a615e48bd6b391f8a69af13ffe753cdcc36ff25e0"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/observation_features.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/observation_features.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "c87f1367387d6f4a7818cd4290452132140913872dbd643b42ce8a5bf4adb9e4"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/ownership_recovery.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/ownership_recovery.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e3f24e3a81225e74e15a230b5de0765d67ae1866e0199dca69b61941a4c3810a"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_episode_transfer.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_episode_transfer.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "2b46704c9951e7710690d13012335e300392900cb7d3f388a887d60bd678cb23"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_scene_memory.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_scene_memory.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "226671ac328a659bde87ea40365550a6d50d1446978f67884116e62080bbd9f5"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_effort_prompt.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_effort_prompt.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "8f7f364b12be694f603395a0be8a90b654011d189b3ca89560f0dac443c68eba"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/drawer_ray.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/drawer_ray.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "d60b0ba60b4dff09e3dfc285e69d17f0efe05c8fddb6a8e8c2407f4057d061b7"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/close_observation.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/close_observation.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "f9e705033b9b706956be6bdc73f9a46c8a8a7e3bde92b02680959a59ba70d563"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/prompt_smolvla_e3.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/prompt_smolvla_e3.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "61b066675efc1e95f548db5c4f4b99357de191c0522c4dcd98f8a7432f545303"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R2.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R2.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "48ed6211732eee38286b8fdb6c1a2f40abd7160b82912ebff6e184c224961f12"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_observed_completion.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_observed_completion.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "194b9c22468511b33cca7fe2449fb08335cfe13067997c19efefb18dab4925ca"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/static_depth_memory.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/static_depth_memory.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "0603ee337e8e29e3675cd2f1239faf933056e58120aeb7899f727340938dfaf7"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/temporal_plan_memory.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/temporal_plan_memory.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "6dd4e04bdf15f5a6a1cdf7e833c91e074a17d8885b333d33b98a4ca91418fed7"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/reference_contract.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/reference_contract.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "c0520be6396989b3e0d82176075d9d62c5b4665a649b1690d3474ca383f34ef8"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_vector_geometry.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_vector_geometry.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "504abfd27757f33c550b04835c09190bb8f51eda09a9037a9c7bc39e59e365f2"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/run.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/run.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "1c4bef3a6a1f6a1af4d915073cb47d2b439fb35a0ab61043ab2a8620d8c5e2f1"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_fixed_anchors.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_fixed_anchors.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "6865e86b75dbca4f9d16a2d2871242105b2708c61131b7c9bfbcb98b9033216e"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_effort.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_effort.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "121b5ec82491f18dacb7eeea68f9c30fca821a45bbce95eb464324d971c98d50"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/response_memo.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/response_memo.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "c868df287380d7acbc851344f9ed1827a8aa651a89a6039d633d39acc1955868"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/points.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/points.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "2321c036078cbd89bdbda7f99ea6a5009097c1167f4cdd972a40613cf6734885"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_hybrid.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_hybrid.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "41e0e88514d70da27d77c821c824ded11f5f5325ba82737087a9154dbdcbfbac"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/strong_grasp_rule.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/strong_grasp_rule.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "17e83f412435c68a4bd4b357d080289a6124cd4c63bca115203659ddd5f6bda1"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/validate_terminal.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/validate_terminal.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "b4976c27550b09019f730cbeeed2e40fb01fbfc22a46278dfbf0219dc165c9c3"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_policy_v4.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_policy_v4.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "919418f89c43b93d50787083f774df9ded370d39b0841c828a28a7acffdae7ee"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/replay_memory.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/replay_memory.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "0f3ece0dd5591f6d37a8977b6397d04425c0d8e7ed4bef0838e300e3f6a0c0c1"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/completion.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/completion.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e148af90a8ca42359f5ad35d04cee379fcbf86c7320f1a37a14a944c5338e0ef"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_terminal_gate.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_terminal_gate.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "54161860658d8b6a1e3f0ed94d9815550ce76a8cc043554832d09ba0c4549082"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_probe_runtime.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_probe_runtime.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "64accfc97e6f2fed783bdde950c3eb6eddeabadfbbb0c58b501086d0b57619c1"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_progress.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_progress.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e9520ddb759d747e708236a69da1266f684a4c84f1dc6a712bba5951ab6b0665"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/prompt.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/prompt.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "c0a8bccaaa1d73ecb4862bf00ab3775b9346120fd156580bc848271ae4e28c40"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/observed_completion.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/observed_completion.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "f80847baa39d1d8192aa5b73cb9f2ee5a91b636ab7299fcacd2092db4dc687cb"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R6.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R6.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "60567479c4ad3c1405b2053c6712a9627c02934b16be5b33db89fea60e87fbb1"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/operators.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/operators.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "126ab4a49d40078fc3cb89ae8f75c7db36b7a91a8926a085eb70170146447482"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_stationary_objects.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_stationary_objects.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "2dc91ba9aca723f45ca187326c412de28a7d280c7677b6e865ce936a2a26d000"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/policy_backend.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/policy_backend.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "8180b64fa9dbe3c205f2662d9721305c4d4eca6349f74ab726740afecfea18a0"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/oracle_review.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/oracle_review.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "9803f1f898740ec1dbe062ee071eee16ff51972e545b2785c165827295f707ee"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/plan_prerequisites.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/plan_prerequisites.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e0a896a5f92154800082d7ea86ffc095d15ec724c6beae1807b047288b8e7bcd"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_observer.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_observer.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e4cebb68fa901ec8f84e35e3eb8f0436c820ec7a0e39bced771ee49624793a33"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/planner.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/planner.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "cac8db8bf49e0bd1171b20edbce146b4d24f9d657ee6e0c0e4fec3062ee84a0f"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/probe_runtime.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/probe_runtime.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "35164f0843c564eb21adf42c8ba843d2d31f4d6b77379583f15922005688a522"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/completion_s1_base.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/completion_s1_base.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "f80847baa39d1d8192aa5b73cb9f2ee5a91b636ab7299fcacd2092db4dc687cb"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_preflight.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_preflight.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e5792bff1a2ae52d4a401f1036ee4dc90bb6d7d922dc5f5fd373514e382f16b0"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/visual_verifier_frozen.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/visual_verifier_frozen.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "8aa2d54c55668058047474cff75f7eefe4d1f455c650cb426a737c24f7a88706"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/drawer_guard.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/drawer_guard.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "8c61995f8e61e83885d0ecef0f7f28047941b94e9d3a71901c5979076e84df98"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/recovery_code_prompt_v3.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/recovery_code_prompt_v3.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "faaaf675470e81a9e235fb2d1b1722f1f29c6e348cd74579a2288b231f4fbe12"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "edc39d203d0d29ed37f780e0f10f1d1d2a5eab322bfd14a5265a4df8d1d70725"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/return_release_review.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/return_release_review.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "d0beac119ce9a7da30a73f1c64713579d054efe905cfed0c5dc3d4e49274ee08"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R9.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R9.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "7ec70c8b3676bf1aa06853e1e83073211516041ef853580ae65ec8d00e056b43"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/post_return_handoff.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/post_return_handoff.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "107cf5d5477b39210204316a8a9905e0a125bdb3def08be271cd5314fc585bd7"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R10.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R10.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "b596ab3a10157842c76bb530243ed95ba8dcedd753f3adf21f4ce76de2d609dc"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_rubrics.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_rubrics.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e474d82e93aa4c4c0d33e1a037dcd653987a41d0931d9782ad5afbff5a22eecf"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/scene_memory.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/scene_memory.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "053e2e8f7c7212a272438c5d9e1c615f8ba4fbe8fced5b83993f33ae529bf7b3"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/visual_verifier.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/visual_verifier.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "7009bb41d6c9e79c2d6cc2f854cd84a4a2457d7127ddb2aebece15c2c40a36df"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/observation_validation.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/observation_validation.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "022dbf2cd3c97ed446e2e0ce2c7cf97377be828b71d568fcfe9f2f13bf6cae84"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/test_switch_terminal.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/test_switch_terminal.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "98ee47625c6bf2eeae47dce06d8d16d1b3516f527f2eec3725009cb806a77c41"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R3.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R3.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "3b40066b30a450a6be7e0982ae0d7bd45ae0b2a8fa4cb9877479ab7a09f10460"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/observation_tools.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/observation_tools.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "d688a20a15f93c6fb85b05f0cfdfe359828b00856a730c8117ed0ca440a464a6"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/verifier_prompt_R11.txt",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/verifier_prompt_R11.txt"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "b596ab3a10157842c76bb530243ed95ba8dcedd753f3adf21f4ce76de2d609dc"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/output_contract.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/output_contract.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "559b2368e4024d442dfa697d4764630583bc2774af2d56c3e0280c0051e356b9"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/cap_program.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/cap_program.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "1c22b565169458093cfd64fc411480143e1e2485b5e0cfe9800a38c09dba518f"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/switch_terminal.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/switch_terminal.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "7d1f7314e1c9d659bb89969334400384b2777dfb655d2750a897dcbd5b216d22"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/predicates.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/predicates.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "ec563cdf3b6b1a6d7d570fd666490f7ed379cdd8315b557dc89fb6f1d118f138"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/validation_reviewed.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/validation_reviewed.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "2f8cd91f7508c73b499cb27fe1af48a709a8b46b51e155e02f772855a411bbe6"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/adapters.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/adapters.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "c63e9ea0158d7102a20ca0242b9097d9a8246694c7b572a81d82f5e2d59f6ec2"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/validation_events.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/validation_events.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "e58a49c97877cf22dccb05154003b711c8ea07b75ea9f80adf7567ffa8535eec"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/evaluator.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/evaluator.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "a11ff5d78857b23490de4b6cc2dfe8a72a352cd7cd07a0dcf35230d2c66be9cc"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/validation_cli_final.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/validation_cli_final.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "563f153382d70f7226394bbc6af836d5d3e4acc15f28cacf3cf4ae0926a4535d"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/reasons.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/reasons.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "3c7428252869ca3b210d7aaf44f867cd99274de5b78b227ad5ded2e85d9b44f6"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/config.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/config.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "70bb35da2f804d5145ad92d15f7d0408573a0311651e491d822d25f5b109e3b8"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/contracts.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/contracts.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "4cb7191a8e473908f3ea727235361e04d91a7de9372bc2e8862100387e0af8a2"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/RELEASE.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/RELEASE.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "3fd726b99a4a4fc8a0f27ee4ed182b733cd7ad0daf0d9ef0280ae514b2e62f45"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/cli.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/cli.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "a00d732aca409915f34d309e2fa565a20d93d89161b3738c57b76b449e27d7dc"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/controller.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/controller.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "7efebfdde47ba9f5d0470b78a93bf4cf9d330fb360b323ed33bc60aa27a8b407"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/events.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/events.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "a6212899661c6566e6c89f9bfec532f2df42fc385b48fb09303b04fce6837540"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/__main__.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/__main__.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/validation_cli.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/validation_cli.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "38e3a82d4767fece760255ab9d635e8fbb8119597af88aa04e241f7b7f953f08"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/__init__.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/__init__.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "a40837453fa27ebb4f9656331534500d50bd443920c170fc4c1c0b0f64928347"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/configs/v2.5.0-candidate.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/configs/v2.5.0-candidate.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "4a1349af4bdcd60cfe78267a15ddb1cd69938042455514f335160286d5af3dcc"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/tests/smoke_jobs.json",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/tests/smoke_jobs.json"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "0a4aa121866d48d70498826dfcf1dd345e1016f9f85aafe892da619a806e8b08"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/tests/test_metrics.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/tests/test_metrics.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "360313635e8be1d854fa27e1b085612ca69d3404fb155cb56d0cd4f5448bb97e"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/tests/regression_reviewed.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/tests/regression_reviewed.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "f6f184a0a8031d815f97ce42f9a7107b45c0173c9e4acc98916cb8703a38a080"
+  },
+  {
+    "destination": "runtime/freeze/f28d/source/benchmark_metrics/tests/regression_events.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/source/benchmark_metrics/tests/regression_events.py"
+    ],
+    "reason": "Use actual full C3r/pi05 E3 kernel, not Raw History ablation",
+    "sha256": "96333216822231386fe36f2bc1d09d86f7085ccb01ef5f265c082b996b841315"
+  },
+  {
+    "destination": "runtime/freeze/study/compat_source/run.py",
+    "sources": [
+      "/mnt/disk_4/geyi/pi05_744_30k_c3r_eval1540_20261104/c3r_pi05_8gpu/compat_run.py"
+    ],
+    "reason": "Actual pi05 runner: current 224 views, E3 templates, predict10 execute3",
+    "sha256": "844380c8566a1f8ecd6a7be071568ba24be9408716829d9d1e636ef717d5211d"
+  }
+]

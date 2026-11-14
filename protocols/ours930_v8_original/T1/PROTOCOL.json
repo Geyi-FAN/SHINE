@@ -1,0 +1,336 @@
+{
+  "version": "t1-en-acoustic40-v2-20261107",
+  "status": "data_release_not_new_evaluation",
+  "executor": "SmolVLA E3 v4",
+  "language": "en",
+  "physical": {
+    "version": "2.5.0-candidate",
+    "file": "physical_v2.5.0-candidate.frozen.json",
+    "sha256": "4a1349af4bdcd60cfe78267a15ddb1cd69938042455514f335160286d5af3dcc",
+    "target": "T1-native-v2: native goal ever after authorized actual policy action, including natural hold frames",
+    "instruction": "not evaluated by user decision for T1",
+    "hold_control_steps": 0,
+    "control_hz": 20,
+    "missing_evidence": "unknown_counted_as_not_pass"
+  },
+  "metrics": {
+    "interaction": {
+      "numerator": "all_required_interaction_events_pass_no_forbidden_events_within_deadlines",
+      "denominator": "all_preregistered_cases"
+    },
+    "target": {
+      "numerator": "final_non_cancelled_physical_goal_ever_achieved_after_its_valid_authorization",
+      "denominator": "preregistered_physical_eligible_cases"
+    }
+  },
+  "budgets": {
+    "pause_from_decisive_audio_end_s": 5.0,
+    "pause_fallback_from_audio_end_s": 5.0,
+    "pause_hold_s": 1.0,
+    "pause_max_eef_translation_m": 0.005,
+    "pause_max_eef_rotation_rad": 0.05,
+    "pause_max_gripper_width_change_m": 0.003,
+    "ack_from_audio_end_s": 10.0,
+    "clarification_question_from_audio_end_s": 20.0,
+    "valid_command_accept_from_audio_end_s": 20.0,
+    "first_new_action_from_audio_end_s": 45.0,
+    "qa_first_informative_audio_from_audio_end_s": 20.0,
+    "qa_complete_answer_from_audio_end_s": 40.0,
+    "waiting_handoff_from_independent_predecessor_success_s": 10.0,
+    "automatic_phase_transition_s": 20.0,
+    "max_clarification_questions_per_request": 3,
+    "max_unnecessary_confirmations": 1,
+    "user_reply_delay_after_question_s": 1.5,
+    "per_physical_goal_action_steps": 1200,
+    "per_physical_goal_wall_s": 600,
+    "case_action_steps": 3600,
+    "case_wall_s": 1800,
+    "precondition_wall_s": 180,
+    "precondition_action_steps": 1200,
+    "negative_observation_s": 5.0,
+    "terminal_hold_steps": 40,
+    "post_terminal_observation_s": 20
+  },
+  "accounting": {
+    "action_steps": "all_non_hold_executor_steps_including_wrong_and_stale_actions; no_reset_on_pause_or_retry",
+    "wall_clock": "monotonic; includes_audio_API_wait_QA_pause_retries; never_freeze_world_for_model",
+    "latency_timeouts": "count_fail_and_right_censor; report_response_coverage_and_success_conditional_p50_p95",
+    "precondition_failure": "natural_lifecycle_fail_in_denominator; common_fixture_failure_abort_entire_paired_block",
+    "errors": "method_timeouts_missing_points_format_errors_disconnects_count_fail; declared_external_infrastructure_failure_rerun_whole_paired_block_keep_all_attempts",
+    "aggregation": "report_counts_micro_and_T1_to_T8_equal_weight_macro; eligible_only_macro_for_physical; no_NA_as_zero_or_one; unknown_reported_separately_and_not_pass"
+  },
+  "release_gates": [
+    "40 exact waveforms, relative paths, scene assets and private scorer verified",
+    "current shared runtime, model identities and dedicated API must be bound and frozen before a new run",
+    "two engineering preflight cases outside main denominator; retain every actual audio attempt"
+  ],
+  "change_reason": "User removes mixed-language condition; no other input/metric/budget changes",
+  "setup": {
+    "method": "three native initial states; predecessor actions through evaluator-only setup API; core interaction always actual waveform",
+    "setup_failure": "retain case in denominators; no gold pose replacement",
+    "camera": "same 8787 scene/camera family"
+  },
+  "repetitions": 1,
+  "audio_revision": "original CL/NS/EM/OV bytes; MX removed by user on 2026-11-07",
+  "task_scope": "10 basic tasks x 4 acoustic conditions x 1 preselected initialization; one attempt per case",
+  "denominators": {
+    "interaction": 40,
+    "target": 40
+  },
+  "no_answer_hint": "Private goals/subgoals/reference text not supplied to model; waveform only",
+  "stage_feedback": "Native: original native goals; Symbolic: C3r F28d observational stage checks and bounded recovery; no legacy Max execution planner",
+  "t1_contracts": [
+    {
+      "task_id": 0,
+      "goal": "open_middle",
+      "title": "打开中间抽屉",
+      "object": null,
+      "benchmark_language": "open the middle drawer of the cabinet",
+      "native_predicates": [
+        [
+          "open",
+          "wooden_cabinet_1_middle_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 1,
+      "goal": "bowl_stove",
+      "title": "碗放炉灶",
+      "object": "bowl",
+      "benchmark_language": "put the bowl on the stove",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "flat_stove_1_cook_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 2,
+      "goal": "bottle_cabinet",
+      "title": "酒瓶放柜顶",
+      "object": "wine_bottle",
+      "benchmark_language": "put the wine bottle on top of the cabinet",
+      "native_predicates": [
+        [
+          "on",
+          "wine_bottle_1",
+          "wooden_cabinet_1_top_side"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 3,
+      "goal": "bowl_drawer",
+      "title": "开顶层抽屉并放碗",
+      "object": "bowl",
+      "benchmark_language": "open the top drawer and put the bowl inside",
+      "native_predicates": [
+        [
+          "in",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 4,
+      "goal": "bowl_cabinet",
+      "title": "碗放柜顶",
+      "object": "bowl",
+      "benchmark_language": "put the bowl on top of the cabinet",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_side"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 5,
+      "goal": "push_plate",
+      "title": "盘子推至炉灶前",
+      "object": "plate",
+      "benchmark_language": "push the plate to the front of the stove",
+      "native_predicates": [
+        [
+          "on",
+          "plate_1",
+          "main_table_stove_front_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 6,
+      "goal": "cheese_bowl",
+      "title": "奶酪放入碗",
+      "object": "cheese",
+      "benchmark_language": "put the cream cheese in the bowl",
+      "native_predicates": [
+        [
+          "on",
+          "cream_cheese_1",
+          "akita_black_bowl_1"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 7,
+      "goal": "turn_on_stove",
+      "title": "打开炉灶",
+      "object": null,
+      "benchmark_language": "turn on the stove",
+      "native_predicates": [
+        [
+          "turnon",
+          "flat_stove_1"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 8,
+      "goal": "bowl_plate",
+      "title": "碗放盘子上",
+      "object": "bowl",
+      "benchmark_language": "put the bowl on the plate",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "plate_1"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 9,
+      "goal": "bottle_rack",
+      "title": "酒瓶放酒架",
+      "object": "wine_bottle",
+      "benchmark_language": "put the wine bottle on the rack",
+      "native_predicates": [
+        [
+          "on",
+          "wine_bottle_1",
+          "wine_rack_1_top_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    }
+  ],
+  "initial_scene_checks": "same native 8787 BDDL and camera; three official init states; all ten initial targets false",
+  "parent_protocol_version": "t1-c3r-collection50-v1-20261104",
+  "action_execution": "real-time NativeRealtimePrefetch + denoiser CUDA graph; execute4, predict10, flow10; no physics freeze",
+  "audio_transport": "independent AudioBenchmarkClient; real-time20ms PCM16@16k; outputPCM24k; clocked sink; no browser",
+  "audio_time_boundary": "first output PCM received; also record clocked consumption; old browser boundaries not identical",
+  "runtime_shape_warmup": "general readiness warmup before audio; no target-specific warmup; first native length recapture included in true latency",
+  "ignored_old_private_instruction_clauses": "old terminal_hold40 private metadata remains as historical data, not applied to the two T1 metrics; no user goal changed",
+  "formal_attempts": "once per case, total10, no selective reruns",
+  "selection_rule": "exact user selected G00-G09 S15, one predefined state each,10 total",
+  "human_audio_acceptance": null,
+  "emotion_profiles": {},
+  "emotion_by_goal": [],
+  "emotion_validation": "TTS conditioning only; human perception not yet assessed",
+  "input_admission_version": "automated-audio-admission-v1",
+  "audio_admission": {
+    "mode": "hash-bound-collection50-existing-ASR",
+    "human_review_not_universally_verified": true
+  },
+  "audio_input_timing_gate": {
+    "version": "t1-v3-input-timing-v1",
+    "clip_duration_ratio_min": 0.95,
+    "clip_duration_ratio_max": 1.1,
+    "max_inter_frame_gap_s": 0.1,
+    "action": "retain all cases; invalid pacing -> diagnostic only, do not publish as standard real-time score"
+  },
+  "selected_utterances": [
+    "T1COL1_CL_G00",
+    "T1COL1_CL_G01",
+    "T1COL1_CL_G02",
+    "T1COL1_CL_G03",
+    "T1COL1_CL_G04",
+    "T1COL1_CL_G05",
+    "T1COL1_CL_G06",
+    "T1COL1_CL_G07",
+    "T1COL1_CL_G08",
+    "T1COL1_CL_G09",
+    "T1COL1_NS_G00",
+    "T1COL1_NS_G01",
+    "T1COL1_NS_G02",
+    "T1COL1_NS_G03",
+    "T1COL1_NS_G04",
+    "T1COL1_NS_G05",
+    "T1COL1_NS_G06",
+    "T1COL1_NS_G07",
+    "T1COL1_NS_G08",
+    "T1COL1_NS_G09",
+    "T1COL1_EM_G00",
+    "T1COL1_EM_G01",
+    "T1COL1_EM_G02",
+    "T1COL1_EM_G03",
+    "T1COL1_EM_G04",
+    "T1COL1_EM_G05",
+    "T1COL1_EM_G06",
+    "T1COL1_EM_G07",
+    "T1COL1_EM_G08",
+    "T1COL1_EM_G09",
+    "T1COL1_OV_G00",
+    "T1COL1_OV_G01",
+    "T1COL1_OV_G02",
+    "T1COL1_OV_G03",
+    "T1COL1_OV_G04",
+    "T1COL1_OV_G05",
+    "T1COL1_OV_G06",
+    "T1COL1_OV_G07",
+    "T1COL1_OV_G08",
+    "T1COL1_OV_G09"
+  ],
+  "actual_runtime": "C3r recovery + R7-T3.2 + NativePrefetch + R8/T3-v4 language guards",
+  "previous_protocol_sha256": "1bebd1c351c0e747aabe1be45c617687f301b93a829239f066c0452c7f3a9837",
+  "no_metric_budget_or_task_changes": true,
+  "source_protocol_sha256": "cd8f51cbfaea2721b78c57f24a3c534a05eaff8620e15765de321264a05ddafa",
+  "inactive_inherited_fields": [
+    "pause_*",
+    "qa_*",
+    "waiting_*",
+    "terminal_hold_steps",
+    "t1_contracts[*].terminal_hold_steps"
+  ],
+  "target_requires_40_step_hold": false,
+  "source_metadata_corrections": [
+    "G07 evaluator key stove_on -> turn_on_stove; numeric task ID remains7",
+    "T1 contract terminal_hold_steps40 inherited but NOT scored by T1 Target",
+    "selected sound revision and denominators updated; no claim of new rollout"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "t4": "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104",
+  "t5": "/mnt/disk_4/geyi/research_store/evidence/T5/runs/t5_acoustic50_I02_20261104",
+  "t7": "/mnt/disk_4/geyi/research_store/evidence/T7/runs/t7_acoustic40_20261104/runtime/source_archives/CL10_v1/t7_adapter",
+  "t6": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter"
+}

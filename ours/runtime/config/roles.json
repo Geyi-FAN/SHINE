@@ -1,0 +1,8 @@
+{
+  "model": "Qwen3.8-27B",
+  "api_base_url": "http://127.0.0.1:18686/v1",
+  "service_env_file": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/our_T3_T1_T6_repair_20261109/private/client.env",
+  "transport_retries": 0,
+  "cloud_fallback": false,
+  "note": "All eight branches: frozen C3r four roles, Paratera04, no fallback; separate original visual QA."
+}

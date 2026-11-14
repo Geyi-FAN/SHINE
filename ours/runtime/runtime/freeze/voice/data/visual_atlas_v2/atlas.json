@@ -1,0 +1,200 @@
+{
+  "version": "libero-object-atlas.v2",
+  "scope": "asset_identity_reference_not_current_scene_inventory",
+  "objects": [
+    {
+      "id": "cheese",
+      "asset": "stable_hope_objects/cream_cheese/cream_cheese.xml",
+      "instance": "cream_cheese_1",
+      "name": "奶酪 / 芝士 / cream cheese",
+      "aliases": [
+        "奶酪",
+        "芝士",
+        "cream cheese",
+        "cheese"
+      ],
+      "description": "LIBERO 的奶酪是蓝白色包装的长方体盒装奶油奶酪，不是黄色裸露奶酪块。应结合盒形与包装图案匹配，不能仅凭蓝色认定。",
+      "asset_sha256": "a1bbeb0321d9d20d723aca62baa54f6012bf74c0af5d4f767a58ca0cdde50d95",
+      "reference": "references/cheese.jpg",
+      "reference_sha256": "f2adea1f9c0cd465b41a7df9c5f91f0e778c81ff4813d549e71bc73ee8cc5676",
+      "label_source": "verified_asset_xml_path",
+      "reference_views": [
+        [
+          115,
+          -35
+        ],
+        [
+          235,
+          -65
+        ]
+      ]
+    },
+    {
+      "id": "bowl",
+      "asset": "stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml",
+      "instance": "akita_black_bowl_1",
+      "name": "碗 / bowl",
+      "aliases": [
+        "碗",
+        "bowl"
+      ],
+      "description": "该资产为较深的圆形碗，有灰白底黑色花纹、黄色细碗沿、内腔和较高侧壁。不能按英文资产名中的 black 假定纯黑色，也不能把它当透明杯。",
+      "asset_sha256": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda",
+      "reference": "references/bowl.jpg",
+      "reference_sha256": "c653926891240849410b2a403c94236d693d36e405e3ecf84472def0c43c5253",
+      "label_source": "verified_asset_xml_path",
+      "reference_views": [
+        [
+          115,
+          -35
+        ],
+        [
+          235,
+          -65
+        ]
+      ]
+    },
+    {
+      "id": "plate",
+      "asset": "stable_scanned_objects/plate/plate.xml",
+      "instance": "plate_1",
+      "name": "盘子 / 碟子 / plate",
+      "aliases": [
+        "盘子",
+        "盘",
+        "碟子",
+        "plate"
+      ],
+      "description": "该资产为浅圆盘，边缘带同心彩色条纹。它与碗是独立物体，碗或奶酪可遮住盘面，不能把重叠的两件物体合称一个容器。",
+      "asset_sha256": "72b4de23b2daa3169843b784998c0c3c30a6559c6c85917c6b86e3d39fa241e6",
+      "reference": "references/plate.jpg",
+      "reference_sha256": "674aef2cdc1929b8366751990e520f08d0611fddefd6f46fbfd707f7c0023bb4",
+      "label_source": "verified_asset_xml_path",
+      "reference_views": [
+        [
+          115,
+          -35
+        ],
+        [
+          235,
+          -65
+        ]
+      ]
+    },
+    {
+      "id": "stove",
+      "asset": "articulated_objects/flat_stove.xml",
+      "instance": "flat_stove_1",
+      "name": "炉灶 / stove",
+      "aliases": [
+        "炉灶",
+        "炉子",
+        "灶台",
+        "stove"
+      ],
+      "description": "方形浅色底座、圆形深色灶面及旋钮。不是盘子。参考图只说明身份，不说明当前开关状态。",
+      "asset_sha256": "046748f5543cdfc1500d74f8ca60a992ad6633717396a2d4f505eb79aa102cb1",
+      "reference": "references/stove.jpg",
+      "reference_sha256": "a53bf9941e664596dce796bde5c4c45e315255dd50b51e10286dc04812e42d87",
+      "label_source": "verified_asset_xml_path",
+      "reference_views": [
+        [
+          115,
+          -35
+        ],
+        [
+          235,
+          -65
+        ]
+      ]
+    },
+    {
+      "id": "wine_bottle",
+      "asset": "turbosquid_objects/wine_bottle/wine_bottle.xml",
+      "instance": "wine_bottle_1",
+      "name": "酒瓶 / wine bottle",
+      "aliases": [
+        "酒瓶",
+        "红酒瓶",
+        "wine bottle"
+      ],
+      "description": "深色细颈酒瓶，带浅色瓶塞和瓶身标签。远景可能很小或被遮挡；酒架上的支撑块不是酒瓶。",
+      "asset_sha256": "9bdae6cb59f9260544cb802d4babe32c23b9dd66e0a5fb2bdb4662b468ce1a17",
+      "reference": "references/wine_bottle.jpg",
+      "reference_sha256": "882de8cebcd3b1215f27bf6dad81b50a18601e768c5d191727ad0c3b7544a2b1",
+      "label_source": "verified_asset_xml_path",
+      "reference_views": [
+        [
+          115,
+          -35
+        ],
+        [
+          235,
+          -65
+        ]
+      ]
+    },
+    {
+      "id": "wine_rack",
+      "asset": "turbosquid_objects/wine_rack/wine_rack.xml",
+      "instance": "wine_rack_1",
+      "name": "酒架 / wine rack",
+      "aliases": [
+        "酒架",
+        "木架",
+        "wine rack"
+      ],
+      "description": "倾斜木条构成的酒架，与酒瓶是独立对象。",
+      "asset_sha256": "18f97cd8bb76ed18b2f11d047c5abbe0a2d9490d53ac167e0657c596dd450c3e",
+      "reference": "references/wine_rack.jpg",
+      "reference_sha256": "d023838aa3471805adefc4438671f7d0ec144dfe0e46dfee7c74cd6822c2e610",
+      "label_source": "verified_asset_xml_path",
+      "reference_views": [
+        [
+          115,
+          -35
+        ],
+        [
+          235,
+          -65
+        ]
+      ]
+    },
+    {
+      "id": "cabinet",
+      "asset": "articulated_objects/wooden_cabinet.xml",
+      "instance": "wooden_cabinet_1",
+      "name": "抽屉柜 / cabinet and drawers",
+      "aliases": [
+        "柜子",
+        "抽屉",
+        "上层抽屉",
+        "中层抽屉",
+        "下层抽屉",
+        "cabinet",
+        "drawer"
+      ],
+      "description": "深色柜体带三层抽屉及把手。抽屉属于柜体；具体层数和开合必须依据现场图，不由参考图推断。",
+      "asset_sha256": "eca251258c7ff6a05fa181a316c767508801812f4ea870921f3ce28fd82ea7af",
+      "reference": "references/cabinet.jpg",
+      "reference_sha256": "83e7c564fac2dfa766266b0ef7e538241107614b23f704980aee798077fbc577",
+      "label_source": "verified_asset_xml_path",
+      "reference_views": [
+        [
+          115,
+          -35
+        ],
+        [
+          235,
+          -65
+        ]
+      ]
+    }
+  ],
+  "rules": [
+    "Reference images do not establish current presence, pose, support, contact, or completion.",
+    "Unlisted objects remain eligible for open-vocabulary recognition.",
+    "No query-scene ground truth is supplied to the model."
+  ],
+  "human_review": "Seven isolated asset renders visually reviewed; wine bottle is dark with light cork and label, rack includes brown stops which must not be called bottles."
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+node_modules
+reports/
+runs/
+FREEZE.json
+private/
+*.token
+*.env
+*.sqlite*
+*.log

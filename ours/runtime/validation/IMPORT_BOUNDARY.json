@@ -1,0 +1,269 @@
+{
+  "external_modules": [
+    {
+      "module": "libero.libero",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/__init__.py",
+      "sha256": "0f3263e04e58acef0a2184a8b73639292fe9ded83e87ff5d786606ca75bcfb94"
+    },
+    {
+      "module": "libero.libero.benchmark",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/benchmark/__init__.py",
+      "sha256": "4ce6edbb00b3280692f2e2b2e8a14bf6e2d5878965b0484a386c0355a867ecc5"
+    },
+    {
+      "module": "libero.libero.benchmark.libero_suite_task_map",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/benchmark/libero_suite_task_map.py",
+      "sha256": "0c950df0a785aa55de968bb38ccd865d2017f71ddbe6f48cfd05ac0742b6d62d"
+    },
+    {
+      "module": "libero.libero.envs",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/__init__.py",
+      "sha256": "b99601b6b44de6d0078baa66054113881492826bbfbe8cd41e2d39d5bf6f0875"
+    },
+    {
+      "module": "libero.libero.envs.arenas",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/arenas/__init__.py",
+      "sha256": "a148bff0a3b0eb37b1d9d22579fbf3b05c7a26753ea026f5621576aa3f82fcb1"
+    },
+    {
+      "module": "libero.libero.envs.arenas.coffee_table_arena",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/arenas/coffee_table_arena.py",
+      "sha256": "a1321848013495e1194c495eecb6c9da36e2260ce64ec636aea6f404e35abc04"
+    },
+    {
+      "module": "libero.libero.envs.arenas.empty_arena",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/arenas/empty_arena.py",
+      "sha256": "1032b22ff518a37dd94609a525291082e1ac7151abc2d509e76b588625437260"
+    },
+    {
+      "module": "libero.libero.envs.arenas.kitchen_arena",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/arenas/kitchen_arena.py",
+      "sha256": "fab3692ad931ce3e910b318626cd3d1f8c67a0100fbdb9fb28b6118fe42ec8f1"
+    },
+    {
+      "module": "libero.libero.envs.arenas.living_room_arena",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/arenas/living_room_arena.py",
+      "sha256": "8267ca85d85a4b83815543f1f5405002da81b0462259c1ca45a146b612277581"
+    },
+    {
+      "module": "libero.libero.envs.arenas.study_arena",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/arenas/study_arena.py",
+      "sha256": "274c663111069f77795151667e962afaa78ab43ea45d206f6b202c8cfba40387"
+    },
+    {
+      "module": "libero.libero.envs.arenas.style",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/arenas/style.py",
+      "sha256": "e9ccc2a8d68be6e8d831d4cd683e022ac05fb7ba62fb3a2a5c9b716cf997a409"
+    },
+    {
+      "module": "libero.libero.envs.arenas.table_arena",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/arenas/table_arena.py",
+      "sha256": "a47a23d3736d35b34b279f90f267f9f3fa2426431a96c8f038d18ed44cc9a834"
+    },
+    {
+      "module": "libero.libero.envs.base_object",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/base_object.py",
+      "sha256": "88ee0d4b2a39f39437d97fb12ec08831cb5064e23a7456d2f882e3baab246f1a"
+    },
+    {
+      "module": "libero.libero.envs.bddl_base_domain",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/bddl_base_domain.py",
+      "sha256": "055836670ac5fcac7e033fc86404718fd53854996e5776b1ff68b646f7bbcc9d"
+    },
+    {
+      "module": "libero.libero.envs.bddl_utils",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/bddl_utils.py",
+      "sha256": "f8148a5054e7818cee1ceddda300ff9f15272f8e6600389abd38f102e477cd8c"
+    },
+    {
+      "module": "libero.libero.envs.env_wrapper",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/env_wrapper.py",
+      "sha256": "a782fb76c9792268d28979474fe72849e1e98ada49c8e997a65359a8d6b6acd0"
+    },
+    {
+      "module": "libero.libero.envs.object_states",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/object_states/__init__.py",
+      "sha256": "1fb9ad68a61066a7a4986f3f5f8610ba4d725b290e3d8944ab628d3e9f8a2d9f"
+    },
+    {
+      "module": "libero.libero.envs.object_states.base_object_states",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/object_states/base_object_states.py",
+      "sha256": "ca6f53123336b6487bdb4feb02534ddb3a0627a4b847fe89da4460520ef01366"
+    },
+    {
+      "module": "libero.libero.envs.objects",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/objects/__init__.py",
+      "sha256": "cced646bb88ab95e21b5475d8d7dc46a5db4e6c881c63637a1a27e15dd844c04"
+    },
+    {
+      "module": "libero.libero.envs.objects.articulated_objects",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/objects/articulated_objects.py",
+      "sha256": "f5187b0381d69a2a8736c1dcb646e5fa7c138a42950f92e30c21c2efaed52faa"
+    },
+    {
+      "module": "libero.libero.envs.objects.google_scanned_objects",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/objects/google_scanned_objects.py",
+      "sha256": "626e25dfa8b102f7f7b406ef6a997003f1308b48cf52e7c22762e9eb86a1ec4c"
+    },
+    {
+      "module": "libero.libero.envs.objects.hope_objects",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/objects/hope_objects.py",
+      "sha256": "70ee607faf5dca4f69c5db96fbf79080990b7c39a0f08d99b074c67f0acbd62d"
+    },
+    {
+      "module": "libero.libero.envs.objects.site_object",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/objects/site_object.py",
+      "sha256": "4907bf2550945c395b85fd92725763ada4da533ad50966eb179e637dabeeebf6"
+    },
+    {
+      "module": "libero.libero.envs.objects.target_zones",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/objects/target_zones.py",
+      "sha256": "49a14627103648fbb620c3a6c1ae14f52fae6e2f4db81b0074e602f01aaf7205"
+    },
+    {
+      "module": "libero.libero.envs.objects.turbosquid_objects",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/objects/turbosquid_objects.py",
+      "sha256": "4de4205eabb588600fd9669f6ee6e2ef12e47e13d9b421257215d34f836f9804"
+    },
+    {
+      "module": "libero.libero.envs.predicates",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/predicates/__init__.py",
+      "sha256": "e059a52d635ae4bdfe0e4bd6f0a0ca9b53a04444b39b53664fffb38d0838679e"
+    },
+    {
+      "module": "libero.libero.envs.predicates.base_predicates",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/predicates/base_predicates.py",
+      "sha256": "319137e95330dbb22a266a8dceb8110f18413c2bf17461550222228c4bc310a1"
+    },
+    {
+      "module": "libero.libero.envs.problems",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/problems/__init__.py",
+      "sha256": "2d1980568bf81fe7c27f62ed59a2c0376722f726654eb07ced6ea8c6bce017bc"
+    },
+    {
+      "module": "libero.libero.envs.problems.libero_coffee_table_manipulation",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/problems/libero_coffee_table_manipulation.py",
+      "sha256": "cd04e469c3e8852421cbec73c92c4bbe135ef8eb0a36c12851eb912101a3cd94"
+    },
+    {
+      "module": "libero.libero.envs.problems.libero_floor_manipulation",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/problems/libero_floor_manipulation.py",
+      "sha256": "38fce9925399651977033647525a64c28f50d45a110d72ecf35efa92054e9234"
+    },
+    {
+      "module": "libero.libero.envs.problems.libero_kitchen_tabletop_manipulation",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/problems/libero_kitchen_tabletop_manipulation.py",
+      "sha256": "e5ea541118d19aa120d08ffec655da0f65d2e2a21c2045cd49e7e0a73f695cd3"
+    },
+    {
+      "module": "libero.libero.envs.problems.libero_living_room_tabletop_manipulation",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/problems/libero_living_room_tabletop_manipulation.py",
+      "sha256": "a13bc0a92ff746d572a6d76e09add98dafad70d88928555068728641c6c9de10"
+    },
+    {
+      "module": "libero.libero.envs.problems.libero_study_tabletop_manipulation",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/problems/libero_study_tabletop_manipulation.py",
+      "sha256": "a25d06b4dda1ecd5dbf7083145cc2720639db55c0485ca0983da0202a2e756ca"
+    },
+    {
+      "module": "libero.libero.envs.problems.libero_tabletop_manipulation",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/problems/libero_tabletop_manipulation.py",
+      "sha256": "0defb17c0bbab8f6bd34c021ac15598ea101fe1e48690cb440d4ef92762880fe"
+    },
+    {
+      "module": "libero.libero.envs.regions",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/regions/__init__.py",
+      "sha256": "64fd7ecbbb1b7fe04b0c2240e0f6c79419cba1b29db8f7f13a91ab2718cce5ed"
+    },
+    {
+      "module": "libero.libero.envs.regions.base_region_sampler",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/regions/base_region_sampler.py",
+      "sha256": "08c12685b443d723bdffc3e1820cfb1a9b54eeda54a261ccaeacb7f04f9ab88d"
+    },
+    {
+      "module": "libero.libero.envs.regions.object_property_sampler",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/regions/object_property_sampler.py",
+      "sha256": "051fbce5a9aadcdf26bd42b447c1b677e610e0e539132807a3ffb578b6feab60"
+    },
+    {
+      "module": "libero.libero.envs.regions.workspace_region_sampler",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/regions/workspace_region_sampler.py",
+      "sha256": "66b8ce7f7eb18e316fdc1a44a4210ee0a25a24e9a9d49be88dde970960a58b75"
+    },
+    {
+      "module": "libero.libero.envs.robots",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/robots/__init__.py",
+      "sha256": "92d2667dcd9fce0d0ba744bcc317bfc07104136e90f066df04d09cbad5bd489e"
+    },
+    {
+      "module": "libero.libero.envs.robots.mounted_panda",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/robots/mounted_panda.py",
+      "sha256": "c89ab36decca6d9fa242021971513960c3ce31aa42735009c73258f397be126c"
+    },
+    {
+      "module": "libero.libero.envs.robots.on_the_ground_panda",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/robots/on_the_ground_panda.py",
+      "sha256": "7d580aeee632e164f327cf6b1951861bec40cf814cdbe92bcfc469a93e1f9fa8"
+    },
+    {
+      "module": "libero.libero.envs.utils",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/utils.py",
+      "sha256": "81813480479dbd7fd938479dcdc17c258608b3ea4efdefc3e13aff100a89fd6a"
+    },
+    {
+      "module": "libero.libero.envs.venv",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_layout_memory_20261012/runtime/LIBERO/libero/libero/envs/venv.py",
+      "sha256": "a970353a592190152f313424738b05457f8e10cbafc7303c756b85aa9425d1e7"
+    },
+    {
+      "module": "omnivla",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/omnivla/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "omnivla.config",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/omnivla/config.py",
+      "sha256": "a08f539fb8f804185532cb8025c5f7067ea32c1d968d77c31278036d5b0858e0"
+    },
+    {
+      "module": "omnivla.env_adapters",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/omnivla/env_adapters/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "omnivla.env_adapters.contact_exit_scenes",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/omnivla/env_adapters/contact_exit_scenes.py",
+      "sha256": "8b64823f243471eb3c49744e0b162dc9fa379f08be4c99a6df7a8f4b787424e7"
+    },
+    {
+      "module": "omnivla.env_adapters.libero",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/omnivla/env_adapters/libero.py",
+      "sha256": "e35ddc1a5ccb52cb939bc3e523cfccf69f7cece657e804b0f22a724bdcf93d75"
+    },
+    {
+      "module": "revision_pipeline",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/revision_pipeline/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "revision_pipeline.settings",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/revision_pipeline/settings.py",
+      "sha256": "97abe42215771b8a811e3c09d2a19e40ea66e760a171db3bcab7b5de42087fc6"
+    },
+    {
+      "module": "revisionlab",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/revisionlab/__init__.py",
+      "sha256": "f8115921d023edc031e8e9089d7fb434979d79c8aeef88e22c98032f01dc82f9"
+    },
+    {
+      "module": "revisionlab.render_context",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/memory_dataset_v5_fast60_20261013/pipeline/src/revisionlab/render_context.py",
+      "sha256": "54ab6bc2a8e0bc4061951454f72db0f55b9f9936ded2ccd53cee97d2f5860215"
+    },
+    {
+      "module": "sim_state",
+      "path": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_revision_p1/goal_new_state_test_p0_3750_v2_stratified/src/sim_state.py",
+      "sha256": "0913b1e940b8ebbe938936418f34421ed0c8d69a52eb62fd25eb49ee4a1baf03"
+    }
+  ]
+}

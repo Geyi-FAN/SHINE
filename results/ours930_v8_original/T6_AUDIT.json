@@ -1,0 +1,132 @@
+{
+  "registered": 90,
+  "judged": 90,
+  "semantic_judge": "GLM-4.6V",
+  "judge_not_codex": true,
+  "qualified_success": 87,
+  "failed": 3,
+  "unknown": 0,
+  "semantic_pass": 87,
+  "semantic_fail": 3,
+  "online_visual_answer_models": {
+    "qwen3.8-max": 78
+  },
+  "online_visual_review_error_cases": 1,
+  "online_visual_review_errors": [
+    {
+      "case_id": "T6Q_BOWL_CONTENTS_P1_S2__MV90V2_V00_B02",
+      "question": "Is the bowl empty?",
+      "candidate": "基于当前画面，碗内没有可见物体，看起来是空的。",
+      "final": null,
+      "errors": [
+        {
+          "kind": "model_error",
+          "time": 1794635582.439,
+          "name": "AbortError",
+          "message": "This operation was aborted"
+        }
+      ],
+      "total_vision_review_seconds": 14.000999927520752,
+      "review_supported": null
+    }
+  ],
+  "timed_audio_pass": 90,
+  "no_qa_control_error": 90,
+  "question_audio_sent": 90,
+  "prepared_and_eligible": 90,
+  "binding_errors": 0,
+  "visual_cases": 78,
+  "task_record_only_cases": 12,
+  "checked_actual_image_files": 78,
+  "checked_received_audio_outputs": 189,
+  "independent_output_ASR_completed": 0,
+  "PCM_hash_errors": [],
+  "returned_judge_models": {
+    "GLM-4.6V": 90
+  },
+  "format_repair_cases": 0,
+  "failure_reasons": {
+    "no_answer": 2,
+    "wrong_count": 1
+  },
+  "max_reference_frame_offset_s": 0.0800485610961914,
+  "audio_deadlines": {
+    "first_correct_seconds": 20,
+    "full_answer_seconds": 40
+  },
+  "control_observation_window_after_question_seconds": 45,
+  "first_relevant_audio_median_s": 8.136000037193298,
+  "last_relevant_audio_median_s": 12.297000050544739,
+  "independent_human_calibration_completed": false,
+  "scores_overwritten": false,
+  "T7_interaction_alias": "Registered interaction45;120 applicable, not missing/zero",
+  "groups": [
+    {
+      "group": "T6Q_ABSENT_TENNIS",
+      "success": 9,
+      "total": 9,
+      "rate_percent": 100.0
+    },
+    {
+      "group": "T6Q_BOWL_CONTENTS",
+      "success": 8,
+      "total": 9,
+      "rate_percent": 88.88888888888889
+    },
+    {
+      "group": "T6Q_BOWL_PLATE",
+      "success": 9,
+      "total": 9,
+      "rate_percent": 100.0
+    },
+    {
+      "group": "T6Q_CHEESE_BOWL",
+      "success": 8,
+      "total": 9,
+      "rate_percent": 88.88888888888889
+    },
+    {
+      "group": "T6Q_CURRENT_ACTION",
+      "success": 9,
+      "total": 9,
+      "rate_percent": 100.0
+    },
+    {
+      "group": "T6Q_DRAWER_CONTENTS",
+      "success": 9,
+      "total": 9,
+      "rate_percent": 100.0
+    },
+    {
+      "group": "T6Q_DRAWER_STATE",
+      "success": 9,
+      "total": 9,
+      "rate_percent": 100.0
+    },
+    {
+      "group": "T6Q_EXTRA",
+      "success": 8,
+      "total": 9,
+      "rate_percent": 88.88888888888889
+    },
+    {
+      "group": "T6Q_STOVE",
+      "success": 9,
+      "total": 9,
+      "rate_percent": 100.0
+    },
+    {
+      "group": "T6Q_WINE_LOCATION",
+      "success": 9,
+      "total": 9,
+      "rate_percent": 100.0
+    }
+  ],
+  "judge_reliability10": {
+    "planned": 10,
+    "completed": 10,
+    "final_score_agreement": 10,
+    "semantic_verdict_agreement": 10,
+    "primary_scores_unchanged": true
+  }
+}

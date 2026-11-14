@@ -1,0 +1,890 @@
+[
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/conftest.py",
+    "target": "runtime/vendor/openpi/src/openpi/conftest.py",
+    "sha256": "626672e385fb276396c119e2220421065c58f8ec602401e8bf2ae509f9fffaf3",
+    "bytes": 339
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/transforms_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/transforms_test.py",
+    "sha256": "d76f3ee8c5d7dc1c6fb6cb3b36b45ef30dd1de1ab5bc054bcb03deb79dcc06a8",
+    "bytes": 4111
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/transforms.py",
+    "target": "runtime/vendor/openpi/src/openpi/transforms.py",
+    "sha256": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4",
+    "bytes": 15752
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/__init__.py",
+    "target": "runtime/vendor/openpi/src/openpi/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/model.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/model.py",
+    "sha256": "0d74bc1d8f4623ac3d8e543710b8bf75f9b95e588a3ebf6127c659e001385cff",
+    "bytes": 12270
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/pi0.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/pi0.py",
+    "sha256": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342",
+    "bytes": 12887
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/vit.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/vit.py",
+    "sha256": "d285d057636c3cba2d1fd3b37693b18075ad4b9c3b47bbde807c34c6c376ac93",
+    "bytes": 10266
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/pi0_fast.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/pi0_fast.py",
+    "sha256": "627332a555046f2744ef144c45f8bd3361a9820cf68854a4528d0fdbba7e9aa3",
+    "bytes": 13209
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/lora.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/lora.py",
+    "sha256": "ced28716950c34d84a1a6d0b03b1d9550000732721df884818080b6e78cb3289",
+    "bytes": 5342
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/gemma_fast.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/gemma_fast.py",
+    "sha256": "563c6e1ffd8afa31c406bcb8894a605e87df88f6c075d398d97a57af6bc3aefa",
+    "bytes": 15643
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/pi0_config.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/pi0_config.py",
+    "sha256": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa",
+    "bytes": 4435
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/tokenizer.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/tokenizer.py",
+    "sha256": "965be8b3c393a6811875bbc32da9e01a5d01cc2f87802de801cf7293e049748c",
+    "bytes": 17517
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/lora_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/lora_test.py",
+    "sha256": "a0f10525de7773310402b3ffa636e88ffff7035f3179b140aacc6809c122f085",
+    "bytes": 3138
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/siglip.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/siglip.py",
+    "sha256": "14b4df0be280d5769fb0dc31a40cde27525dbb1980cc998c28475d62fa3cad32",
+    "bytes": 12078
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/model_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/model_test.py",
+    "sha256": "f8e71f195045d4e3ef1ddfafb2337fa52e5aa2f89bce1fde62f5cbfb67121f21",
+    "bytes": 2966
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/gemma.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/gemma.py",
+    "sha256": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+    "bytes": 17146
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/__init__.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/pi0_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/pi0_test.py",
+    "sha256": "5082873014a7fc45fb8414f517909e1c24cdafea980a1fb612e0aea6058ed0fe",
+    "bytes": 1631
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/tokenizer_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/tokenizer_test.py",
+    "sha256": "5abd179ce883420e39d4d18b33d0123290af752da243003aa48a3bc06dbb9517",
+    "bytes": 807
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models/utils/fsq_tokenizer.py",
+    "target": "runtime/vendor/openpi/src/openpi/models/utils/fsq_tokenizer.py",
+    "sha256": "88866638ee4775f46a222561a957bd35e20600fe38c5888b587016ad77b1065f",
+    "bytes": 15928
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models_pytorch/pi0_pytorch.py",
+    "target": "runtime/vendor/openpi/src/openpi/models_pytorch/pi0_pytorch.py",
+    "sha256": "dcd7b6f508808ce4b7170a1720a4c62c6da04edae3652d16c94a469dca924e16",
+    "bytes": 19128
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models_pytorch/preprocessing_pytorch.py",
+    "target": "runtime/vendor/openpi/src/openpi/models_pytorch/preprocessing_pytorch.py",
+    "sha256": "6a44e91be2d7a724c6140d2cc98ed0a631b8d38bbb29f63b380a0a19f903bbf6",
+    "bytes": 7264
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models_pytorch/gemma_pytorch.py",
+    "target": "runtime/vendor/openpi/src/openpi/models_pytorch/gemma_pytorch.py",
+    "sha256": "225092e06509da0ae37bb9dca55c00d2804255bb1496f7c8700304b4c52a95eb",
+    "bytes": 13480
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models_pytorch/transformers_replace/models/gemma/modeling_gemma.py",
+    "target": "runtime/vendor/openpi/src/openpi/models_pytorch/transformers_replace/models/gemma/modeling_gemma.py",
+    "sha256": "17eeb54e277939e58cd6f8a92719a275e36baf0c9f463b2754227d42f87aedde",
+    "bytes": 36392
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models_pytorch/transformers_replace/models/gemma/configuration_gemma.py",
+    "target": "runtime/vendor/openpi/src/openpi/models_pytorch/transformers_replace/models/gemma/configuration_gemma.py",
+    "sha256": "26fd0d0f52730ab32b6f337eb73ae9a26cb71ae0915bc49eced1d0e2ed8d0ec6",
+    "bytes": 8958
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models_pytorch/transformers_replace/models/siglip/modeling_siglip.py",
+    "target": "runtime/vendor/openpi/src/openpi/models_pytorch/transformers_replace/models/siglip/modeling_siglip.py",
+    "sha256": "ef2e99500f263fdd78db9d4d9a255e29d844eb92f53c25ad640f8056700ef84b",
+    "bytes": 50231
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models_pytorch/transformers_replace/models/siglip/check.py",
+    "target": "runtime/vendor/openpi/src/openpi/models_pytorch/transformers_replace/models/siglip/check.py",
+    "sha256": "466e8eb7887ac5ccc98118a3169298d6ab65a284d834bae74751e3854dbc4245",
+    "bytes": 133
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/models_pytorch/transformers_replace/models/paligemma/modeling_paligemma.py",
+    "target": "runtime/vendor/openpi/src/openpi/models_pytorch/transformers_replace/models/paligemma/modeling_paligemma.py",
+    "sha256": "c945d330b829264f927f3ee5339f977238631772de07a28e855e265bb85fd53c",
+    "bytes": 27688
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/policies/libero_policy.py",
+    "target": "runtime/vendor/openpi/src/openpi/policies/libero_policy.py",
+    "sha256": "d8679d99facc3fef48da07406081b20709ed872fcefdf7de67ede99422d623fa",
+    "bytes": 4322
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/policies/aloha_policy.py",
+    "target": "runtime/vendor/openpi/src/openpi/policies/aloha_policy.py",
+    "sha256": "50d7ad972d80142ecb0f03b0780dacfd3af212946f4c9aac31a204b02db4543d",
+    "bytes": 7543
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/policies/droid_policy.py",
+    "target": "runtime/vendor/openpi/src/openpi/policies/droid_policy.py",
+    "sha256": "99ebf8b252bde5e33dba7af10552137c421589ec88887bb0ee6507366d24da68",
+    "bytes": 3188
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/policies/policy_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/policies/policy_test.py",
+    "sha256": "9dbb20963600367a7e7abfc97d1e326916777c57a87b39b1bc4070ba64676683",
+    "bytes": 1127
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/policies/policy_config.py",
+    "target": "runtime/vendor/openpi/src/openpi/policies/policy_config.py",
+    "sha256": "aaf42ab04a33b6c91d2447926211646c33ebd8ebfa427f026d7b6c4f7c45ec52",
+    "bytes": 4107
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/policies/policy.py",
+    "target": "runtime/vendor/openpi/src/openpi/policies/policy.py",
+    "sha256": "a2ac5236e23b11d0f5a840d4a8fef148d89dba921d5452ec5dfcd5a6ffa46f20",
+    "bytes": 5344
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/serving/websocket_policy_server.py",
+    "target": "runtime/vendor/openpi/src/openpi/serving/websocket_policy_server.py",
+    "sha256": "1370d345e6c3c5b8f15573050e485e60a5b423d1df33e24b237805e6b442b026",
+    "bytes": 3051
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/checkpoints.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/checkpoints.py",
+    "sha256": "3cc32682ec3609e9075dabd991488edb9d7f6c045443f58963d733f99c468dbd",
+    "bytes": 5763
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/sharding.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/sharding.py",
+    "sha256": "c67c4112a126ab097571c8a882fd1ee3f106b15b6e608e7205ac7f29b44ca985",
+    "bytes": 4099
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/config.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/config.py",
+    "sha256": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d",
+    "bytes": 44594
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/droid_rlds_dataset.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/droid_rlds_dataset.py",
+    "sha256": "1d3a057a040240218234d7dbc6680ee4fe8256f2058531a0f9fefd3f7ee995a4",
+    "bytes": 10886
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/utils.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/utils.py",
+    "sha256": "b684e674343f86ef5e976f279a586d3fe2f885e901f396ac899ed136abc7eca6",
+    "bytes": 1217
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/weight_loaders.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/weight_loaders.py",
+    "sha256": "a54ac3222f81f8c6233241bc16b6f369c9416cdaa83f7058f96f7ddcfde1a3b4",
+    "bytes": 3738
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/data_loader_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/data_loader_test.py",
+    "sha256": "a0cf1bc293e8b0eb9bc5516bc05d30d9940da06c94fcfa1addca7267f8358815",
+    "bytes": 2487
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/data_loader.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/data_loader.py",
+    "sha256": "4d0b055ac28527c1ab1f0ba7496057722c7c748c88564a8de2ff4fac650e97c9",
+    "bytes": 19977
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/optimizer.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/optimizer.py",
+    "sha256": "cfb5d6f6aec61fbe961287b4015c652260628a0ed4682a0dbdc271b8e65431fa",
+    "bytes": 3202
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/misc/polaris_config.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/misc/polaris_config.py",
+    "sha256": "c2ab92efb5e0d675118ad812113fd1c3cb3a62cdab5d79066014266e82df12d8",
+    "bytes": 9624
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/training/misc/roboarena_config.py",
+    "target": "runtime/vendor/openpi/src/openpi/training/misc/roboarena_config.py",
+    "sha256": "914acdd74ccf90e6779c13a5093140595c7e4f687e9e0b167439446a81d74c01",
+    "bytes": 4804
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/nnx_utils.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/nnx_utils.py",
+    "sha256": "4da7111ba3011c4d1c381c9ed17257771df6a50ed89182647c3fb6f79208005e",
+    "bytes": 2844
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/image_tools.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/image_tools.py",
+    "sha256": "0f8fcb355288119e56acb56d550c1cc1f3a9edddceb0dc5b319f955943ef7767",
+    "bytes": 4665
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/array_typing.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/array_typing.py",
+    "sha256": "6524945566eab3eb97b75a6280ba4724617b4d028c55f05172b283c3de68a026",
+    "bytes": 3402
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/normalize.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/normalize.py",
+    "sha256": "6c2cea4946fb07e51801530400d2b2fd94730e195cd290d6b6960114eca9739d",
+    "bytes": 5529
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/normalize_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/normalize_test.py",
+    "sha256": "fda27a21cf37f337b12bcab71229407c2a349c5965c33f278bdc468ed03f58af",
+    "bytes": 1521
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/download_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/download_test.py",
+    "sha256": "234ee70ab2501a1421f6c44cbd83c1e16747597023319ae1446bed9d44f17072",
+    "bytes": 1490
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/image_tools_test.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/image_tools_test.py",
+    "sha256": "842374579dc9f4c2907da5e8bb555efe5a3f4902b659720c8e90115863dd59fe",
+    "bytes": 1418
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/download.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/download.py",
+    "sha256": "a12054a6ddaab4efa833c4ff49a1aba00c63759e4e88d6be21c1e0b3307fd9b2",
+    "bytes": 8862
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/src/openpi/shared/__init__.py",
+    "target": "runtime/vendor/openpi/src/openpi/shared/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/msgpack_numpy.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/msgpack_numpy.py",
+    "sha256": "c04568948fcee52b691e3be4b6cffb759f7e79ad67530fcd5d23095a0d13c057",
+    "bytes": 1944
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/image_tools.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/image_tools.py",
+    "sha256": "d48b4bd7f44e79fe6db8a8e07c9161144fa250be686e1245014a8b47e6171977",
+    "bytes": 2426
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/base_policy.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/base_policy.py",
+    "sha256": "88e98e0f06293f3c4767db675061664c4bba12f87242ba1e64377d1b8de8069e",
+    "bytes": 271
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/websocket_client_policy.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/websocket_client_policy.py",
+    "sha256": "36557cb0b91ccf31cd4fb4b508306850d76ed0feb4028dac5182d0f5a5d88005",
+    "bytes": 2131
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/action_chunk_broker.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/action_chunk_broker.py",
+    "sha256": "019b9d69cb26cc681331a2f95dbe60a2cc7b02d6d309c5d15b6457ab39798234",
+    "bytes": 1404
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/msgpack_numpy_test.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/msgpack_numpy_test.py",
+    "sha256": "2c6dd236720dae716d7bdf842b7d506a165e9563bf9d4376c95289269adcb973",
+    "bytes": 1643
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/image_tools_test.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/image_tools_test.py",
+    "sha256": "4df4b0ba0b95ba5e47160039c3e837a64d50c802b419a588211dffbaa732589c",
+    "bytes": 1411
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/__init__.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/__init__.py",
+    "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "bytes": 22
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/runtime/environment.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/runtime/environment.py",
+    "sha256": "1c12e5054b3401dec5f1f8b71eef0f625cb60e2b50784dcf19afa32c77107a7e",
+    "bytes": 1044
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/runtime/runtime.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/runtime/runtime.py",
+    "sha256": "3daa242a9ce61ffb210789ef3ba6b1e3cade9de757fcd36af7b174c530345ea8",
+    "bytes": 3049
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/runtime/subscriber.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/runtime/subscriber.py",
+    "sha256": "d269a2af8ec4056beb310e5c3c97d4468af01549c7ef80dd905652d8ac64f85b",
+    "bytes": 500
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/runtime/agent.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/runtime/agent.py",
+    "sha256": "b559885afd9645a91b9b6ee12a28513295474f987d11b16610fc0479dbe6de5b",
+    "bytes": 465
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/openpi/packages/openpi-client/src/openpi_client/runtime/agents/policy_agent.py",
+    "target": "runtime/vendor/openpi/packages/openpi-client/src/openpi_client/runtime/agents/policy_agent.py",
+    "sha256": "c4d63952d1954bd4b72a3122223df36794812fea74cf1c7023433b5a90473c1c",
+    "bytes": 509
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/audit_alignment.py",
+    "target": "runtime/vendor/support/symbolic/audit_alignment.py",
+    "sha256": "db2dc87139372d9be201be5d3c595623a1f675f871fd06fff7e69aab0cb54a57",
+    "bytes": 2088
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/common.py",
+    "target": "runtime/vendor/support/symbolic/common.py",
+    "sha256": "7fb70666efcfb63950e889e4cfa2bca9dc120f287bfd8c7088b98b5f165e6f60",
+    "bytes": 1319
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/v3_markers.py",
+    "target": "runtime/vendor/support/symbolic/v3_markers.py",
+    "sha256": "f38d94338e81113a1f691d26f5c193e85ad72f21c8d374f0a9341385dfcf89fe",
+    "bytes": 3989
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/validate_v3.py",
+    "target": "runtime/vendor/support/symbolic/validate_v3.py",
+    "sha256": "7d974c3b50eb976301935cde413b4e0579e0657661569144572c4f666a99faf7",
+    "bytes": 4404
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/validate_augmentation.py",
+    "target": "runtime/vendor/support/symbolic/validate_augmentation.py",
+    "sha256": "d756075f3a6144d67a2f8f9418f985e84b9d1500f92ae1b3873b8fc324407e7d",
+    "bytes": 3135
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/model_config.py",
+    "target": "runtime/vendor/support/symbolic/model_config.py",
+    "sha256": "80c4c97949020b8bbfb81bd7fa0c678522620988e9caf3fd605d5ba6e05f7c54",
+    "bytes": 1640
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/prepare_eval_jobs.py",
+    "target": "runtime/vendor/support/symbolic/prepare_eval_jobs.py",
+    "sha256": "3871f53e641333ae4f7573e8a60e9c6def31c0f3a8ccc91ecd4f979b9c071851",
+    "bytes": 974
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/build_v3_data.py",
+    "target": "runtime/vendor/support/symbolic/build_v3_data.py",
+    "sha256": "244f2fc6bfbcfc0c177bcbc11745ff9fb15919b04115d27c1ed9c58c0cd807fd",
+    "bytes": 6752
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/sym_geometry.py",
+    "target": "runtime/vendor/support/symbolic/sym_geometry.py",
+    "sha256": "2913c21b58c11f477015b0f19d46c980d36e2b4a59e8d5f5219134abbd2cf6a9",
+    "bytes": 7356
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/finalize_preflight.py",
+    "target": "runtime/vendor/support/symbolic/finalize_preflight.py",
+    "sha256": "811c26ef6ee06c7cb2ffc724a3aae3fe8ce2d653cd2f936ded7bfc7cd936103c",
+    "bytes": 5764
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/mini_runner.py",
+    "target": "runtime/vendor/support/symbolic/mini_runner.py",
+    "sha256": "a3b5beebcc2c4a4f89188ba96586b49ec52ca5c851f3cc568c480bba91dde6f9",
+    "bytes": 10230
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/sym_contract.py",
+    "target": "runtime/vendor/support/symbolic/sym_contract.py",
+    "sha256": "5d8f85bcc6837ecfa74efe3c062c815cc3a8f7c98a3a8c31c0b6ac909b2f409c",
+    "bytes": 11462
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/audit_mini_prompts.py",
+    "target": "runtime/vendor/support/symbolic/audit_mini_prompts.py",
+    "sha256": "f560a8fc28d3f91eaa27bfa9138890f3ecb2844324d752227e7e8298adbf2f98",
+    "bytes": 1833
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/audit_scheduled_prompts.py",
+    "target": "runtime/vendor/support/symbolic/audit_scheduled_prompts.py",
+    "sha256": "7bc1e4bd7cbee7bca79396794078d09637b554700fd7f9b7bf64a7cef2f5f175",
+    "bytes": 2507
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/serve.py",
+    "target": "runtime/vendor/support/symbolic/serve.py",
+    "sha256": "5e65e9ea6dcc94363553b9c2882e48cc96818122777d236861a3104c7c33fbfd",
+    "bytes": 3264
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/sym_paths.py",
+    "target": "runtime/vendor/support/symbolic/sym_paths.py",
+    "sha256": "2be0603c9c12829774e480165f91c0cc641df4bcf6b2b767472040a91812ffc5",
+    "bytes": 581
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/symbolic_eval_identity.py",
+    "target": "runtime/vendor/support/symbolic/symbolic_eval_identity.py",
+    "sha256": "ac8f2b7bd011fb981894999ddc747811f4e5e73cdc6ab5eb7250707e306372e9",
+    "bytes": 896
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/sym_augmentation.py",
+    "target": "runtime/vendor/support/symbolic/sym_augmentation.py",
+    "sha256": "93092202a994246e9fa433672047021f171acebdc49f81474f5394fc37e14772",
+    "bytes": 1979
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/sym_online.py",
+    "target": "runtime/vendor/support/symbolic/sym_online.py",
+    "sha256": "8aa4610b3e3d27367eb6625e74e85bf2eb1499ddd159173930b66c5ca5bfb0dc",
+    "bytes": 6965
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/dataset.py",
+    "target": "runtime/vendor/support/symbolic/dataset.py",
+    "sha256": "86c4929c4b0d6a2b884cba1964790d04bc0420e0b61f6315c6db43b149649695",
+    "bytes": 2795
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/trainer.py",
+    "target": "runtime/vendor/support/symbolic/trainer.py",
+    "sha256": "ae61e308b0d5aa5dd109a08d431ed75e13c4c35a85957289ec7b6805424b903b",
+    "bytes": 20703
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/summarize_eval.py",
+    "target": "runtime/vendor/support/symbolic/summarize_eval.py",
+    "sha256": "b1377fa46d576e5eede8a0fa0fe14dae2df8f5880cf47ca786e62f15a0b59c59",
+    "bytes": 2410
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/models/V3R/src/make_previews.py",
+    "target": "runtime/vendor/support/symbolic/make_previews.py",
+    "sha256": "b4e3ab787e0645a255c26d772e318184a5f5d1eef92e212a2faf3f55a825bc6a",
+    "bytes": 7797
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/bundle_hashes.py",
+    "target": "runtime/vendor/support/memory/bundle_hashes.py",
+    "sha256": "bc7ff0cf82622f4eccc0fa8790e976d1af3b3c5414389aff5062244712603fc4",
+    "bytes": 1507
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/common.py",
+    "target": "runtime/vendor/support/memory/common.py",
+    "sha256": "e49277467132ebb0dd674811eb54c19ed6c9a8b455f473a28eff9da75b83cb33",
+    "bytes": 1917
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/deploy.py",
+    "target": "runtime/vendor/support/memory/deploy.py",
+    "sha256": "4e71dd2fbbb026c13ac1d745447a190c61d8d5c8c664e35ddf750a9c1ea8fa2c",
+    "bytes": 690
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/model_config.py",
+    "target": "runtime/vendor/support/memory/model_config.py",
+    "sha256": "17eaffbd98c4d3118fa3e4e89d07b93a0aee3ead8ee07302ead861794c175469",
+    "bytes": 2395
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/prepare_token_corrections.py",
+    "target": "runtime/vendor/support/memory/prepare_token_corrections.py",
+    "sha256": "215165eb7eb9154b12f7878745da7014a36573042e9798ba97663a6480021c45",
+    "bytes": 1440
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/mini_runner.py",
+    "target": "runtime/vendor/support/memory/mini_runner.py",
+    "sha256": "29054e6fcfad0161647a07b5b2fb9fb36a9f7d3097f3a5ba06f4320c116af53b",
+    "bytes": 9035
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/launch_eval.py",
+    "target": "runtime/vendor/support/memory/launch_eval.py",
+    "sha256": "0b37bd0382af910960637c32d09f131c13cd4d10ced594e59bc2ebbaaf916469",
+    "bytes": 5043
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/preflight.py",
+    "target": "runtime/vendor/support/memory/preflight.py",
+    "sha256": "de6c8e58e679887d79617053d246f49f8dc39972aeb6791faa6cebdb6119b93c",
+    "bytes": 2287
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/reference_model.py",
+    "target": "runtime/vendor/support/memory/reference_model.py",
+    "sha256": "2dfd5ad9358e586972ea5e662289655a1c17f138eb584c2b6ff522f9b8e333a3",
+    "bytes": 2134
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/serve.py",
+    "target": "runtime/vendor/support/memory/serve.py",
+    "sha256": "933e8f0fc259f0c7c31ed637d4fe81b30a215b9cfebe5e3d88524b85dc4c50ff",
+    "bytes": 2446
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/check_gpu.py",
+    "target": "runtime/vendor/support/memory/check_gpu.py",
+    "sha256": "fb22eda7f498e6c53e530c8155fc62a7b86bb12424f4b07758774cb4e0ac59a0",
+    "bytes": 541
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/compare.py",
+    "target": "runtime/vendor/support/memory/compare.py",
+    "sha256": "132d4c25b36bdce36da027a5cfaf6b1a90ae91b6669bd654ac522d18d6a61eb9",
+    "bytes": 1607
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/reference_inputs.py",
+    "target": "runtime/vendor/support/memory/reference_inputs.py",
+    "sha256": "bb96f4b1b1331861c580f26ee6f9212dbcc109b469c2484e36ff339e0e7f47dd",
+    "bytes": 1412
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/schema.py",
+    "target": "runtime/vendor/support/memory/schema.py",
+    "sha256": "ba3212f1382236618bd669668b7782d992c58ea46f8c44d17a042c3c2d43c311",
+    "bytes": 6582
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/restore_metrics.py",
+    "target": "runtime/vendor/support/memory/restore_metrics.py",
+    "sha256": "2eeb3630fc1a5613f5667a6beba6e4d88ef4a8522b754d4e98d9af15fc6f5e37",
+    "bytes": 621
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/sim_runtime.py",
+    "target": "runtime/vendor/support/memory/sim_runtime.py",
+    "sha256": "019b9fd5282673531c11d02d893e6014e9688dae783353f82a42aafb28a55e10",
+    "bytes": 3263
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/eval_inputs.py",
+    "target": "runtime/vendor/support/memory/eval_inputs.py",
+    "sha256": "72c72c3649fc55bd17562ae5a8b60d81a67f04212410c8a3ec1b2bce6c76ffec",
+    "bytes": 1738
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/dataset.py",
+    "target": "runtime/vendor/support/memory/dataset.py",
+    "sha256": "d60f29fa1005a4e8ce8ba60e6ebcfb6a27851fe61b749a3c42d0d3b9a9231af2",
+    "bytes": 4359
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/build_bundle.py",
+    "target": "runtime/vendor/support/memory/build_bundle.py",
+    "sha256": "52304c74434dc662c0d5f1e707efd5e1556efb00a07c86392300f19bb5e421d2",
+    "bytes": 2718
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/evaluation_identity.py",
+    "target": "runtime/vendor/support/memory/evaluation_identity.py",
+    "sha256": "49b740d22534b89db8526a613feb457d412049d1d52e9ad5cf05bbc232b5c638",
+    "bytes": 940
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/trainer.py",
+    "target": "runtime/vendor/support/memory/trainer.py",
+    "sha256": "8fb7c83dce34d3602b2132f701e01d2e6f0fa43ced3d16d3b331a420a4a34183",
+    "bytes": 15799
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/check_input_parity.py",
+    "target": "runtime/vendor/support/memory/check_input_parity.py",
+    "sha256": "9ec4764c5770efb8a558735a1e64ae78b72b5c51d1dbe528c5df4aa4745ae98b",
+    "bytes": 2492
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/contract.py",
+    "target": "runtime/vendor/support/memory/revision_eval/contract.py",
+    "sha256": "fdc2ee0780b61a0b8edf9f355af67b1f04eec40d67fd490917af188cf52efe64",
+    "bytes": 2670
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/common.py",
+    "target": "runtime/vendor/support/memory/revision_eval/common.py",
+    "sha256": "2a2d539fbd60f3add21b73bde15ede866449ac2c1c74cce7a08b8fc45e9b6abb",
+    "bytes": 1042
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/tasks.py",
+    "target": "runtime/vendor/support/memory/revision_eval/tasks.py",
+    "sha256": "32a64b5724f33b3c9593a850897cb7099a10ac6f267ac214698f677a6379fbe2",
+    "bytes": 600
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/render_context.py",
+    "target": "runtime/vendor/support/memory/revision_eval/render_context.py",
+    "sha256": "54ab6bc2a8e0bc4061951454f72db0f55b9f9936ded2ccd53cee97d2f5860215",
+    "bytes": 2103
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/contract_checks.py",
+    "target": "runtime/vendor/support/memory/revision_eval/contract_checks.py",
+    "sha256": "9bf5193d3298493b74e8c7552821dcbbe0403cb035c7f76d88d6177b09c17d24",
+    "bytes": 30626
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/metrics.py",
+    "target": "runtime/vendor/support/memory/revision_eval/metrics.py",
+    "sha256": "5173a0ff7460352edb95dd5bfc7e6d497727af527e7666e4afc62e41491d0bab",
+    "bytes": 3005
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/env.py",
+    "target": "runtime/vendor/support/memory/revision_eval/env.py",
+    "sha256": "eeb80489090d43c06545ae619afb663eb899377317c87080d7cd9820a9f52ddc",
+    "bytes": 1818
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/pose_rules.json",
+    "target": "runtime/vendor/support/memory/revision_eval/pose_rules.json",
+    "sha256": "b13ba8eda93971c1f2fd38acc31924ec96d9e8c09acacca329d6db70e02e489b",
+    "bytes": 1041
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/runtime.py",
+    "target": "runtime/vendor/support/memory/revision_eval/runtime.py",
+    "sha256": "741821bd53a836bda4dcbd2e9fde49d506da3615883e7660304eed761ccbce6b",
+    "bytes": 5514
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/policies.py",
+    "target": "runtime/vendor/support/memory/revision_eval/policies.py",
+    "sha256": "f1d7d2d54232e6b4aa65675eb1a58086e8e156d555ad32ca8e606cd308a1c6be",
+    "bytes": 3134
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/contact.py",
+    "target": "runtime/vendor/support/memory/revision_eval/contact.py",
+    "sha256": "db446de64fdf199b00c695da1029eb58c11b1a4ac393d6352d8e3679efbc6e45",
+    "bytes": 13044
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/events.py",
+    "target": "runtime/vendor/support/memory/revision_eval/events.py",
+    "sha256": "4daee11de59dd0ae318713348a64c32b233b0b1b1a89f08765e857a92e767b86",
+    "bytes": 5047
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/__init__.py",
+    "target": "runtime/vendor/support/memory/revision_eval/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "source": "/mnt/disk_2/geyi/pi05_small722_20261016/work/pi05_memory_ad_experiments_20261013/src/revision_eval/engine.py",
+    "target": "runtime/vendor/support/memory/revision_eval/engine.py",
+    "sha256": "29088c53bf6da743e00ac6f410e3d6321bf30ddc1c6c35a0c237bc29e38183f5",
+    "bytes": 9196
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/predicates.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/predicates.py",
+    "sha256": "ec563cdf3b6b1a6d7d570fd666490f7ed379cdd8315b557dc89fb6f1d118f138",
+    "bytes": 1436
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/validation_reviewed.json",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/validation_reviewed.json",
+    "sha256": "2f8cd91f7508c73b499cb27fe1af48a709a8b46b51e155e02f772855a411bbe6",
+    "bytes": 2216
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/adapters.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/adapters.py",
+    "sha256": "c63e9ea0158d7102a20ca0242b9097d9a8246694c7b572a81d82f5e2d59f6ec2",
+    "bytes": 1631
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/validation_events.json",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/validation_events.json",
+    "sha256": "e58a49c97877cf22dccb05154003b711c8ea07b75ea9f80adf7567ffa8535eec",
+    "bytes": 15085
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/evaluator.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/evaluator.py",
+    "sha256": "a11ff5d78857b23490de4b6cc2dfe8a72a352cd7cd07a0dcf35230d2c66be9cc",
+    "bytes": 10007
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/validation_cli_final.json",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/validation_cli_final.json",
+    "sha256": "563f153382d70f7226394bbc6af836d5d3e4acc15f28cacf3cf4ae0926a4535d",
+    "bytes": 6289
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/reasons.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/reasons.py",
+    "sha256": "3c7428252869ca3b210d7aaf44f867cd99274de5b78b227ad5ded2e85d9b44f6",
+    "bytes": 860
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/config.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/config.py",
+    "sha256": "70bb35da2f804d5145ad92d15f7d0408573a0311651e491d822d25f5b109e3b8",
+    "bytes": 1922
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/contracts.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/contracts.py",
+    "sha256": "4cb7191a8e473908f3ea727235361e04d91a7de9372bc2e8862100387e0af8a2",
+    "bytes": 1089
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/RELEASE.json",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/RELEASE.json",
+    "sha256": "3fd726b99a4a4fc8a0f27ee4ed182b733cd7ad0daf0d9ef0280ae514b2e62f45",
+    "bytes": 2970
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/cli.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/cli.py",
+    "sha256": "a00d732aca409915f34d309e2fa565a20d93d89161b3738c57b76b449e27d7dc",
+    "bytes": 3307
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/controller.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/controller.py",
+    "sha256": "7efebfdde47ba9f5d0470b78a93bf4cf9d330fb360b323ed33bc60aa27a8b407",
+    "bytes": 467
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/events.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/events.py",
+    "sha256": "a6212899661c6566e6c89f9bfec532f2df42fc385b48fb09303b04fce6837540",
+    "bytes": 3185
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/__main__.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/__main__.py",
+    "sha256": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+    "bytes": 29
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/validation_cli.json",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/validation_cli.json",
+    "sha256": "38e3a82d4767fece760255ab9d635e8fbb8119597af88aa04e241f7b7f953f08",
+    "bytes": 5729
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/__init__.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/__init__.py",
+    "sha256": "a40837453fa27ebb4f9656331534500d50bd443920c170fc4c1c0b0f64928347",
+    "bytes": 198
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/configs/v2.5.0-candidate.json",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/configs/v2.5.0-candidate.json",
+    "sha256": "4a1349af4bdcd60cfe78267a15ddb1cd69938042455514f335160286d5af3dcc",
+    "bytes": 2877
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/tests/smoke_jobs.json",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/tests/smoke_jobs.json",
+    "sha256": "0a4aa121866d48d70498826dfcf1dd345e1016f9f85aafe892da619a806e8b08",
+    "bytes": 219
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/tests/test_metrics.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/tests/test_metrics.py",
+    "sha256": "360313635e8be1d854fa27e1b085612ca69d3404fb155cb56d0cd4f5448bb97e",
+    "bytes": 7633
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/tests/regression_reviewed.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/tests/regression_reviewed.py",
+    "sha256": "f6f184a0a8031d815f97ce42f9a7107b45c0173c9e4acc98916cb8703a38a080",
+    "bytes": 1913
+  },
+  {
+    "source": "/mnt/disk_4/geyi/smolvla_eval/benchmark_metrics/tests/regression_events.py",
+    "target": "runtime/vendor/support/metrics/benchmark_metrics/tests/regression_events.py",
+    "sha256": "96333216822231386fe36f2bc1d09d86f7085ccb01ef5f265c082b996b841315",
+    "bytes": 1941
+  }
+]

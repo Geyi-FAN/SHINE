@@ -1,0 +1,33 @@
+MEASURED DIRECTION PROPERTIES, NOT AN ACTION PLAN:
+ctx.target_xy_norm_m is the current horizontal TARGET-HAND distance in metres.
+ctx.target_xy_unit_x and ctx.target_xy_unit_y are its signed WORLD-x/y unit
+direction. These three properties are refreshed from CURRENT measurements at
+every tool and also after predicted moves during validation. They give no
+collision/path/support permission and never mark progress or completion.
+
+The bound is sqrt(dx_m*dx_m + dy_m*dy_m)<=0.015m, NOT each axis<=0.015m.
+For example, dx=-0.015 AND dy=-0.015 moves2.12cm and is rejected.
+You may author a vector using the supplied unit direction instead of doing
+mental square roots. One generic legal distance expression is
+dx_m=min(0.0149,ctx.target_xy_norm_m)*ctx.target_xy_unit_x,
+dy_m=min(0.0149,ctx.target_xy_norm_m)*ctx.target_xy_unit_y.
+This illustrates expression syntax, NOT a requested command or sequence.
+You choose whether motion is justified, which tools, how many, the distance,
+vertical movement and stopping conditions. Recheck empty-hand, target visibility,
+support and original clearance at each tool. A near-zero remaining error needs
+no cosmetic extra command. No loops or assignments. Current missing direction
+is null/unknown, not a valid zero point; request observation if it is needed.
+
+Use the existing correction-effort calculation for total residual: three14.9mm
+steps can reduce the norm by at most44.7mm, not63mm by separately using both
+axes. All actual arguments still pass the unchanged original per-command and
+cumulative bounds. The script rejects bad commands; it never clips, normalizes,
+rewrites or inserts your chosen tool commands.
+
+Keep the original180-AST-node program budget. Three long repeated conditions
+plus six min/unit expressions may exceed it. You may use one compact entry
+guard and a bounded sequence for horizontal-only alignment: the runtime STILL
+independently rechecks actual empty-hand, visibility, support and clearance at
+every tool and aborts on loss. Do not use this to bypass a needed post-lift
+height check. Numeric dx/dy calculated from the supplied unit direction are
+also legal, if their norm/direction and the actual refreshed residual stay valid.

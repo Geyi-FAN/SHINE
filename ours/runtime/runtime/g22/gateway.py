@@ -1,0 +1,212 @@
+"""Isolated speech-compatible Gateway; one owner of the G2 physical bridge.
+No scoring contract or evaluator trigger is supplied to any language model.
+"""
+import argparse,copy,gzip,hashlib,importlib.util,io,json,os,signal,sys,threading,time
+from pathlib import Path
+from types import SimpleNamespace
+import numpy as np
+B=Path(__file__).resolve().parents[1];sys.path[:0]=[str(B),str(B/'g2')]
+from bootstrap import configure
+
+def main():
+ ap=argparse.ArgumentParser();ap.add_argument('--spec',type=Path,required=True);ap.add_argument('--out',type=Path,required=True);ap.add_argument('--port',type=int,required=True);ap.add_argument('--gpu',type=int,default=4);ap.add_argument('--policy-port',type=int,default=19866);a=ap.parse_args()
+ spec=json.loads(a.spec.read_text());a.out.mkdir(parents=True,exist_ok=True);(a.out/'logs').mkdir(exist_ok=True)
+ os.environ.update(VOICE_ROBOT_DATA_DIR=str(a.out/'gateway'),VOICE_EVAL_RECORD_DIR=str(a.out/'recordings'),VOICE_HARNESS_RUNTIME_CONFIG=str(B/'freeze/voice/configs/runtime.local.json'))
+ core,runner,authority=configure(a.out,a.gpu)
+ original_completion=sys.modules['completion'];sys.modules['completion']=sys.modules['gateway_completion'];sys.path.insert(0,str(B/'freeze/voice/robot_gateway'))
+ module_spec=importlib.util.spec_from_file_location('g3_http',B/'freeze/voice/robot_gateway/server.py');http=importlib.util.module_from_spec(module_spec);module_spec.loader.exec_module(http);sys.modules['completion']=original_completion
+ from sim_runtime import GeometryRuntime,new_env
+ from revision_eval.env import make_libero_env,settle_env
+ from policy_backend import SmolHTTPClient
+ from grounding import inventory_from_names
+ from bridge import SingleOwnerBridge
+ from native_execution import NativeExecution,native_candidate,CATALOG
+ from PIL import Image
+ import h5py
+ fixture=spec['fixture'];assets=fixture['assets']
+ for asset in assets.values():assert hashlib.sha256(Path(asset['path']).read_bytes()).hexdigest()==asset['sha256']
+ scene_task=SimpleNamespace(problem_folder='',bddl_file=assets['bddl_file']['path'],language='approved live8787 fixture')
+ env,_=make_libero_env(scene_task,SimpleNamespace(env_img_res=256,seed=fixture['scene_seed'],control_mode='relative'))
+ env.env.ignore_done=True;env.env.horizon=10000
+ from revisionlab.render_context import bind_render_context
+ bind_render_context(env)
+ with h5py.File(assets['source_hdf']['path'])as f:obs=settle_env(env,f['states'][0].copy(),10)
+ rt=GeometryRuntime();positions=rt.monitor(env,0).measure()['all_object_poses'];xyz={name:value['position']for name,value in positions.items()}
+ context=authority.state.capture(env);context.update(main_raw_image=obs['agentview_image'],wrist_raw_image=obs['robot0_eye_in_hand_image']);initial=a.out/'initial.npz';np.savez(initial,**context)
+ reference=np.asarray(Image.open(assets['reference_image']['path']).convert('RGB'));actual=np.ascontiguousarray(obs['agentview_image'][::-1,::-1]);delta=np.abs(actual.astype(int)-reference.astype(int));assert delta.max()<=2 and delta.mean()<=.001,'Initial scene does not match approved fixture'
+ (a.out/'initial_scene.json').write_text(json.dumps(dict(expected=assets['reference_image']['sha256'],actual=hashlib.sha256(Image.fromarray(actual).tobytes()).hexdigest(),maximum_channel_delta=int(delta.max()),mean_delta=float(delta.mean()),state_identity=authority.state.identity(context)),indent=2))
+ state=http.state;state.ready=False;state.obs=copy.deepcopy(obs);state.reset_count=1;state.mode='loading';state.execution_backend='qwen'
+ from response_memo import fingerprint
+ class Client(SmolHTTPClient):
+  def infer(self,request):
+   response=super().infer(request);response.update(paired_request_sha256=fingerprint(request),paired_response_memo_hit=False,paired_action_sha256=fingerprint(np.asarray(response['actions'],np.float32)));return response
+ client=Client(port=a.policy_port);metadata=client.get_server_metadata();assert metadata['weights_sha256']=='30a620085ba28b8faec160ae68a9276d705ec0fb6d2fc9237e706379d0c5eebc';assert metadata['normalization_sha256']=='d4e03a22ef5d89a910e32c233a509465ad0d265381a06745917d69fd8924a635';state.policy_metadata=metadata
+ case=copy.deepcopy(json.loads((B/'g2/fixed32.json').read_text())[0]);case.update(case_id=spec['case_id'],source_task=spec.get('source_task',0),target_task=0,kind='revision',group='G3',initial_state_file=str(initial),snapshot_file=str(initial),initial_xyz=xyz,fixed_switch_step=0,previous_instruction='',public_user_instruction='',instruction='',policy_seed=7)
+ def contract(target,revision=False):
+  clauses=[];clause=lambda **kw:dict(source='case.instruction.G3_private_evaluator',**kw)
+  if revision and spec.get('restore'):
+   name={'bowl':'akita_black_bowl_1','wine_bottle':'wine_bottle_1'}[spec['restore']];clauses.append(clause(id='restore',kind='restore_episode_start',object=name,reference='source_episode_start',reference_position=xyz[name],stable_required=True,withdraw_required=False))
+  clauses.append(clause(id='target',kind='native_target',task_id=target))
+  if revision and spec.get('restore'):clauses.append(clause(id='order_restore_target',kind='completion_order',before='restore',after='target'))
+  if revision and spec.get('preserve_bowl'):
+   current=rt.monitor(env,0).measure()['all_object_poses']['akita_black_bowl_1']['position'];clauses.append(clause(id='preserve_bowl',kind='preserve_position',object='akita_black_bowl_1',reference_position=current))
+  return dict(case_id=case['case_id'],clauses=clauses,budget=1200)
+ private=a.out/'private_contracts.json';private.write_text(json.dumps([contract(0)]));os.environ['HYBRID_CONTRACT_FILE']=str(private);runner.CONTRACT_FILE=private
+ from g22.return_release import install as install_release
+ install_release(SingleOwnerBridge)
+ class Bridge(SingleOwnerBridge):
+  def apply(self,action,phase):
+   return super().apply(action,'source_policy'if phase=='authorized_native_control'else phase)
+  def commit_acceptance(self,decision):
+   committed=super().commit_acceptance(decision)
+   if committed:
+    from hold_gate import PoseHold
+    self.pose=PoseHold(self.obs,self.env.env.robots[0].controller)
+   return committed
+ b=Bridge(env,obs,state,a.out,case,runner,authority);b.route='idle';b.install_hooks();b.build_run_function();b.native=None;b.native_goal_hold=False;b.task=None;b.task_count=0;b.task_start_control=0;b.task_started=0;b.fixture_hold=False;b.fixture_used=False;b.source_phase_streak=0;b.stopping=False;b.last_archived=None
+ # Preserve episode memory across new tasks; only a new semantic task renews takeover.
+ def begin_instruction(points,image,frame):
+  if getattr(points,'g3_takeover_task',None)==state.task_id:return
+  frame=max(b.engine_start_step,points.scene.frame,b.control_steps)
+  points.update_evidence(frame,b.cache_reader.memory_evidence(),b.cache_reader.memory_camera_id());b.points_class.begin_instruction(points,image,frame);points.g3_takeover_task=state.task_id
+ b.saved_points=runner.Points(a.out/'episode_memory/points',episode_id=state.episode,episode_frame_at_takeover=0)
+ b.saved_points.begin_instruction=lambda image,frame:begin_instruction(b.saved_points,image,frame)
+ b.saved_points.initialize_episode(actual,b.cache_reader.memory_evidence(),b.cache_reader.memory_camera_id())
+ state.scene_inventory=inventory_from_names(name for category in('objects','fixtures')for names in env.env.parsed_problem[category].values()for name in names)
+ state.scene_memory_status=dict(state='ready',current_identity=True,version_matches=True,source='F28d_M1_episode_memory',episode_id=state.episode)
+ state.execution_readiness=dict(phase='ready',ready=True,policy_ready=True,detector_ready=True,episode_memory_ready=True,current_observation_ready=True,execution_core='F28d_G22_G3');state.observed_at=time.time();state.ready=True;state.mode='idle';state.execution_profile='symbolic'
+ base_snapshot=state.snapshot
+ def snapshot():
+  result=base_snapshot();result['note']='F28d local four roles; observed intermediate completion; simulator-assisted memory validity and final benchmark acceptance';return result
+ state.snapshot=snapshot
+ original_command=state.command
+ intake={};original_interaction=state.record_interaction
+ def record_interaction(body):
+  with state.lock:
+   receipt=original_interaction(body)
+   if not receipt.get('duplicate'):
+    intake[body['input_id']]=dict(episode_id=state.episode,task_id=state.task_id,semantic_revision=state.task_intent_revision,version=state.version,mode=state.mode,text=body['text'],monotonic=time.monotonic())
+   return receipt
+ state.record_interaction=record_interaction
+ def command(name,args,request_id):
+  with state.lock:
+   before=b.token()
+   from g22.completion_race import bind
+   args=bind(b,name,args,intake)
+   try:receipt=original_command(name,args,request_id)
+   except Exception as error:b.log('voice_tool_rejected',tool=name,error=str(error),request_id=request_id);raise
+  b.log('voice_tool_receipt',tool=name,args=args,request_id=request_id,before_identity=list(before),after_identity=list(b.token()),receipt=receipt)
+  if name=='robot_resume' and state.mode=='running' and b.fixture_hold:
+   b.fixture_hold=False;b.log('controlled_source_window_released_on_actual_resume')
+  return receipt
+ state.command=command
+ class Handler(http.Handler):
+  def do_GET(self):
+   if self.path=='/evaluator/status':
+    if not self.authenticated():return self.respond(401,{'error':'authentication_required'})
+    return self.respond(200,dict(physics_step=b.physics_steps,control_step=b.control_steps,simulation_time=float(env.sim.data.time),physical_state_sha256=b.state_hash(),fixture_hold=b.fixture_hold,task_count=b.task_count,task_control_steps=b.control_steps-b.task_start_control,io_role=None if b.io is None else b.io['role'],source_phase_reached=b.source_phase_streak>=3,task_id=state.task_id,mode=state.mode))
+   return super().do_GET()
+  def do_POST(self):
+   if self.path=='/evaluator/finish':
+    if not self.authenticated():return self.respond(401,{'error':'authentication_required'})
+    b.stopping=True;return self.respond(200,{'accepted':True})
+   return super().do_POST()
+ server=http.GatewayHTTPServer(('127.0.0.1',a.port),Handler);threading.Thread(target=server.serve_forever,daemon=True).start()
+ (a.out/'READY.json').write_text(json.dumps(dict(episode_id=state.episode,metadata=metadata,port=a.port,execution_core='F28d_G3',actual_owner='simulation_main_thread'),indent=2))
+ class Native(NativeExecution):
+  def _infer(self,observation,*args):
+   result=super()._infer(observation,*args);result['observed_at']=observation['_capture_monotonic'];return result
+  def _finish(self,state,already_satisfied=False):
+   # The Native target is a candidate. The same independent current-contract
+   # acceptance owns the final receipt for Native and Symbolic routes.
+   if not b.native_goal_hold:
+    from hold_gate import PoseHold
+    b.pose=PoseHold(b.obs,env.env.robots[0].controller);state.queue.clear();self.invalidate(state);b.native_goal_hold=True
+    self._status(state,'awaiting_independent_current_acceptance');b.log('native_target_candidate_hold',creates_completion=False)
+ def archive():
+  if not b.task or b.last_archived==b.task:return
+  folder=a.out/'tasks'/b.task;folder.mkdir(parents=True,exist_ok=True)
+  with gzip.open(folder/'trace.json.gz','wt')as f:json.dump(dict(measurements=b.measurements,metric_initial=b.initial),f)
+  score=b.score();(folder/'result.json').write_text(json.dumps(dict(task_id=b.task,instruction=b.case['public_user_instruction'],route=b.route,metrics=score,controls=b.control_steps-b.task_start_control,world_step=b.physics_steps,mode=state.mode,completion_status=state.completion_status),indent=2));b.last_archived=b.task
+ def activate():
+  archive()
+  if b.native:b.native.close();b.native=None
+  b.task=state.task_id;b.task_count+=1;b.task_start_control=b.control_steps;b.task_started=time.monotonic();b.fixture_hold=False;b.native_goal_hold=False;b.last_archived=None
+  b.case.update(public_user_instruction=state.instruction,instruction=state.instruction,current_instruction=state.instruction,instruction_original=state.instruction)
+  source=b.task_count==1 and bool(spec.get('context_turns'));target=spec.get('source_task',1)if source else spec.get('target_task',0)
+  if target is None:target=0
+  b.case['target_task']=target;b.target=rt.monitor(env,target);b.contract=contract(target,not source);b.initial=dict(articulation=b.source.measure()['articulation'],native_goal=bool(rt.frame(b.target,target)['goal']));b.measurements=[];b.acceptance=None;b.acceptance_decision=None;b.terminal_reason=None;b.stop_reason=None;b.restart_count=0;b.scoring_active=True
+  private.write_text(json.dumps([b.contract],indent=2));assert b.run_function.__globals__['CONTRACT_FILE']==private
+  b.terminal=authority.published.StopController(b.case,b.contract,b.rules)
+  width=float(np.abs(b.obs['robot0_gripper_qpos']).sum());skill,reason=native_candidate(state,b.task_count==1,'none'if width>=.065 else'unknown')
+  if skill:
+   b.route='native';state.execution_profile='native_libero_goal';memory=SimpleNamespace(reader=b.cache_reader)
+   reader=None
+   b.native=Native(env,memory,client,a.out/'native'/b.task,skill,goal_reader=reader)
+   b.engine_start_step=max(b.control_steps,b.saved_points.scene.frame);b.saved_points.begin_instruction(np.ascontiguousarray(b.obs['agentview_image'][::-1,::-1]),b.engine_start_step)
+  else:
+   b.route='symbolic';state.execution_profile='symbolic';b.saved_mon=None;b.saved_recovery=None;b.saved_observed_states=None;b.saved_relations=None;b.approved_events=[]
+   if hasattr(b,'original_takeover_images'):del b.original_takeover_images
+   import planner
+   b.planner=planner.Planner();from g21.observed_goal_guard import ADDENDUM
+   b.planner.system+='\n'+ADDENDUM;b.policy_calls_attempted=0;b.start(client,resume=True)
+  state.event('execution_profile_selected',dict(execution_profile=state.execution_profile,reason=reason,execution_core='F28d_G3'));b.log('g3_task_activated',task_id=b.task,route=b.route,instruction=state.instruction)
+ def jpeg():
+  images=[]
+  for key in('agentview_image','robot0_eye_in_hand_image'):
+   f=io.BytesIO();Image.fromarray(np.ascontiguousarray(b.obs[key][::-1,::-1])).save(f,format='JPEG',quality=85);images.append(f.getvalue())
+  with state.lock:state.jpeg,state.wrist_jpeg=images
+ def close_signal(*_):b.stopping=True
+ signal.signal(signal.SIGTERM,close_signal);signal.signal(signal.SIGINT,close_signal)
+ tick=time.monotonic();last_image=0.;started=time.monotonic()
+ try:
+  while not b.stopping and time.monotonic()-started<1600:
+   now=time.monotonic()
+   if state.task_id!=b.task and state.mode=='running'and not(b.thread and b.thread.is_alive()):activate()
+   if state.task_id!=b.task and b.thread and b.thread.is_alive():b.pump(True)
+   elif b.route=='symbolic'and b.task:
+    stepped=b.pump(now>=tick)
+    if stepped:tick=time.monotonic()+.05
+    if b.worker_done.is_set()and state.mode=='running'and b.kernel_error=='retired_generation'and b.restart_count<2:
+     b.restart_count+=1;b.start(client,resume=True)
+    elif b.worker_done.is_set()and state.mode=='running'and not b.terminal_reason:
+     detail=b.kernel_error or(b.kernel_result or{}).get('error')or(b.kernel_result or{}).get('status')or'F28d_worker_stopped'
+     state.failure_detail=dict(code='f28d_execution_stopped',detail=str(detail)[-1200:],recovery='执行内核已停止；请查看隔离运行日志，不要将此报错归为动作模型失败。');state._hold('needs_review','F28d_execution_stopped');b.log('symbolic_worker_stopped',detail=detail)
+   elif now>=tick:
+    if b.env_lock.acquire(blocking=False):
+     try:
+      with state.lock:
+       if state.mode!='paused':
+        if b.native and state.task_id==b.task and not b.fixture_hold and not b.native_goal_hold and state.mode=='running':
+         snap=copy.deepcopy(b.obs);snap['_capture_monotonic']=b.capture_monotonic
+         from g22.native_wait import tick as native_tick
+         native_tick(b,b.native,state,snap)
+        action=state.next_action()if state.mode=='running'and not b.fixture_hold and not b.native_goal_hold else None;policy=action is not None
+        b.apply(action if policy else b.pose.action(b.obs),'authorized_native_control'if policy else'async_wait_hold')
+        if b.native:b.native.record_applied_action(state,policy)
+        if b.route=='native'and b.physics_steps%4==0:
+         p=b.saved_points;p.update_evidence(b.physics_steps,b.cache_reader.memory_evidence(),b.cache_reader.memory_camera_id());p.observe(np.ascontiguousarray(b.obs['agentview_image'][::-1,::-1]),b.physics_steps)
+        if b.task_count==1 and spec.get('phase')and b.native:
+         facts=b.cache_reader.snapshot;item=facts['objects']['bowl'];phase=spec['phase'];valid=facts['held_object']=='bowl'and not item['supported']if phase=='M2'else bool(rt.frame(rt.monitor(env,1),1)['goal'])and item['supported']and not item['robot_contact']
+         b.source_phase_streak=b.source_phase_streak+1 if valid else 0
+         if b.source_phase_streak>=3 and not b.fixture_hold and not b.fixture_used:
+          from hold_gate import PoseHold
+          b.pose=PoseHold(b.obs,env.env.robots[0].controller);b.fixture_hold=True;b.fixture_used=True;state.queue.clear();b.native.invalidate(state);b.log('common_fixture_observation_window',phase=phase,world_clock_continues=True)
+     finally:b.env_lock.release()
+    tick=time.monotonic()+.05
+   if state.task_id==b.task and state.mode=='running'and(b.control_steps-b.task_start_control>=spec.get('task_control_budget',1200) or now-b.task_started>900):state._hold('budget_exhausted','G3_shared_1200_control_or_900_wall_budget')
+   if state.mode=='completed'and state.completion_status=='verified'and b.route=='symbolic':
+    state.agent_execution['completion_current_verified']=bool(b.acceptance_decision and b.acceptance_decision.get('accepted') and tuple(b.acceptance_decision.get('subject',[]))==b.token()[:3] and b.score().get('instruction_adjusted',{}).get('success'));state.native_handoff_ready=b.cache_reader.snapshot.get('held_object')=='none'
+    if state.deferred_task and state.native_handoff_ready:state._run_deferred()
+   if now-last_image>.2:jpeg();last_image=now
+   time.sleep(.002)
+ except BaseException:
+  import traceback
+  (a.out/'RUNTIME_ERROR.txt').write_text(traceback.format_exc());raise
+ finally:
+  if state.mode=='running':state._hold('cancelled','G3_evaluation_finished')
+  if b.native:b.native.close()
+  b.close();archive();env.close();server.shutdown()
+  (a.out/'DONE.json').write_text(json.dumps(dict(world_steps=b.physics_steps,controls=b.control_steps,late_results_discarded=b.stale_discarded,reset_count=state.reset_count),indent=2))
+
+if __name__=='__main__':main()

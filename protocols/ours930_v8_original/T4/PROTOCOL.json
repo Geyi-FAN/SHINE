@@ -1,0 +1,197 @@
+{
+  "version": "t4-en-acoustic40-v2-20261107",
+  "executor": "SmolVLA E3 v4",
+  "language": "en",
+  "physical": {
+    "version": "2.5.0-candidate",
+    "file": "physical_v2.5.0-candidate.frozen.json",
+    "sha256": "4a1349af4bdcd60cfe78267a15ddb1cd69938042455514f335160286d5af3dcc",
+    "target": "ever_target_in_policy_steps_after_valid_authorization",
+    "instruction": "all_user_physical_obligations_in_allowed_order_and_hold_at_case_end",
+    "hold_control_steps": 40,
+    "control_hz": 20,
+    "missing_evidence": "unknown_counted_as_not_pass"
+  },
+  "metrics": {
+    "interaction": {
+      "numerator": "all_required_interaction_events_pass_no_forbidden_events_within_deadlines",
+      "denominator": "all_preregistered_cases"
+    },
+    "target": {
+      "numerator": "final_non_cancelled_physical_goal_ever_achieved_after_its_valid_authorization",
+      "denominator": "preregistered_physical_eligible_cases"
+    },
+    "instruction": {
+      "numerator": "target_and_all_explicit_physical_clauses_and_terminal_hold_pass",
+      "denominator": "same_as_target"
+    },
+    "joint": {
+      "numerator": "interaction_and_instruction_for_physical_cases_else_interaction",
+      "denominator": "all_preregistered_cases"
+    }
+  },
+  "budgets": {
+    "pause_from_decisive_audio_end_s": 5.0,
+    "pause_fallback_from_audio_end_s": 5.0,
+    "pause_hold_s": 1.0,
+    "pause_max_eef_translation_m": 0.005,
+    "pause_max_eef_rotation_rad": 0.05,
+    "pause_max_gripper_width_change_m": 0.003,
+    "ack_from_audio_end_s": 10.0,
+    "clarification_question_from_audio_end_s": 20.0,
+    "valid_command_accept_from_audio_end_s": 20.0,
+    "first_new_action_from_audio_end_s": 45.0,
+    "qa_first_informative_audio_from_audio_end_s": 20.0,
+    "qa_complete_answer_from_audio_end_s": 40.0,
+    "waiting_handoff_from_independent_predecessor_success_s": 10.0,
+    "automatic_phase_transition_s": 20.0,
+    "max_clarification_questions_per_request": 3,
+    "max_unnecessary_confirmations": 1,
+    "user_reply_delay_after_question_s": 1.5,
+    "per_physical_goal_action_steps": 1200,
+    "per_physical_goal_wall_s": 600,
+    "case_action_steps": 3600,
+    "case_wall_s": 1800,
+    "precondition_wall_s": 180,
+    "precondition_action_steps": 1200,
+    "negative_observation_s": 5.0,
+    "terminal_hold_steps": 40
+  },
+  "accounting": {
+    "action_steps": "all_non_hold_executor_steps_including_wrong_and_stale_actions; no_reset_on_pause_or_retry",
+    "wall_clock": "monotonic including all waits; only declared evaluator fixture preparation pauses physics before query; no pause credit",
+    "latency_timeouts": "count_fail_and_right_censor; report_response_coverage_and_success_conditional_p50_p95",
+    "precondition_failure": "natural_lifecycle_fail_in_denominator; common_fixture_failure_abort_entire_paired_block",
+    "errors": "method_timeouts_missing_points_format_errors_disconnects_count_fail; declared_external_infrastructure_failure_rerun_whole_paired_block_keep_all_attempts",
+    "aggregation": "report_counts_micro_and_T1_to_T8_equal_weight_macro; eligible_only_macro_for_physical; no_NA_as_zero_or_one; unknown_reported_separately_and_not_pass"
+  },
+  "release_gates": [
+    "asset and actor identity",
+    "real audio and task/plan/trace evidence preflight; physical success not required"
+  ],
+  "change_reason": "User authorized moderate deadline relaxation before rerun; physical thresholds/action budgets unchanged",
+  "setup": {
+    "method": "same approved8787 I00; actual source audio and policy actions; M0/K0/P0 pre-contact three-frame predicates or original M4; evaluator-only hard pause before query",
+    "setup_failure": "retain in denominator; no replacement pose",
+    "camera": "same approved8787 assets"
+  },
+  "test_mode": "original controlled causal source prefix and true hard pause; real clocked PCM; C3r recovery + R7-T3.2 + NativePrefetch + observed S1; independent original Easy10 physical scoring",
+  "scoring_version": "easy10_actual_audio_and_typed_preservation_v1",
+  "new_framework_details": {
+    "parent": "shared C3r recovery + R7-T3.2 + NativePrefetch + T3-v4/R8; exact source hashes per-run FREEZE.json",
+    "actor": "SmolVLA E3 v4 raw30000",
+    "speech": "qwen3.8-omni-flash-realtime",
+    "four_roles": "Qwen3.8-27B-FP8 local; no Codex or legacy Max planner",
+    "source_scoring": "predecessor only prepares causal fixture; no Oracle next-subgoal",
+    "final_completion": "Independent original Easy10 physical target/release/stability/order; 40 real terminal hold ticks; actor C3r observed completion remains separate.",
+    "explicit_pause": "zero env.step and simulation time; not posture hold",
+    "controller_intermediate": "C3r observed S1 and bounded VLM/code recovery; no Oracle next-subgoal",
+    "private_ports": [
+      [
+        33481,
+        33487,
+        33489
+      ],
+      [
+        33581,
+        33587,
+        33589
+      ]
+    ],
+    "model_ports": [
+      33200,
+      33201
+    ],
+    "render_gpu": [
+      4,
+      5
+    ],
+    "max_own_workers": 2,
+    "hardware": "shared with active training and other categories; not exclusive",
+    "first_attempt": true,
+    "changes_after_formal_start": "none; all pilot attempts separate"
+  },
+  "historical_case_metadata_note": "case.fixture.pause_scope is historical template wording; this protocol overrides it: explicit fixture pause freezes all physics, no credit as model Stop success.",
+  "selected_easy_dev": true,
+  "source_trigger": "3 prior actual source actions and3 consecutive no-contact/unmoved frames; M4 unchanged10 stable frames",
+  "source_unreached_counts_as_failure": true,
+  "private_contracts_not_sent_to_agents": true,
+  "stage_feedback": "C3r local FP8 agents/S1; no Oracle next subgoal; M1 validity and final benchmark retain disclosed simulation assistance",
+  "metadata_amendment": "Update inherited historical backend and port descriptions only; cases, audio, budgets and physical rules unchanged.",
+  "pause_publication_sync": "After accepted pause, wait <=2s for newer owner publication matching episode/task/version/revision and mode paused. Then unchanged250ms paired physical-freeze check; no changed physics thresholds.",
+  "dataset_status": "development; outcome-selected fixtures; no independent generalization",
+  "model_input": "actual audio only; no transcript, labels, private contracts or expected references sent",
+  "runner_ready": false,
+  "speech_synthesis": "all generated voices are synthetic; emotion is requested style, not human perception label",
+  "source_audio_revision": "t4-source-cabinet-clarity-v1; affects T01/T09 first turn; historical scores remain historical",
+  "status": "data_ready_shared_runtime_freeze_pending",
+  "cases": 40,
+  "population": "10 fixed dialogue-state pairs, 2 unique physical initial states, 4 English acoustic conditions, one attempt each",
+  "selected_ids": [
+    "T4C1_CL_T00_I00",
+    "T4C1_NS_T00_I00",
+    "T4C1_EM_T00_I00",
+    "T4C1_OV_T00_I00",
+    "T4C1_CL_T01_I01",
+    "T4C1_NS_T01_I01",
+    "T4C1_EM_T01_I01",
+    "T4C1_OV_T01_I01",
+    "T4C1_CL_T02_I00",
+    "T4C1_NS_T02_I00",
+    "T4C1_EM_T02_I00",
+    "T4C1_OV_T02_I00",
+    "T4C1_CL_T03_I00",
+    "T4C1_NS_T03_I00",
+    "T4C1_EM_T03_I00",
+    "T4C1_OV_T03_I00",
+    "T4C1_CL_T04_I00",
+    "T4C1_NS_T04_I00",
+    "T4C1_EM_T04_I00",
+    "T4C1_OV_T04_I00",
+    "T4C1_CL_T05_I00",
+    "T4C1_NS_T05_I00",
+    "T4C1_EM_T05_I00",
+    "T4C1_OV_T05_I00",
+    "T4C1_CL_T06_I00",
+    "T4C1_NS_T06_I00",
+    "T4C1_EM_T06_I00",
+    "T4C1_OV_T06_I00",
+    "T4C1_CL_T07_I00",
+    "T4C1_NS_T07_I00",
+    "T4C1_EM_T07_I00",
+    "T4C1_OV_T07_I00",
+    "T4C1_CL_T08_I00",
+    "T4C1_NS_T08_I00",
+    "T4C1_EM_T08_I00",
+    "T4C1_OV_T08_I00",
+    "T4C1_CL_T09_I00",
+    "T4C1_NS_T09_I00",
+    "T4C1_EM_T09_I00",
+    "T4C1_OV_T09_I00"
+  ],
+  "denominators": {
+    "interaction": 40,
+    "target": 40,
+    "instruction": 40,
+    "per_condition": 10,
+    "human": "10 pending, outside active denominator"
+  },
+  "conditions": {
+    "active": [
+      "CL",
+      "NS",
+      "EM",
+      "OV"
+    ],
+    "count": 40,
+    "per_condition": 10,
+    "first_turn": "6 fixed English source audio files shared across conditions",
+    "second_turn": "four English acoustic conditions only",
+    "controlled_pause_before_revision": true,
+    "natural_stop_test": false
+  },
+  "audio_review": "Existing machine ASR passed; no new human or new audio acceptance claimed",
+  "data_ready": true,
+  "runtime_binding_required": true,
+  "source_protocol_sha256": "6dec0d9ce13ca162a034705dffd725b9669ea17eb65a77530783fb2d5074a308"
+}

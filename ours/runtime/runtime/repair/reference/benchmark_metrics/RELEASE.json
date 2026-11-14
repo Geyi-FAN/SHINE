@@ -1,0 +1,42 @@
+{
+  "version": "2.5.0-candidate",
+  "status": "frozen_candidate_not_final_benchmark",
+  "rules_sha256": "d64038f1ccd17ebc6c9327de21c0711a98c07542d5b817f057ff165e1cde59e6",
+  "canonical_contracts_sha256": "8a110fc5c71fec4ee36ff88c15168f1508fda726d716f43ea5d75e786067f067",
+  "contract_count": 722,
+  "validation": {
+    "unit_tests_passed": 27,
+    "reviewed_restore_cases": 15,
+    "target_region_cases": 5,
+    "original_close_successes": 101,
+    "reviewed_drop_negatives": 16,
+    "cli_end_to_end": true
+  },
+  "files": {
+    "benchmark_metrics/README.md": "471960a7dfacb6a366739f1080f731f7e374a0cc8edac5bee8df443ff253fa7e",
+    "benchmark_metrics/__init__.py": "a40837453fa27ebb4f9656331534500d50bd443920c170fc4c1c0b0f64928347",
+    "benchmark_metrics/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+    "benchmark_metrics/adapters.py": "c63e9ea0158d7102a20ca0242b9097d9a8246694c7b572a81d82f5e2d59f6ec2",
+    "benchmark_metrics/cli.py": "a00d732aca409915f34d309e2fa565a20d93d89161b3738c57b76b449e27d7dc",
+    "benchmark_metrics/config.py": "70bb35da2f804d5145ad92d15f7d0408573a0311651e491d822d25f5b109e3b8",
+    "benchmark_metrics/configs/v2.5.0-candidate.json": "4a1349af4bdcd60cfe78267a15ddb1cd69938042455514f335160286d5af3dcc",
+    "benchmark_metrics/contracts.py": "4cb7191a8e473908f3ea727235361e04d91a7de9372bc2e8862100387e0af8a2",
+    "benchmark_metrics/controller.py": "7efebfdde47ba9f5d0470b78a93bf4cf9d330fb360b323ed33bc60aa27a8b407",
+    "benchmark_metrics/evaluator.py": "a11ff5d78857b23490de4b6cc2dfe8a72a352cd7cd07a0dcf35230d2c66be9cc",
+    "benchmark_metrics/events.py": "a6212899661c6566e6c89f9bfec532f2df42fc385b48fb09303b04fce6837540",
+    "benchmark_metrics/predicates.py": "ec563cdf3b6b1a6d7d570fd666490f7ed379cdd8315b557dc89fb6f1d118f138",
+    "benchmark_metrics/reasons.py": "3c7428252869ca3b210d7aaf44f867cd99274de5b78b227ad5ded2e85d9b44f6",
+    "benchmark_metrics/tests/regression_events.py": "96333216822231386fe36f2bc1d09d86f7085ccb01ef5f265c082b996b841315",
+    "benchmark_metrics/tests/regression_reviewed.py": "f6f184a0a8031d815f97ce42f9a7107b45c0173c9e4acc98916cb8703a38a080",
+    "benchmark_metrics/tests/test_metrics.py": "360313635e8be1d854fa27e1b085612ca69d3404fb155cb56d0cd4f5448bb97e",
+    "smolvla_small722_eval_10k_15k_20261019/src/score.py": "b07f308efa10dc9c0a66333de730feed2355875d611dd8b21ba0c79e40dc1b8a"
+  },
+  "limitations": {
+    "restore_radii": "review-supported candidates; not independently validated",
+    "high_release_height": "accepted12-19mm and rejected101-155mm;20-50mm boundary insufficient",
+    "close_gap": "accepted6.90/7.08mm;negative boundary near10mm insufficient",
+    "support_window": "tolerates isolated loss; support-surface identity remains limited",
+    "reopen": "diagnostic only in current contracts; confirmed close is not continuous keep",
+    "human_boundary_review": "15 reviewed:11 written,4 explicitly accept original failures; mixed label scopes"
+  }
+}

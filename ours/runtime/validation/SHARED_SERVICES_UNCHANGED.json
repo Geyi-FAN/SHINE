@@ -1,0 +1,11 @@
+{
+  "main": {
+    "execution_service": "f28d_async_single_owner",
+    "execution_service_revision": "R7-T3.2",
+    "execution_kernel": null,
+    "runtime_revision": null
+  },
+  "local_models": {
+    "read_only_probe": "HTTPError"
+  }
+}

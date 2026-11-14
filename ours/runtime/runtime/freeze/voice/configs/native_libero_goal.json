@@ -1,0 +1,156 @@
+{
+  "schema": "native_libero_goal.v1",
+  "source": "Public LIBERO-Goal task language and BDDL goal predicates; normal training text. No evaluation case labels, positions or reference plan.",
+  "entries": [
+    {
+      "skill_id": "open_middle",
+      "task_id": 0,
+      "canonical_task": "open the middle drawer of the cabinet",
+      "object": null,
+      "native_predicates": [
+        [
+          "open",
+          "wooden_cabinet_1_middle_region"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "bowl_stove",
+      "task_id": 1,
+      "canonical_task": "put the bowl on the stove",
+      "object": "bowl",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "flat_stove_1_cook_region"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "bottle_cabinet",
+      "task_id": 2,
+      "canonical_task": "put the wine bottle on top of the cabinet",
+      "object": "wine_bottle",
+      "native_predicates": [
+        [
+          "on",
+          "wine_bottle_1",
+          "wooden_cabinet_1_top_side"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "bowl_drawer",
+      "task_id": 3,
+      "canonical_task": "open the top drawer and put the bowl inside",
+      "object": "bowl",
+      "native_predicates": [
+        [
+          "in",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_region"
+        ]
+      ],
+      "intrinsic_preconditions": [
+        "打开上层抽屉"
+      ],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "bowl_cabinet",
+      "task_id": 4,
+      "canonical_task": "put the bowl on top of the cabinet",
+      "object": "bowl",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_side"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "push_plate",
+      "task_id": 5,
+      "canonical_task": "push the plate to the front of the stove",
+      "object": "plate",
+      "native_predicates": [
+        [
+          "on",
+          "plate_1",
+          "main_table_stove_front_region"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "cheese_bowl",
+      "task_id": 6,
+      "canonical_task": "put the cream cheese in the bowl",
+      "object": "cheese",
+      "native_predicates": [
+        [
+          "on",
+          "cream_cheese_1",
+          "akita_black_bowl_1"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "turn_on_stove",
+      "task_id": 7,
+      "canonical_task": "turn on the stove",
+      "object": null,
+      "native_predicates": [
+        [
+          "turnon",
+          "flat_stove_1"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "bowl_plate",
+      "task_id": 8,
+      "canonical_task": "put the bowl on the plate",
+      "object": "bowl",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "plate_1"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    },
+    {
+      "skill_id": "bottle_rack",
+      "task_id": 9,
+      "canonical_task": "put the wine bottle on the rack",
+      "object": "wine_bottle",
+      "native_predicates": [
+        [
+          "on",
+          "wine_bottle_1",
+          "wine_rack_1_top_region"
+        ]
+      ],
+      "intrinsic_preconditions": [],
+      "intrinsic_constraints": []
+    }
+  ]
+}

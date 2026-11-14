@@ -1,0 +1,223 @@
+{
+  "completed": 930,
+  "unique_cases": 370,
+  "runtime": "98bcb048d6e61b42125d8027b59f8fda197e6d02",
+  "metrics": [
+    {
+      "task": "T1",
+      "metric": "interaction",
+      "success": 120,
+      "total": 120,
+      "rate_percent": 100.0,
+      "unknown": 0
+    },
+    {
+      "task": "T1",
+      "metric": "target",
+      "success": 120,
+      "total": 120,
+      "rate_percent": 100.0,
+      "unknown": 0
+    },
+    {
+      "task": "T2",
+      "metric": "interaction",
+      "success": 111,
+      "total": 120,
+      "rate_percent": 92.5,
+      "unknown": 0
+    },
+    {
+      "task": "T2",
+      "metric": "target",
+      "success": 117,
+      "total": 120,
+      "rate_percent": 97.5,
+      "unknown": 0
+    },
+    {
+      "task": "T2",
+      "metric": "instruction",
+      "success": 102,
+      "total": 120,
+      "rate_percent": 85.0,
+      "unknown": 0
+    },
+    {
+      "task": "T3",
+      "metric": "interaction",
+      "success": 114,
+      "total": 120,
+      "rate_percent": 95.0,
+      "unknown": 0
+    },
+    {
+      "task": "T3",
+      "metric": "target",
+      "success": 106,
+      "total": 120,
+      "rate_percent": 88.33333333333333,
+      "unknown": 0
+    },
+    {
+      "task": "T3",
+      "metric": "instruction",
+      "success": 106,
+      "total": 120,
+      "rate_percent": 88.33333333333333,
+      "unknown": 0
+    },
+    {
+      "task": "T4",
+      "metric": "interaction",
+      "success": 114,
+      "total": 120,
+      "rate_percent": 95.0,
+      "unknown": 0
+    },
+    {
+      "task": "T4",
+      "metric": "target",
+      "success": 103,
+      "total": 120,
+      "rate_percent": 85.83333333333333,
+      "unknown": 3
+    },
+    {
+      "task": "T4",
+      "metric": "instruction",
+      "success": 103,
+      "total": 120,
+      "rate_percent": 85.83333333333333,
+      "unknown": 0
+    },
+    {
+      "task": "T5",
+      "metric": "interaction",
+      "success": 118,
+      "total": 120,
+      "rate_percent": 98.33333333333333,
+      "unknown": 0
+    },
+    {
+      "task": "T5",
+      "metric": "target",
+      "success": 107,
+      "total": 108,
+      "rate_percent": 99.07407407407408,
+      "unknown": 1
+    },
+    {
+      "task": "T5",
+      "metric": "instruction",
+      "success": 107,
+      "total": 108,
+      "rate_percent": 99.07407407407408,
+      "unknown": 0
+    },
+    {
+      "task": "T7",
+      "metric": "interaction",
+      "success": 108,
+      "total": 120,
+      "rate_percent": 90.0,
+      "unknown": 0
+    },
+    {
+      "task": "T7",
+      "metric": "target",
+      "success": 109,
+      "total": 120,
+      "rate_percent": 90.83333333333333,
+      "unknown": 0
+    },
+    {
+      "task": "T7",
+      "metric": "instruction",
+      "success": 99,
+      "total": 120,
+      "rate_percent": 82.5,
+      "unknown": 0
+    },
+    {
+      "task": "T8",
+      "metric": "interaction",
+      "success": 120,
+      "total": 120,
+      "rate_percent": 100.0,
+      "unknown": 0
+    },
+    {
+      "task": "T8",
+      "metric": "target",
+      "success": 84,
+      "total": 84,
+      "rate_percent": 100.0,
+      "unknown": 0
+    },
+    {
+      "task": "T6",
+      "metric": "QA_success",
+      "success": 87,
+      "total": 90,
+      "rate_percent": 96.66666666666667,
+      "unknown": 0
+    },
+    {
+      "task": "T8",
+      "metric": "speech_action_separation",
+      "success": 24,
+      "total": 24,
+      "rate_percent": 100.0,
+      "unknown": 0
+    }
+  ],
+  "all_first_attempts": true,
+  "QA_judge": "T6-fixed-hybrid-judge-v4-20261109/r3",
+  "measurement_revision": "v25-existing-loaded-container-support-aligned-v1",
+  "independent_heldout": false,
+  "human_calibration_complete": false,
+  "old_results_not_overwritten": true,
+  "at": 1794646350.016233,
+  "pooled_nonQA": [
+    {
+      "task": "pooled_nonQA",
+      "metric": "interaction",
+      "score_key": "registered_applicable",
+      "success": 805,
+      "total": 840,
+      "rate_percent": 95.83333333333333,
+      "failed": 35,
+      "unknown": 0
+    },
+    {
+      "task": "pooled_nonQA",
+      "metric": "target",
+      "score_key": "registered_applicable",
+      "success": 746,
+      "total": 792,
+      "rate_percent": 94.1919191919192,
+      "failed": 42,
+      "unknown": 4
+    },
+    {
+      "task": "pooled_nonQA",
+      "metric": "instruction",
+      "score_key": "registered_applicable",
+      "success": 517,
+      "total": 588,
+      "rate_percent": 87.92517006802721,
+      "failed": 71,
+      "unknown": 0
+    }
+  ],
+  "derived_export_correction": "T7 registered interaction45 mapped to displayed interaction; all per-case labels unchanged",
+  "audit_report": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/reports/result_check_20261114/RESULTS.md",
+  "T6_reliability10": {
+    "planned": 10,
+    "completed": 10,
+    "final_score_agreement": 10,
+    "semantic_verdict_agreement": 10,
+    "primary_scores_unchanged": true
+  }
+}

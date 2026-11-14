@@ -1,0 +1,25 @@
+{
+  "schema": "r34_local_role_routes_v1",
+  "model": "Qwen3.8-27B",
+  "service_env_file": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/our_T3_T1_T6_repair_20261109/private/client.env",
+  "roles": {
+    "verifier": {
+      "api_base_url": "http://127.0.0.1:18686/v1"
+    },
+    "recovery": {
+      "api_base_url": "http://127.0.0.1:18686/v1"
+    }
+  },
+  "timeout_seconds": 600,
+  "atlas": {
+    "max_images_per_sheet": 3,
+    "max_sheets": 2,
+    "label_band_pixels": 32,
+    "resize": false,
+    "format": "PNG"
+  },
+  "cloud_fallback": false,
+  "transport_retries": 0,
+  "runtime_validation_attempts": "original R34 up to 3 for recovery; replay first attempt only",
+  "preserve_role_api_urls": true
+}

@@ -1,0 +1,11 @@
+{
+  "evaluation_root": "/mnt/disk_2/geyi/pi0.5_test_1001/evaluation_portable",
+  "pi05_project": "/mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r3_20261108",
+  "pi05_python": "/mnt/disk_2/geyi/openpi/.venv/bin/python",
+  "robot_python": "/mnt/disk_2/geyi/pi0.5_test_1001/evaluation_portable/.venv/bin/python",
+  "node": "/mnt/disk_2/geyi/voice_pi05_harness/runtime/node-v22.23.3-linux-x64/bin/node",
+  "checkpoint": "/mnt/disk_4/geyi/e3_v4_744_E3_fulllibero_35k_30000/30000",
+  "openpi_data_home": "/mnt/disk_2/geyi/.cache/openpi",
+  "expected_experiment": "pi05_744_E3_imported_params",
+  "expected_checkpoint_step": "30000"
+}

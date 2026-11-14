@@ -1,0 +1,24 @@
+{
+  "runtime_revision": "audio-c3r-pi05-744-r3",
+  "status": "CODE_FROZEN_PENDING_AUDIO_PREFLIGHT",
+  "architecture": "VoiceHarness R7/R8 common interaction fixes + full C3r recovery + pi05 E3 744 30000",
+  "python_tests": 278,
+  "node_tests": 121,
+  "real_audio_trials": 0,
+  "real_model_generation_calls": 0,
+  "robot_action_steps": 0,
+  "unchanged": [
+    "main 8787 and 8801",
+    "r6 release datasets",
+    "scoring denominators and thresholds",
+    "historical scores",
+    "other experiments and environments"
+  ],
+  "pending": [
+    "32 representative real audio + model + robot preflight",
+    "category runner binding and controlled preparation interface checks",
+    "main service cutover after acceptance"
+  ],
+  "prompt_route": "all pi05 tasks via full C3r Agent",
+  "real_audio_note": "Diagnostic attempts live in external preflight directory; no paired32 completion yet"
+}

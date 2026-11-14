@@ -1,0 +1,739 @@
+TAP version 13
+# Subtest: first success has one generation
+ok 1 - first success has one generation
+  ---
+  duration_ms: 1.071149
+  type: 'test'
+  ...
+# Subtest: timeout retries exact same text once before any forwarding
+ok 2 - timeout retries exact same text once before any forwarding
+  ---
+  duration_ms: 0.280715
+  type: 'test'
+  ...
+# Subtest: two timeouts do not create a third attempt
+ok 3 - two timeouts do not create a third attempt
+  ---
+  duration_ms: 1.5266
+  type: 'test'
+  ...
+# Subtest: authentication errors are never retried
+ok 4 - authentication errors are never retried
+  ---
+  duration_ms: 0.211766
+  type: 'test'
+  ...
+# Subtest: already aborted input generates no speech
+ok 5 - already aborted input generates no speech
+  ---
+  duration_ms: 0.234136
+  type: 'test'
+  ...
+# Subtest: new input cancellation prevents retry
+ok 6 - new input cancellation prevents retry
+  ---
+  duration_ms: 0.213396
+  type: 'test'
+  ...
+# Subtest: changed fixed readout retries once without releasing rejected speech
+ok 7 - changed fixed readout retries once without releasing rejected speech
+  ---
+  duration_ms: 0.334024
+  type: 'test'
+  ...
+# Subtest: readout retry requires a fixed verified announcement
+ok 8 - readout retry requires a fixed verified announcement
+  ---
+  duration_ms: 0.291114
+  type: 'test'
+  ...
+# Subtest: first successful review returns once
+ok 9 - first successful review returns once
+  ---
+  duration_ms: 23.523983
+  type: 'test'
+  ...
+# Subtest: timed-out review retries identical image/prompt only once before audio
+ok 10 - timed-out review retries identical image/prompt only once before audio
+  ---
+  duration_ms: 5.184677
+  type: 'test'
+  ...
+# Subtest: two timed-out reviews fail closed with no third request
+ok 11 - two timed-out reviews fail closed with no third request
+  ---
+  duration_ms: 10.121459
+  type: 'test'
+  ...
+# Subtest: HTTP authorization errors are not retried
+ok 12 - HTTP authorization errors are not retried
+  ---
+  duration_ms: 0.595909
+  type: 'test'
+  ...
+# Subtest: parent cancellation never triggers retry
+ok 13 - parent cancellation never triggers retry
+  ---
+  duration_ms: 0.683456
+  type: 'test'
+  ...
+# Subtest: already aborted parent makes no request
+ok 14 - already aborted parent makes no request
+  ---
+  duration_ms: 0.252765
+  type: 'test'
+  ...
+# Subtest: expired total budget makes no request
+ok 15 - expired total budget makes no request
+  ---
+  duration_ms: 0.189896
+  type: 'test'
+  ...
+# Subtest: malformed review JSON is not retried or returned as a candidate
+ok 16 - malformed review JSON is not retried or returned as a candidate
+  ---
+  duration_ms: 0.472731
+  type: 'test'
+  ...
+# Subtest: standalone pause Pause the 机器人。
+ok 17 - standalone pause Pause the 机器人。
+  ---
+  duration_ms: 3.681317
+  type: 'test'
+  ...
+# Subtest: standalone pause pause的机器人。
+ok 18 - standalone pause pause的机器人。
+  ---
+  duration_ms: 0.155277
+  type: 'test'
+  ...
+# Subtest: standalone pause Stop，暂停一下。
+ok 19 - standalone pause Stop，暂停一下。
+  ---
+  duration_ms: 0.296024
+  type: 'test'
+  ...
+# Subtest: standalone pause Stop.
+ok 20 - standalone pause Stop.
+  ---
+  duration_ms: 0.414612
+  type: 'test'
+  ...
+# Subtest: standalone pause Pause the robot.
+ok 21 - standalone pause Pause the robot.
+  ---
+  duration_ms: 0.135427
+  type: 'test'
+  ...
+# Subtest: standalone pause 请暂停当前任务。
+ok 22 - standalone pause 请暂停当前任务。
+  ---
+  duration_ms: 3.375463
+  type: 'test'
+  ...
+# Subtest: current resume Continue 刚才的任务。
+ok 23 - current resume Continue 刚才的任务。
+  ---
+  duration_ms: 0.156377
+  type: 'test'
+  ...
+# Subtest: current resume Resume the same 任务。
+ok 24 - current resume Resume the same 任务。
+  ---
+  duration_ms: 0.113868
+  type: 'test'
+  ...
+# Subtest: current resume 继续刚才的任务。
+ok 25 - current resume 继续刚才的任务。
+  ---
+  duration_ms: 0.312894
+  type: 'test'
+  ...
+# Subtest: current resume 继续 the same task.
+ok 26 - current resume 继续 the same task.
+  ---
+  duration_ms: 0.418631
+  type: 'test'
+  ...
+# Subtest: current resume Continue the task you were doing.
+ok 27 - current resume Continue the task you were doing.
+  ---
+  duration_ms: 0.357683
+  type: 'test'
+  ...
+# Subtest: not an immediate pause Don't stop.
+ok 28 - not an immediate pause Don't stop.
+  ---
+  duration_ms: 0.108388
+  type: 'test'
+  ...
+# Subtest: not an immediate pause Do not pause the robot.
+ok 29 - not an immediate pause Do not pause the robot.
+  ---
+  duration_ms: 0.067618
+  type: 'test'
+  ...
+# Subtest: not an immediate pause 不要pause。
+ok 30 - not an immediate pause 不要pause。
+  ---
+  duration_ms: 0.066859
+  type: 'test'
+  ...
+# Subtest: not an immediate pause 不要停。
+ok 31 - not an immediate pause 不要停。
+  ---
+  duration_ms: 0.063069
+  type: 'test'
+  ...
+# Subtest: not an immediate pause Stop after this task is finished.
+ok 32 - not an immediate pause Stop after this task is finished.
+  ---
+  duration_ms: 0.063959
+  type: 'test'
+  ...
+# Subtest: not an immediate pause 完成后再pause。
+ok 33 - not an immediate pause 完成后再pause。
+  ---
+  duration_ms: 0.066528
+  type: 'test'
+  ...
+# Subtest: not an immediate pause Cancel the waiting task.
+ok 34 - not an immediate pause Cancel the waiting task.
+  ---
+  duration_ms: 0.458711
+  type: 'test'
+  ...
+# Subtest: not an immediate pause 取消waiting任务。
+ok 35 - not an immediate pause 取消waiting任务。
+  ---
+  duration_ms: 0.071959
+  type: 'test'
+  ...
+# Subtest: not an immediate pause What does stop mean?
+ok 36 - not an immediate pause What does stop mean?
+  ---
+  duration_ms: 0.101028
+  type: 'test'
+  ...
+# Subtest: not an immediate pause 如果我说暂停会怎样？
+ok 37 - not an immediate pause 如果我说暂停会怎样？
+  ---
+  duration_ms: 0.094308
+  type: 'test'
+  ...
+# Subtest: not an immediate pause Stop. Put the bowl on the plate.
+ok 38 - not an immediate pause Stop. Put the bowl on the plate.
+  ---
+  duration_ms: 0.067258
+  type: 'test'
+  ...
+# Subtest: not a generic current reference 恢复刚才打开抽屉的任务
+ok 39 - not a generic current reference 恢复刚才打开抽屉的任务
+  ---
+  duration_ms: 0.092018
+  type: 'test'
+  ...
+# Subtest: not a generic current reference Resume the completed earlier drawer task.
+ok 40 - not a generic current reference Resume the completed earlier drawer task.
+  ---
+  duration_ms: 0.064869
+  type: 'test'
+  ...
+# Subtest: not a generic current reference Continue the task from yesterday.
+ok 41 - not a generic current reference Continue the task from yesterday.
+  ---
+  duration_ms: 0.061189
+  type: 'test'
+  ...
+# Subtest: not a generic current reference 不要继续刚才的任务。
+ok 42 - not a generic current reference 不要继续刚才的任务。
+  ---
+  duration_ms: 0.061759
+  type: 'test'
+  ...
+# Subtest: not a generic current reference 继续上一个已经完成的任务。
+ok 43 - not a generic current reference 继续上一个已经完成的任务。
+  ---
+  duration_ms: 0.058908
+  type: 'test'
+  ...
+# Subtest: split negative Don't.
+ok 44 - split negative Don't.
+  ---
+  duration_ms: 0.321524
+  type: 'test'
+  ...
+# Subtest: split negative Do not.
+ok 45 - split negative Do not.
+  ---
+  duration_ms: 0.194776
+  type: 'test'
+  ...
+# Subtest: split negative 如果
+ok 46 - split negative 如果
+  ---
+  duration_ms: 0.156207
+  type: 'test'
+  ...
+# Subtest: split negative 不要
+ok 47 - split negative 不要
+  ---
+  duration_ms: 0.072869
+  type: 'test'
+  ...
+# Subtest: real dispatcher resolves unique current memory Continue 刚才的任务。
+ok 48 - real dispatcher resolves unique current memory Continue 刚才的任务。
+  ---
+  duration_ms: 19.337207
+  type: 'test'
+  ...
+# Subtest: real dispatcher resolves unique current memory 继续刚才的任务。
+ok 49 - real dispatcher resolves unique current memory 继续刚才的任务。
+  ---
+  duration_ms: 1.098968
+  type: 'test'
+  ...
+# Subtest: memory cannot select wrong task ambiguous
+ok 50 - memory cannot select wrong task ambiguous
+  ---
+  duration_ms: 0.688636
+  type: 'test'
+  ...
+# Subtest: memory cannot select wrong task wrongTask
+ok 51 - memory cannot select wrong task wrongTask
+  ---
+  duration_ms: 0.562178
+  type: 'test'
+  ...
+# Subtest: memory cannot select wrong task staleVersion
+ok 52 - memory cannot select wrong task staleVersion
+  ---
+  duration_ms: 0.677176
+  type: 'test'
+  ...
+# Subtest: independent Stop survives only transport generation change
+ok 53 - independent Stop survives only transport generation change
+  ---
+  duration_ms: 2.325294
+  type: 'test'
+  ...
+# Subtest: already consumed independent event cannot be replayed
+ok 54 - already consumed independent event cannot be replayed
+  ---
+  duration_ms: 1.00153
+  type: 'test'
+  ...
+# Subtest: second explicit pause fragment does not commit the same pause twice
+ok 55 - second explicit pause fragment does not commit the same pause twice
+  ---
+  duration_ms: 1.012289
+  type: 'test'
+  ...
+# Subtest: a newer independent utterance invalidates an old Stop
+ok 56 - a newer independent utterance invalidates an old Stop
+  ---
+  duration_ms: 0.51647
+  type: 'test'
+  ...
+# Subtest: a newer primary utterance invalidates old Stop
+ok 57 - a newer primary utterance invalidates old Stop
+  ---
+  duration_ms: 0.410642
+  type: 'test'
+  ...
+# Subtest: primary VAD for same audio binds the same independent Stop once
+ok 58 - primary VAD for same audio binds the same independent Stop once
+  ---
+  duration_ms: 0.716126
+  type: 'test'
+  ...
+# Subtest: original gateway fence rejects a changed task
+ok 59 - original gateway fence rejects a changed task
+  ---
+  duration_ms: 0.656477
+  type: 'test'
+  ...
+# Subtest: original gateway fence rejects a changed episode
+ok 60 - original gateway fence rejects a changed episode
+  ---
+  duration_ms: 0.579249
+  type: 'test'
+  ...
+# Subtest: stopping a call invalidates the independent control lease
+ok 61 - stopping a call invalidates the independent control lease
+  ---
+  duration_ms: 0.360323
+  type: 'test'
+  ...
+# Subtest: muting input invalidates the control lease
+ok 62 - muting input invalidates the control lease
+  ---
+  duration_ms: 0.370793
+  type: 'test'
+  ...
+# Subtest: old audio cannot be rebound to the current task
+ok 63 - old audio cannot be rebound to the current task
+  ---
+  duration_ms: 0.162647
+  type: 'test'
+  ...
+# Subtest: committed pause receipt survives a newer same-command ASR fragment
+ok 64 - committed pause receipt survives a newer same-command ASR fragment
+  ---
+  duration_ms: 1.055049
+  type: 'test'
+  ...
+# Subtest: standalone resume cannot replace control with robot_restore_task
+ok 65 - standalone resume cannot replace control with robot_restore_task
+  ---
+  duration_ms: 0.108288
+  type: 'test'
+  ...
+# Subtest: standalone resume cannot replace control with robot_revise_task
+ok 66 - standalone resume cannot replace control with robot_revise_task
+  ---
+  duration_ms: 0.068188
+  type: 'test'
+  ...
+# Subtest: standalone pause cannot replace control with robot_start_task
+ok 67 - standalone pause cannot replace control with robot_start_task
+  ---
+  duration_ms: 0.078848
+  type: 'test'
+  ...
+# Subtest: standalone cancel_waiting cannot replace control with robot_schedule_task
+ok 68 - standalone cancel_waiting cannot replace control with robot_schedule_task
+  ---
+  duration_ms: 0.064179
+  type: 'test'
+  ...
+# Subtest: negative controls cannot mutate 不要继续当前任务。
+ok 69 - negative controls cannot mutate 不要继续当前任务。
+  ---
+  duration_ms: 0.126138
+  type: 'test'
+  ...
+# Subtest: negative controls cannot mutate 不要恢复刚才的任务。
+ok 70 - negative controls cannot mutate 不要恢复刚才的任务。
+  ---
+  duration_ms: 0.082239
+  type: 'test'
+  ...
+# Subtest: negative controls cannot mutate 不要取消等待任务。
+ok 71 - negative controls cannot mutate 不要取消等待任务。
+  ---
+  duration_ms: 0.075559
+  type: 'test'
+  ...
+# Subtest: actual dispatcher rejects restore instead of standalone current resume
+ok 72 - actual dispatcher rejects restore instead of standalone current resume
+  ---
+  duration_ms: 0.166017
+  type: 'test'
+  ...
+# Subtest: second fragment may have captured OLD version before first pause committed; no retry mutation
+ok 73 - second fragment may have captured OLD version before first pause committed; no retry mutation
+  ---
+  duration_ms: 1.192477
+  type: 'test'
+  ...
+# Subtest: fresh task identity for What are you doing?
+ok 74 - fresh task identity for What are you doing?
+  ---
+  duration_ms: 2.248826
+  type: 'test'
+  ...
+# Subtest: fresh task identity for What are you doing now?
+ok 75 - fresh task identity for What are you doing now?
+  ---
+  duration_ms: 0.590628
+  type: 'test'
+  ...
+# Subtest: fresh task identity for What are you doing right now?
+ok 76 - fresh task identity for What are you doing right now?
+  ---
+  duration_ms: 0.122908
+  type: 'test'
+  ...
+# Subtest: fresh task identity for What's the task right now?
+ok 77 - fresh task identity for What's the task right now?
+  ---
+  duration_ms: 0.122698
+  type: 'test'
+  ...
+# Subtest: fresh task identity for What is the current task?
+ok 78 - fresh task identity for What is the current task?
+  ---
+  duration_ms: 0.146608
+  type: 'test'
+  ...
+# Subtest: fresh task identity for 当前在执行什么任务？
+ok 79 - fresh task identity for 当前在执行什么任务？
+  ---
+  duration_ms: 0.198466
+  type: 'test'
+  ...
+# Subtest: preserve actual mode paused
+ok 80 - preserve actual mode paused
+  ---
+  duration_ms: 0.226455
+  type: 'test'
+  ...
+# Subtest: preserve actual mode completed
+ok 81 - preserve actual mode completed
+  ---
+  duration_ms: 0.114987
+  type: 'test'
+  ...
+# Subtest: preserve actual mode budget_exhausted
+ok 82 - preserve actual mode budget_exhausted
+  ---
+  duration_ms: 0.411712
+  type: 'test'
+  ...
+# Subtest: preserve actual mode needs_review
+ok 83 - preserve actual mode needs_review
+  ---
+  duration_ms: 0.398792
+  type: 'test'
+  ...
+# Subtest: preserve actual mode cancelled
+ok 84 - preserve actual mode cancelled
+  ---
+  duration_ms: 0.179106
+  type: 'test'
+  ...
+# Subtest: truly idle is not a fabricated task
+ok 85 - truly idle is not a fabricated task
+  ---
+  duration_ms: 0.155657
+  type: 'test'
+  ...
+# Subtest: does not replace unrelated question What's in the bowl?
+ok 86 - does not replace unrelated question What's in the bowl?
+  ---
+  duration_ms: 0.139067
+  type: 'test'
+  ...
+# Subtest: does not replace unrelated question What color is the bowl?
+ok 87 - does not replace unrelated question What color is the bowl?
+  ---
+  duration_ms: 0.114418
+  type: 'test'
+  ...
+# Subtest: does not replace unrelated question Where are you taking the bowl?
+ok 88 - does not replace unrelated question Where are you taking the bowl?
+  ---
+  duration_ms: 0.076599
+  type: 'test'
+  ...
+# Subtest: does not replace unrelated question What does stop mean?
+ok 89 - does not replace unrelated question What does stop mean?
+  ---
+  duration_ms: 0.081209
+  type: 'test'
+  ...
+# Subtest: does not replace unrelated question What are you doing? Then open the middle drawer.
+ok 90 - does not replace unrelated question What are you doing? Then open the middle drawer.
+  ---
+  duration_ms: 0.077749
+  type: 'test'
+  ...
+# Subtest: no simulator facts keep visual responsibility: How far open is the middle drawer?
+ok 91 - no simulator facts keep visual responsibility: How far open is the middle drawer?
+  ---
+  duration_ms: 0.99291
+  type: 'test'
+  ...
+# Subtest: no simulator facts keep visual responsibility: Is the middle drawer shut?
+ok 92 - no simulator facts keep visual responsibility: Is the middle drawer shut?
+  ---
+  duration_ms: 1.281765
+  type: 'test'
+  ...
+# Subtest: no simulator facts keep visual responsibility: 中层抽屉打开了吗？
+ok 93 - no simulator facts keep visual responsibility: 中层抽屉打开了吗？
+  ---
+  duration_ms: 0.234776
+  type: 'test'
+  ...
+# Subtest: stale facts do not overwrite current visual answer
+ok 94 - stale facts do not overwrite current visual answer
+  ---
+  duration_ms: 0.151887
+  type: 'test'
+  ...
+# Subtest: different episode cannot supply drawer state
+ok 95 - different episode cannot supply drawer state
+  ---
+  duration_ms: 0.164947
+  type: 'test'
+  ...
+# Subtest: mixed object relation still uses visual model
+ok 96 - mixed object relation still uses visual model
+  ---
+  duration_ms: 0.132437
+  type: 'test'
+  ...
+# Subtest: supported legacy explicit facts retain physical distinction
+ok 97 - supported legacy explicit facts retain physical distinction
+  ---
+  duration_ms: 0.319824
+  type: 'test'
+  ...
+# Subtest: stalled destination uses fresh actual goal exactly once
+ok 98 - stalled destination uses fresh actual goal exactly once
+  ---
+  duration_ms: 2.621488
+  type: 'test'
+  ...
+# Subtest: does not override new_input
+ok 99 - does not override new_input
+  ---
+  duration_ms: 0.250725
+  type: 'test'
+  ...
+# Subtest: does not override already_played
+ok 100 - does not override already_played
+  ---
+  duration_ms: 0.115378
+  type: 'test'
+  ...
+# Subtest: does not override camera_owner
+ok 101 - does not override camera_owner
+  ---
+  duration_ms: 0.113148
+  type: 'test'
+  ...
+# Subtest: does not override mutation
+ok 102 - does not override mutation
+  ---
+  duration_ms: 0.187057
+  type: 'test'
+  ...
+# Subtest: does not override reconnect
+ok 103 - does not override reconnect
+  ---
+  duration_ms: 0.110298
+  type: 'test'
+  ...
+# Subtest: does not override generation_changed
+ok 104 - does not override generation_changed
+  ---
+  duration_ms: 0.170967
+  type: 'test'
+  ...
+# Subtest: busy model is not cancelled or overridden
+ok 105 - busy model is not cancelled or overridden
+  ---
+  duration_ms: 0.699166
+  type: 'test'
+  ...
+# Subtest: unrelated scene question is not metadata answered
+ok 106 - unrelated scene question is not metadata answered
+  ---
+  duration_ms: 0.579129
+  type: 'test'
+  ...
+# Subtest: compound physical request is not a pure record query
+ok 107 - compound physical request is not a pure record query
+  ---
+  duration_ms: 0.448091
+  type: 'test'
+  ...
+# Subtest: untrusted transcript evidence cannot create a reply
+ok 108 - untrusted transcript evidence cannot create a reply
+  ---
+  duration_ms: 0.217726
+  type: 'test'
+  ...
+# Subtest: bounded handoff cancels only the unheard owned read-only continuation and speaks actual task once
+ok 109 - bounded handoff cancels only the unheard owned read-only continuation and speaks actual task once
+  ---
+  duration_ms: 0.673277
+  type: 'test'
+  ...
+# Subtest: never yields foreign_input
+ok 110 - never yields foreign_input
+  ---
+  duration_ms: 1.580509
+  type: 'test'
+  ...
+# Subtest: never yields foreign_version
+ok 111 - never yields foreign_version
+  ---
+  duration_ms: 0.490011
+  type: 'test'
+  ...
+# Subtest: never yields foreign_generation
+ok 112 - never yields foreign_generation
+  ---
+  duration_ms: 0.483251
+  type: 'test'
+  ...
+# Subtest: never yields proactive_authority
+ok 113 - never yields proactive_authority
+  ---
+  duration_ms: 0.466611
+  type: 'test'
+  ...
+# Subtest: never yields tool_pending
+ok 114 - never yields tool_pending
+  ---
+  duration_ms: 0.484201
+  type: 'test'
+  ...
+# Subtest: rejected cancellation does not fabricate a free provider channel
+ok 115 - rejected cancellation does not fabricate a free provider channel
+  ---
+  duration_ms: 0.52619
+  type: 'test'
+  ...
+# 18 actual-current-reference/ambiguity/stale-version assertions passed; no generated instruction
+# Subtest: /mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r3_20261108/tests/node/test_current_reference.mjs
+ok 7 - /mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r3_20261108/tests/node/test_current_reference.mjs
+  ---
+  duration_ms: 57.275303
+  type: 'test'
+  ...
+# 10 complete-dispatch assertions passed: actual memory ID only; instruction/version retained; ambiguity/stale blocks mutation
+# Subtest: /mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r3_20261108/tests/node/test_reference_dispatch.mjs
+ok 8 - /mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r3_20261108/tests/node/test_reference_dispatch.mjs
+  ---
+  duration_ms: 80.753527
+  type: 'test'
+  ...
+# 19 command/negative/replay-bound assertions passed; no model/audio call
+# Subtest: /mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r3_20261108/tests/node/test_voice.mjs
+ok 9 - /mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r3_20261108/tests/node/test_voice.mjs
+  ---
+  duration_ms: 53.642475
+  type: 'test'
+  ...
+# Subtest: image-only review rejects a hallucinated ball before forwarding an answer
+ok 119 - image-only review rejects a hallucinated ball before forwarding an answer
+  ---
+  duration_ms: 22.358257
+  type: 'test'
+  ...
+# Subtest: malformed review never forwards an unverified candidate
+ok 120 - malformed review never forwards an unverified candidate
+  ---
+  duration_ms: 1.040059
+  type: 'test'
+  ...
+# Subtest: end-to-end image QA retries a transport timeout with identical review evidence, then returns only checked text
+ok 121 - end-to-end image QA retries a transport timeout with identical review evidence, then returns only checked text
+  ---
+  duration_ms: 5004.370843
+  type: 'test'
+  ...
+1..121
+# tests 121
+# suites 0
+# pass 121
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5133.690977

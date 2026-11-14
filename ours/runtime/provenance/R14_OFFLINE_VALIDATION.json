@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "python": {
+    "tests": 292,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "models_called": 0,
+    "robot_actions": 0
+  },
+  "node_passed": true,
+  "voice_import_passed": true,
+  "voice_import_output": "LiveSession import passed\n",
+  "syntax_files": 20,
+  "elapsed_seconds": 12.453836917877197,
+  "models_called": 0,
+  "robot_actions": 0,
+  "real_audio_cases": 0
+}

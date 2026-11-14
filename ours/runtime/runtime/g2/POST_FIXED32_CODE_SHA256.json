@@ -1,0 +1,17 @@
+{
+  "files": {
+    "g2/bootstrap.py": "eaa3f61cb31d4cc23551716964171c066966e76e7d79ca71faff9da71f11d5fc",
+    "g2/bridge.py": "6f9595e4923214dd4d5f99a45d76be5b68436070759b60dc1c8990c364caf5e7",
+    "g2/natural_source.py": "375af6c533385a8e2739bbb891bdd2f00524c7afab90bcadb88428d8992745a7",
+    "g2/run_case.py": "8ed3c409b135a5457bb9e563c754608401f311c7bb2cc227ca8b97294070566a",
+    "g2/schedule.py": "3051dde2927852ce89a36a27bf8d8540a8051b534b28a6c55e38b78a044a0ed5",
+    "g2/test_bridge.py": "e07cd81462124b2b581d26a2f61f93a052a341f7a2ae7bfef170ccd5c099729d"
+  },
+  "fixed32_original_manifest": "g2/FINAL_CODE_SHA256.json",
+  "changes_after_fixed32": [
+    "terminal receipt protection",
+    "actual natural switch reference and state proof",
+    "separate natural source/post wall budgets"
+  ],
+  "fixed32_results_not_rewritten": true
+}

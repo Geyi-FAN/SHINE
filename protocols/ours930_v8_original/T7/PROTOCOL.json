@@ -1,0 +1,93 @@
+{
+  "budgets": {
+    "receipt_start_from_audio_end_s": 10,
+    "command_accept_from_audio_end_s": 20,
+    "source_first_action_from_source_audio_end_s": 45,
+    "waiting_handoff_s": 10,
+    "goal_policy_steps": 1200,
+    "goal_wall_s": 600,
+    "case_policy_steps": 3600,
+    "case_wall_s": 1800,
+    "endpoint_hold_steps": 40,
+    "cancelled_queue_observation_s": 5,
+    "receipt_observation_cap_s": 15,
+    "after_receipt_silence_s": 0.5,
+    "final_receipt_playback_drain_cap_s": 15
+  },
+  "timing": {
+    "queue": "After predecessor first actual action, before independent predecessor ready; no artificial world pause.",
+    "update": "After original successor acceptance, before handoff; wait actual playback end + 0.5s when available.",
+    "missing_receipt": "Fail missing receipt check; after 15s, continue authored next turn only if intended state is still present and voice idle.",
+    "missed_pending_window": "Retain fixed denominator and record pending-window-unreached; no resampling, no forced pause, no pretend update.",
+    "completion_during_update_audio": "Record separately; judge actions against actual decisive-intent/authorization time, not unknowable future text.",
+    "target_budget": "A clock starts after U01; successor clock starts when A independently ready; updates do not reset A or total case budgets.",
+    "handoff_clock": "max(predecessor independently ready, final valid successor request fully available); do not start before request exists.",
+    "predecessor_ready": "Independent v2.5 native goal plus applicable release/support/stability checks; not Harness completed; endpoint hold is not an extra every-stage dwell.",
+    "target_observation": "Native success during the authorized task execution or within 40 simulation ticks after its last action, before any foreign task action and within wall/action budgets. Historical action-frame-only T1 scores remain separate."
+  },
+  "latency_clock": "audio_end_proxy_until_decisive_phrase_annotations; no retroactive audio-onset authorization",
+  "model_reference": {
+    "executor": "SmolVLA E3 v4 raw30000",
+    "planner": "F28d Qwen3.8-27B-FP8 four roles",
+    "speech": "qwen3.8-omni-flash-realtime",
+    "stage_completion": "F28d S1/visual verification",
+    "positions": "YOLO/M1"
+  },
+  "typed_benchmark_task_injection": false,
+  "scope": "Current fixed-scene LIBERO-Goal goals0-9, not all LIBERO suites",
+  "repetitions": 1,
+  "primary_metric": "Interaction45; alongside Interaction10, Target, Instruction",
+  "whole_compound_predecessor": "For goal3, cancellation only removes waiting wine bottle; opening top drawer AND placing bowl remains authorized.",
+  "physical_constraints": "Original v2.5 including container-support evidence; no new positions, persistent constraints, closure, or threshold changes.",
+  "information_boundary": "Target spec999; all goals derived from actually authorized user text in executor. No future test answers sent to agent.",
+  "time_grades": {
+    "reported_handoff_s": [
+      10,
+      45
+    ],
+    "main_table": "interaction45",
+    "strict_metric": "interaction10",
+    "rule": "Same trajectory; only handoff deadline changes. Missing handoff never passes solely by widening time."
+  },
+  "provider_failure_policy": "Stop scheduling on access/input-quality/infra failure, preserve attempts. At most one separately mapped retry allowed only if no benchmark WAV, no task and no policy action; never rerun real method failures.",
+  "version": "t7-en-acoustic40-v2-20261107",
+  "denominators": {
+    "interaction10": 40,
+    "interaction45": 40,
+    "target": 40,
+    "instruction": 40,
+    "joint10": 40,
+    "joint45": 40
+  },
+  "source_protocol_sha256": "2b748a7a77e6bba5ec55a790a544d3913d634a5d453eba349056d1eefc73eabb",
+  "schema": "audio-switch-t7-data-release-v2",
+  "conditions": [
+    "CL",
+    "NS",
+    "EM",
+    "OV"
+  ],
+  "case_count": 40,
+  "unique_scripts": 10,
+  "available_wavs": 108,
+  "expected_input_turns": 108,
+  "initial_states": [
+    "LIVE8787_I00"
+  ],
+  "per_condition_denominator": 10,
+  "branch_counts": {
+    "N": 12,
+    "C": 16,
+    "R": 12
+  },
+  "excluded_conditions": [
+    "MX"
+  ],
+  "human_pending_outside_active_suite": {
+    "dialogues": 10,
+    "turns": 27,
+    "actual_recordings": 0
+  },
+  "new_robot_evaluation": false,
+  "scope_of_change": "paths, packaging and discovery only; waveform/task/trigger/budgets/judge unchanged"
+}

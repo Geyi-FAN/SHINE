@@ -1,0 +1,72 @@
+[
+  {
+    "source": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter/daemon/dist/tools/qa-grounding.mjs",
+    "target": "voice/dist/tools/qa-grounding.mjs",
+    "sha256": "3ee38b922f01a61e9012b707174cf3c12c65844bdb5d7690ffb9f5d9e1309b5f"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/evidence/T7/runs/t7_acoustic40_20261104/runtime/source_archives/CL10_v1/t7_adapter/test_bootstrap_evidence.py",
+    "target": "tests/python/test_bootstrap_evidence.py",
+    "sha256": "22f7df2cec310131a9a2e79f34ca803cf0859de6b3d402352c3e8a55f98af3b7"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/evidence/T7/runs/t7_acoustic40_20261104/runtime/source_archives/CL10_v1/t7_adapter/test_pending_preparation.py",
+    "target": "tests/python/test_pending_preparation.py",
+    "sha256": "9d7afeebc0aa60434023d91f5f802c5eee18405ead0c9aadf9a472b9dbf7a49f"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/evidence/T7/runs/t7_acoustic40_20261104/runtime/source_archives/CL10_v1/t7_adapter/test_cancel_audio.py",
+    "target": "tests/python/test_cancel_audio.py",
+    "sha256": "8d517ea00b8829569efe531d4ce47262c38ea18532e02b5b5b28f99a6f61a4cb"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/test_current_reference.mjs",
+    "target": "tests/node/test_current_reference.mjs",
+    "sha256": "6494dead1f3d02bc4c11bc5d29b18339df2d7b1637fb5e0157dcdc4f2da09597"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/test_reference_dispatch.mjs",
+    "target": "tests/node/test_reference_dispatch.mjs",
+    "sha256": "92129b10b8f21d0f5e450adfc8b71219b75d32ad2fb059322ad773b2a3a98611"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104/t4_adapter/test_voice.mjs",
+    "target": "tests/node/test_voice.mjs",
+    "sha256": "d312216ea1d6ba99202aa9c0cade99318a5fc877fc9cc98397aec6ac0cb1f901"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter/tests/control_repair.test.mjs",
+    "target": "tests/node/control_repair.test.mjs",
+    "sha256": "bf9a5c132c7709d811b9b4ade4f3fe2d1cc5ed0245f019c7d1d3e572210da0ab"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter/tests/task_question_fallback.test.mjs",
+    "target": "tests/node/task_question_fallback.test.mjs",
+    "sha256": "f3d45c08a38c3c613402684054f76055a394257c93de6346e1a9711bcd292067"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter/tests/visual_review.test.mjs",
+    "target": "tests/node/visual_review.test.mjs",
+    "sha256": "353bc6c1d06fe348d4c4ac4b72a719be4794486a9aa99e112d02ab78ec97bb60"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter/tests/bounded_speech.test.mjs",
+    "target": "tests/node/bounded_speech.test.mjs",
+    "sha256": "c5fef5313518e97af10cbcce00d4f1f40535f9a48bc0dc5962be1c291074693b"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter/tests/current_task_status.test.mjs",
+    "target": "tests/node/current_task_status.test.mjs",
+    "sha256": "a78897cc4d957eba040dc3db8235bad2981d8cdcff0be2bf294ccb0324944af9"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter/tests/bounded_visual_review.test.mjs",
+    "target": "tests/node/bounded_visual_review.test.mjs",
+    "sha256": "6638fa1f501338bfc0457e88ff236e068ebc04a6c3fe085ea873f8fbc2e33867"
+  },
+  {
+    "source": "/mnt/disk_4/geyi/research_store/disk2_archive/audio_switch/T6/runs/t6_c3r_20_20261103/source_archives/round5/t6_adapter/tests/drawer_visual_fallback.test.mjs",
+    "target": "tests/node/drawer_visual_fallback.test.mjs",
+    "sha256": "bfb5e8280b5a190445b41feeb7f3e8131501475b2624b83160db09efd96fe285"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "source_workspace": "/mnt/disk_4/geyi/t4_audio50_c3r_unified_v2_20261104",
+  "changes": [
+    "G22 transport import resolves inside dataset; bundled ws source+license",
+    "private token files supplied via environment only"
+  ],
+  "behavioral_changes": false,
+  "new_live_validation": false,
+  "requires_matching_already_running_isolated_backend": true,
+  "no_shared_service_launcher": true
+}

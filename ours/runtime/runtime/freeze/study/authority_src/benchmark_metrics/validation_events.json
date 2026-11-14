@@ -1,0 +1,592 @@
+{
+  "passed": true,
+  "original_close_successes": 101,
+  "reviewed_drop_failures": 16,
+  "cases": [
+    {
+      "case_id": "V2_R329_T03_C4_T00_SWITCH_T03_C4_R02",
+      "component": "close",
+      "confirmed_step": 232
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T00_SWITCH_T03_C4_R07",
+      "component": "close",
+      "confirmed_step": 275
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T04_SWITCH_T03_C4_R07",
+      "component": "close",
+      "confirmed_step": 232
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T04_SWITCH_T03_C23_R03",
+      "component": "close",
+      "confirmed_step": 46
+    },
+    {
+      "case_id": "V2_R329_T00_D2_T03_SWITCH_T00_D2_R00",
+      "component": "close",
+      "confirmed_step": 46
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T04_SWITCH_T03_C23_R07",
+      "component": "close",
+      "confirmed_step": 50
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R08",
+      "component": "close",
+      "confirmed_step": 127
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R05",
+      "component": "close",
+      "confirmed_step": 169
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T05_SWITCH_T03_C6_R00",
+      "component": "close",
+      "confirmed_step": 94
+    },
+    {
+      "case_id": "V2_R329_T00_D2_T03_SWITCH_T00_D2_R07",
+      "component": "close",
+      "confirmed_step": 42
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T05_CLOSE_MIDDLE_T00_D1_R07",
+      "component": "close",
+      "confirmed_step": 14
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T01_SWITCH_T03_C4_R02",
+      "component": "close",
+      "confirmed_step": 222
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T04_SWITCH_T03_C4_R02",
+      "component": "close",
+      "confirmed_step": 227
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T09_SWITCH_T03_C4_R02",
+      "component": "close",
+      "confirmed_step": 223
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T01_CLOSE_MIDDLE_T00_D1_R00",
+      "component": "close",
+      "confirmed_step": 32
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T02_CLOSE_MIDDLE_T00_D1_R00",
+      "component": "close",
+      "confirmed_step": 31
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T03_CLOSE_MIDDLE_T00_D1_R00",
+      "component": "close",
+      "confirmed_step": 28
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T04_CLOSE_MIDDLE_T00_D1_R00",
+      "component": "close",
+      "confirmed_step": 30
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T05_CLOSE_MIDDLE_T00_D1_R00",
+      "component": "close",
+      "confirmed_step": 28
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T06_CLOSE_MIDDLE_T00_D1_R00",
+      "component": "close",
+      "confirmed_step": 22
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T08_CLOSE_MIDDLE_T00_D1_R00",
+      "component": "close",
+      "confirmed_step": 31
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T05_SWITCH_T00_D1_R01",
+      "component": "close",
+      "confirmed_step": 35
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T03_CLOSE_MIDDLE_T00_D1_R01",
+      "component": "close",
+      "confirmed_step": 34
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T04_CLOSE_MIDDLE_T00_D1_R01",
+      "component": "close",
+      "confirmed_step": 37
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T05_CLOSE_MIDDLE_T00_D1_R01",
+      "component": "close",
+      "confirmed_step": 37
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T06_CLOSE_MIDDLE_T00_D1_R01",
+      "component": "close",
+      "confirmed_step": 34
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T07_CLOSE_MIDDLE_T00_D1_R01",
+      "component": "close",
+      "confirmed_step": 35
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T08_CLOSE_MIDDLE_T00_D1_R01",
+      "component": "close",
+      "confirmed_step": 39
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T09_CLOSE_MIDDLE_T00_D1_R01",
+      "component": "close",
+      "confirmed_step": 33
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T01_CLOSE_MIDDLE_T00_D1_R02",
+      "component": "close",
+      "confirmed_step": 73
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T02_CLOSE_MIDDLE_T00_D1_R02",
+      "component": "close",
+      "confirmed_step": 78
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T03_CLOSE_MIDDLE_T00_D1_R02",
+      "component": "close",
+      "confirmed_step": 120
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T04_CLOSE_MIDDLE_T00_D1_R02",
+      "component": "close",
+      "confirmed_step": 74
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T06_CLOSE_MIDDLE_T00_D1_R02",
+      "component": "close",
+      "confirmed_step": 37
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T07_CLOSE_MIDDLE_T00_D1_R02",
+      "component": "close",
+      "confirmed_step": 84
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T08_CLOSE_MIDDLE_T00_D1_R02",
+      "component": "close",
+      "confirmed_step": 81
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T01_CLOSE_MIDDLE_T00_D1_R03",
+      "component": "close",
+      "confirmed_step": 15
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T02_CLOSE_MIDDLE_T00_D1_R03",
+      "component": "close",
+      "confirmed_step": 14
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T04_CLOSE_MIDDLE_T00_D1_R03",
+      "component": "close",
+      "confirmed_step": 14
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T07_CLOSE_MIDDLE_T00_D1_R03",
+      "component": "close",
+      "confirmed_step": 13
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T08_CLOSE_MIDDLE_T00_D1_R03",
+      "component": "close",
+      "confirmed_step": 14
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T09_CLOSE_MIDDLE_T00_D1_R03",
+      "component": "close",
+      "confirmed_step": 13
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T05_SWITCH_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 40
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T01_CLOSE_MIDDLE_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 43
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T02_CLOSE_MIDDLE_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 41
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T03_CLOSE_MIDDLE_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 40
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T04_CLOSE_MIDDLE_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 42
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T05_CLOSE_MIDDLE_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 42
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T06_CLOSE_MIDDLE_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 42
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T08_CLOSE_MIDDLE_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 41
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T09_CLOSE_MIDDLE_T00_D1_R04",
+      "component": "close",
+      "confirmed_step": 41
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T01_CLOSE_MIDDLE_T00_D1_R05",
+      "component": "close",
+      "confirmed_step": 17
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T03_CLOSE_MIDDLE_T00_D1_R05",
+      "component": "close",
+      "confirmed_step": 13
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T06_CLOSE_MIDDLE_T00_D1_R05",
+      "component": "close",
+      "confirmed_step": 11
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T08_CLOSE_MIDDLE_T00_D1_R05",
+      "component": "close",
+      "confirmed_step": 12
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T09_CLOSE_MIDDLE_T00_D1_R05",
+      "component": "close",
+      "confirmed_step": 13
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T02_CLOSE_MIDDLE_T00_D1_R06",
+      "component": "close",
+      "confirmed_step": 47
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T04_CLOSE_MIDDLE_T00_D1_R06",
+      "component": "close",
+      "confirmed_step": 41
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T07_CLOSE_MIDDLE_T00_D1_R06",
+      "component": "close",
+      "confirmed_step": 42
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T05_SWITCH_T00_D1_R07",
+      "component": "close",
+      "confirmed_step": 13
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T01_CLOSE_MIDDLE_T00_D1_R07",
+      "component": "close",
+      "confirmed_step": 14
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T02_CLOSE_MIDDLE_T00_D1_R07",
+      "component": "close",
+      "confirmed_step": 12
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T04_CLOSE_MIDDLE_T00_D1_R07",
+      "component": "close",
+      "confirmed_step": 20
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T06_CLOSE_MIDDLE_T00_D1_R07",
+      "component": "close",
+      "confirmed_step": 8
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T08_CLOSE_MIDDLE_T00_D1_R07",
+      "component": "close",
+      "confirmed_step": 13
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T09_CLOSE_MIDDLE_T00_D1_R07",
+      "component": "close",
+      "confirmed_step": 15
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T01_CLOSE_MIDDLE_T00_D1_R08",
+      "component": "close",
+      "confirmed_step": 19
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T02_CLOSE_MIDDLE_T00_D1_R08",
+      "component": "close",
+      "confirmed_step": 18
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T03_CLOSE_MIDDLE_T00_D1_R08",
+      "component": "close",
+      "confirmed_step": 16
+    },
+    {
+      "case_id": "V2_R329_T00_D1_T04_CLOSE_MIDDLE_T00_D1_R08",
+      "component": "close",
+      "confirmed_step": 18
+    },
+    {
+      "case_id": "V2_R329_T00_D2_T03_SWITCH_T00_D2_R01",
+      "component": "close",
+      "confirmed_step": 67
+    },
+    {
+      "case_id": "V2_R329_T00_D2_T03_SWITCH_T00_D2_R08",
+      "component": "close",
+      "confirmed_step": 48
+    },
+    {
+      "case_id": "V2_R329_T00_D2_T03_SWITCH_T00_D2_R09",
+      "component": "close",
+      "confirmed_step": 75
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T02_SWITCH_T03_C23_R00",
+      "component": "close",
+      "confirmed_step": 124
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T05_SWITCH_T03_C23_R00",
+      "component": "close",
+      "confirmed_step": 124
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T06_SWITCH_T03_C23_R00",
+      "component": "close",
+      "confirmed_step": 124
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T08_SWITCH_T03_C23_R00",
+      "component": "close",
+      "confirmed_step": 122
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T02_SWITCH_T03_C23_R03",
+      "component": "close",
+      "confirmed_step": 55
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T05_SWITCH_T03_C23_R03",
+      "component": "close",
+      "confirmed_step": 46
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T06_SWITCH_T03_C23_R03",
+      "component": "close",
+      "confirmed_step": 236
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T08_SWITCH_T03_C23_R03",
+      "component": "close",
+      "confirmed_step": 52
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T02_SWITCH_T03_C23_R06",
+      "component": "close",
+      "confirmed_step": 171
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T02_SWITCH_T03_C23_R07",
+      "component": "close",
+      "confirmed_step": 51
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T05_SWITCH_T03_C23_R07",
+      "component": "close",
+      "confirmed_step": 58
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T06_SWITCH_T03_C23_R07",
+      "component": "close",
+      "confirmed_step": 61
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T08_SWITCH_T03_C23_R07",
+      "component": "close",
+      "confirmed_step": 51
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T00_SWITCH_T03_C23_R08",
+      "component": "close",
+      "confirmed_step": 152
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T05_SWITCH_T03_C23_R08",
+      "component": "close",
+      "confirmed_step": 144
+    },
+    {
+      "case_id": "V2_R329_T03_C23_T06_SWITCH_T03_C23_R08",
+      "component": "close",
+      "confirmed_step": 147
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R00",
+      "component": "close",
+      "confirmed_step": 95
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R02",
+      "component": "close",
+      "confirmed_step": 181
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T05_SWITCH_T03_C6_R02",
+      "component": "close",
+      "confirmed_step": 142
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R03",
+      "component": "close",
+      "confirmed_step": 106
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T05_SWITCH_T03_C6_R03",
+      "component": "close",
+      "confirmed_step": 107
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R04",
+      "component": "close",
+      "confirmed_step": 167
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T05_SWITCH_T03_C6_R04",
+      "component": "close",
+      "confirmed_step": 146
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T05_SWITCH_T03_C6_R05",
+      "component": "close",
+      "confirmed_step": 137
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R06",
+      "component": "close",
+      "confirmed_step": 151
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T05_SWITCH_T03_C6_R06",
+      "component": "close",
+      "confirmed_step": 114
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R07",
+      "component": "close",
+      "confirmed_step": 150
+    },
+    {
+      "case_id": "V2_R329_T03_C6_T00_SWITCH_T03_C6_R09",
+      "component": "close",
+      "confirmed_step": 110
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T01_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T04_SWITCH_T03_C4_R04",
+      "component": "drop",
+      "confirmed_step": 5
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T07_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T00_SWITCH_T03_C4_R04",
+      "component": "drop",
+      "confirmed_step": 5
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T00_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T02_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T04_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T05_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T06_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T08_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T09_SWITCH_T03_C4_R03",
+      "component": "drop",
+      "confirmed_step": 4
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T01_SWITCH_T03_C4_R04",
+      "component": "drop",
+      "confirmed_step": 5
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T05_SWITCH_T03_C4_R04",
+      "component": "drop",
+      "confirmed_step": 5
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T07_SWITCH_T03_C4_R04",
+      "component": "drop",
+      "confirmed_step": 5
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T08_SWITCH_T03_C4_R04",
+      "component": "drop",
+      "confirmed_step": 5
+    },
+    {
+      "case_id": "V2_R329_T03_C4_T09_SWITCH_T03_C4_R04",
+      "component": "drop",
+      "confirmed_step": 5
+    }
+  ]
+}

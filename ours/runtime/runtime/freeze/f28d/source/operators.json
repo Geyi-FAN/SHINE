@@ -1,0 +1,242 @@
+{
+  "return_bowl": {
+    "kind": "return",
+    "object": "bowl",
+    "reference": {
+      "entity": "bowl",
+      "keypoint": "K2",
+      "time_source": "episode_start"
+    },
+    "template": "return the bowl to its episode-start position at {episode_start.bowl.K2}, release it stably"
+  },
+  "return_bowl_clear": {
+    "kind": "return",
+    "object": "bowl",
+    "reference": {
+      "entity": "bowl",
+      "keypoint": "K2",
+      "time_source": "episode_start"
+    },
+    "template": "return the bowl to its episode-start position at {episode_start.bowl.K2}, release it stably and move the gripper clear"
+  },
+  "release_bowl": {
+    "kind": "release",
+    "object": "bowl",
+    "reference": {
+      "entity": "bowl",
+      "keypoint": "K2",
+      "time_source": "instruction_takeover"
+    },
+    "template": "release the bowl stably at its current supported position at {instruction_takeover.bowl.K2}"
+  },
+  "grasp_bowl": {
+    "kind": "grasp",
+    "object": "bowl",
+    "reference": {
+      "entity": "bowl",
+      "keypoint": "K1",
+      "time_source": "current"
+    },
+    "template": "grasp and lift the bowl now at {current.bowl.K1} clear of its support"
+  },
+  "return_cheese": {
+    "kind": "return",
+    "object": "cheese",
+    "reference": {
+      "entity": "cheese",
+      "keypoint": "K2",
+      "time_source": "episode_start"
+    },
+    "template": "return the cream cheese to its episode-start position at {episode_start.cheese.K2}, release it stably"
+  },
+  "return_cheese_clear": {
+    "kind": "return",
+    "object": "cheese",
+    "reference": {
+      "entity": "cheese",
+      "keypoint": "K2",
+      "time_source": "episode_start"
+    },
+    "template": "return the cream cheese to its episode-start position at {episode_start.cheese.K2}, release it stably and move the gripper clear"
+  },
+  "release_cheese": {
+    "kind": "release",
+    "object": "cheese",
+    "reference": {
+      "entity": "cheese",
+      "keypoint": "K2",
+      "time_source": "instruction_takeover"
+    },
+    "template": "release the cream cheese stably at its current supported position at {instruction_takeover.cheese.K2}"
+  },
+  "grasp_cheese": {
+    "kind": "grasp",
+    "object": "cheese",
+    "reference": {
+      "entity": "cheese",
+      "keypoint": "K1",
+      "time_source": "current"
+    },
+    "template": "grasp and lift the cream cheese now at {current.cheese.K1} clear of its support"
+  },
+  "return_wine_bottle": {
+    "kind": "return",
+    "object": "wine_bottle",
+    "reference": {
+      "entity": "wine_bottle",
+      "keypoint": "K2",
+      "time_source": "episode_start"
+    },
+    "template": "return the wine bottle to its episode-start position at {episode_start.wine_bottle.K2}, release it stably"
+  },
+  "return_wine_bottle_clear": {
+    "kind": "return",
+    "object": "wine_bottle",
+    "reference": {
+      "entity": "wine_bottle",
+      "keypoint": "K2",
+      "time_source": "episode_start"
+    },
+    "template": "return the wine bottle to its episode-start position at {episode_start.wine_bottle.K2}, release it stably and move the gripper clear"
+  },
+  "release_wine_bottle": {
+    "kind": "release",
+    "object": "wine_bottle",
+    "reference": {
+      "entity": "wine_bottle",
+      "keypoint": "K2",
+      "time_source": "instruction_takeover"
+    },
+    "template": "release the wine bottle stably at its current supported position at {instruction_takeover.wine_bottle.K2}"
+  },
+  "grasp_wine_bottle": {
+    "kind": "grasp",
+    "object": "wine_bottle",
+    "reference": {
+      "entity": "wine_bottle",
+      "keypoint": "K1",
+      "time_source": "current"
+    },
+    "template": "grasp and lift the wine bottle now at {current.wine_bottle.K1} clear of its support"
+  },
+  "close_middle": {
+    "kind": "close",
+    "object": "middle_drawer",
+    "reference": null,
+    "template": "close the middle drawer using its handle"
+  },
+  "open_middle": {
+    "kind": "target",
+    "object": "middle_drawer",
+    "reference": null,
+    "template": "open the middle drawer and disengage from the cabinet"
+  },
+  "close_top": {
+    "kind": "close",
+    "object": "top_drawer",
+    "reference": null,
+    "template": "close the top drawer using its handle"
+  },
+  "open_top": {
+    "kind": "open_top",
+    "object": "top_drawer",
+    "reference": null,
+    "template": "open the top drawer"
+  },
+  "bowl_stove": {
+    "kind": "target",
+    "object": "bowl",
+    "reference": {
+      "entity": "stove_placement",
+      "keypoint": "K3",
+      "time_source": "current"
+    },
+    "template": "place the bowl on the stove at {current.stove_placement.K3} and release it stably"
+  },
+  "bowl_cabinet": {
+    "kind": "target",
+    "object": "bowl",
+    "reference": {
+      "entity": "cabinet_top_placement",
+      "keypoint": "K3",
+      "time_source": "current"
+    },
+    "template": "place the bowl on top of the cabinet at {current.cabinet_top_placement.K3} and release it stably"
+  },
+  "bowl_plate": {
+    "kind": "target",
+    "object": "bowl",
+    "reference": {
+      "entity": "plate",
+      "keypoint": "K3",
+      "time_source": "current"
+    },
+    "template": "place the bowl on the plate at {current.plate.K3} and release it stably"
+  },
+  "bowl_drawer": {
+    "kind": "target",
+    "object": "bowl",
+    "reference": {
+      "entity": "top_drawer_interior",
+      "keypoint": "K3",
+      "time_source": "current"
+    },
+    "template": "place the bowl inside the top drawer at {current.top_drawer_interior.K3} and release it stably"
+  },
+  "cheese_bowl": {
+    "kind": "target",
+    "object": "cheese",
+    "reference": {
+      "entity": "bowl",
+      "keypoint": "K3",
+      "time_source": "current"
+    },
+    "template": "place the cream cheese in the bowl at its current interior point {current.bowl.K3} and release it stably"
+  },
+  "bottle_cabinet": {
+    "kind": "target",
+    "object": "wine_bottle",
+    "reference": {
+      "entity": "cabinet_top_placement",
+      "keypoint": "K3",
+      "time_source": "current"
+    },
+    "template": "place the wine bottle on top of the cabinet at {current.cabinet_top_placement.K3} and release it stably"
+  },
+  "bottle_rack": {
+    "kind": "target",
+    "object": "wine_bottle",
+    "reference": {
+      "entity": "wine_rack_placement",
+      "keypoint": "K3",
+      "time_source": "current"
+    },
+    "template": "place the wine bottle on the rack at {current.wine_rack_placement.K3} and release it stably"
+  },
+  "push_plate": {
+    "kind": "target",
+    "object": "plate",
+    "reference": {
+      "entity": "table_front_placement",
+      "keypoint": "K3",
+      "time_source": "current"
+    },
+    "template": "push the plate to the front of the stove at {current.table_front_placement.K3}"
+  },
+  "turn_on_stove": {
+    "kind": "target",
+    "object": "stove",
+    "reference": {
+      "entity": "stove_button",
+      "keypoint": "K1",
+      "time_source": "current"
+    },
+    "template": "turn on the stove using its switch at {current.stove_button.K1} and disengage from the stove"
+  },
+  "maintain": {
+    "kind": "maintain",
+    "object": "none",
+    "reference": null,
+    "template": "maintain the completed task without repeating the operation"
+  }
+}

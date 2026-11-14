@@ -1,0 +1,17 @@
+{
+  "version": "continue_after_failure_v1",
+  "role": "execution_only_never_a_scoring_threshold",
+  "preparation_budget_numerator": 2,
+  "preparation_budget_denominator": 3,
+  "stage_max_steps": {
+    "return": 600,
+    "close": 400,
+    "open_top": 300,
+    "grasp": 400
+  },
+  "high_release_action": "record_failed_execution_stage_and_advance",
+  "timeout_action": "record_execution_timeout_and_advance_without_fabricating_success",
+  "stop": "first_native_target_or_original_total_budget",
+  "helpers": "original_plan_grasp_and_open_top_guards_and_entry_skips",
+  "scoring": "unchanged_v2.5_canonical_contract_evaluated_independently"
+}

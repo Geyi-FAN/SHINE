@@ -1,0 +1,26 @@
+{
+  "version": "T6-fixed-hybrid-judge-v4-20261109",
+  "semantic_model": "GLM-4.6V",
+  "protocol_path": "fixed_v4/PROTOCOL.json",
+  "prompt_path": "v3/SYSTEM_PROMPT.txt",
+  "model_parameters_path": "v3/PROTOCOL.json",
+  "deterministic_guard_path": "reference_guards.py",
+  "not_an_online_agent": true,
+  "judge_not_codex": true,
+  "status": "frozen_development_grader; independent human calibration still required",
+  "dataset_version": "t6-en-controlled90-v2-20261107",
+  "source_sha256": {
+    "FORMAT_REPAIR_PROMPT.txt": "3b56c124915ca7387f80fef9ee57c290a5443f8e47127c58799418927f64819c",
+    "REGISTERED_CASES90.json": "3e2728465271fa9f460c6b170bc9d6c17eb509bfbb16a95235277e2ba799b2fd",
+    "apply_fixed_guards.py": "a327221436a33d579de42352e450f8761ea4c827fca28ac65b4039af98b4bb5e",
+    "fixed_v4/PROTOCOL.json": "7d9327b5b751986ec4fed0f3c2a246adda7179b70523e2ae6e6d1ece92fe3bda",
+    "judge_fixed.py": "dc3127c3f5456c35e6c6bdc42fdf9992c57df9b47de7ddcc276cdd1138804081",
+    "prepare_judge_inputs.py": "eae355187112628e13f4960303340d9434f11f458e614ac91b83f047325e3d53",
+    "reference_guards.py": "ad46ec3a12a1f4f3a295e3af8002acae412f2089ce12ff8c11829c7a4b6caea4",
+    "v3/PROTOCOL.json": "4aac9cce83722a2f94b981d188c72dfda56d5ff1f3b4bb08b3a49f7e8ae3f90d",
+    "v3/SYSTEM_PROMPT.txt": "0b2149b1c00ffac50f29213c9a10abc52d6dcfe48297d76ce49c685445928c52",
+    "v3/client.py": "a96ac5c9cb4c7f34fbaf9db66a14eeb926243e5265af7ae97082b5d5de13f867",
+    "v3/run_judge.py": "3e42f0c1904ceefc44f581db1d8f81b2f23d49907a25791ea93a6cf8463c4c14"
+  },
+  "package_revision": "r3_full_dependency_lock_and_registered_denominator_no_verdict_rule_change"
+}

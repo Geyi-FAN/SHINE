@@ -1,0 +1,24 @@
+{
+  "cases": [
+    "SW4_T03_C4_T08_CLOSE_TOP_T03_C4_S03",
+    "SW4_T01_M2_T09_SWITCH_T01_M2_S01",
+    "SW4_T08_M2_T02_SWITCH_T08_M2_S01",
+    "SW4_T04_M2_T05_SWITCH_T04_M2_S05",
+    "SW4_T02_M2_T08_SWITCH_T02_M2_S04",
+    "SW4_T03_C4_T07_CLOSE_TOP_T03_C4_S01",
+    "SW4_T03_C4_T07_KEEP_TOP_T03_C4_S01",
+    "SW4_T02_M2_T01_SWITCH_T02_M2_S02"
+  ],
+  "selection": "all eight preregistered legacy return cases from G1; no post-outcome selection",
+  "source": "actual native full-task model rollout from original episode initial state",
+  "trigger": "three private benchmark observations of correct source object held and unsupported; never Agent input",
+  "pre_pause": false,
+  "reset_at_switch": false,
+  "source_budget": 1200,
+  "source_wall_seconds": 300,
+  "post_switch_budget": 1200,
+  "repeats": 1,
+  "physical_denominator": 8,
+  "source_failures": "included as failures in primary denominator",
+  "mode": "correct-text natural interruption, not audio"
+}

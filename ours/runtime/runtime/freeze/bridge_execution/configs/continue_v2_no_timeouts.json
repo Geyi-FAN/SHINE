@@ -1,0 +1,14 @@
+{
+  "version": "continue_after_confirmed_failure_v2_no_timeouts",
+  "role": "execution_only_never_a_scoring_threshold",
+  "stage_max_steps": null,
+  "preparation_deadline_steps": null,
+  "target_reserved_steps": null,
+  "total_budget": "unchanged_frozen_case_budget",
+  "unmet_physical_guard": "keep_current_stage_until_ready_or_total_budget_exhausted",
+  "high_release_action": "record_failed_restore_stage_and_advance",
+  "score_failure": "never_blocks_execution_and_is_never_cleared",
+  "stop": "first_native_target_or_original_total_budget",
+  "helpers": "unchanged_training_prompts_original_grasp_open_top_guards_and_entry_skips",
+  "scoring": "unchanged_v2.5_canonical_contract_evaluated_independently"
+}

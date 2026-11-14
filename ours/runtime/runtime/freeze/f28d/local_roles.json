@@ -1,0 +1,25 @@
+{
+  "schema": "r34_local_role_routes_v1",
+  "model": "Qwen3.8-27B-FP8",
+  "service_env_file": "/mnt/disk_4/geyi/F1_switch308_20261031/evolution/fp8_deployment_20261031/private/client.env",
+  "roles": {
+    "verifier": {
+      "api_base_url": "http://127.0.0.1:18684/v1"
+    },
+    "recovery": {
+      "api_base_url": "http://127.0.0.1:18684/v1"
+    }
+  },
+  "timeout_seconds": 600,
+  "atlas": {
+    "max_images_per_sheet": 3,
+    "max_sheets": 2,
+    "label_band_pixels": 32,
+    "resize": false,
+    "format": "PNG"
+  },
+  "cloud_fallback": false,
+  "transport_retries": 0,
+  "runtime_validation_attempts": "original R34 up to 3 for recovery; replay first attempt only",
+  "preserve_role_api_urls": true
+}

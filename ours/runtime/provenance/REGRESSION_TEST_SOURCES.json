@@ -1,0 +1,86 @@
+[
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_dialogue_transactions.py",
+    "source_sha256": "8c8acb5b86374b9f5e39f8913c69809613b568a3330e9e26e9decc5c9ba2401d",
+    "test": "tests/python/test_dialogue_transactions.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_confirmation_acoustic_source.py",
+    "source_sha256": "ba63af4f87551e6e1724f8344be6471a35ba494f6e2d8fdce486faf4d08fde05",
+    "test": "tests/python/test_confirmation_acoustic_source.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_cancelled_proposal_late_confirmation.py",
+    "source_sha256": "e7d9014840574cf645a58b7a91df44669b91b6b2eeecf777506e62c53dea5700",
+    "test": "tests/python/test_cancelled_proposal_late_confirmation.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_clarification_two_slots.py",
+    "source_sha256": "d9fe3fd1b93e866eed5bae3cfcab81d0191a1908cd09bf71cde49ab19014ea26",
+    "test": "tests/python/test_clarification_two_slots.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_clarification_destination_placeholder.py",
+    "source_sha256": "39c6f195110277d3a30a477c571dfa36f8ce40a10c69fc57fde79577ef19475d",
+    "test": "tests/python/test_clarification_destination_placeholder.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_confirmation_object_correction.py",
+    "source_sha256": "3433d2bd38240bc0dc55fad54835a5614961d23016820cf93173a71ef6d151a8",
+    "test": "tests/python/test_confirmation_object_correction.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_semantics_confirmation.py",
+    "source_sha256": "e6a404067db0d088488cb4c8fa0400decde69b9555c3cf8894749fe0f217b413",
+    "test": "tests/python/test_semantics_confirmation.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_speech_correction_evidence.py",
+    "source_sha256": "88e0e8aa3aed861f24fa2957cbff016efad03f587cd93b5a4988e5997064e9fd",
+    "test": "tests/python/test_speech_correction_evidence.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_deferred_memory.py",
+    "source_sha256": "619838f7a62e30310e4f526d1e55e263d75b89f14724146d0a8547a73782ecf3",
+    "test": "tests/python/test_deferred_memory.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_priority_stop.py",
+    "source_sha256": "e41fc721002bdc29363ba614fa337f4ad113d3cf3650de85e5560cc7d10c5a36",
+    "test": "tests/python/test_priority_stop.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_speech_guard.py",
+    "source_sha256": "27c3ed0d933638a207c3f2acde59170f72a9482e68056c6043ada111933b2ab2",
+    "test": "tests/python/test_speech_guard.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_core.py",
+    "source_sha256": "139005d2ce35c16cd05ad1ab1e8a9b23d01580aed15a911ab4bba6711885c267",
+    "test": "tests/python/test_core.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_clarification_correction.py",
+    "source_sha256": "24ea3f159e57f6132516d4ad5cd72ac4d57b0dadac0f9a203f9ff69adea7e10b",
+    "test": "tests/python/test_clarification_correction.py",
+    "changes": "import location and actor profile literal only"
+  },
+  {
+    "source": "/mnt/disk_2/geyi/voice_pi05_harness/tests/test_confirmed_native_routing.py",
+    "source_sha256": "4a3af3178f5ade17e647220355316e7d89404c4da128c7da9bb4c83d1832b89a",
+    "test": "tests/python/test_confirmed_native_routing.py",
+    "changes": "import location and actor profile literal only"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "version": "T6-C3r-data-release-v2-20261107",
+  "dataset_version": "t6-en-controlled90-v2-20261107",
+  "audio_dataset_version": "T6-AUDIO90-MV5-BG3-20261102-v1",
+  "planned_cases": 90,
+  "subsets": {
+    "selected20": 20,
+    "reply_order3": 3,
+    "overlapping_not_additional": true
+  },
+  "track": "controlled_execution_QA_development",
+  "repetitions": 1,
+  "pre_question_attempts_max": 3,
+  "count_in_QA_denominator_from": "first_core_PCM_actually_sent_after_valid_live_gate",
+  "retry_after_question_starts": false,
+  "first_correct_audio_seconds": 20,
+  "complete_answer_seconds": 40,
+  "observation_seconds": 45,
+  "latency_origin": "end_of_question_audio_no_human_word_times",
+  "input_audio": {
+    "format": "PCM16LE",
+    "sample_rate": 16000,
+    "channels": 1,
+    "frame_ms": 20,
+    "frame_bytes": 640
+  },
+  "output_audio": {
+    "sample_rate": 24000,
+    "sink": "clocked_PCM_receipt_not_physical_speaker"
+  },
+  "input_quality": {
+    "duration_ratio_range": [
+      0.95,
+      1.05
+    ],
+    "max_frame_gap_ms": 100
+  },
+  "gate": {
+    "correct_object": true,
+    "bilateral_contact": true,
+    "off_support": true,
+    "task_running": true,
+    "consecutive_real_control_cycles": 5,
+    "real_pose_holds_count": true,
+    "paused_or_duplicate_frame_count": false,
+    "legacy_policy_action_counter_recorded_separately": true
+  },
+  "primary_metric": "factually_correct_relevant_and_complete_clocked_audio_given_valid_execution",
+  "interaction_for_future_unified_entry": "qualified_QA AND no_QA_control_or_task_identity_change",
+  "existing_20_primary_is_QA_not_retroactively_renamed": true,
+  "target_metric_applicable": false,
+  "instruction_metric_applicable": false,
+  "preserve_setup_failures": true,
+  "report_planned_and_asked_denominators": true,
+  "uncertain_answer_allowed_only_with_actual_visibility_evidence": true,
+  "factual_review": "independent evidence/label required; current images at actual request time, not preset reference",
+  "robot_environment_workers_reference": 2,
+  "max_voice_sessions_reference": 1,
+  "voice_cooldown_seconds_reference": 30,
+  "private_ground_truth": "evaluator gates/scoring; M1 validity assistance disclosed; not sent as QA answer",
+  "unified_runtime_frozen": false,
+  "new_robot_evaluation": false,
+  "controlled_setup_reference_home_disclosed": true,
+  "preparation_spec": "dataset/PREPARATION_SPEC.private.json"
+}

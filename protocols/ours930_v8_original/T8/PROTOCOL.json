@@ -1,0 +1,59 @@
+{
+  "version": "t8-en-acoustic40-v4-20261107",
+  "status": "data_ready; no_new_closed_loop_results",
+  "scripts": 10,
+  "planned_audio_slots": 40,
+  "available_audio_slots": 40,
+  "human_pending": 10,
+  "denominators_available": {
+    "interaction": 40,
+    "target": 28,
+    "dual_channel": 8
+  },
+  "per_category": {
+    "interaction": 10,
+    "target": 7,
+    "dual_channel": 2
+  },
+  "repetitions": 1,
+  "state_rule": "scenario index modulo3; fixed across categories",
+  "task_scope": "10 T8 interaction scenarios; original moving task bowl-to-stove; not10 LIBERO goals",
+  "setup_audio": "English Aiden; T2 CL G01 start and pause WAVs reused unchanged; 16kHz; same all conditions",
+  "core_language": "English only",
+  "interaction": "all applicable T8 core checks and timing pass; setup/trigger failure, timeout, missing evidence remain nonpass; errors never omitted",
+  "target": "native original goal reached after authorized real policy action in the same task; causally subsequent natural settling/hold frames included, matching T1 definition; not full-release/stability/instruction score",
+  "target_definition_change": "declared for new version to avoid known old action-frame-only undercount; old scores untouched; requires independent runtime scorer adaptation before new evaluation",
+  "dual_channel": "Interaction subset N08/N09; no additional independent cases",
+  "instruction_metric": false,
+  "budgets": {
+    "source_policy_steps": 1200,
+    "source_wall_s": 600,
+    "case_wall_s": 1800,
+    "setup_wall_s": 180,
+    "speech_stop_s": 2,
+    "qa_first_audio_s": 20,
+    "qa_complete_audio_s": 40,
+    "continue_or_natural_completion_s": 20,
+    "post_core_observe_s": 5
+  },
+  "timing": "audio-end proxy, decisive intent times not yet manually annotated",
+  "source_runtime": "/mnt/disk_2/geyi/voice_c3r_integration_20261102",
+  "actor": "SmolVLA E3 v4 raw30000",
+  "agents": "F28d Qwen3.8-27B-FP8",
+  "memory": "YOLO/M1",
+  "runtime_candidate_only": true,
+  "public_8787_unchanged": true,
+  "new_closed_loop_evaluations": 0,
+  "all_labels_private": true,
+  "overlap_dimensions": "OV adds quieter bystander to microphone input; N07/N08/N09/N10T additionally require concurrent real AI output by scheduling; no physical acoustic echo simulation",
+  "tts_emotion_labels": "requested delivery only, not perceptual human annotations",
+  "human_missing": "pending, not counted as completed; no silent/TTS placeholders",
+  "packaging_release": "t8-en-acoustic40-v4-20261107",
+  "denominators": {
+    "interaction": 40,
+    "target": 28,
+    "dual_channel": 8
+  },
+  "runtime_version": "must_be_frozen_for_new_run",
+  "source_protocol": "provenance/SOURCE_PROTOCOL.reference.json"
+}

@@ -1,0 +1,41 @@
+{
+  "runtime_commit": "98bcb048d6e61b42125d8027b59f8fda197e6d02",
+  "files": {
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/work/formal930.py": "b48bb4267c5dcdb4d55e73f71532297aad90bb7010e980041ce6ff47ac554a80",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/work/collect_QA90_formal.py": "1bc9238c8118b6b9b185374b6954c3fb55cf5dcb2a998a843e9b7d481e7ff715",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/work/finalize_formal930.py": "2cb51e951dd5600893565b9ac0b04944580ba6ec713d759d9bf70d0809b4efee",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/work/mirror_run.py": "541aeea167f833944659badf47dc74f8cf4f1ee10232137864921500c0b1d616",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/SOURCE_LOCK.json": "c28eff977dc78744e305e2bea5d3825fb53559fedd521ef2bccb797be5428aa8",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/plans/REGISTERED930.json": "e666046278bce7dce2f0f81abf2d7c0861b343bfd9afe8c93cf10bb3058c749b",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/reports/FORMAL_ADMISSION.json": "5ff8ed23f8c2b92035ec9e588cb05203c387e5b335fa120dcb4bc748575588dc",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/EVALUATION_PROTOCOL_ALIGNMENT.json": "4a58c8811f13d667797cb60aa39eb1d70af09e3acf1bb2c1264666282f7f7ae3",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/reports/V8_MINIMAL_PATCH_AUDIT.json": "f2f8f5c45cc3a44c47d35068386415dc968bd869bdcec223ff907e87f0e2d681"
+  },
+  "registered_930": 930,
+  "independent_cases": 370,
+  "primary_denominators": {
+    "interaction": 840,
+    "target": 792,
+    "instruction": 588,
+    "QA": 90,
+    "speech_action_separation": 24
+  },
+  "all_first_attempts_only": true,
+  "automatic_case_retry": false,
+  "created_at": "2026-11-14T04:01:13.860479+08:00",
+  "offline_judge_files": {
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/client.py": "a96ac5c9cb4c7f34fbaf9db66a14eeb926243e5265af7ae97082b5d5de13f867",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/REGISTERED_CASES90.json": "3e2728465271fa9f460c6b170bc9d6c17eb509bfbb16a95235277e2ba799b2fd",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/reference_guards.py": "ad46ec3a12a1f4f3a295e3af8002acae412f2089ce12ff8c11829c7a4b6caea4",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/prepare_judge_inputs.py": "eae355187112628e13f4960303340d9434f11f458e614ac91b83f047325e3d53",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/judge_fixed.py": "dc3127c3f5456c35e6c6bdc42fdf9992c57df9b47de7ddcc276cdd1138804081",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/FORMAT_REPAIR_PROMPT.txt": "3b56c124915ca7387f80fef9ee57c290a5443f8e47127c58799418927f64819c",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/ACTIVE_PROTOCOL.json": "03f39a8fac21678374feefd57b806ab18a6ed3c609605823d7e24e7c6e3f80ed",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/apply_fixed_guards.py": "a327221436a33d579de42352e450f8761ea4c827fca28ac65b4039af98b4bb5e",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/v3/SYSTEM_PROMPT.txt": "0b2149b1c00ffac50f29213c9a10abc52d6dcfe48297d76ce49c685445928c52",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/v3/run_judge.py": "3e42f0c1904ceefc44f581db1d8f81b2f23d49907a25791ea93a6cf8463c4c14",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/v3/client.py": "a96ac5c9cb4c7f34fbaf9db66a14eeb926243e5265af7ae97082b5d5de13f867",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/v3/PROTOCOL.json": "4aac9cce83722a2f94b981d188c72dfda56d5ff1f3b4bb08b3a49f7e8ae3f90d",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_final_c3r_20261110/finalization_20261111/frozen_judge/fixed_v4/PROTOCOL.json": "7d9327b5b751986ec4fed0f3c2a246adda7179b70523e2ae6e6d1ece92fe3bda"
+  }
+}

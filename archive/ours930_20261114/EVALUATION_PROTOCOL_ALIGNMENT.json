@@ -1,0 +1,22 @@
+{
+  "revision": "v25-existing-loaded-container-support-aligned-v1",
+  "numerical_thresholds_changed": false,
+  "independent_judge_algorithms_changed": false,
+  "measurement_source_changed": true,
+  "reason": "Private cache recorder omitted existing normal-plus-friction bowl support while final acceptance already used it",
+  "source_function": "runtime/entryfix/support.py:container_support",
+  "conditions": [
+    "native On(cheese,bowl) true",
+    "upward nonrobot bowl contact load below cheese COM meets original minimum_support_force",
+    "original release and stability windows also pass"
+  ],
+  "preserved_fields": [
+    "geometric_support_contact",
+    "container_support_evidence"
+  ],
+  "online_GT_positions_or_subgoals_added": false,
+  "historical_results_overwritten": false,
+  "new_run_must_disclose_measurement_revision": true,
+  "baseline_comparison_requires_same_measurements_or_separate_reporting": true,
+  "human_boundary_calibration_complete": false
+}

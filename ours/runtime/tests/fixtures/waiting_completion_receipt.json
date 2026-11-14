@@ -1,0 +1,35 @@
+{
+  "provenance": "Actual preflight32_v6b T7CL04 schedule receipt, private projected fields only",
+  "callId": "c060c39f-b3d5-4299-ba5a-4a140aa6e1b7",
+  "inputId": "item_Z26zApqtzRpDAD73f7bef",
+  "prior": {
+    "episode_id": "07f1d4e53c69423aac5f283172aec1a8",
+    "task_id": "7ff9e2f5ce73416c9f6c36155d2c90f4",
+    "task_version": 1,
+    "task_intent_revision": 1,
+    "state": "running"
+  },
+  "receipt": {
+    "status": "scheduled",
+    "executed": false,
+    "episode_id": "07f1d4e53c69423aac5f283172aec1a8",
+    "task_id": "7ff9e2f5ce73416c9f6c36155d2c90f4",
+    "task_version": 2,
+    "task_intent_revision": 1,
+    "state": "completed",
+    "completion": "verified",
+    "agent_execution": {
+      "task_id": "7ff9e2f5ce73416c9f6c36155d2c90f4",
+      "completion_current_verified": true
+    },
+    "deferred_task": {
+      "episode_id": "07f1d4e53c69423aac5f283172aec1a8",
+      "predecessor_task_id": "7ff9e2f5ce73416c9f6c36155d2c90f4",
+      "voice_input_id": "c060c39f-b3d5-4299-ba5a-4a140aa6e1b7:item_Z26zApqtzRpDAD73f7bef",
+      "state": "waiting_for_native_release",
+      "deferred_id": "e7c5a2edc00e49978580926d0dc2fe09",
+      "transaction_id": "e7c5a2edc00e49978580926d0dc2fe09",
+      "transaction_revision": 1
+    }
+  }
+}

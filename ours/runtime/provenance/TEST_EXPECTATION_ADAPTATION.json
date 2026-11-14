@@ -1,0 +1,15 @@
+{
+  "test": "test_confirmation_infinitive_is_not_a_target",
+  "previous_expected": "top of the cabinet instead",
+  "expected": "top of the cabinet",
+  "reason": "T4 slots now strip discourse marker instead, consistent with canonical target; original test retained and all other assertions unchanged.",
+  "20261114": {
+    "reason": "retained T1 general direct-route contract from the already-verified v2, instead of obsolete forced Symbolic expectation",
+    "modified_tests": [
+      "tests/python/test_unified_pi05.py",
+      "tests/node/bounded_visual_review.test.mjs",
+      "tests/node/visual_review.test.mjs"
+    ],
+    "QA_review": "single request within existing 14s total, fail closed on timeout/bad JSON; no unreviewed answer permitted"
+  }
+}

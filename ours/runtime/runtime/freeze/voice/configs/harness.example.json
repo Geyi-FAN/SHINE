@@ -1,0 +1,47 @@
+{
+  "language": "zh-CN",
+  "realtimeEndpoint": "https://dashscope.aliyuncs.com",
+  "realtimeModel": "qwen3.8-omni-flash-realtime",
+  "voice": "Tina",
+  "backends": [],
+  "port": 8788,
+  "visualInput": {
+    "source": "camera",
+    "mode": "on-demand",
+    "fps": 1
+  },
+  "memory": {
+    "enabled": false
+  },
+  "proactive": {
+    "enabled": false
+  },
+  "defaultCwd": ".",
+  "providers": {
+    "dialogue": {
+      "provider": "qwen-realtime",
+      "endpoint": "https://dashscope.aliyuncs.com",
+      "model": "qwen3.8-omni-flash-realtime",
+      "apiKeyFile": "private/dashscope.key",
+      "voice": "Tina"
+    },
+    "visual_qa": {
+      "provider": "qwen-realtime",
+      "endpoint": "https://dashscope.aliyuncs.com",
+      "model": "qwen3.8-omni-flash-realtime",
+      "apiKeyFile": "private/dashscope.key",
+      "voice": "Tina"
+    },
+    "speech": {
+      "provider": "qwen-realtime",
+      "endpoint": "https://dashscope.aliyuncs.com",
+      "model": "qwen3.8-omni-flash-realtime",
+      "apiKeyFile": "private/dashscope.key",
+      "voice": "Tina"
+    },
+    "grounding": {
+      "provider": "rex-omni",
+      "enabled": false
+    }
+  }
+}

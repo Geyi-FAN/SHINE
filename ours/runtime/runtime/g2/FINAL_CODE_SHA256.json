@@ -1,0 +1,9 @@
+{
+  "g2/natural_source.py": "0493b6f57d537b2a1e19a9e9a8bae7c7484031b6bf574537d02bab80cdaefb80",
+  "g2/bridge.py": "6d9eed167dba9333d41e18d62ec1e14f2908686b165a75299f07c0919488797c",
+  "g2/bootstrap.py": "eaa3f61cb31d4cc23551716964171c066966e76e7d79ca71faff9da71f11d5fc",
+  "g2/test_bridge.py": "e07cd81462124b2b581d26a2f61f93a052a341f7a2ae7bfef170ccd5c099729d",
+  "g2/schedule.py": "3051dde2927852ce89a36a27bf8d8540a8051b534b28a6c55e38b78a044a0ed5",
+  "g2/run_case.py": "a88b1c3ba540f9f70c293ee1847a935bc0b7321fddf16167c09d1f78c0074cb6",
+  "freeze/voice/robot_gateway/server.py": "05628ada387e57e0f83e44fcce3ac2cc06dfeef3f74e8aced2b02122b07133bd"
+}

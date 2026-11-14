@@ -1,0 +1,199 @@
+/**
+ * @license
+ * Copyright 2026 Qwen
+ * SPDX-License-Identifier: Apache-2.0
+ */
+const MAX_ASSETS = 32;
+export class HandleRegistry {
+    sessions = new Map();
+    sessionsByBackendId = new Map();
+    /** Sessions whose backend reported closure — handles no longer resolve. */
+    closedSessions = new Set();
+    jobs = new Map();
+    /**
+     * Keyed by `${backend.adaptor}:${jobRef}` — jobRefs are adaptor-local
+     * (qwen serve mints prompt UUIDs, an ACP adaptor counts turn-1, turn-2),
+     * so the owning adaptor scopes the key or two backends collide.
+     */
+    jobsByRef = new Map();
+    assets = new Map();
+    sessionSeq = 0;
+    jobSeq = 0;
+    assetSeq = 0;
+    deliverySeq = 0;
+    deliveries = new Map();
+    /** Receipt handles are deliberately separate from jobs and their counters. */
+    delivery(adaptor, id) {
+        for (const [handle, record] of this.deliveries) {
+            if (record.adaptor === adaptor && record.id === id)
+                return handle;
+        }
+        const handle = `delivery_${++this.deliverySeq}`;
+        this.deliveries.set(handle, { adaptor, id });
+        return handle;
+    }
+    retainDeliveries(records) {
+        const current = new Set(records.map(({ adaptor, id }) => `${adaptor}:${id}`));
+        for (const [handle, record] of this.deliveries) {
+            if (!current.has(`${record.adaptor}:${record.id}`))
+                this.deliveries.delete(handle);
+        }
+    }
+    resolveDelivery(handle) {
+        return this.deliveries.get(handle.trim());
+    }
+    /** Register (or return the existing handle for) a backend session. */
+    session(backend) {
+        const key = `${backend.adaptor}:${backend.id}`;
+        const existing = this.sessionsByBackendId.get(key);
+        if (existing)
+            return existing;
+        const handle = `session_${++this.sessionSeq}`;
+        this.sessions.set(handle, backend);
+        this.sessionsByBackendId.set(key, handle);
+        return handle;
+    }
+    resolveSession(handle) {
+        const key = handle.trim();
+        if (this.closedSessions.has(key))
+            return undefined;
+        return this.sessions.get(key);
+    }
+    /** Mark a session closed: its handle stops resolving from now on. */
+    closeSession(handle) {
+        const normalized = handle.trim();
+        this.closedSessions.add(normalized);
+        // Clear the reverse mapping so a respawned agent reusing the same
+        // backend session id gets a fresh handle, not the poisoned closed one.
+        const backend = this.sessions.get(normalized);
+        if (backend) {
+            this.sessionsByBackendId.delete(`${backend.adaptor}:${backend.id}`);
+        }
+    }
+    /**
+     * Register a new job. Idempotent by (backend, jobRef): a jobRef already
+     * registered for that backend means the backend attributed the prompt to
+     * that existing turn (e.g. a steer that joined it), so the existing record
+     * is returned instead of minting a second job that would orphan the first
+     * in 'running'.
+     */
+    createJob(fields) {
+        if (fields.jobRef !== undefined) {
+            const existing = this.jobByRef(fields.backend, fields.jobRef);
+            if (existing)
+                return existing;
+        }
+        const record = {
+            jobHandle: `job_${++this.jobSeq}`,
+            sessionHandle: fields.sessionHandle,
+            backend: fields.backend,
+            ...(fields.jobRef !== undefined ? { jobRef: fields.jobRef } : {}),
+            state: 'accepted',
+            task: fields.task,
+            createdAt: Date.now(),
+        };
+        this.jobs.set(record.jobHandle, record);
+        if (record.jobRef !== undefined) {
+            this.jobsByRef.set(`${fields.backend.adaptor}:${record.jobRef}`, record.jobHandle);
+        }
+        return record;
+    }
+    resolveJob(handle) {
+        return this.jobs.get(handle.trim());
+    }
+    /** Full owned active-job set, not a paginated UI projection. Aliases share
+     * one record and must not count as separate cancellation candidates. */
+    activeJobs() {
+        return [...new Set(this.jobs.values())].filter((job) => (job.state === 'accepted' || job.state === 'running') &&
+            !this.closedSessions.has(job.sessionHandle));
+    }
+    /** Bind an exact join acknowledgement while preserving any promised alias. */
+    bindJoinedJob(handle, backend, jobRef) {
+        const job = this.resolveJob(handle);
+        if (!job ||
+            !jobRef ||
+            job.backend.adaptor !== backend.adaptor ||
+            job.backend.id !== backend.id ||
+            (job.jobRef !== undefined && job.jobRef !== jobRef))
+            return undefined;
+        const existing = this.jobByRef(backend, jobRef);
+        if (existing && existing !== job) {
+            if (existing.sessionHandle !== job.sessionHandle ||
+                existing.backend.id !== backend.id ||
+                !['accepted', 'running', 'interrupted'].includes(job.state))
+                return undefined;
+            for (const [alias, candidate] of this.jobs)
+                if (candidate === job)
+                    this.jobs.set(alias, existing);
+            return existing;
+        }
+        job.jobRef = jobRef;
+        this.jobsByRef.set(`${backend.adaptor}:${jobRef}`, job.jobHandle);
+        return job;
+    }
+    /** Find the job a backend event's jobRef (on its backend) belongs to. */
+    jobByRef(backend, jobRef) {
+        const handle = this.jobsByRef.get(`${backend.adaptor}:${jobRef}`);
+        return handle ? this.jobs.get(handle) : undefined;
+    }
+    /**
+     * Reconcile a session's non-terminal jobs against reality: the backend
+     * reports idle, so any 'accepted'/'running' record left over from a
+     * terminal event lost on transport interruption becomes 'interrupted'. Gated on
+     * the caller's isBusy check so a genuinely busy backend is never
+     * touched.
+     */
+    reconcileIdleSession(sessionHandle) {
+        const interrupted = [];
+        for (const job of this.jobs.values()) {
+            if (job.sessionHandle !== sessionHandle)
+                continue;
+            if (job.state === 'done' || job.state === 'failed')
+                continue;
+            if (job.state === 'cancelled')
+                continue;
+            if (job.state === 'interrupted')
+                continue;
+            job.state = 'interrupted';
+            interrupted.push(job);
+        }
+        return interrupted;
+    }
+    /** The most recent non-terminal job for a session, if any. */
+    activeJobForSession(sessionHandle) {
+        let candidate;
+        for (const job of this.jobs.values()) {
+            if (job.sessionHandle !== sessionHandle)
+                continue;
+            if (job.state === 'done' || job.state === 'failed')
+                continue;
+            if (job.state === 'cancelled')
+                continue;
+            if (job.state === 'interrupted')
+                continue;
+            if (!candidate || job.createdAt > candidate.createdAt)
+                candidate = job;
+        }
+        return candidate;
+    }
+    registerAsset(fields) {
+        const record = {
+            assetHandle: `asset_${++this.assetSeq}`,
+            path: fields.path,
+            mimeType: fields.mimeType,
+            createdAt: Date.now(),
+        };
+        this.assets.set(record.assetHandle, record);
+        // Bounded: assets reference temp files with short TTLs; keep the newest.
+        while (this.assets.size > MAX_ASSETS) {
+            const oldest = this.assets.keys().next().value;
+            if (oldest === undefined)
+                break;
+            this.assets.delete(oldest);
+        }
+        return record;
+    }
+    resolveAsset(handle) {
+        return this.assets.get(handle.trim());
+    }
+}
