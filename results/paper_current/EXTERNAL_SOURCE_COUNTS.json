@@ -1,0 +1,279 @@
+{
+  "source": "user-provided screenshots, 2026-11-12",
+  "independent_raw_result_verification": false,
+  "counts": [
+    {
+      "task": "Spoken Execution",
+      "metric": "Inter. SR",
+      "ELLSA": [
+        42,
+        120
+      ],
+      "RoboOmni": [
+        5,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Spoken Execution",
+      "metric": "Target SR",
+      "ELLSA": [
+        42,
+        120
+      ],
+      "RoboOmni": [
+        5,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Pause & Resume",
+      "metric": "Inter. SR",
+      "ELLSA": [
+        33,
+        96
+      ],
+      "RoboOmni": [
+        0,
+        72
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Pause & Resume",
+      "metric": "Target SR",
+      "ELLSA": [
+        33,
+        96
+      ],
+      "RoboOmni": [
+        0,
+        72
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Pause & Resume",
+      "metric": "Instr. SR",
+      "ELLSA": [
+        21,
+        96
+      ],
+      "RoboOmni": [
+        0,
+        72
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Goal Revision",
+      "metric": "Inter. SR",
+      "ELLSA": [
+        0,
+        120
+      ],
+      "RoboOmni": [
+        1,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Goal Revision",
+      "metric": "Target SR",
+      "ELLSA": [
+        0,
+        120
+      ],
+      "RoboOmni": [
+        1,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Goal Revision",
+      "metric": "Instr. SR",
+      "ELLSA": [
+        0,
+        120
+      ],
+      "RoboOmni": [
+        0,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Contextual Reference",
+      "metric": "Inter. SR",
+      "ELLSA": [
+        9,
+        120
+      ],
+      "RoboOmni": [
+        0,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Contextual Reference",
+      "metric": "Target SR",
+      "ELLSA": [
+        9,
+        120
+      ],
+      "RoboOmni": [
+        0,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Contextual Reference",
+      "metric": "Instr. SR",
+      "ELLSA": [
+        9,
+        120
+      ],
+      "RoboOmni": [
+        0,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Clarify & Confirm",
+      "metric": "Inter. SR",
+      "ELLSA": [
+        0,
+        108
+      ],
+      "RoboOmni": [
+        0,
+        108
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Clarify & Confirm",
+      "metric": "Target SR",
+      "ELLSA": [
+        0,
+        108
+      ],
+      "RoboOmni": [
+        0,
+        108
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Clarify & Confirm",
+      "metric": "Instr. SR",
+      "ELLSA": [
+        0,
+        108
+      ],
+      "RoboOmni": [
+        0,
+        108
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Deferred Execution",
+      "metric": "Inter. SR",
+      "ELLSA": [
+        12,
+        120
+      ],
+      "RoboOmni": [
+        9,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Deferred Execution",
+      "metric": "Target SR",
+      "ELLSA": [
+        12,
+        120
+      ],
+      "RoboOmni": [
+        9,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Deferred Execution",
+      "metric": "Instr. SR",
+      "ELLSA": [
+        0,
+        120
+      ],
+      "RoboOmni": [
+        0,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Non-command Handling",
+      "metric": "Inter. SR",
+      "ELLSA": [
+        12,
+        120
+      ],
+      "RoboOmni": [
+        8,
+        120
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Non-command Handling",
+      "metric": "Target SR",
+      "ELLSA": [
+        36,
+        84
+      ],
+      "RoboOmni": [
+        0,
+        84
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Non-command Handling",
+      "metric": "S-A Sep.",
+      "ELLSA": [
+        0,
+        24
+      ],
+      "RoboOmni": [
+        0,
+        24
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    },
+    {
+      "task": "Concurrent QA",
+      "metric": "QA Success",
+      "ELLSA": [
+        0,
+        9
+      ],
+      "RoboOmni": [
+        0,
+        19
+      ],
+      "source": "user screenshots 1-3; screenshot 3 overrides Interaction T1-T7"
+    }
+  ]
+}

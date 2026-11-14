@@ -1,0 +1,43 @@
+Task,Metric,Method,success,total,rate_percent,note
+Spoken Execution,Inter. SR,ELLSA,42,120,35.00,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Spoken Execution,Inter. SR,RoboOmni,5,120,4.17,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Spoken Execution,Target SR,ELLSA,42,120,35.00,历史汇总；尚未按新共同评分器复核
+Spoken Execution,Target SR,RoboOmni,5,120,4.17,历史汇总；尚未按新共同评分器复核
+Pause & Resume,Inter. SR,ELLSA,33,96,34.38,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Pause & Resume,Inter. SR,RoboOmni,0,72,0.00,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Pause & Resume,Target SR,ELLSA,33,96,34.38,历史汇总；尚未按新共同评分器复核
+Pause & Resume,Target SR,RoboOmni,0,72,0.00,历史汇总；尚未按新共同评分器复核
+Pause & Resume,Instr. SR,ELLSA,21,96,21.88,历史汇总；尚未按新共同评分器复核
+Pause & Resume,Instr. SR,RoboOmni,0,72,0.00,历史汇总；尚未按新共同评分器复核
+Goal Revision,Inter. SR,ELLSA,0,120,0.00,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Goal Revision,Inter. SR,RoboOmni,1,120,0.83,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Goal Revision,Target SR,ELLSA,0,120,0.00,历史汇总；尚未按新共同评分器复核
+Goal Revision,Target SR,RoboOmni,1,120,0.83,历史汇总；尚未按新共同评分器复核
+Goal Revision,Instr. SR,ELLSA,0,120,0.00,历史汇总；尚未按新共同评分器复核
+Goal Revision,Instr. SR,RoboOmni,0,120,0.00,历史汇总；尚未按新共同评分器复核
+Contextual Reference,Inter. SR,ELLSA,9,120,7.50,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Contextual Reference,Inter. SR,RoboOmni,0,120,0.00,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Contextual Reference,Target SR,ELLSA,9,120,7.50,历史汇总；尚未按新共同评分器复核
+Contextual Reference,Target SR,RoboOmni,0,120,0.00,历史汇总；尚未按新共同评分器复核
+Contextual Reference,Instr. SR,ELLSA,9,120,7.50,历史汇总；尚未按新共同评分器复核
+Contextual Reference,Instr. SR,RoboOmni,0,120,0.00,历史汇总；尚未按新共同评分器复核
+Clarify & Confirm,Inter. SR,ELLSA,0,108,0.00,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Clarify & Confirm,Inter. SR,RoboOmni,0,108,0.00,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Clarify & Confirm,Target SR,ELLSA,0,108,0.00,历史汇总；尚未按新共同评分器复核
+Clarify & Confirm,Target SR,RoboOmni,0,108,0.00,历史汇总；尚未按新共同评分器复核
+Clarify & Confirm,Instr. SR,ELLSA,0,108,0.00,历史汇总；尚未按新共同评分器复核
+Clarify & Confirm,Instr. SR,RoboOmni,0,108,0.00,历史汇总；尚未按新共同评分器复核
+Deferred Execution,Inter. SR,ELLSA,12,120,10.00,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Deferred Execution,Inter. SR,RoboOmni,9,120,7.50,历史汇总；尚未按新共同评分器复核；此处旧Inter实际按物理成功统计，不是统一交互成功率
+Deferred Execution,Target SR,ELLSA,12,120,10.00,历史汇总；尚未按新共同评分器复核
+Deferred Execution,Target SR,RoboOmni,9,120,7.50,历史汇总；尚未按新共同评分器复核
+Deferred Execution,Instr. SR,ELLSA,0,120,0.00,历史汇总；尚未按新共同评分器复核
+Deferred Execution,Instr. SR,RoboOmni,0,120,0.00,历史汇总；尚未按新共同评分器复核
+Non-command Handling,Inter. SR,ELLSA,12,120,10.00,历史汇总；尚未按新共同评分器复核
+Non-command Handling,Inter. SR,RoboOmni,8,120,6.67,历史汇总；尚未按新共同评分器复核
+Non-command Handling,Target SR,ELLSA,36,84,42.86,历史汇总；尚未按新共同评分器复核
+Non-command Handling,Target SR,RoboOmni,0,84,0.00,历史汇总；尚未按新共同评分器复核
+Non-command Handling,S-A Sep.,ELLSA,0,24,0.00,历史汇总；尚未按新共同评分器复核
+Non-command Handling,S-A Sep.,RoboOmni,0,24,0.00,历史汇总；尚未按新共同评分器复核
+Concurrent QA,QA Success,ELLSA,0,9,0.00,历史汇总；尚未按新共同评分器复核；只统计进入提问的条件分母，未统一为固定90例
+Concurrent QA,QA Success,RoboOmni,0,19,0.00,历史汇总；尚未按新共同评分器复核；只统计进入提问的条件分母，未统一为固定90例

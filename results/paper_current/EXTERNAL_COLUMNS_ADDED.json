@@ -1,0 +1,14 @@
+{
+  "change": "add_existing_ELLSA_RoboOmni_columns_only",
+  "rows": 21,
+  "external_cells": 42,
+  "external_rates_recomputed_from_saved_counts": true,
+  "existing_three_method_cells_unchanged": 63,
+  "external_fully_harmonized": false,
+  "new_model_calls": 0,
+  "evaluation_runtime_modified": false,
+  "sources": {
+    "results/historical_comparison/TABLE2.csv": "231458e0bd6ca963513935695343ee0cd856e7c4091fca8bbbb1de55833aeb9a",
+    "EXTERNAL_SOURCE_COUNTS.json": "bb66f96e513e2d3e82ba8d18817db8c8ae6fcb96c6108c80aa4507d88529aabf"
+  }
+}
