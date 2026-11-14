@@ -1,0 +1,21 @@
+{
+  "phase": "running_auto_network_admission",
+  "completed": 308,
+  "planned": 1770,
+  "infrastructure_errors": 7,
+  "recovery_cycle": 0,
+  "automatic_network_admission": true,
+  "new_completed": 4,
+  "new_engine_errors": 0,
+  "active_cases": [
+    "B0:T3:T3S50_OV_S02_I00:R03",
+    "B0:T4:T4C1_EM_T01_I01:R03",
+    "B0:T5:T5AV1_CL_F07_P0_I02:R03",
+    "B1:T2:T2COL1_OV_G01:R01",
+    "B1:T6:T6Q_CURRENT_ACTION_P1_S1__MV90V2_V03_B00:R01",
+    "B1:T7:T7AC1_CL_T06_R_I00:R03",
+    "B1:T8:T8EN4_CL_N07_I00:R03"
+  ],
+  "retained_sha_unchanged": true,
+  "at": 1794662544.2369342
+}

@@ -1,0 +1,6 @@
+{
+  "type": "OSError",
+  "reason": "[Errno 98] Address already in use",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/recovery/network_admission_20261114/coordinator.py\", line 238, in <module>\n    main()\n  File \"/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/recovery/network_admission_20261114/coordinator.py\", line 169, in main\n    s.bind(('127.0.0.1', port))\nOSError: [Errno 98] Address already in use\n",
+  "at": 1794662101.0384624
+}

@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "fatal": false,
+  "dns": [
+    {
+      "host": "llmapi.paratera.com",
+      "passed": true,
+      "addresses": [
+        "115.190.35.43"
+      ]
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "passed": true,
+      "addresses": [
+        "2408:400a:3e:ef00:ce6f:bc78:1534:33d0",
+        "2408:400a:3e:ef02:12f:bd95:e827:51d",
+        "39.96.198.249",
+        "39.96.213.166",
+        "8.140.217.18",
+        "8.152.159.24"
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "preflight_input": "/mnt/disk_4/geyi/audio_switch_c3r_cloud04_20261109/mirror/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/preflight15_r7/cases/PREFLIGHT:B1:T1:T1COL1_NS_G00_I00:R01/agent_calls/request_1794654487278423246_a0f646b9/request.json",
+      "input_sha256": "e5266cc0efd7bfe3c627449e21c64c3b727faf080ee52cd153ef99b5b93bafa5",
+      "formal_trial": false,
+      "requests": 1,
+      "started": 1794662078.5989985,
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "fatal": false,
+      "elapsed_s": 1.9106471500126645
+    },
+    {
+      "preflight_input": "/mnt/disk_4/geyi/audio_switch_c3r_cloud04_20261109/mirror/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/preflight15_r7/cases/PREFLIGHT:B1:T5:T5AV1_CL_F08_P0_I02:R01/agent_calls/request_1794654544237432743_27066c21/request.json",
+      "input_sha256": "1c62afd79181caca224960164ec7238a646252c09aa0e9bf41b74edd6642d912",
+      "formal_trial": false,
+      "requests": 1,
+      "started": 1794662078.6007125,
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "fatal": false,
+      "elapsed_s": 6.638130253995769
+    },
+    {
+      "preflight_input": "/mnt/disk_4/geyi/audio_switch_c3r_cloud04_20261109/mirror/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/preflight15_r7/cases/PREFLIGHT:B1:T6:T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01:R01/agent_calls/request_1794654519348807029_17103f6f/request.json",
+      "input_sha256": "c2e0df86c04a50a8fabc8a86a85baca0e0caac482d6bebb5f400dc459c0b8d1e",
+      "formal_trial": false,
+      "requests": 1,
+      "started": 1794662078.6040692,
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "fatal": false,
+      "elapsed_s": 16.90711970604025
+    },
+    {
+      "preflight_input": "/mnt/disk_4/geyi/audio_switch_c3r_cloud04_20261109/mirror/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/runs/preflight15_r7/cases/PREFLIGHT:B1:T7:T7AC1_CL_T04_N_I00:R01/agent_calls/request_1794654452218066476_73ba1022/request.json",
+      "input_sha256": "e275a3e1201248d8869aba2f985021677d279906e8491847885cdef7a2e2c76d",
+      "formal_trial": false,
+      "requests": 1,
+      "started": 1794662078.602407,
+      "http_status": 200,
+      "actual_model": "Qwen3.8-27B",
+      "passed": true,
+      "fatal": false,
+      "elapsed_s": 4.0356342770392075
+    }
+  ],
+  "max_concurrent": 4,
+  "no_formal_trial_retries": true,
+  "at": 1794662095.5119069
+}

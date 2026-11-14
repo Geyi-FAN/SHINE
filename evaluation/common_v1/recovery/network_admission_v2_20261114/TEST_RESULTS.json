@@ -1,0 +1,8 @@
+{
+  "local_passed": 15,
+  "remote_container_passed": 15,
+  "includes_mock_full1770_with_one_timeout": true,
+  "real_socket_TIME_WAIT_reproduced": true,
+  "real_listener_rejected": true,
+  "formal_trials_replayed": 0
+}

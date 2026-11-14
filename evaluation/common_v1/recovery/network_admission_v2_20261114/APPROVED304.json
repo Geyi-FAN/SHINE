@@ -1,0 +1,19 @@
+{
+  "completed": 304,
+  "planned": 1770,
+  "remaining": 1466,
+  "reviewed_faults": {
+    "B1:T2:T2COL1_EM_G01:R01": "upstream_timeout",
+    "B1:T2:T2COL1_NS_G01:R03": "dns_failure",
+    "B1:T8:T8EN4_CL_N06_I02:R02": "upstream_timeout",
+    "B1:T1:T1COL1_CL_G05_I02:R03": "dns_failure",
+    "B1:T2:T2COL1_NS_G01:R02": "upstream_http_error",
+    "B1:T8:T8EN4_CL_N07_I00:R02": "upstream_timeout",
+    "B1:T5:T5AV1_CL_F06_P1_I02:R03": "unfinished_planning_at_client_timeout"
+  },
+  "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
+  "source_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "no_partial_cases": true,
+  "original_actor_scorer_frozen": true,
+  "previous_deployment_stop": "non-reuse bind falsely rejected a recently closed HTTP gateway; no new formal case was dispatched in failed recovery"
+}
