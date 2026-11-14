@@ -1,0 +1,271 @@
+{
+  "phase": "completed",
+  "planned": 15,
+  "completed": 15,
+  "infrastructure_errors": 0,
+  "by_method": {
+    "B0": {
+      "T1": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 0
+        }
+      },
+      "T2": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 1,
+          "observed": 1
+        }
+      },
+      "T3": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 1
+        }
+      },
+      "T4": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 1,
+          "observed": 1
+        }
+      },
+      "T5": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 0,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 1
+        }
+      },
+      "T6": {
+        "planned": 0,
+        "completed": 0,
+        "interaction": {
+          "success": 0,
+          "observed": 0
+        },
+        "target": {
+          "success": 0,
+          "observed": 0
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 0
+        }
+      },
+      "T7": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 1,
+          "observed": 1
+        }
+      },
+      "T8": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 0,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 0
+        }
+      }
+    },
+    "B1": {
+      "T1": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 1,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 0
+        }
+      },
+      "T2": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 1
+        }
+      },
+      "T3": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 0,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 1
+        }
+      },
+      "T4": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 1,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 1
+        }
+      },
+      "T5": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 1,
+          "observed": 1
+        }
+      },
+      "T6": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 0
+        },
+        "target": {
+          "success": 0,
+          "observed": 0
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 0
+        }
+      },
+      "T7": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 0,
+          "observed": 1
+        },
+        "target": {
+          "success": 0,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 1
+        }
+      },
+      "T8": {
+        "planned": 1,
+        "completed": 1,
+        "interaction": {
+          "success": 1,
+          "observed": 1
+        },
+        "target": {
+          "success": 1,
+          "observed": 1
+        },
+        "instruction": {
+          "success": 0,
+          "observed": 0
+        }
+      }
+    }
+  },
+  "time": 1794654679.4847698,
+  "first_attempts_only": true,
+  "qa_needs_fixed_judge": true
+}

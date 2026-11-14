@@ -1,0 +1,12 @@
+{
+  "phase": "running",
+  "planned": 1770,
+  "completed": 15,
+  "infrastructure_errors": 0,
+  "time": 1794654948.5433679,
+  "first_attempts_only": true,
+  "qa_needs_fixed_judge": true,
+  "formal_started": true,
+  "comparison_results_final": false,
+  "not_a_paper_score": true
+}

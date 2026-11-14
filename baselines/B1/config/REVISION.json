@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-11-09T01:19:44.479657+08:00",
+  "parent": "/mnt/disk_4/geyi/audio_switch_benchmark/experiments/asr_agent_oracle_20261108/revisions/cloud01_20261109_r2",
+  "revision": "cloud01_r3",
+  "change": "hard pause latch; clear queued completion at pause; causal subject+mode gate for delayed Agent results; Agent still chooses all stages; models/scoring/data unchanged",
+  "prior_records_preserved": true,
+  "new_preflight_plan": "same full14 all once; no success selection",
+  "formal_started": false
+}

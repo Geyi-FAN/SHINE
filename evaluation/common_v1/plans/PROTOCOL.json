@@ -1,0 +1,103 @@
+{
+  "status": "candidate_pending_preflight",
+  "registered_source": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/ours_full930_readiness_20261114/plans/REGISTERED930.json",
+  "registered_source_sha256": "e666046278bce7dce2f0f81abf2d7c0861b343bfd9afe8c93cf10bb3058c749b",
+  "physical_executor": {
+    "name": "pi05 E3 744/30000",
+    "checkpoint": "/mnt/disk_4/geyi/e3_v4_744_E3_fulllibero_35k_30000/30000",
+    "archive_sha256": "57315913541eb81f40678a75121e15c55c2622bbbe496a75ead7903f61820588",
+    "normalization_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+    "weights": "exported_params",
+    "ema_provenance": "unspecified; do not label EMA",
+    "image_size": [
+      224,
+      224
+    ],
+    "views": [
+      "MAIN",
+      "WRIST"
+    ],
+    "state_dimensions": 8,
+    "action_horizon": 10,
+    "execute_steps": 3,
+    "flow_steps": 10,
+    "max_tokens": 200,
+    "discrete_state_input": true
+  },
+  "action_rng": {
+    "recommended_seed": 7,
+    "seed_policy": "same7 for every method and repetition; matches current Ours implementation",
+    "nonQA_repetitions": 3,
+    "T6_repetitions": 1,
+    "not_three_different_action_seeds": true,
+    "wire_level_first_request_seed_audit_required": true,
+    "scene_seeds": "keep registered fixture scene_seed; distinct from action RNG seed"
+  },
+  "timing": {
+    "spoken_receipt_seconds": 10,
+    "command_accept_seconds": 20,
+    "first_authorized_action_seconds": 45,
+    "stop_or_retarget_seconds": 5,
+    "T2_pause_hold_seconds": 3,
+    "T7_primary_handoff_seconds": 45,
+    "T7_diagnostic_handoff_seconds": 10,
+    "T6_first_correct_audio_seconds": 20,
+    "T6_full_correct_audio_seconds": 40,
+    "T6_control_observation_after_question_seconds": 45,
+    "T6_reference_frame_tolerance_seconds": 0.1,
+    "clock_origin": "same actual input-PCM/audio-end proxy for methods; do not reset from ASR text completion",
+    "unannotated_decisive_word_timing": "disclose fixed segment/audio-end proxy; do not claim manual word timestamps"
+  },
+  "physical": {
+    "reference_measurement": "v25-existing-loaded-container-support-aligned-v1",
+    "threshold_policy": "preserve registered per-category numeric rules and target windows",
+    "target": "independent task-specific authorized final goal window, not agent task text",
+    "instruction": "physical target plus all explicit physical constraints; independent of interaction",
+    "joint": "supplemental per-case interaction AND physical instruction only",
+    "logical_goal_attribution": "apply one method-neutral validated logical-goal persistence rule to all methods",
+    "terminal_hold": "40 actual physics ticks only where the branch contract requires; not every subgoal",
+    "scoring_entrypoint": "to_be_implemented_and_verified_before_formal_launch"
+  },
+  "preparation": {
+    "T3": "same T3-controlled-source-prefix-v2 for all methods; reference controls are not method VLA actions; no private next-subgoal hints",
+    "T6": "same t6-prefix-v2; replay actual actions with causal observations; no privileged QA facts online",
+    "other_branches": "preserve registered fixtures and triggers; align delivery logic without supplying method abilities"
+  },
+  "metrics_denominators": {
+    "interaction": 840,
+    "target": 792,
+    "physical_instruction": 588,
+    "QA_for_supported_methods": 90,
+    "T8_speech_action_separation": 24
+  },
+  "known_inherited_field_conflicts": [
+    {
+      "field": "T7 budgets.waiting_handoff_s",
+      "legacy_value": 10,
+      "actual_main_metric": "interaction45",
+      "resolved_primary": 45
+    },
+    {
+      "field": "released data repetitions",
+      "legacy_value": 1,
+      "formal_nonQA_repetitions": 3
+    },
+    {
+      "field": "generic pause_hold_s",
+      "legacy_value": 1,
+      "T2_specific_pause_hold_s": 3
+    }
+  ],
+  "freeze_required": [
+    "resolved per-category protocol and scoring dependency hashes",
+    "all scene/prefix/audio/point coordinate transforms and input shapes",
+    "all model weights, normalization and actual service metadata",
+    "per-trial seed and first inference payload metadata",
+    "independent task/control/audio evidence adapters",
+    "no private object poses or selected-stage simulator completion to non-Oracle main actors"
+  ],
+  "version": "three-method-common-oracle-v1-20261114",
+  "method_change": "preserve historical B1 restricted Oracle and historical B0 raw ASR; supersedes proposed non-Oracle B1",
+  "policy_seed": 7,
+  "QA_backend_B1": "unchanged single Qwen3.8-27B, not replaced by Ours Qwen3.8-max"
+}

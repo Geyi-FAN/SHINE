@@ -1,0 +1,45 @@
+{
+  "agent": {
+    "model": "Qwen3.8-27B",
+    "endpoint": "https://llmapi.paratera.com/v1/chat/completions",
+    "backend": "paratera-cloud01",
+    "temperature": 0,
+    "max_tokens": 1800,
+    "thinking": false,
+    "request_timeout_s": 120,
+    "transport_retries": 0,
+    "provider": "Paratera hosted; not Alibaba original service",
+    "credential_no": "01",
+    "max_concurrent": 1,
+    "weight_revision": "not disclosed by hosted provider"
+  },
+  "asr": {
+    "model": "openai/whisper-large-v3",
+    "revision": "06f233fe06e710322aca913c1bc4249a0d71fce1",
+    "beam": 5,
+    "dtype": "float16",
+    "port": 49650,
+    "transport": "SSD/memory clock logs; neural decode unchanged"
+  },
+  "policy": {
+    "endpoint": "http://127.0.0.1:49661",
+    "checkpoint": "/mnt/disk_4/geyi/e3_v4_744_E3_fulllibero_35k_30000/30000",
+    "weights": "exported_params",
+    "horizon": 10,
+    "execute_steps": 3,
+    "flow_steps": 10,
+    "state_dim": 8
+  },
+  "tts": {
+    "model": "qwen3.8-omni-flash-realtime",
+    "voice": "Tina",
+    "tools": false,
+    "input": "Agent_reply_text_only",
+    "output_rate": 24000,
+    "session": "warmed before audio admission; reused serially within each case; provider transcript checked before release"
+  },
+  "method": "ASR_Agent_Oracle_pi05",
+  "oracle": "typed_points_and_selected_current_stage_only",
+  "score": "audio-logical-goal-attribution-v4-20261109",
+  "tts_key_logged": false
+}

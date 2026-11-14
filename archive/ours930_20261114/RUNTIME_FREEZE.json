@@ -1,0 +1,16 @@
+{
+  "runtime_revision": "audio-c3r-prereval-repairs-v8-20261114",
+  "git_commit": "98bcb048d6e61b42125d8027b59f8fda197e6d02",
+  "git_tag": null,
+  "status": "FROZEN_REQUIRES_CURRENT8",
+  "frozen_at": "2026-11-14T03:43:29.267629+08:00",
+  "acceptance_report": null,
+  "main_service_switched": false,
+  "source_runtime": "v12 d7b6bc8f75c7030c5d534df40670f473cf0c84b3",
+  "deployment": "isolated non-Oracle Ours, all-category engineering preflight",
+  "note": "No Oracle plans, points, intermediate completion or memory-validity decisions. Simulator data retained only in private benchmark initialization/triggers/scoring and final success feedback.",
+  "parent_candidate": "v19 8d1e235fde08d2c168fd31d6a37311d8cf076e91",
+  "scope": "T1 generic direct route; C3r/YOLO-M1 observational stages; original branch judges",
+  "parent": "5fccda030e6b8b5770f8546bb279373eea48cd60",
+  "startup_fix": "infer defensively copies request before pop; actual warmup regression test added"
+}

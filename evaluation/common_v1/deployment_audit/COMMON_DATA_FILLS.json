@@ -1,0 +1,30 @@
+[
+  {
+    "path": "data/SMOKE.private.json",
+    "sha256": "df8e334bf5be16a02ecc81fa7cfcaa82c3eedc81e60ff97d5ff8ed2a8141f1ec"
+  },
+  {
+    "path": "data/SMOKE_COMPOUND.private.json",
+    "sha256": "28b0332f20bd41e21d99cc1c320f5072225bf62ea058463091f9284bbafe937c"
+  },
+  {
+    "path": "data/PREFLIGHT14.private.json",
+    "sha256": "cb76ec57524080d85479ba6d0216f9e2ba8545d846bd4b8e9aa4fe4aad99ab1a"
+  },
+  {
+    "path": "data/T1/protocol.json",
+    "sha256": "751488a50d1e0a4c793c6d32eb20811555e9066223279746e2f830bc9ebbc8f5"
+  },
+  {
+    "path": "data/T1/audio_manifest.json",
+    "sha256": "92c68fa09bdf3cd39328ef5195f208aaab11b31e4df43a40c3b050def8ec9368"
+  },
+  {
+    "path": "data/T1/initial_states.json",
+    "sha256": "4d9dfeefe7acd99c3c244bc8acbdfc3d7ac05d3852c5a82f42949a03a0d30220"
+  },
+  {
+    "path": "data/T1/selected.private.json",
+    "sha256": "6b929d3b516ea4e771f2f3564d5e4b7ef1493964dc7ab05a89209b4c2e1ec9ca"
+  }
+]

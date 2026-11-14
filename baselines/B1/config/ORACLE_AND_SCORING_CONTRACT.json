@@ -1,0 +1,40 @@
+{
+  "schema": "audio-switch-oracle-boundary-v2",
+  "applies_to": [
+    "ASR_Agent_pi05",
+    "Ours"
+  ],
+  "planning_owner": "Agent",
+  "oracle_outputs": {
+    "point": "only the Agent-selected entity/K/time_source in MAIN224 y,x; historical points frozen at episode initialization or actual instruction takeover",
+    "selected_stage": "operation selected by Agent, status running/completed/failed, causal event time/frame, matching real task/version"
+  },
+  "ordinary_non_oracle_inputs": [
+    "actual ASR transcript",
+    "actual causal conversation and tool receipts",
+    "current MAIN and WRIST images",
+    "robot proprioception8",
+    "Agent-owned persistent memory",
+    "public trained operator catalog"
+  ],
+  "forbidden": [
+    "all native_goal_relations",
+    "whole object ground-truth poses",
+    "privileged held-object/drawer-state vector",
+    "private evaluator contract/invariants",
+    "standard next stage or benchmark plan",
+    "reference transcripts",
+    "future completion history"
+  ],
+  "selected_stage_only": true,
+  "standard_next_stage_provided": false,
+  "scoring": {
+    "version": "audio-causal-attribution-v3-20261109",
+    "actor_attribution": "actual authorizing audio + episode/task/action cohort; accepts task creation or real versioned task update; excludes earlier same-ID actions",
+    "instruction_text_matching": false,
+    "geometric_thresholds": "unchanged frozen category predicates",
+    "legacy_results": "immutable; regrade separately",
+    "all_three_methods_required": true
+  },
+  "deployment_note": "B1 implementation is local in this experiment. Ours must explicitly import/validate this contract before a paired new run; no claim that existing running Ours has been updated."
+}

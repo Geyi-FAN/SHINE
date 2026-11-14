@@ -1,0 +1,22 @@
+Task,Metric,ASR + pi0.5,ASR + Agent (Oracle assisted),Ours latest
+Spoken Execution,Inter. SR,0.00,94.17,100.00
+Spoken Execution,Target SR,96.67,86.67,100.00
+Pause & Resume,Inter. SR,0.00,55.83,92.50
+Pause & Resume,Target SR,80.83,85.83,97.50
+Pause & Resume,Instr. SR,58.33,60.00,85.00
+Goal Revision,Inter. SR,0.00,7.50,95.00
+Goal Revision,Target SR,75.00,74.17,88.33
+Goal Revision,Instr. SR,51.67,60.83,88.33
+Contextual Reference,Inter. SR,0.00,68.33,95.00
+Contextual Reference,Target SR,88.33,66.67,85.83
+Contextual Reference,Instr. SR,71.67,65.83,85.83
+Clarify & Confirm,Inter. SR,0.00,68.33,98.33
+Clarify & Confirm,Target SR,0.00,72.22,99.07
+Clarify & Confirm,Instr. SR,0.00,70.37,99.07
+Deferred Execution,Inter. SR,0.00,40.83,90.00
+Deferred Execution,Target SR,50.00,50.83,90.83
+Deferred Execution,Instr. SR,12.50,47.50,82.50
+Non-command Handling,Inter. SR,0.00,88.33,100.00
+Non-command Handling,Target SR,42.86,98.81,100.00
+Non-command Handling,S-A Sep.,N/E,100.00,100.00
+Concurrent QA,QA Success,N/S,Pending,96.67

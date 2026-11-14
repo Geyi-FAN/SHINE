@@ -1,0 +1,21 @@
+{
+  "name": "common-oracle-baselines-20261114",
+  "id": "6f8cb0ee88fb0e8c56e4e75b9b0e4ff37ea402cb60a67cad9ed0cf26aa516854",
+  "gpus": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "overlay_roots": [
+    "/mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r15_20261108/runtime/freeze",
+    "/mnt/disk_4/geyi/audio_switch_benchmark/runtimes/c3r_pi05_744_30k_r15_20261108/runtime/vendor/support",
+    "/mnt/disk_2/geyi/memory_dataset_v5_fast60_20261013/pipeline/src",
+    "/mnt/disk_2/geyi/pi05_revision_p1/goal_new_state_test_p0_3750_v2_stratified/src",
+    "/mnt/disk_2/geyi/pi05_small722_20261016/local_assets.json",
+    "/mnt/disk_2/geyi/t3_final40_dedicated_20261104/tools",
+    "/mnt/disk_2/geyi/voice_pi05_harness/scripts/audio_switch_benchmark/tts.py",
+    "/mnt/disk_4/geyi/yolo_v3r_3000_20261024/destination_rules.json"
+  ],
+  "old_container_restarted": false
+}

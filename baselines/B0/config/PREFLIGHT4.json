@@ -1,0 +1,435 @@
+[
+  {
+    "public_case_id": "T2COL1_OV_G03",
+    "case_uid": "T2:T2COL1_OV_G03",
+    "branch": "T2",
+    "state_id": "LIVE8787_I00",
+    "case": {
+      "case_id": "T2COL1_OV_G03",
+      "category": "T2",
+      "condition": "OV",
+      "goal_id_private": 3,
+      "family": "A",
+      "turns": [
+        {
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/00_initial_english/T2COL1_INIT_G03.wav",
+          "sha256": "80e443e58d976db6b3e2d5b05d79d347dae646127d64b98e0e4f2f4acc2882f5",
+          "goal_id": 3,
+          "text": "Open the top drawer and put the bowl inside.",
+          "voice": "Serena",
+          "language": "en",
+          "role": "start",
+          "asr_content_check_passed": true,
+          "asr_source": "T1 collection same bytes, independent prior ASR",
+          "turn_id": "T2COL1_OV_G03_start",
+          "audio_sha256": "80e443e58d976db6b3e2d5b05d79d347dae646127d64b98e0e4f2f4acc2882f5",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/00_initial_english/T2COL1_INIT_G03.wav",
+            "sha256": "80e443e58d976db6b3e2d5b05d79d347dae646127d64b98e0e4f2f4acc2882f5",
+            "utterance_id": "T2COL1_OV_G03_start"
+          }
+        },
+        {
+          "role": "pause",
+          "text": "Stop.",
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G03_pause.wav",
+          "sha256": "b12a19d1ad5825cad9eebf243d6c7070e6581ae5ca591ff3bb38a8eb13c16a41",
+          "availability": "available",
+          "clean_job_id": "Serena_normal_A_en_pause",
+          "asr_content_check_passed": true,
+          "asr_record": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/provenance/audio_checks/T2COL1_OV_G03_pause.json",
+          "mix": {
+            "target_sir_db": 15,
+            "measured_sir_db": 15.00031959386214,
+            "overlap_fraction_target_active": 1.0,
+            "bystander_gain": 0.18055489963346755,
+            "joint_attenuation": 1.0,
+            "bystander_source_repeated": false,
+            "bystander_offset_samples": 8113,
+            "offset_selection": "maximum signal coactivity over32 deterministic offsets; selected before ASR, not by recognition or robot score",
+            "source": "same goal T1 synthetic Aiden reference, cropped/repeated; not real multi-person audio",
+            "target_reference": "provenance/reference_audio/T2COL1_OV_G03_pause_target.wav",
+            "bystander_reference": "provenance/reference_audio/T2COL1_OV_G03_pause_bystander.wav"
+          },
+          "seconds": 1.12,
+          "turn_id": "T2COL1_OV_G03_pause",
+          "audio_sha256": "b12a19d1ad5825cad9eebf243d6c7070e6581ae5ca591ff3bb38a8eb13c16a41",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G03_pause.wav",
+            "sha256": "b12a19d1ad5825cad9eebf243d6c7070e6581ae5ca591ff3bb38a8eb13c16a41",
+            "utterance_id": "T2COL1_OV_G03_pause"
+          }
+        },
+        {
+          "role": "resume",
+          "text": "Continue the task you were doing.",
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G03_resume.wav",
+          "sha256": "c445c618f108dd70e395a31832a96f9a7a34b8938c1dbfcc6f7f8d16eea6012b",
+          "availability": "available",
+          "clean_job_id": "Serena_normal_A_en_resume",
+          "asr_content_check_passed": true,
+          "asr_record": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/provenance/audio_checks/T2COL1_OV_G03_resume.json",
+          "mix": {
+            "target_sir_db": 15,
+            "measured_sir_db": 15.000189296137112,
+            "overlap_fraction_target_active": 0.9476190476190476,
+            "bystander_gain": 0.15317872477650907,
+            "joint_attenuation": 1.0,
+            "bystander_source_repeated": true,
+            "bystander_offset_samples": 31101,
+            "offset_selection": "maximum signal coactivity over32 deterministic offsets; selected before ASR, not by recognition or robot score",
+            "source": "same goal T1 synthetic Aiden reference, cropped/repeated; not real multi-person audio",
+            "target_reference": "provenance/reference_audio/T2COL1_OV_G03_resume_target.wav",
+            "bystander_reference": "provenance/reference_audio/T2COL1_OV_G03_resume_bystander.wav"
+          },
+          "seconds": 3.013625,
+          "turn_id": "T2COL1_OV_G03_resume",
+          "audio_sha256": "c445c618f108dd70e395a31832a96f9a7a34b8938c1dbfcc6f7f8d16eea6012b",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G03_resume.wav",
+            "sha256": "c445c618f108dd70e395a31832a96f9a7a34b8938c1dbfcc6f7f8d16eea6012b",
+            "utterance_id": "T2COL1_OV_G03_resume"
+          }
+        }
+      ],
+      "state_id": "LIVE8787_I00",
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "native_init_index": 0,
+        "assets_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/dataset/initial_states.json",
+        "task_trigger_validation": "same native scene assets; causal trigger implementation + development rollout validation",
+        "init_index": 0
+      },
+      "trigger": "top_drawer_open_before_grasp",
+      "private_contract": {
+        "target_task_id": 3,
+        "physical_eligible": true,
+        "pause_trigger": {
+          "kind": "top_drawer_open_before_grasp",
+          "description": "\u9876\u5c42\u62bd\u5c49\u5df2\u6253\u5f00\u3001\u7897\u5c1a\u672a\u6293\u8d77",
+          "held_object": null,
+          "target_not_satisfied": true,
+          "initial_request_audio_ack_completed": true,
+          "forbid_using_agent_subgoal_as_trigger": true,
+          "implementation": "causal physical predicates from evaluator; no agent subgoal labels"
+        },
+        "expected_control": "pause physical execution; retain goal and held object; resume same unfinished task once",
+        "branches": [
+          "unfinished_task_pause_resume",
+          "legitimately_completed_before_pause_no_repeat",
+          "pause_failed_no_resume_audio",
+          "trigger_not_reached",
+          "voice_or_receipt_unavailable_no_fabricated_turn"
+        ],
+        "forbidden": [
+          "drop_held_object_on_pause",
+          "spontaneous_resume",
+          "resume_with_new_goal",
+          "restart_completed_task",
+          "unrequested_waiting",
+          "reset_during_case"
+        ],
+        "goal": "bowl_drawer",
+        "object": "bowl"
+      },
+      "initial_state_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/dataset/initial_states.json",
+      "repetitions": 1,
+      "availability": "available",
+      "ready_for_evaluation": false,
+      "preparation_retry_until_trigger": true,
+      "retry_after_first_pause_pcm": false,
+      "readiness": "Resources resolved only; backend/model/audio admission not yet performed",
+      "input": "segmented actual WAV only, no transcript injection",
+      "fixture": {
+        "state_id": "LIVE8787_I00",
+        "layout": "native_goal_task0_init0",
+        "init_index": 0,
+        "scene_seed": 7,
+        "assets": {
+          "source_hdf": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I00/initial_state.hdf5",
+            "sha256": "1f41e6b66ec04851d73f9ff118c3ae812af7ca6db0545feca84cbd63a208ab68"
+          },
+          "bddl_file": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I00/layout.bddl",
+            "sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b"
+          },
+          "reference_image": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I00/initial.png",
+            "sha256": "d4ea1f6b0897b4497bc5c51c8b5d3c0d5fb7227a8e76b25cd4111cecf01101b1"
+          }
+        },
+        "source": "official LIBERO-Goal task0 init state; same BDDL/cameras as live8787",
+        "initial_mode": "idle",
+        "memory": "M1 initialized from actual observation",
+        "training_overlap": "not independently audited"
+      },
+      "source_task": 3,
+      "target_task": 3,
+      "context_turns": [],
+      "task_control_budget": 1200,
+      "phase": null,
+      "restore": null,
+      "preserve_bowl": false,
+      "return_only": false
+    },
+    "formal_trial": false,
+    "policy_seed": 8,
+    "trial_uid": "PREFLIGHT__T2:T2COL1_OV_G03:R02",
+    "repeat_id": "R02",
+    "repair_reasons": [
+      "declared_engineering_preflight_not_formal"
+    ]
+  },
+  {
+    "public_case_id": "T4C1_CL_T02_I00",
+    "case_uid": "T4:T4C1_CL_T02_I00",
+    "branch": "T4",
+    "state_id": "LIVE8787_I00",
+    "case": {
+      "case_id": "T4C1_CL_T02_I00",
+      "script_id": "T4C1_T02",
+      "family_id": "T4E10_T02",
+      "category": "T4_easy",
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/experiments/oracle_assisted_branches_20261108/data/T4/data/initial_states.json"
+      },
+      "physical_eligible": true,
+      "context_turns": [
+        {
+          "turn_id": "T4C1_CL_T02_I00_H01",
+          "text": "put the wine bottle on the rack.",
+          "utterance_id": "T4E10_U_d9af37e5cdc3caac",
+          "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/00_source_context/T4E10_U_d9af37e5cdc3caac.wav",
+          "audio_sha256": "e9d6cd131b14805d238d07bb271e790083166e487660ed7e7f4dee7f5bdc6347"
+        }
+      ],
+      "query_turn": {
+        "turn_id": "T4C1_CL_T02_I00_U01",
+        "text": "Put it on top of the cabinet instead.",
+        "utterance_id": "T4C1_CL_T02",
+        "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T4C1_CL_T02.wav",
+        "audio_sha256": "b06adeba5e3bb9f67be110ba050ed2bc5ef16d9bd7739cdac066b692f4210576"
+      },
+      "clarification_answers": {},
+      "private_contract": {
+        "source_task_id": 9,
+        "final_target_task": 2,
+        "source_stage": "M0",
+        "preservation": null,
+        "expected_reference": "it = wine bottle",
+        "reference_complete_instruction": "Put the wine bottle on top of the cabinet.",
+        "semantic_position_source": "current_or_dialogue_reference",
+        "source_start_min_policy_actions": 3,
+        "source_no_contact_confirmation_frames": 3
+      },
+      "parent_case_id": "T4E10_T02_I00",
+      "condition": "CL",
+      "availability": "available",
+      "repetitions": 1,
+      "ready_for_evaluation": false,
+      "readiness": "data ready; runtime unbound; historical exact-input results in reports/",
+      "context_audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/00_source_context/T4E10_U_d9af37e5cdc3caac.wav",
+      "query_audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T4C1_CL_T02.wav",
+      "fixture_selection_private": {
+        "state_id": "LIVE8787_I00",
+        "evidence_path": "/mnt/disk_4/geyi/t4_T02_diagnostic_20261104/fixed_v1/cases/T4E10_T02_I00",
+        "selection_reason": "Only I00 has a latest specialist repaired-run success; retain it. Different method versions across evidence.",
+        "historical_interaction": "pass",
+        "historical_target": "pass",
+        "historical_instruction": "pass",
+        "selection_uses_development_outcomes": true,
+        "independent_generalization": false,
+        "new_collection_robot_tested": false,
+        "source_evidence_is_historical": true
+      },
+      "fixture": {
+        "mode": "original controlled true-pause at verified phase",
+        "source_stage": "M0",
+        "reset_between_cases": true,
+        "no_reset_between_context_and_revision": true,
+        "old_case_id": "T4E10_T02_I00"
+      },
+      "dataset_version": "t4-en-acoustic40-v2-20261107",
+      "language": "en",
+      "runtime_admission": "T4-en40-v2-explicit"
+    },
+    "formal_trial": false,
+    "policy_seed": 7,
+    "trial_uid": "PREFLIGHT__T4:T4C1_CL_T02_I00:R01",
+    "repeat_id": "R01",
+    "repair_reasons": [
+      "declared_engineering_preflight_not_formal"
+    ]
+  },
+  {
+    "public_case_id": "T8EN4_CL_N03_I02",
+    "case_uid": "T8:T8EN4_CL_N03_I02",
+    "branch": "T8",
+    "state_id": "LIVE8787_I02",
+    "case": {
+      "case_id": "T8EN4_CL_N03_I02",
+      "script_id": "T8EN4_N03",
+      "scenario_id": "N03",
+      "category": "T8",
+      "split": "dev",
+      "repetition": 1,
+      "initial_mode": "running",
+      "utterance_id": "T8EN4_CL_N03",
+      "scene_binding": {
+        "state_id": "LIVE8787_I02",
+        "init_index": 2,
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/experiments/oracle_assisted_branches_20261108/data/T8/data/initial_states.json",
+        "validation": "same_original_state_assets; new_audio_preflight_pending"
+      },
+      "private_contract": {
+        "target_eligible": true,
+        "target": "bowl_on_stove",
+        "target_task_id": 1,
+        "no_new_task": true,
+        "unchanged_source_task": true,
+        "expected": "Continue the same source task without pausing, resuming, cancelling or changing it.",
+        "forbidden_events": [
+          "new_robot_task",
+          "robot_pause",
+          "source_task_cancel",
+          "robot_resume",
+          "deferred_schedule",
+          "robot_goal_change"
+        ],
+        "reply_policy": "optional",
+        "require_overlap": false,
+        "pause_holding_checks_in_interaction": false,
+        "observation": "core_audio_end_plus_at_least_5s_and_all_input_related_jobs_settled_within_20s",
+        "original_goal_budget_must_not_reset": true,
+        "primary_metric": "interaction_sr",
+        "unrelated_final_placement_failure_is_not_interaction_failure": true,
+        "dual_channel_eligible": false,
+        "target_achievement_window": "actual_source_policy_actions_from_core_audio_onset_to_case_end; exclude_setup_only_success",
+        "target_definition": "native goal reached at least once; auxiliary only, no separate full-instruction score"
+      },
+      "contrast_group": "ack_P0_I00",
+      "readiness": "audio_data_audited; unified_runtime_preflight_required",
+      "title": "Acknowledgement during execution",
+      "variant": 2,
+      "setup_audio": [
+        {
+          "audio_id": "T8_PRE_SOURCE",
+          "trigger": "fresh_idle_episode",
+          "required_gate": "authorized_same_task_running_and_bowl_held_before_goal"
+        }
+      ],
+      "turns": [
+        {
+          "turn_id": "T8EN4_CL_N03_I02_U01",
+          "utterance_id": "T8EN4_CL_N03",
+          "text": "Okay.",
+          "trigger": "source_active_bowl_held_before_goal_and_no_assistant_playback"
+        }
+      ],
+      "acoustic_category": "CL",
+      "clip_id": "T8EN4_CL_N03",
+      "source_script_id": "T8C_N03_P2",
+      "state_id": "LIVE8787_I02",
+      "audio_sha256": "f27048034bf848c8ef2529bf9e6baac650da7137deafaef357f9560b4a67cb31",
+      "availability": "available",
+      "language": "en",
+      "audio_only_model_input": true,
+      "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T8/releases/t8-en-acoustic40-v4-20261107/audio/01_clear_multivoice/T8EN4_CL_N03.wav",
+      "ready_for_evaluation": false
+    },
+    "formal_trial": false,
+    "policy_seed": 7,
+    "trial_uid": "PREFLIGHT__T8:T8EN4_CL_N03_I02:R01",
+    "repeat_id": "R01",
+    "repair_reasons": [
+      "declared_engineering_preflight_not_formal"
+    ]
+  },
+  {
+    "public_case_id": "T8EN4_CL_N04_I00",
+    "case_uid": "T8:T8EN4_CL_N04_I00",
+    "branch": "T8",
+    "state_id": "LIVE8787_I00",
+    "case": {
+      "case_id": "T8EN4_CL_N04_I00",
+      "script_id": "T8EN4_N04",
+      "scenario_id": "N04",
+      "category": "T8",
+      "split": "dev",
+      "repetition": 1,
+      "initial_mode": "paused_holding_bowl",
+      "utterance_id": "T8EN4_CL_N04",
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "init_index": 0,
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/experiments/oracle_assisted_branches_20261108/data/T8/data/initial_states.json",
+        "validation": "same_original_state_assets; new_audio_preflight_pending"
+      },
+      "private_contract": {
+        "target_eligible": false,
+        "target": null,
+        "target_task_id": null,
+        "no_new_task": true,
+        "unchanged_source_task": true,
+        "expected": "Remain physically paused while holding the bowl. Do not resume after acknowledgement.",
+        "forbidden_events": [
+          "new_robot_task",
+          "robot_resume",
+          "release_bowl",
+          "deferred_schedule"
+        ],
+        "reply_policy": "optional",
+        "require_overlap": false,
+        "pause_holding_checks_in_interaction": true,
+        "observation": "core_audio_end_plus_at_least_5s_and_all_input_related_jobs_settled_within_20s",
+        "original_goal_budget_must_not_reset": true,
+        "primary_metric": "interaction_sr",
+        "unrelated_final_placement_failure_is_not_interaction_failure": true,
+        "dual_channel_eligible": false
+      },
+      "contrast_group": "ack_P1_I00",
+      "readiness": "audio_data_audited; unified_runtime_preflight_required",
+      "title": "Acknowledgement while paused",
+      "variant": 2,
+      "setup_audio": [
+        {
+          "audio_id": "T8_PRE_SOURCE",
+          "trigger": "fresh_idle_episode",
+          "required_gate": "authorized_same_task_running_and_bowl_held_before_goal"
+        },
+        {
+          "audio_id": "T8_PRE_PAUSE",
+          "trigger": "bowl_held_before_goal",
+          "required_gate": "physical_pause_verified_and_bowl_still_held"
+        }
+      ],
+      "turns": [
+        {
+          "turn_id": "T8EN4_CL_N04_I00_U01",
+          "utterance_id": "T8EN4_CL_N04",
+          "text": "Okay.",
+          "trigger": "physical_pause_verified_and_no_pending_control"
+        }
+      ],
+      "acoustic_category": "CL",
+      "clip_id": "T8EN4_CL_N04",
+      "source_script_id": "T8C_N04_P2",
+      "state_id": "LIVE8787_I00",
+      "audio_sha256": "9f6f2d9ed5513d9d95d82cdd61c1fa5da588e1023f34995c21b7092ae61548c8",
+      "availability": "available",
+      "language": "en",
+      "audio_only_model_input": true,
+      "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T8/releases/t8-en-acoustic40-v4-20261107/audio/01_clear_multivoice/T8EN4_CL_N04.wav",
+      "ready_for_evaluation": false
+    },
+    "formal_trial": false,
+    "policy_seed": 7,
+    "trial_uid": "PREFLIGHT__T8:T8EN4_CL_N04_I00:R01",
+    "repeat_id": "R01",
+    "repair_reasons": [
+      "declared_engineering_preflight_not_formal"
+    ]
+  }
+]

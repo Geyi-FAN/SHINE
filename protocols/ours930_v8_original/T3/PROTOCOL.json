@@ -1,0 +1,314 @@
+{
+  "version": "T3-final-v3-40-English-3noStop-20261104",
+  "status": "completed_development_reference_round_packaged_20261107",
+  "executor": "SmolVLA E3 v4",
+  "language": "en",
+  "physical": {
+    "version": "2.5.0-candidate",
+    "file": "private/physical_rules.json",
+    "sha256": "4a1349af4bdcd60cfe78267a15ddb1cd69938042455514f335160286d5af3dcc",
+    "target": "ever_target_in_policy_steps_after_valid_authorization",
+    "instruction": "all_user_physical_obligations_in_allowed_order_and_hold_at_case_end",
+    "hold_control_steps": 40,
+    "control_hz": 20,
+    "missing_evidence": "unknown_counted_as_not_pass"
+  },
+  "metrics": {
+    "interaction": {
+      "numerator": "all_required_interaction_events_pass_no_forbidden_events_within_deadlines",
+      "denominator": "all_preregistered_cases"
+    },
+    "target": {
+      "numerator": "final_non_cancelled_physical_goal_ever_achieved_after_its_valid_authorization",
+      "denominator": "preregistered_physical_eligible_cases"
+    },
+    "instruction": {
+      "numerator": "target_and_all_explicit_physical_clauses_and_terminal_hold_pass",
+      "denominator": "same_as_target"
+    },
+    "joint": {
+      "numerator": "interaction_and_instruction_for_physical_cases_else_interaction",
+      "denominator": "all_preregistered_cases"
+    }
+  },
+  "budgets": {
+    "pause_from_decisive_audio_end_s": 5.0,
+    "pause_fallback_from_audio_end_s": 5.0,
+    "pause_hold_s": 1.0,
+    "pause_max_eef_translation_m": 0.005,
+    "pause_max_eef_rotation_rad": 0.05,
+    "pause_max_gripper_width_change_m": 0.003,
+    "ack_from_audio_end_s": 10.0,
+    "clarification_question_from_audio_end_s": 20.0,
+    "valid_command_accept_from_audio_end_s": 20.0,
+    "first_new_action_from_audio_end_s": 45.0,
+    "qa_first_informative_audio_from_audio_end_s": 20.0,
+    "qa_complete_answer_from_audio_end_s": 40.0,
+    "waiting_handoff_from_independent_predecessor_success_s": 10.0,
+    "automatic_phase_transition_s": 20.0,
+    "max_clarification_questions_per_request": 3,
+    "max_unnecessary_confirmations": 1,
+    "user_reply_delay_after_question_s": 1.5,
+    "per_physical_goal_action_steps": 1200,
+    "per_physical_goal_wall_s": 600,
+    "case_action_steps": 3600,
+    "case_wall_s": 1800,
+    "precondition_wall_s": 180,
+    "precondition_action_steps": 1200,
+    "negative_observation_s": 5.0,
+    "terminal_hold_steps": 40
+  },
+  "accounting": {
+    "action_steps": "all_non_hold_executor_steps_including_wrong_and_stale_actions; no_reset_on_pause_or_retry",
+    "wall_clock": "monotonic; includes_audio_API_wait_QA_pause_retries; never_freeze_world_for_model",
+    "latency_timeouts": "count_fail_and_right_censor; report_response_coverage_and_success_conditional_p50_p95",
+    "precondition_failure": "natural_lifecycle_fail_in_denominator; common_fixture_failure_abort_entire_paired_block",
+    "errors": "method_timeouts_missing_points_format_errors_disconnects_count_fail; declared_external_infrastructure_failure_rerun_whole_paired_block_keep_all_attempts",
+    "aggregation": "report_counts_micro_and_T1_to_T8_equal_weight_macro; eligible_only_macro_for_physical; no_NA_as_zero_or_one; unknown_reported_separately_and_not_pass"
+  },
+  "release_gates": [
+    "Validate 40 unique cases and 50 WAV SHA256",
+    "Bind LIVE8787_I00 assets and same camera",
+    "Record runtime identity and scoring source before evaluation",
+    "Human word timing and held-out/human validation required before stronger public claims"
+  ],
+  "change_reason": "User authorized moderate deadline relaxation before rerun; physical thresholds/action budgets unchanged",
+  "setup": {
+    "method": "fresh native initial state; U0 through direct text tool only in text baseline, real waveform in audio; early causal trigger; no evaluator pause tool in audio",
+    "setup_failure": "retain all preregistered cases in denominator; no selective retry",
+    "camera": "same 8787 scene family; exact initialization image hash check"
+  },
+  "repetitions": 1,
+  "audio_revision": "final_v3_drop_MX_keep_other_waveforms_exact",
+  "task_scope": "10 scripts x CL/NS/EM/OV x LIVE8787_I00 x one attempt",
+  "denominators": {
+    "interaction": 40,
+    "target": 40,
+    "instruction": 40
+  },
+  "no_answer_hint": "Private goals/subgoals/reference text not supplied to model; waveform only",
+  "stage_feedback": "C3r four Agent, image-only YOLO/M1 references; simulator-assisted M1 validity and final physical acceptance disclosed",
+  "t1_contracts": [
+    {
+      "task_id": 0,
+      "goal": "open_middle",
+      "title": "打开中间抽屉",
+      "object": null,
+      "benchmark_language": "open the middle drawer of the cabinet",
+      "native_predicates": [
+        [
+          "open",
+          "wooden_cabinet_1_middle_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 1,
+      "goal": "bowl_stove",
+      "title": "碗放炉灶",
+      "object": "bowl",
+      "benchmark_language": "put the bowl on the stove",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "flat_stove_1_cook_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 2,
+      "goal": "bottle_cabinet",
+      "title": "酒瓶放柜顶",
+      "object": "wine_bottle",
+      "benchmark_language": "put the wine bottle on top of the cabinet",
+      "native_predicates": [
+        [
+          "on",
+          "wine_bottle_1",
+          "wooden_cabinet_1_top_side"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 3,
+      "goal": "bowl_drawer",
+      "title": "开顶层抽屉并放碗",
+      "object": "bowl",
+      "benchmark_language": "open the top drawer and put the bowl inside",
+      "native_predicates": [
+        [
+          "in",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 4,
+      "goal": "bowl_cabinet",
+      "title": "碗放柜顶",
+      "object": "bowl",
+      "benchmark_language": "put the bowl on top of the cabinet",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_side"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 5,
+      "goal": "push_plate",
+      "title": "盘子推至炉灶前",
+      "object": "plate",
+      "benchmark_language": "push the plate to the front of the stove",
+      "native_predicates": [
+        [
+          "on",
+          "plate_1",
+          "main_table_stove_front_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 6,
+      "goal": "cheese_bowl",
+      "title": "奶酪放入碗",
+      "object": "cheese",
+      "benchmark_language": "put the cream cheese in the bowl",
+      "native_predicates": [
+        [
+          "on",
+          "cream_cheese_1",
+          "akita_black_bowl_1"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 7,
+      "goal": "turn_on_stove",
+      "title": "打开炉灶",
+      "object": null,
+      "benchmark_language": "turn on the stove",
+      "native_predicates": [
+        [
+          "turnon",
+          "flat_stove_1"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 8,
+      "goal": "bowl_plate",
+      "title": "碗放盘子上",
+      "object": "bowl",
+      "benchmark_language": "put the bowl on the plate",
+      "native_predicates": [
+        [
+          "on",
+          "akita_black_bowl_1",
+          "plate_1"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    },
+    {
+      "task_id": 9,
+      "goal": "bottle_rack",
+      "title": "酒瓶放酒架",
+      "object": "wine_bottle",
+      "benchmark_language": "put the wine bottle on the rack",
+      "native_predicates": [
+        [
+          "on",
+          "wine_bottle_1",
+          "wine_rack_1_top_region"
+        ]
+      ],
+      "terminal_hold_steps": 40,
+      "physical_rules": "2.5.0-candidate",
+      "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+    }
+  ],
+  "initial_scene_checks": "LIVE8787_I00 only; same native 8787 scene/cameras; exact assets and initial image comparison",
+  "audio_content_review": "50 retained WAV SHA256 equal current v3; no new TTS or manual critical-word timing in repackaging",
+  "approval": "User retained only NS04/NS05/OV05 noStop; removed MX; authorized final40 reference round. Repackaging does not change tasks, audio, thresholds or existing scores.",
+  "categories": [
+    "T3"
+  ],
+  "not_formal_test_set": true,
+  "audio_acceptance": {
+    "content": "Inherited automatic checks and live evidence; no new human acceptance asserted",
+    "human_critical_word_times": "not annotated",
+    "stop_timing": "isolated Stop segment-end proxy, not manually annotated word end"
+  },
+  "runtime": "C3r recovery + R7-T3.2 + NativePrefetch + T2/R8 short receipts + frozen T3-v4",
+  "new_audio_review": "3 replacement clips: waveform/hash and live closed-loop evidence checked; additional noStop10 are diagnostic only and not adopted",
+  "preflight": "same reviewed waveforms and causal trigger reused from original; new engineering probe3 separately retained",
+  "support": "native task6 On(cheese,bowl), not In; measured current nonrobot upward resultant contact force; existing minimum support force, release and stability windows; original geometric proxy retained",
+  "legacy_scoring": "each rollout additionally scored with original geometric support proxy",
+  "parallelism": 1,
+  "differences": "Four English conditions; 37 Stop and 3 approved noStop; no MX; metadata-only repackaging, retained waveforms unchanged",
+  "ASR_GATE": {
+    "scope": "Historical MX independent ASR check excluded from current English40 claims; see original metadata only"
+  },
+  "private_reference_never_sent_to_model": true,
+  "audio_parallelism": 1,
+  "old_same_audio_baseline": "Historical same-ID40 subset reported separately; no score splicing",
+  "group_denominators": {
+    "CL": 10,
+    "NS": 10,
+    "EM": 10,
+    "OV": 10
+  },
+  "explicit_stop_required": true,
+  "audio_versions": {
+    "CL": "original multivoice, all10 retain Stop",
+    "NS": "original fan20dB/vacuum15dB except approved NS04/NS05 noStop derived from gap100",
+    "EM": "original five emotions, all10 retain Stop",
+    "OV": "original Serena/Aiden SIR15dB except approved OV05 noStop derived from gap100"
+  },
+  "route_cache_scope": "Fresh official DNS/TLS/authorized WebSocket preflight; route TTL12h for long run, hostname/SNI/certificate verification retained",
+  "explicit_stop_scope": "Per-case explicit_stop_required; only three approved cases false",
+  "scoring_adapter": "external frozen legacy entry documented in docs/METRICS.md and provenance/RUNTIME.json",
+  "result_policy": "New dataset version; do not relabel or rewrite historical fifty-case scores",
+  "metadata_revision": 3,
+  "explicit_stop_required_default": true,
+  "explicit_stop_overrides": {
+    "T3S50_NS_S04_I00": false,
+    "T3S50_NS_S05_I00": false,
+    "T3S50_OV_S05_I00": false
+  },
+  "explicit_stop_precedence": "Each case explicit_stop_required overrides protocol default; do not apply global True to approved three",
+  "dataset_joint_evaluation_status": "completed_40_20261104",
+  "parallelism_note": "Reference completed round used one environment and one cloud audio session at a time; concurrency is a runtime attribute, not dataset requirement",
+  "source_metadata_history": "provenance/original_metadata/PROTOCOL.json"
+}

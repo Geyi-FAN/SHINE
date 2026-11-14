@@ -1,0 +1,191 @@
+{
+  "rules": {
+    "version": "2.5.0-candidate",
+    "schema_version": 1,
+    "status": "frozen_candidate_not_final_benchmark",
+    "control_hz": 20,
+    "restore": {
+      "radius_m": 0.035,
+      "upper_drawer_bowl_radius_m": 0.07,
+      "special_previous_instruction": "open the top drawer and put the bowl inside",
+      "special_source_task": 3,
+      "special_object": "akita_black_bowl_1",
+      "position_steps": 5,
+      "support_steps": 5,
+      "support_min_true": 4,
+      "release_steps": 3,
+      "stable_steps": 5,
+      "stable_diameter_m": 0.005,
+      "withdraw_steps": 3,
+      "withdraw_distance_m": 0.08,
+      "high_release_height_m": 0.03,
+      "high_release_confirmation_steps": 3
+    },
+    "close": {
+      "gap_m": 0.01,
+      "confirmation_steps": 5
+    },
+    "reopen_diagnostic": {
+      "gap_m": 0.01,
+      "confirmation_steps": 3,
+      "severe_gap_m": 0.03
+    },
+    "preserve_position": {
+      "tolerance_m": 0.025,
+      "confirmation_steps": 3,
+      "severe_m": 0.05
+    },
+    "preserve_joint": {
+      "tolerance_m": 0.01,
+      "confirmation_steps": 3,
+      "severe_m": 0.03
+    },
+    "target_regions": {
+      "wine_rack_1_top_region": {
+        "margin_m": [
+          0.0,
+          0.005,
+          0.0
+        ]
+      },
+      "main_table_stove_front_region": {
+        "margin_m": [
+          0.005,
+          0.005,
+          0.0
+        ]
+      }
+    },
+    "controller_only": {
+      "grasp_confirmation_steps": 5,
+      "grasp_loss_steps": 3
+    },
+    "semantics": {
+      "target": "any policy step; ignore hold-only achievement",
+      "instruction": "target and explicit contract clauses; stop at first qualifying success",
+      "order": "first completion of prerequisite strictly precedes first completion of successor",
+      "early_motion": "diagnostic_only",
+      "plan_only_constraints": "excluded",
+      "high_release": "failure during restore, before completion; later settling does not erase",
+      "preservation": "switch reference, no rebaselining; pending violation blocks completion",
+      "containment": "explicit per-step native containment evidence; no inferred world-position lock",
+      "adjusted_target_scope": "switch target5/9; native predicate retained separately",
+      "missing_evidence": "unknown, never silently true",
+      "grasp_handover": "controller only, never a benchmark clause"
+    },
+    "calibration_status": {
+      "restore_radii": "review-supported candidates; not independently validated",
+      "high_release_height": "accepted12-19mm and rejected101-155mm;20-50mm boundary insufficient",
+      "close_gap": "accepted6.90/7.08mm;negative boundary near10mm insufficient",
+      "support_window": "tolerates isolated loss; support-surface identity remains limited",
+      "reopen": "diagnostic only in current contracts; confirmed close is not continuous keep",
+      "human_boundary_review": "15 reviewed:11 written,4 explicitly accept original failures; mixed label scopes"
+    },
+    "evidence": {
+      "source_identity_tolerance_m": 1e-07
+    }
+  },
+  "rules_sha256": "d64038f1ccd17ebc6c9327de21c0711a98c07542d5b817f057ff165e1cde59e6",
+  "summary": {
+    "target_native": {
+      "total": 1,
+      "pass": 1,
+      "fail": 0,
+      "unknown": 0,
+      "success_rate": 1.0,
+      "lower_bound": 1.0,
+      "upper_bound": 1.0
+    },
+    "target_adjusted": {
+      "total": 1,
+      "pass": 1,
+      "fail": 0,
+      "unknown": 0,
+      "success_rate": 1.0,
+      "lower_bound": 1.0,
+      "upper_bound": 1.0
+    },
+    "instruction_native": {
+      "total": 1,
+      "pass": 1,
+      "fail": 0,
+      "unknown": 0,
+      "success_rate": 1.0,
+      "lower_bound": 1.0,
+      "upper_bound": 1.0
+    },
+    "instruction_adjusted": {
+      "total": 1,
+      "pass": 1,
+      "fail": 0,
+      "unknown": 0,
+      "success_rate": 1.0,
+      "lower_bound": 1.0,
+      "upper_bound": 1.0
+    }
+  },
+  "cases": [
+    {
+      "schema_version": 1,
+      "case_id": "NEW_B_s2_P3_a000",
+      "rules_version": "2.5.0-candidate",
+      "rules_sha256": "d64038f1ccd17ebc6c9327de21c0711a98c07542d5b817f057ff165e1cde59e6",
+      "contract_sha256": "e098b7910ec035910244e04d6781bc79574619ae655b76530a3153a78318ba53",
+      "policy_steps": 305,
+      "target_native": {
+        "success": true,
+        "first_step": 298,
+        "status": "pass"
+      },
+      "target_adjusted": {
+        "success": true,
+        "first_step": 298,
+        "status": "pass"
+      },
+      "instruction_native": {
+        "success": true,
+        "first_step": 298,
+        "status": "pass"
+      },
+      "instruction_adjusted": {
+        "success": true,
+        "first_step": 298,
+        "status": "pass"
+      },
+      "components": {
+        "restore": {
+          "success": true,
+          "first_step": 182,
+          "status": "pass",
+          "last_state": true
+        },
+        "target": {
+          "success": true,
+          "first_step": 298,
+          "status": "pass",
+          "last_state": true
+        }
+      },
+      "completion_events": {
+        "restore": 182,
+        "target": 298
+      },
+      "evidence_issues": {},
+      "diagnostics": {
+        "hold_frames_excluded": 40,
+        "initial_state_evidence_available": false,
+        "native_target_lost_steps": [],
+        "limits": [
+          "Support contact is a logged proxy, not exact net support force.",
+          "Release between snapshot and first measurement is not observable without initial evidence."
+        ],
+        "restore": {
+          "radius_m": 0.035,
+          "high_release_events": [],
+          "first_position_step": 137
+        }
+      },
+      "trace_sha256": "fde4d1608fa989672cd6e53e26dd4fc07b5ec5ac298791e1ff5b9b2b9619a177"
+    }
+  ]
+}

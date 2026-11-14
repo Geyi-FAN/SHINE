@@ -1,0 +1,19 @@
+{
+  "asr": {
+    "model": "openai/whisper-large-v3",
+    "revision": "06f233fe06e710322aca913c1bc4249a0d71fce1",
+    "beam": 5,
+    "dtype": "float16",
+    "port": 49650,
+    "transport": "SSD/memory clock logs; neural decode unchanged"
+  },
+  "policy": {
+    "endpoint": "http://127.0.0.1:49661",
+    "checkpoint": "/mnt/disk_4/geyi/e3_v4_744_E3_fulllibero_35k_30000/30000",
+    "weights": "exported_params",
+    "horizon": 10,
+    "execute_steps": 3,
+    "flow_steps": 10,
+    "state_dim": 8
+  }
+}

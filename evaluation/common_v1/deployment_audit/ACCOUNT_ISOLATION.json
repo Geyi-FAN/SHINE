@@ -1,0 +1,11 @@
+{
+  "credential_key_hashes": [
+    "9ff444248abf86f16590f0b999c196852510e87989cabfdb79253f7e843965e4",
+    "6f2b85c35ceb3c450f9d730ed53468f40fab101c692a27f7443d612284e2e210",
+    "681b1ce86402d90a1b0b190463409329d1dc8b2e3ab73da9a59eb22140bca37a",
+    "8f97664eff4aca1dc25311bc43d354a5cd74e91ab308b1c4e2bc8ff1d26f6b31"
+  ],
+  "distinct_keys": 4,
+  "independent_account_ownership": "prior user-provided independent-account routing; key distinctness alone not proof",
+  "raw_keys_published": false
+}

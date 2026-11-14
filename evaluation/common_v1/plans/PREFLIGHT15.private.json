@@ -1,0 +1,2798 @@
+[
+  {
+    "case_uid": "T1:T1COL1_NS_G00_I00",
+    "branch": "T1",
+    "case_id": "T1COL1_NS_G00_I00",
+    "condition": "NS",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T1_G00",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "T1COL1_NS_G00_I00_U01",
+        "role": "core",
+        "audio_path": "data/T1/audio/02_background_noise/T1COL1_NS_G00.wav",
+        "audio_sha256": "5b11118f2e5c4b80f907cb53dbf0c877b5e69414fc15b460c88b9bf9afdf2bbd",
+        "trigger": "fresh_idle_ready"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T1/dataset/selected40.private.json",
+    "protocol": "data/T1/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T1/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": false
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T1COL1_NS_G00_I00",
+      "script_id": "T1COL1_NS_G00",
+      "category": "T1",
+      "condition": "NS",
+      "title": "打开中间抽屉",
+      "text": "Open the middle drawer of the cabinet.",
+      "utterance_id": "T1COL1_NS_G00",
+      "audio_sha256": "5b11118f2e5c4b80f907cb53dbf0c877b5e69414fc15b460c88b9bf9afdf2bbd",
+      "audio_file": "/mnt/disk_4/geyi/audio_switch_benchmark/T1/releases/t1-en-acoustic40-v2-20261107/audio/02_background_noise/T1COL1_NS_G00.wav",
+      "scene_binding": {
+        "state_id": "LIVE8787_I00"
+      },
+      "turns": [
+        {
+          "turn_id": "T1COL1_NS_G00_I00_U01",
+          "text": "Open the middle drawer of the cabinet."
+        }
+      ],
+      "private_contract": {
+        "target_task_id": 0,
+        "goal": "open_middle"
+      },
+      "repetitions": 1
+    },
+    "public_case_id": "T1COL1_NS_G00_I00",
+    "preflight_id": "CLOUD04_T1COL1_NS_G00_I00",
+    "trial_uid": "PREFLIGHT:B0:T1:T1COL1_NS_G00_I00:R01",
+    "paired_trial_uid": "T1:T1COL1_NS_G00_I00:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B0"
+  },
+  {
+    "case_uid": "T2:T2COL1_OV_G08",
+    "branch": "T2",
+    "case_id": "T2COL1_OV_G08",
+    "condition": "OV",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T2_G08",
+    "state_id": "LIVE8787_I02",
+    "inputs": [
+      {
+        "turn_id": "T2COL1_OV_G08_start",
+        "role": "start",
+        "audio_path": "data/T2/audio/00_initial_english/T2COL1_INIT_G08.wav",
+        "audio_sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+        "trigger": null
+      },
+      {
+        "turn_id": "T2COL1_OV_G08_pause",
+        "role": "pause",
+        "audio_path": "data/T2/audio/06_overlapping_speech/T2COL1_OV_G08_pause.wav",
+        "audio_sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+        "trigger": null
+      },
+      {
+        "turn_id": "T2COL1_OV_G08_resume",
+        "role": "resume",
+        "audio_path": "data/T2/audio/06_overlapping_speech/T2COL1_OV_G08_resume.wav",
+        "audio_sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+        "trigger": null
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T2/dataset/eval_plan40.private.json",
+    "protocol": "data/T2/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T2/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T2COL1_OV_G08",
+      "category": "T2",
+      "condition": "OV",
+      "goal_id_private": 8,
+      "family": "A",
+      "turns": [
+        {
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/00_initial_english/T2COL1_INIT_G08.wav",
+          "sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+          "goal_id": 8,
+          "text": "Put the bowl on the plate.",
+          "voice": "Jennifer",
+          "language": "en",
+          "role": "start",
+          "asr_content_check_passed": true,
+          "asr_source": "T1 collection same bytes, independent prior ASR",
+          "turn_id": "T2COL1_OV_G08_start",
+          "audio_sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/00_initial_english/T2COL1_INIT_G08.wav",
+            "sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+            "utterance_id": "T2COL1_OV_G08_start"
+          }
+        },
+        {
+          "role": "pause",
+          "text": "Stop.",
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G08_pause.wav",
+          "sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+          "availability": "available",
+          "clean_job_id": "Serena_normal_A_en_pause",
+          "asr_content_check_passed": true,
+          "asr_record": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/provenance/audio_checks/T2COL1_OV_G08_pause.json",
+          "mix": {
+            "target_sir_db": 15,
+            "measured_sir_db": 15.000220569247208,
+            "overlap_fraction_target_active": 0.9705882352941176,
+            "bystander_gain": 0.13174473879841525,
+            "joint_attenuation": 1.0,
+            "bystander_source_repeated": false,
+            "bystander_offset_samples": 0,
+            "offset_selection": "maximum signal coactivity over32 deterministic offsets; selected before ASR, not by recognition or robot score",
+            "source": "same goal T1 synthetic Aiden reference, cropped/repeated; not real multi-person audio",
+            "target_reference": "provenance/reference_audio/T2COL1_OV_G08_pause_target.wav",
+            "bystander_reference": "provenance/reference_audio/T2COL1_OV_G08_pause_bystander.wav"
+          },
+          "seconds": 1.12,
+          "turn_id": "T2COL1_OV_G08_pause",
+          "audio_sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G08_pause.wav",
+            "sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+            "utterance_id": "T2COL1_OV_G08_pause"
+          }
+        },
+        {
+          "role": "resume",
+          "text": "Continue the task you were doing.",
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G08_resume.wav",
+          "sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+          "availability": "available",
+          "clean_job_id": "Serena_normal_A_en_resume",
+          "asr_content_check_passed": true,
+          "asr_record": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/provenance/audio_checks/T2COL1_OV_G08_resume.json",
+          "mix": {
+            "target_sir_db": 15,
+            "measured_sir_db": 15.00022000949588,
+            "overlap_fraction_target_active": 0.9904761904761905,
+            "bystander_gain": 0.18082205914007843,
+            "joint_attenuation": 1.0,
+            "bystander_source_repeated": true,
+            "bystander_offset_samples": 18641,
+            "offset_selection": "maximum signal coactivity over32 deterministic offsets; selected before ASR, not by recognition or robot score",
+            "source": "same goal T1 synthetic Aiden reference, cropped/repeated; not real multi-person audio",
+            "target_reference": "provenance/reference_audio/T2COL1_OV_G08_resume_target.wav",
+            "bystander_reference": "provenance/reference_audio/T2COL1_OV_G08_resume_bystander.wav"
+          },
+          "seconds": 3.013625,
+          "turn_id": "T2COL1_OV_G08_resume",
+          "audio_sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G08_resume.wav",
+            "sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+            "utterance_id": "T2COL1_OV_G08_resume"
+          }
+        }
+      ],
+      "state_id": "LIVE8787_I02",
+      "scene_binding": {
+        "state_id": "LIVE8787_I02",
+        "native_init_index": 2,
+        "assets_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/dataset/initial_states.json",
+        "task_trigger_validation": "same native scene assets; causal trigger implementation + development rollout validation",
+        "init_index": 2
+      },
+      "trigger": "low_secure_grasp",
+      "private_contract": {
+        "target_task_id": 8,
+        "physical_eligible": true,
+        "pause_trigger": {
+          "kind": "low_secure_grasp",
+          "description": "碗刚抓稳低位抬起",
+          "held_object": "bowl",
+          "target_not_satisfied": true,
+          "initial_request_audio_ack_completed": true,
+          "forbid_using_agent_subgoal_as_trigger": true,
+          "implementation": "causal physical predicates from evaluator; no agent subgoal labels"
+        },
+        "expected_control": "pause physical execution; retain goal and held object; resume same unfinished task once",
+        "branches": [
+          "unfinished_task_pause_resume",
+          "legitimately_completed_before_pause_no_repeat",
+          "pause_failed_no_resume_audio",
+          "trigger_not_reached",
+          "voice_or_receipt_unavailable_no_fabricated_turn"
+        ],
+        "forbidden": [
+          "drop_held_object_on_pause",
+          "spontaneous_resume",
+          "resume_with_new_goal",
+          "restart_completed_task",
+          "unrequested_waiting",
+          "reset_during_case"
+        ],
+        "goal": "bowl_plate",
+        "object": "bowl"
+      },
+      "initial_state_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/dataset/initial_states.json",
+      "repetitions": 1,
+      "availability": "available",
+      "ready_for_evaluation": false,
+      "preparation_retry_until_trigger": true,
+      "retry_after_first_pause_pcm": false,
+      "readiness": "Resources resolved only; backend/model/audio admission not yet performed",
+      "input": "segmented actual WAV only, no transcript injection",
+      "fixture": {
+        "state_id": "LIVE8787_I02",
+        "layout": "native_goal_task0_init2",
+        "init_index": 2,
+        "scene_seed": 7,
+        "assets": {
+          "source_hdf": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I02/initial_state.hdf5",
+            "sha256": "31d959cf73b30993ee68ee5d0cef4c7dfea03695b149d91c8546d7204d8ad1ef"
+          },
+          "bddl_file": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I02/layout.bddl",
+            "sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b"
+          },
+          "reference_image": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I02/initial.png",
+            "sha256": "57317c9dd479286af5d24c08845dc8d9817674a9d72855ea7c4d178e2b57a0b5"
+          }
+        },
+        "source": "official LIBERO-Goal task0 init state; same BDDL/cameras as live8787",
+        "initial_mode": "idle",
+        "memory": "M1 initialized from actual observation",
+        "training_overlap": "not independently audited"
+      },
+      "source_task": 8,
+      "target_task": 8,
+      "context_turns": [],
+      "task_control_budget": 1200,
+      "phase": null,
+      "restore": null,
+      "preserve_bowl": false,
+      "return_only": false
+    },
+    "public_case_id": "T2COL1_OV_G08",
+    "preflight_id": "CLOUD04_T2COL1_OV_G08",
+    "trial_uid": "PREFLIGHT:B0:T2:T2COL1_OV_G08:R01",
+    "paired_trial_uid": "T2:T2COL1_OV_G08:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B0"
+  },
+  {
+    "case_uid": "T3:T3S50_CL_S01_I00",
+    "branch": "T3",
+    "case_id": "T3S50_CL_S01_I00",
+    "condition": "CL",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T3S50_CL_S01",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "U0",
+        "role": "source",
+        "audio_path": "data/T3/audio/U0/T3S50_U0_S01.wav",
+        "audio_sha256": "a1c7fb528ccf8a3fb42a14cce6e41b793a11502f58ec316f4e95402fb60651bc",
+        "trigger": "source_ready"
+      },
+      {
+        "turn_id": "U1",
+        "role": "switch",
+        "audio_path": "data/T3/audio/U1/CL/T3S50_CL_S01.wav",
+        "audio_sha256": "2bd27f49bb3e04da41dd874e2e7962692b540c6827ed310a7bc36ee4ff613381",
+        "trigger": "private_trigger"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T3/private/cases.private.json",
+    "protocol": "data/T3/private/PROTOCOL.json",
+    "source_episode_file": "data/T3/manifests/cases.schedule.json",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T3S50_CL_S01_I00",
+      "script_id": "T3S50_CL_S01",
+      "category": "T3",
+      "split": "dev",
+      "variant": "CL",
+      "optional": false,
+      "planned_runs": 1,
+      "interrupt_mode": "proposed_early_stop_and_retarget",
+      "turns": [
+        {
+          "turn_id": "U0",
+          "utterance_id": "T3S50_U0_S01"
+        },
+        {
+          "turn_id": "U1",
+          "utterance_id": "T3S50_CL_S01"
+        }
+      ],
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T3/data/initial_states.json",
+        "validation": "exact frozen initial assets; runtime readiness must verify"
+      },
+      "trigger": {
+        "source_active": true,
+        "source_goal_not_already_complete": true,
+        "stage_is_nonterminal": true,
+        "wait_for_source_receipt_audio_to_finish": false,
+        "uses_future_completion_time": false,
+        "implementation": "selected_eval/client.mjs; independent selected_eval/phases.py",
+        "phase": "D1",
+        "description_zh": "中层抽屉首次超过既有关闭容差、刚形成有效开度时立即触发；不等半开或接近全开",
+        "predicates": [
+          "first_gap_above_existing_closed_tolerance",
+          "source_open_goal_false"
+        ]
+      },
+      "private_judge": {
+        "source_task_id": 0,
+        "target_task_id": 2,
+        "clauses": [
+          {
+            "id": "close",
+            "kind": "close_event",
+            "text_en": "Close the middle drawer",
+            "text_zh": "关闭中层抽屉",
+            "joint": "middle",
+            "continuous_preservation": false,
+            "instruction_binding": {
+              "type": "literal_span",
+              "start": 14,
+              "end": 37
+            }
+          },
+          {
+            "id": "target",
+            "kind": "native_target",
+            "text_en": "Put the wine bottle on top of the cabinet",
+            "text_zh": "把酒瓶放到柜顶",
+            "task_id": 2,
+            "instruction_binding": {
+              "type": "literal_span",
+              "start": 45,
+              "end": 86
+            }
+          },
+          {
+            "id": "order_close_target",
+            "kind": "completion_order",
+            "text_en": "Completion order",
+            "text_zh": "按指令顺序完成",
+            "before": "close",
+            "after": "target",
+            "early_motion": "diagnostic_only",
+            "instruction_binding": {
+              "type": "ordered_subgoals",
+              "ids": [
+                "close",
+                "target"
+              ]
+            }
+          }
+        ],
+        "contract_scope": "same physical obligations as V0",
+        "physical_eligible": true
+      },
+      "readiness": "Existing current audio, user-authorized five-condition development evaluation; no new human acceptance claimed",
+      "source_task": 0,
+      "target_task": 2,
+      "phase": "D1",
+      "family": "FR",
+      "source_text": "Open the middle drawer of the cabinet.",
+      "task_text": "First, please close the middle drawer. Then, Put the wine bottle on top of the cabinet.",
+      "spoken_text": "Stop. First, please close the middle drawer. Then, Put the wine bottle on top of the cabinet.",
+      "source_audio_id": "T3S50_U0_S01",
+      "switch_audio_id": "T3S50_CL_S01",
+      "acoustic_group": "CL",
+      "script_number": 1,
+      "reference_case_id": "T3R2_S00_V1_I00",
+      "explicit_stop_required": true,
+      "audio_version": "audio_switch_T3_60_v1_20261102 original waveforms",
+      "worker_id": 0,
+      "fixture": {
+        "state_id": "LIVE8787_I00",
+        "layout": "native_goal_task0_init0",
+        "init_index": 0,
+        "scene_seed": 7,
+        "assets": {
+          "source_hdf": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T3/releases/t3_v3_40_20261107/assets/states/LIVE8787_I00/initial_state.hdf5",
+            "sha256": "1f41e6b66ec04851d73f9ff118c3ae812af7ca6db0545feca84cbd63a208ab68"
+          },
+          "bddl_file": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T3/releases/t3_v3_40_20261107/assets/states/LIVE8787_I00/layout.bddl",
+            "sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b"
+          },
+          "reference_image": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T3/releases/t3_v3_40_20261107/assets/states/LIVE8787_I00/initial.png",
+            "sha256": "d4ea1f6b0897b4497bc5c51c8b5d3c0d5fb7227a8e76b25cd4111cecf01101b1"
+          }
+        },
+        "source": "official LIBERO-Goal task0 init state; same BDDL/cameras as live8787",
+        "initial_mode": "idle",
+        "memory": "M1 initialized from actual observation",
+        "training_overlap": "not independently audited"
+      },
+      "run_scope": "c3r_pi05_preflight32",
+      "context_turns": [
+        "Open the middle drawer of the cabinet."
+      ],
+      "serve_live": false,
+      "reset_count": 1,
+      "initial_version": 0,
+      "task_control_budget": 1200,
+      "task_wall_budget": 600,
+      "audio_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T3/data/audio.json",
+      "protocol": {
+        "version": "T3-final-v3-40-English-3noStop-20261104",
+        "status": "completed_development_reference_round_packaged_20261107",
+        "executor": "SmolVLA E3 v4",
+        "language": "en",
+        "physical": {
+          "version": "2.5.0-candidate",
+          "file": "private/physical_rules.json",
+          "sha256": "4a1349af4bdcd60cfe78267a15ddb1cd69938042455514f335160286d5af3dcc",
+          "target": "ever_target_in_policy_steps_after_valid_authorization",
+          "instruction": "all_user_physical_obligations_in_allowed_order_and_hold_at_case_end",
+          "hold_control_steps": 40,
+          "control_hz": 20,
+          "missing_evidence": "unknown_counted_as_not_pass"
+        },
+        "metrics": {
+          "interaction": {
+            "numerator": "all_required_interaction_events_pass_no_forbidden_events_within_deadlines",
+            "denominator": "all_preregistered_cases"
+          },
+          "target": {
+            "numerator": "final_non_cancelled_physical_goal_ever_achieved_after_its_valid_authorization",
+            "denominator": "preregistered_physical_eligible_cases"
+          },
+          "instruction": {
+            "numerator": "target_and_all_explicit_physical_clauses_and_terminal_hold_pass",
+            "denominator": "same_as_target"
+          },
+          "joint": {
+            "numerator": "interaction_and_instruction_for_physical_cases_else_interaction",
+            "denominator": "all_preregistered_cases"
+          }
+        },
+        "budgets": {
+          "pause_from_decisive_audio_end_s": 5.0,
+          "pause_fallback_from_audio_end_s": 5.0,
+          "pause_hold_s": 1.0,
+          "pause_max_eef_translation_m": 0.005,
+          "pause_max_eef_rotation_rad": 0.05,
+          "pause_max_gripper_width_change_m": 0.003,
+          "ack_from_audio_end_s": 10.0,
+          "clarification_question_from_audio_end_s": 20.0,
+          "valid_command_accept_from_audio_end_s": 20.0,
+          "first_new_action_from_audio_end_s": 45.0,
+          "qa_first_informative_audio_from_audio_end_s": 20.0,
+          "qa_complete_answer_from_audio_end_s": 40.0,
+          "waiting_handoff_from_independent_predecessor_success_s": 10.0,
+          "automatic_phase_transition_s": 20.0,
+          "max_clarification_questions_per_request": 3,
+          "max_unnecessary_confirmations": 1,
+          "user_reply_delay_after_question_s": 1.5,
+          "per_physical_goal_action_steps": 1200,
+          "per_physical_goal_wall_s": 600,
+          "case_action_steps": 3600,
+          "case_wall_s": 1800,
+          "precondition_wall_s": 180,
+          "precondition_action_steps": 1200,
+          "negative_observation_s": 5.0,
+          "terminal_hold_steps": 40
+        },
+        "accounting": {
+          "action_steps": "all_non_hold_executor_steps_including_wrong_and_stale_actions; no_reset_on_pause_or_retry",
+          "wall_clock": "monotonic; includes_audio_API_wait_QA_pause_retries; never_freeze_world_for_model",
+          "latency_timeouts": "count_fail_and_right_censor; report_response_coverage_and_success_conditional_p50_p95",
+          "precondition_failure": "natural_lifecycle_fail_in_denominator; common_fixture_failure_abort_entire_paired_block",
+          "errors": "method_timeouts_missing_points_format_errors_disconnects_count_fail; declared_external_infrastructure_failure_rerun_whole_paired_block_keep_all_attempts",
+          "aggregation": "report_counts_micro_and_T1_to_T8_equal_weight_macro; eligible_only_macro_for_physical; no_NA_as_zero_or_one; unknown_reported_separately_and_not_pass"
+        },
+        "release_gates": [
+          "Validate 40 unique cases and 50 WAV SHA256",
+          "Bind LIVE8787_I00 assets and same camera",
+          "Record runtime identity and scoring source before evaluation",
+          "Human word timing and held-out/human validation required before stronger public claims"
+        ],
+        "change_reason": "User authorized moderate deadline relaxation before rerun; physical thresholds/action budgets unchanged",
+        "setup": {
+          "method": "fresh native initial state; U0 through direct text tool only in text baseline, real waveform in audio; early causal trigger; no evaluator pause tool in audio",
+          "setup_failure": "retain all preregistered cases in denominator; no selective retry",
+          "camera": "same 8787 scene family; exact initialization image hash check"
+        },
+        "repetitions": 1,
+        "audio_revision": "final_v3_drop_MX_keep_other_waveforms_exact",
+        "task_scope": "10 scripts x CL/NS/EM/OV x LIVE8787_I00 x one attempt",
+        "denominators": {
+          "interaction": 40,
+          "target": 40,
+          "instruction": 40
+        },
+        "no_answer_hint": "Private goals/subgoals/reference text not supplied to model; waveform only",
+        "stage_feedback": "C3r four Agent, image-only YOLO/M1 references; simulator-assisted M1 validity and final physical acceptance disclosed",
+        "t1_contracts": [
+          {
+            "task_id": 0,
+            "goal": "open_middle",
+            "title": "打开中间抽屉",
+            "object": null,
+            "benchmark_language": "open the middle drawer of the cabinet",
+            "native_predicates": [
+              [
+                "open",
+                "wooden_cabinet_1_middle_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 1,
+            "goal": "bowl_stove",
+            "title": "碗放炉灶",
+            "object": "bowl",
+            "benchmark_language": "put the bowl on the stove",
+            "native_predicates": [
+              [
+                "on",
+                "akita_black_bowl_1",
+                "flat_stove_1_cook_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 2,
+            "goal": "bottle_cabinet",
+            "title": "酒瓶放柜顶",
+            "object": "wine_bottle",
+            "benchmark_language": "put the wine bottle on top of the cabinet",
+            "native_predicates": [
+              [
+                "on",
+                "wine_bottle_1",
+                "wooden_cabinet_1_top_side"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 3,
+            "goal": "bowl_drawer",
+            "title": "开顶层抽屉并放碗",
+            "object": "bowl",
+            "benchmark_language": "open the top drawer and put the bowl inside",
+            "native_predicates": [
+              [
+                "in",
+                "akita_black_bowl_1",
+                "wooden_cabinet_1_top_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 4,
+            "goal": "bowl_cabinet",
+            "title": "碗放柜顶",
+            "object": "bowl",
+            "benchmark_language": "put the bowl on top of the cabinet",
+            "native_predicates": [
+              [
+                "on",
+                "akita_black_bowl_1",
+                "wooden_cabinet_1_top_side"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 5,
+            "goal": "push_plate",
+            "title": "盘子推至炉灶前",
+            "object": "plate",
+            "benchmark_language": "push the plate to the front of the stove",
+            "native_predicates": [
+              [
+                "on",
+                "plate_1",
+                "main_table_stove_front_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 6,
+            "goal": "cheese_bowl",
+            "title": "奶酪放入碗",
+            "object": "cheese",
+            "benchmark_language": "put the cream cheese in the bowl",
+            "native_predicates": [
+              [
+                "on",
+                "cream_cheese_1",
+                "akita_black_bowl_1"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 7,
+            "goal": "turn_on_stove",
+            "title": "打开炉灶",
+            "object": null,
+            "benchmark_language": "turn on the stove",
+            "native_predicates": [
+              [
+                "turnon",
+                "flat_stove_1"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 8,
+            "goal": "bowl_plate",
+            "title": "碗放盘子上",
+            "object": "bowl",
+            "benchmark_language": "put the bowl on the plate",
+            "native_predicates": [
+              [
+                "on",
+                "akita_black_bowl_1",
+                "plate_1"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 9,
+            "goal": "bottle_rack",
+            "title": "酒瓶放酒架",
+            "object": "wine_bottle",
+            "benchmark_language": "put the wine bottle on the rack",
+            "native_predicates": [
+              [
+                "on",
+                "wine_bottle_1",
+                "wine_rack_1_top_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          }
+        ],
+        "initial_scene_checks": "LIVE8787_I00 only; same native 8787 scene/cameras; exact assets and initial image comparison",
+        "audio_content_review": "50 retained WAV SHA256 equal current v3; no new TTS or manual critical-word timing in repackaging",
+        "approval": "User retained only NS04/NS05/OV05 noStop; removed MX; authorized final40 reference round. Repackaging does not change tasks, audio, thresholds or existing scores.",
+        "categories": [
+          "T3"
+        ],
+        "not_formal_test_set": true,
+        "audio_acceptance": {
+          "content": "Inherited automatic checks and live evidence; no new human acceptance asserted",
+          "human_critical_word_times": "not annotated",
+          "stop_timing": "isolated Stop segment-end proxy, not manually annotated word end"
+        },
+        "runtime": "C3r recovery + R7-T3.2 + NativePrefetch + T2/R8 short receipts + frozen T3-v4",
+        "new_audio_review": "3 replacement clips: waveform/hash and live closed-loop evidence checked; additional noStop10 are diagnostic only and not adopted",
+        "preflight": "same reviewed waveforms and causal trigger reused from original; new engineering probe3 separately retained",
+        "support": "native task6 On(cheese,bowl), not In; measured current nonrobot upward resultant contact force; existing minimum support force, release and stability windows; original geometric proxy retained",
+        "legacy_scoring": "each rollout additionally scored with original geometric support proxy",
+        "parallelism": 1,
+        "differences": "Four English conditions; 37 Stop and 3 approved noStop; no MX; metadata-only repackaging, retained waveforms unchanged",
+        "ASR_GATE": {
+          "scope": "Historical MX independent ASR check excluded from current English40 claims; see original metadata only"
+        },
+        "private_reference_never_sent_to_model": true,
+        "audio_parallelism": 1,
+        "old_same_audio_baseline": "Historical same-ID40 subset reported separately; no score splicing",
+        "group_denominators": {
+          "CL": 10,
+          "NS": 10,
+          "EM": 10,
+          "OV": 10
+        },
+        "explicit_stop_required": true,
+        "audio_versions": {
+          "CL": "original multivoice, all10 retain Stop",
+          "NS": "original fan20dB/vacuum15dB except approved NS04/NS05 noStop derived from gap100",
+          "EM": "original five emotions, all10 retain Stop",
+          "OV": "original Serena/Aiden SIR15dB except approved OV05 noStop derived from gap100"
+        },
+        "route_cache_scope": "Fresh official DNS/TLS/authorized WebSocket preflight; route TTL12h for long run, hostname/SNI/certificate verification retained",
+        "explicit_stop_scope": "Per-case explicit_stop_required; only three approved cases false",
+        "scoring_adapter": "external frozen legacy entry documented in docs/METRICS.md and provenance/RUNTIME.json",
+        "result_policy": "New dataset version; do not relabel or rewrite historical fifty-case scores",
+        "metadata_revision": 3,
+        "explicit_stop_required_default": true,
+        "explicit_stop_overrides": {
+          "T3S50_NS_S04_I00": false,
+          "T3S50_NS_S05_I00": false,
+          "T3S50_OV_S05_I00": false
+        },
+        "explicit_stop_precedence": "Each case explicit_stop_required overrides protocol default; do not apply global True to approved three",
+        "dataset_joint_evaluation_status": "completed_40_20261104",
+        "parallelism_note": "Reference completed round used one environment and one cloud audio session at a time; concurrency is a runtime attribute, not dataset requirement",
+        "source_metadata_history": "provenance/original_metadata/PROTOCOL.json"
+      },
+      "rules": {
+        "version": "2.5.0-candidate",
+        "schema_version": 1,
+        "status": "frozen_candidate_not_final_benchmark",
+        "control_hz": 20,
+        "restore": {
+          "radius_m": 0.035,
+          "upper_drawer_bowl_radius_m": 0.07,
+          "special_previous_instruction": "open the top drawer and put the bowl inside",
+          "special_source_task": 3,
+          "special_object": "akita_black_bowl_1",
+          "position_steps": 5,
+          "support_steps": 5,
+          "support_min_true": 4,
+          "release_steps": 3,
+          "stable_steps": 5,
+          "stable_diameter_m": 0.005,
+          "withdraw_steps": 3,
+          "withdraw_distance_m": 0.08,
+          "high_release_height_m": 0.03,
+          "high_release_confirmation_steps": 3
+        },
+        "close": {
+          "gap_m": 0.01,
+          "confirmation_steps": 5
+        },
+        "reopen_diagnostic": {
+          "gap_m": 0.01,
+          "confirmation_steps": 3,
+          "severe_gap_m": 0.03
+        },
+        "preserve_position": {
+          "tolerance_m": 0.025,
+          "confirmation_steps": 3,
+          "severe_m": 0.05
+        },
+        "preserve_joint": {
+          "tolerance_m": 0.01,
+          "confirmation_steps": 3,
+          "severe_m": 0.03
+        },
+        "target_regions": {
+          "wine_rack_1_top_region": {
+            "margin_m": [
+              0.0,
+              0.005,
+              0.0
+            ]
+          },
+          "main_table_stove_front_region": {
+            "margin_m": [
+              0.005,
+              0.005,
+              0.0
+            ]
+          }
+        },
+        "controller_only": {
+          "grasp_confirmation_steps": 5,
+          "grasp_loss_steps": 3
+        },
+        "semantics": {
+          "target": "any policy step; ignore hold-only achievement",
+          "instruction": "target and explicit contract clauses; stop at first qualifying success",
+          "order": "first completion of prerequisite strictly precedes first completion of successor",
+          "early_motion": "diagnostic_only",
+          "plan_only_constraints": "excluded",
+          "high_release": "failure during restore, before completion; later settling does not erase",
+          "preservation": "switch reference, no rebaselining; pending violation blocks completion",
+          "containment": "explicit per-step native containment evidence; no inferred world-position lock",
+          "adjusted_target_scope": "switch target5/9; native predicate retained separately",
+          "missing_evidence": "unknown, never silently true",
+          "grasp_handover": "controller only, never a benchmark clause"
+        },
+        "calibration_status": {
+          "restore_radii": "review-supported candidates; not independently validated",
+          "high_release_height": "accepted12-19mm and rejected101-155mm;20-50mm boundary insufficient",
+          "close_gap": "accepted6.90/7.08mm;negative boundary near10mm insufficient",
+          "support_window": "tolerates isolated loss; support-surface identity remains limited",
+          "reopen": "diagnostic only in current contracts; confirmed close is not continuous keep",
+          "human_boundary_review": "15 reviewed:11 written,4 explicitly accept original failures; mixed label scopes"
+        },
+        "evidence": {
+          "source_identity_tolerance_m": 1e-07
+        }
+      }
+    },
+    "public_case_id": "T3S50_CL_S01_I00",
+    "preflight_id": "CLOUD04_T3S50_CL_S01_I00",
+    "trial_uid": "PREFLIGHT:B0:T3:T3S50_CL_S01_I00:R01",
+    "paired_trial_uid": "T3:T3S50_CL_S01_I00:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B0"
+  },
+  {
+    "case_uid": "T4:T4C1_OV_T06_I00",
+    "branch": "T4",
+    "case_id": "T4C1_OV_T06_I00",
+    "condition": "OV",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T4E10_T06",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "T4C1_OV_T06_I00_H01",
+        "role": "context",
+        "audio_path": "data/T4/audio/00_source_context/T4E10_U_0d905503b36e45d5.wav",
+        "audio_sha256": "aaf4633687587f08f4f0d380cf94cb50208fd3f7c3d944402d8d1b99235968a3",
+        "trigger": null
+      },
+      {
+        "turn_id": "T4C1_OV_T06_I00_U01",
+        "role": "query",
+        "audio_path": "data/T4/audio/06_overlapping_speech/T4C1_OV_T06.wav",
+        "audio_sha256": "99d71f6ef88da9be7f3f368cca30345ab4aa99f5f0fa6f6a93fd3a823c4a41a4",
+        "trigger": "private_source_phase"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T4/dataset/selected40.private.json",
+    "protocol": "data/T4/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T4/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T4C1_OV_T06_I00",
+      "script_id": "T4C1_T06",
+      "family_id": "T4E10_T06",
+      "category": "T4_easy",
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T4/data/initial_states.json"
+      },
+      "physical_eligible": true,
+      "context_turns": [
+        {
+          "turn_id": "T4C1_OV_T06_I00_H01",
+          "text": "put the bowl on the plate.",
+          "utterance_id": "T4E10_U_0d905503b36e45d5",
+          "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/00_source_context/T4E10_U_0d905503b36e45d5.wav",
+          "audio_sha256": "aaf4633687587f08f4f0d380cf94cb50208fd3f7c3d944402d8d1b99235968a3"
+        }
+      ],
+      "query_turn": {
+        "turn_id": "T4C1_OV_T06_I00_U01",
+        "text": "Put the cream cheese in that bowl and leave the bowl there.",
+        "utterance_id": "T4C1_OV_T06",
+        "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/06_overlapping_speech/T4C1_OV_T06.wav",
+        "audio_sha256": "99d71f6ef88da9be7f3f368cca30345ab4aa99f5f0fa6f6a93fd3a823c4a41a4"
+      },
+      "clarification_answers": {},
+      "private_contract": {
+        "source_task_id": 8,
+        "final_target_task": 6,
+        "source_stage": "M4",
+        "preservation": "bowl_switch_position",
+        "expected_reference": "that bowl = the bowl just placed on the plate; there = its switch-time position",
+        "reference_complete_instruction": "Put the cream cheese in the bowl. Keep the bowl at its position at the instruction switch until this instruction is complete.",
+        "semantic_position_source": "current_or_dialogue_reference",
+        "source_start_min_policy_actions": 3,
+        "source_no_contact_confirmation_frames": 3
+      },
+      "parent_case_id": "T4E10_T06_I00",
+      "condition": "OV",
+      "availability": "available",
+      "repetitions": 1,
+      "ready_for_evaluation": false,
+      "readiness": "data ready; runtime unbound; historical exact-input results in reports/",
+      "context_audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/00_source_context/T4E10_U_0d905503b36e45d5.wav",
+      "query_audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/06_overlapping_speech/T4C1_OV_T06.wav",
+      "fixture_selection_private": {
+        "state_id": "LIVE8787_I00",
+        "evidence_path": "/mnt/disk_4/geyi/t4_T06_latency_placement_20261104/fixed_v2/cases/T4E10_T06_I00",
+        "selection_reason": "No verified successful latest fixture: keep original I00 and full obligations; interaction passes, target/instruction fail. Do not remove hard task.",
+        "historical_interaction": "pass",
+        "historical_target": "fail",
+        "historical_instruction": "fail",
+        "selection_uses_development_outcomes": true,
+        "independent_generalization": false,
+        "new_collection_robot_tested": false,
+        "source_evidence_is_historical": true
+      },
+      "fixture": {
+        "mode": "original controlled true-pause at verified phase",
+        "source_stage": "M4",
+        "reset_between_cases": true,
+        "no_reset_between_context_and_revision": true,
+        "old_case_id": "T4E10_T06_I00"
+      },
+      "dataset_version": "t4-en-acoustic40-v2-20261107",
+      "language": "en",
+      "runtime_admission": "T4-en40-v2-explicit"
+    },
+    "public_case_id": "T4C1_OV_T06_I00",
+    "preflight_id": "CLOUD04_T4C1_OV_T06_I00",
+    "trial_uid": "PREFLIGHT:B0:T4:T4C1_OV_T06_I00:R01",
+    "paired_trial_uid": "T4:T4C1_OV_T06_I00:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B0"
+  },
+  {
+    "case_uid": "T5:T5AV1_CL_F08_P0_I02",
+    "branch": "T5",
+    "case_id": "T5AV1_CL_F08_P0_I02",
+    "condition": "CL",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T5C_F08_P0",
+    "state_id": "LIVE8787_I02",
+    "inputs": [
+      {
+        "turn_id": "T5C_F08_P0_U01",
+        "role": "initial",
+        "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_01.wav",
+        "audio_sha256": "0f9bec217e8573113be80c5025f016110508b75e642efe06d3e66c3b7c7f98a8",
+        "trigger": "precondition_ready"
+      },
+      {
+        "turn_id": "T5C_F08_P0_U02",
+        "role": "initial",
+        "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_02.wav",
+        "audio_sha256": "efb8638bbd0a9a2ad66b3094645c15d01cf169525d8075f7d573e45f0dda465b",
+        "trigger": "correct_confirmation_question_actually_played"
+      },
+      {
+        "turn_id": "T5C_F08_P0_U03",
+        "role": "initial",
+        "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_02.wav",
+        "audio_sha256": "efb8638bbd0a9a2ad66b3094645c15d01cf169525d8075f7d573e45f0dda465b",
+        "trigger": "first_authorized_acceptance_receipt_actually_played_plus_1.5s"
+      }
+    ],
+    "input_policy": "branching_original_policy",
+    "evaluator_case_file": "data/T5/dataset/selected40.private.json",
+    "protocol": "data/T5/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T5/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T5AV1_CL_F08_P0_I02",
+      "script_id": "T5AV1_CL_F08_P0",
+      "family_id": "F08",
+      "category": "T5",
+      "split": "dev",
+      "physical_eligible": true,
+      "scene_binding": {
+        "state_id": "LIVE8787_I02",
+        "native_init_index": 2,
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T5/initial_states.json",
+        "validation": "Native8787 family; same historical I02; runtime must verify reference image and idle/task-free preconditions"
+      },
+      "repetition": 1,
+      "readiness": "Data validated; unified-runtime live admission still required",
+      "title": "重复确认，同一授权只执行一次",
+      "primary_mechanism": "duplicate_confirmation",
+      "variant": 0,
+      "precondition": "fresh episode; idle; empty gripper; no dialogue/task history; no pointing or gesture",
+      "turns": [
+        {
+          "turn_id": "T5C_F08_P0_U01",
+          "trigger": "precondition_ready",
+          "text": "Open the top drawer and put the bowl inside, but wait for my confirmation.",
+          "utterance_id": "T5AV1_CL_F08_01",
+          "canonical_utterance_id": "T5A_e3a581bf7a364127",
+          "canonical_text": "Open the top drawer and put the bowl inside, but wait for my confirmation."
+        },
+        {
+          "turn_id": "T5C_F08_P0_U02",
+          "trigger": "correct_confirmation_question_actually_played",
+          "text": "Yes, go ahead.",
+          "utterance_id": "T5AV1_CL_F08_02",
+          "canonical_utterance_id": "T5A_143702302343be3d",
+          "canonical_text": "Yes, go ahead."
+        },
+        {
+          "turn_id": "T5C_F08_P0_U03",
+          "trigger": "first_authorized_acceptance_receipt_actually_played_plus_1.5s",
+          "text": "Yes, go ahead.",
+          "utterance_id": "T5AV1_CL_F08_02",
+          "canonical_utterance_id": "T5A_143702302343be3d",
+          "canonical_text": "Yes, go ahead."
+        }
+      ],
+      "private_contract": {
+        "physical_eligible": true,
+        "final_target_task_id": 3,
+        "final_task_semantics": "Open the top drawer and put the bowl inside.",
+        "initial_candidate_task_id": null,
+        "missing_slots": [],
+        "required_events": [
+          "bind_user_turns_to_current_request",
+          "preserve_unmodified_slots",
+          "truthful_actual_spoken_receipts",
+          "authorize_latest_complete_task",
+          "accept_task_exactly_once"
+        ],
+        "forbidden_events": [
+          "second_task_acceptance",
+          "restart_same_task",
+          "reset_plan_from_duplicate_yes"
+        ],
+        "final_negative_observation_seconds": null,
+        "target_task_id": 3,
+        "goal": "bowl_drawer"
+      },
+      "audio_hashes": {
+        "T5AV1_CL_F08_01": "0f9bec217e8573113be80c5025f016110508b75e642efe06d3e66c3b7c7f98a8",
+        "T5AV1_CL_F08_02": "efb8638bbd0a9a2ad66b3094645c15d01cf169525d8075f7d573e45f0dda465b"
+      },
+      "canonical_case_id": "T5C_F08_P0_I02",
+      "canonical_script_id": "T5C_F08_P0",
+      "acoustic_condition": "CL",
+      "ready_for_evaluation": false,
+      "audio_files": {
+        "T5AV1_CL_F08_01": "/mnt/disk_4/geyi/audio_switch_benchmark/T5/releases/t5-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T5AV1_CL_F08_01.wav",
+        "T5AV1_CL_F08_02": "/mnt/disk_4/geyi/audio_switch_benchmark/T5/releases/t5-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T5AV1_CL_F08_02.wav"
+      },
+      "dataset_version": "t5-en-acoustic40-v2-20261107",
+      "data_ready": true,
+      "requires_runtime_admission": true
+    },
+    "public_case_id": "T5AV1_CL_F08_P0_I02",
+    "preflight_id": "CLOUD04_T5AV1_CL_F08_P0_I02",
+    "trial_uid": "PREFLIGHT:B0:T5:T5AV1_CL_F08_P0_I02:R01",
+    "paired_trial_uid": "T5:T5AV1_CL_F08_P0_I02:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B0"
+  },
+  {
+    "case_uid": "T7:T7AC1_CL_T04_N_I00",
+    "branch": "T7",
+    "case_id": "T7AC1_CL_T04_N_I00",
+    "condition": "CL",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T7_T04",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "T7AC1_CL_T04_N_I00_U01",
+        "role": "start_predecessor",
+        "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U01.wav",
+        "audio_sha256": "056d24539909189b3d7775b07180923ca66dfd9ea5d59eaaaaab960237ef5de0",
+        "trigger": "fresh_episode_idle"
+      },
+      {
+        "turn_id": "T7AC1_CL_T04_N_I00_U02",
+        "role": "queue_successor",
+        "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U02.wav",
+        "audio_sha256": "bc13e2f508fa244bd2b0929f2657d8321851313cf6463a59ddb1263a27a84c38",
+        "trigger": "predecessor_started_and_unfinished"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T7/dataset/selected40.private.json",
+    "protocol": "policies/T7_MAIN_TABLE.json",
+    "source_episode_file": "data/T7/episodes.jsonl",
+    "metric_applicability": {
+      "interaction45": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_protocol": "data/T7/dataset/PROTOCOL.json",
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T7V4E_T04_N_I00",
+      "script_id": "T7V4E_T04_N",
+      "category": "T7-Waiting",
+      "group": "T04",
+      "branch": "N",
+      "split": "development-candidate-selection",
+      "repetitions": 1,
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "native_init_index": 0,
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T7/initial_states.json"
+      },
+      "private_contract": {
+        "predecessor_task_id": 8,
+        "original_successor_task_id": 4,
+        "replacement_task_id": null,
+        "final_target_task_id": 4,
+        "required_goal_order": [
+          8,
+          4
+        ],
+        "physical_eligible": true,
+        "required_events": [
+          "predecessor_started_once",
+          "waiting_bound_to_actual_predecessor",
+          "truthful_receipts",
+          "no_duplicate_execution",
+          "predecessor_complete_before_successor",
+          "successor_executes_once"
+        ],
+        "forbidden_events": [
+          "early_successor_actions",
+          "implicit_immediate_switch",
+          "reset_inside_case",
+          "false_completion_claim",
+          "old_task_receipt_consumes_new_pending_task"
+        ],
+        "terminal_hold_steps": 40,
+        "unspoken_preservation_required": false,
+        "predecessor_need_not_remain_true_after_authorized_same_object_relocation": true,
+        "intrinsic_requirements": [],
+        "predecessor_failure_handling": "Keep case in denominator; truthfully report failure and block unauthorized handoff. This is not observed successful handoff coverage.",
+        "knowledge_boundary": "Private evaluator only. Never send goal IDs, expected order, completion answers or future cancel/replace to the agent."
+      },
+      "turns": [
+        {
+          "turn_id": "T7V4E_T04_N_I00_U01",
+          "text": "Put the bowl on the plate.",
+          "role": "start_predecessor",
+          "trigger": "fresh_episode_idle",
+          "utterance_id": "T7AC1_CL_T04_N_I00_U01",
+          "audio_sha256": "056d24539909189b3d7775b07180923ca66dfd9ea5d59eaaaaab960237ef5de0",
+          "audio_file": "/mnt/disk_4/geyi/audio_switch_benchmark/T7/releases/t7-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U01.wav",
+          "base_turn_id": "T7V4E_T04_N_U01",
+          "base_text_en": "Put the bowl on the plate.",
+          "condition_turn_id": "T7AC1_CL_T04_N_I00_U01"
+        },
+        {
+          "turn_id": "T7V4E_T04_N_I00_U02",
+          "text": "When the bowl is down, put the bowl on top of the cabinet.",
+          "role": "queue_successor",
+          "trigger": "predecessor_started_and_unfinished",
+          "utterance_id": "T7AC1_CL_T04_N_I00_U02",
+          "audio_sha256": "bc13e2f508fa244bd2b0929f2657d8321851313cf6463a59ddb1263a27a84c38",
+          "audio_file": "/mnt/disk_4/geyi/audio_switch_benchmark/T7/releases/t7-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U02.wav",
+          "base_turn_id": "T7V4E_T04_N_U02",
+          "base_text_en": "When the bowl is down, put the bowl on top of the cabinet.",
+          "condition_turn_id": "T7AC1_CL_T04_N_I00_U02"
+        }
+      ],
+      "readiness": "user authorized original audio full40 evaluation including all retained disagreements",
+      "variant": 0,
+      "parent_case_id": "T7V4E_T04_N_I00",
+      "audio_condition": "CL",
+      "condition_case_id": "T7AC1_CL_T04_N_I00",
+      "ready_for_evaluation": true,
+      "human_audio_review": "not_performed"
+    },
+    "public_case_id": "T7AC1_CL_T04_N_I00",
+    "preflight_id": "CLOUD04_T7AC1_CL_T04_N_I00",
+    "trial_uid": "PREFLIGHT:B0:T7:T7AC1_CL_T04_N_I00:R01",
+    "paired_trial_uid": "T7:T7AC1_CL_T04_N_I00:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B0"
+  },
+  {
+    "case_uid": "T8:T8EN4_CL_N08_I01",
+    "branch": "T8",
+    "case_id": "T8EN4_CL_N08_I01",
+    "condition": "CL",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T8_N08",
+    "state_id": "LIVE8787_I01",
+    "inputs": [
+      {
+        "turn_id": "T8_PRE_SOURCE",
+        "role": "setup",
+        "audio_path": "data/T8/setup_audio/T8_PRE_SOURCE.wav",
+        "audio_sha256": "ee0fc68bc860516ea9bebad492e6fe50e88155fbae03b9bb980340ea6b85d060",
+        "trigger": "fresh_idle_episode"
+      },
+      {
+        "turn_id": "T8EN4_CL_N08_I01_U01",
+        "role": "core",
+        "audio_path": "data/T8/audio/01_clear_multivoice/T8EN4_CL_N08.wav",
+        "audio_sha256": "cbe56469164de3cd438eb41841531e9adc0d1f2ce116da6a846486facc7a5f22",
+        "trigger": "original_task_actual_receipt_playback_onset_plus_0.3s_and_actual_policy_started_no_held_requirement"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T8/dataset/selected40.private.json",
+    "protocol": "data/T8/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T8/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": false,
+      "dual_channel": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T8EN4_CL_N08_I01",
+      "script_id": "T8EN4_N08",
+      "scenario_id": "N08",
+      "category": "T8",
+      "split": "dev",
+      "repetition": 1,
+      "initial_mode": "running_with_assistant_speech",
+      "utterance_id": "T8EN4_CL_N08",
+      "scene_binding": {
+        "state_id": "LIVE8787_I01",
+        "init_index": 1,
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T8/data/initial_states.json",
+        "validation": "same_original_state_assets; new_audio_preflight_pending"
+      },
+      "private_contract": {
+        "target_eligible": true,
+        "target": "bowl_on_stove",
+        "target_task_id": 1,
+        "no_new_task": true,
+        "unchanged_source_task": true,
+        "expected": "Stop the old assistant speech within two seconds, while the robot continues the same task.",
+        "forbidden_events": [
+          "new_robot_task",
+          "robot_pause",
+          "source_task_cancel",
+          "robot_resume",
+          "deferred_schedule",
+          "robot_goal_change",
+          "continue_old_explanation"
+        ],
+        "reply_policy": "optional_brief",
+        "require_overlap": true,
+        "pause_holding_checks_in_interaction": false,
+        "observation": "core_audio_end_plus_at_least_5s_and_all_input_related_jobs_settled_within_20s",
+        "original_goal_budget_must_not_reset": true,
+        "primary_metric": "interaction_sr",
+        "unrelated_final_placement_failure_is_not_interaction_failure": true,
+        "dual_channel_eligible": true,
+        "target_achievement_window": "actual_source_policy_actions_from_core_audio_onset_to_case_end; exclude_setup_only_success",
+        "target_definition": "native goal reached at least once; auxiliary only, no separate full-instruction score"
+      },
+      "contrast_group": "speech_robot_scope_P2_I00",
+      "readiness": "audio_data_audited; unified_runtime_preflight_required",
+      "title": "Stop speech only",
+      "variant": 2,
+      "setup_audio": [
+        {
+          "audio_id": "T8_PRE_SOURCE",
+          "trigger": "fresh_idle_episode",
+          "required_gate": "original_task_running_actual_policy_action_and_actual_acceptance_audio"
+        }
+      ],
+      "turns": [
+        {
+          "turn_id": "T8EN4_CL_N08_I01_U01",
+          "utterance_id": "T8EN4_CL_N08",
+          "text": "Quiet, please.",
+          "trigger": "original_task_actual_receipt_playback_onset_plus_0.3s_and_actual_policy_started_no_held_requirement"
+        }
+      ],
+      "acoustic_category": "CL",
+      "clip_id": "T8EN4_CL_N08",
+      "source_script_id": "T8C_N08_P2",
+      "state_id": "LIVE8787_I01",
+      "audio_sha256": "cbe56469164de3cd438eb41841531e9adc0d1f2ce116da6a846486facc7a5f22",
+      "availability": "available",
+      "language": "en",
+      "audio_only_model_input": true,
+      "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T8/releases/t8-en-acoustic40-v4-20261107/audio/01_clear_multivoice/T8EN4_CL_N08.wav",
+      "ready_for_evaluation": false
+    },
+    "public_case_id": "T8EN4_CL_N08_I01",
+    "preflight_id": "CLOUD04_T8EN4_CL_N08_I01",
+    "trial_uid": "PREFLIGHT:B0:T8:T8EN4_CL_N08_I01:R01",
+    "paired_trial_uid": "T8:T8EN4_CL_N08_I01:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B0"
+  },
+  {
+    "case_uid": "T1:T1COL1_NS_G00_I00",
+    "branch": "T1",
+    "case_id": "T1COL1_NS_G00_I00",
+    "condition": "NS",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T1_G00",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "T1COL1_NS_G00_I00_U01",
+        "role": "core",
+        "audio_path": "data/T1/audio/02_background_noise/T1COL1_NS_G00.wav",
+        "audio_sha256": "5b11118f2e5c4b80f907cb53dbf0c877b5e69414fc15b460c88b9bf9afdf2bbd",
+        "trigger": "fresh_idle_ready"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T1/dataset/selected40.private.json",
+    "protocol": "data/T1/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T1/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": false
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T1COL1_NS_G00_I00",
+      "script_id": "T1COL1_NS_G00",
+      "category": "T1",
+      "condition": "NS",
+      "title": "打开中间抽屉",
+      "text": "Open the middle drawer of the cabinet.",
+      "utterance_id": "T1COL1_NS_G00",
+      "audio_sha256": "5b11118f2e5c4b80f907cb53dbf0c877b5e69414fc15b460c88b9bf9afdf2bbd",
+      "audio_file": "/mnt/disk_4/geyi/audio_switch_benchmark/T1/releases/t1-en-acoustic40-v2-20261107/audio/02_background_noise/T1COL1_NS_G00.wav",
+      "scene_binding": {
+        "state_id": "LIVE8787_I00"
+      },
+      "turns": [
+        {
+          "turn_id": "T1COL1_NS_G00_I00_U01",
+          "text": "Open the middle drawer of the cabinet."
+        }
+      ],
+      "private_contract": {
+        "target_task_id": 0,
+        "goal": "open_middle"
+      },
+      "repetitions": 1
+    },
+    "public_case_id": "T1COL1_NS_G00_I00",
+    "preflight_id": "CLOUD04_T1COL1_NS_G00_I00",
+    "trial_uid": "PREFLIGHT:B1:T1:T1COL1_NS_G00_I00:R01",
+    "paired_trial_uid": "T1:T1COL1_NS_G00_I00:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B1"
+  },
+  {
+    "case_uid": "T2:T2COL1_OV_G08",
+    "branch": "T2",
+    "case_id": "T2COL1_OV_G08",
+    "condition": "OV",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T2_G08",
+    "state_id": "LIVE8787_I02",
+    "inputs": [
+      {
+        "turn_id": "T2COL1_OV_G08_start",
+        "role": "start",
+        "audio_path": "data/T2/audio/00_initial_english/T2COL1_INIT_G08.wav",
+        "audio_sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+        "trigger": null
+      },
+      {
+        "turn_id": "T2COL1_OV_G08_pause",
+        "role": "pause",
+        "audio_path": "data/T2/audio/06_overlapping_speech/T2COL1_OV_G08_pause.wav",
+        "audio_sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+        "trigger": null
+      },
+      {
+        "turn_id": "T2COL1_OV_G08_resume",
+        "role": "resume",
+        "audio_path": "data/T2/audio/06_overlapping_speech/T2COL1_OV_G08_resume.wav",
+        "audio_sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+        "trigger": null
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T2/dataset/eval_plan40.private.json",
+    "protocol": "data/T2/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T2/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T2COL1_OV_G08",
+      "category": "T2",
+      "condition": "OV",
+      "goal_id_private": 8,
+      "family": "A",
+      "turns": [
+        {
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/00_initial_english/T2COL1_INIT_G08.wav",
+          "sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+          "goal_id": 8,
+          "text": "Put the bowl on the plate.",
+          "voice": "Jennifer",
+          "language": "en",
+          "role": "start",
+          "asr_content_check_passed": true,
+          "asr_source": "T1 collection same bytes, independent prior ASR",
+          "turn_id": "T2COL1_OV_G08_start",
+          "audio_sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/00_initial_english/T2COL1_INIT_G08.wav",
+            "sha256": "0f7454d5c021c70541d6ddafef680361191b0ca4a30ae29e07c749dc12375680",
+            "utterance_id": "T2COL1_OV_G08_start"
+          }
+        },
+        {
+          "role": "pause",
+          "text": "Stop.",
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G08_pause.wav",
+          "sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+          "availability": "available",
+          "clean_job_id": "Serena_normal_A_en_pause",
+          "asr_content_check_passed": true,
+          "asr_record": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/provenance/audio_checks/T2COL1_OV_G08_pause.json",
+          "mix": {
+            "target_sir_db": 15,
+            "measured_sir_db": 15.000220569247208,
+            "overlap_fraction_target_active": 0.9705882352941176,
+            "bystander_gain": 0.13174473879841525,
+            "joint_attenuation": 1.0,
+            "bystander_source_repeated": false,
+            "bystander_offset_samples": 0,
+            "offset_selection": "maximum signal coactivity over32 deterministic offsets; selected before ASR, not by recognition or robot score",
+            "source": "same goal T1 synthetic Aiden reference, cropped/repeated; not real multi-person audio",
+            "target_reference": "provenance/reference_audio/T2COL1_OV_G08_pause_target.wav",
+            "bystander_reference": "provenance/reference_audio/T2COL1_OV_G08_pause_bystander.wav"
+          },
+          "seconds": 1.12,
+          "turn_id": "T2COL1_OV_G08_pause",
+          "audio_sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G08_pause.wav",
+            "sha256": "58fe46098653365c9f9bd3687742bfc3dab7f5b375122d3505a220abdec842b9",
+            "utterance_id": "T2COL1_OV_G08_pause"
+          }
+        },
+        {
+          "role": "resume",
+          "text": "Continue the task you were doing.",
+          "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G08_resume.wav",
+          "sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+          "availability": "available",
+          "clean_job_id": "Serena_normal_A_en_resume",
+          "asr_content_check_passed": true,
+          "asr_record": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/provenance/audio_checks/T2COL1_OV_G08_resume.json",
+          "mix": {
+            "target_sir_db": 15,
+            "measured_sir_db": 15.00022000949588,
+            "overlap_fraction_target_active": 0.9904761904761905,
+            "bystander_gain": 0.18082205914007843,
+            "joint_attenuation": 1.0,
+            "bystander_source_repeated": true,
+            "bystander_offset_samples": 18641,
+            "offset_selection": "maximum signal coactivity over32 deterministic offsets; selected before ASR, not by recognition or robot score",
+            "source": "same goal T1 synthetic Aiden reference, cropped/repeated; not real multi-person audio",
+            "target_reference": "provenance/reference_audio/T2COL1_OV_G08_resume_target.wav",
+            "bystander_reference": "provenance/reference_audio/T2COL1_OV_G08_resume_bystander.wav"
+          },
+          "seconds": 3.013625,
+          "turn_id": "T2COL1_OV_G08_resume",
+          "audio_sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+          "audio_ref": {
+            "file": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/audio/06_overlapping_speech/T2COL1_OV_G08_resume.wav",
+            "sha256": "7cc42c31185a8b485926498e8aa282ae8d8d438d674fa47b4e0ae196a4293472",
+            "utterance_id": "T2COL1_OV_G08_resume"
+          }
+        }
+      ],
+      "state_id": "LIVE8787_I02",
+      "scene_binding": {
+        "state_id": "LIVE8787_I02",
+        "native_init_index": 2,
+        "assets_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/dataset/initial_states.json",
+        "task_trigger_validation": "same native scene assets; causal trigger implementation + development rollout validation",
+        "init_index": 2
+      },
+      "trigger": "low_secure_grasp",
+      "private_contract": {
+        "target_task_id": 8,
+        "physical_eligible": true,
+        "pause_trigger": {
+          "kind": "low_secure_grasp",
+          "description": "碗刚抓稳低位抬起",
+          "held_object": "bowl",
+          "target_not_satisfied": true,
+          "initial_request_audio_ack_completed": true,
+          "forbid_using_agent_subgoal_as_trigger": true,
+          "implementation": "causal physical predicates from evaluator; no agent subgoal labels"
+        },
+        "expected_control": "pause physical execution; retain goal and held object; resume same unfinished task once",
+        "branches": [
+          "unfinished_task_pause_resume",
+          "legitimately_completed_before_pause_no_repeat",
+          "pause_failed_no_resume_audio",
+          "trigger_not_reached",
+          "voice_or_receipt_unavailable_no_fabricated_turn"
+        ],
+        "forbidden": [
+          "drop_held_object_on_pause",
+          "spontaneous_resume",
+          "resume_with_new_goal",
+          "restart_completed_task",
+          "unrequested_waiting",
+          "reset_during_case"
+        ],
+        "goal": "bowl_plate",
+        "object": "bowl"
+      },
+      "initial_state_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/dataset/initial_states.json",
+      "repetitions": 1,
+      "availability": "available",
+      "ready_for_evaluation": false,
+      "preparation_retry_until_trigger": true,
+      "retry_after_first_pause_pcm": false,
+      "readiness": "Resources resolved only; backend/model/audio admission not yet performed",
+      "input": "segmented actual WAV only, no transcript injection",
+      "fixture": {
+        "state_id": "LIVE8787_I02",
+        "layout": "native_goal_task0_init2",
+        "init_index": 2,
+        "scene_seed": 7,
+        "assets": {
+          "source_hdf": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I02/initial_state.hdf5",
+            "sha256": "31d959cf73b30993ee68ee5d0cef4c7dfea03695b149d91c8546d7204d8ad1ef"
+          },
+          "bddl_file": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I02/layout.bddl",
+            "sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b"
+          },
+          "reference_image": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T2/releases/T2-current40-repack-v1-20261107/fixtures/LIVE8787_I02/initial.png",
+            "sha256": "57317c9dd479286af5d24c08845dc8d9817674a9d72855ea7c4d178e2b57a0b5"
+          }
+        },
+        "source": "official LIBERO-Goal task0 init state; same BDDL/cameras as live8787",
+        "initial_mode": "idle",
+        "memory": "M1 initialized from actual observation",
+        "training_overlap": "not independently audited"
+      },
+      "source_task": 8,
+      "target_task": 8,
+      "context_turns": [],
+      "task_control_budget": 1200,
+      "phase": null,
+      "restore": null,
+      "preserve_bowl": false,
+      "return_only": false
+    },
+    "public_case_id": "T2COL1_OV_G08",
+    "preflight_id": "CLOUD04_T2COL1_OV_G08",
+    "trial_uid": "PREFLIGHT:B1:T2:T2COL1_OV_G08:R01",
+    "paired_trial_uid": "T2:T2COL1_OV_G08:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B1"
+  },
+  {
+    "case_uid": "T3:T3S50_CL_S01_I00",
+    "branch": "T3",
+    "case_id": "T3S50_CL_S01_I00",
+    "condition": "CL",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T3S50_CL_S01",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "U0",
+        "role": "source",
+        "audio_path": "data/T3/audio/U0/T3S50_U0_S01.wav",
+        "audio_sha256": "a1c7fb528ccf8a3fb42a14cce6e41b793a11502f58ec316f4e95402fb60651bc",
+        "trigger": "source_ready"
+      },
+      {
+        "turn_id": "U1",
+        "role": "switch",
+        "audio_path": "data/T3/audio/U1/CL/T3S50_CL_S01.wav",
+        "audio_sha256": "2bd27f49bb3e04da41dd874e2e7962692b540c6827ed310a7bc36ee4ff613381",
+        "trigger": "private_trigger"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T3/private/cases.private.json",
+    "protocol": "data/T3/private/PROTOCOL.json",
+    "source_episode_file": "data/T3/manifests/cases.schedule.json",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T3S50_CL_S01_I00",
+      "script_id": "T3S50_CL_S01",
+      "category": "T3",
+      "split": "dev",
+      "variant": "CL",
+      "optional": false,
+      "planned_runs": 1,
+      "interrupt_mode": "proposed_early_stop_and_retarget",
+      "turns": [
+        {
+          "turn_id": "U0",
+          "utterance_id": "T3S50_U0_S01"
+        },
+        {
+          "turn_id": "U1",
+          "utterance_id": "T3S50_CL_S01"
+        }
+      ],
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T3/data/initial_states.json",
+        "validation": "exact frozen initial assets; runtime readiness must verify"
+      },
+      "trigger": {
+        "source_active": true,
+        "source_goal_not_already_complete": true,
+        "stage_is_nonterminal": true,
+        "wait_for_source_receipt_audio_to_finish": false,
+        "uses_future_completion_time": false,
+        "implementation": "selected_eval/client.mjs; independent selected_eval/phases.py",
+        "phase": "D1",
+        "description_zh": "中层抽屉首次超过既有关闭容差、刚形成有效开度时立即触发；不等半开或接近全开",
+        "predicates": [
+          "first_gap_above_existing_closed_tolerance",
+          "source_open_goal_false"
+        ]
+      },
+      "private_judge": {
+        "source_task_id": 0,
+        "target_task_id": 2,
+        "clauses": [
+          {
+            "id": "close",
+            "kind": "close_event",
+            "text_en": "Close the middle drawer",
+            "text_zh": "关闭中层抽屉",
+            "joint": "middle",
+            "continuous_preservation": false,
+            "instruction_binding": {
+              "type": "literal_span",
+              "start": 14,
+              "end": 37
+            }
+          },
+          {
+            "id": "target",
+            "kind": "native_target",
+            "text_en": "Put the wine bottle on top of the cabinet",
+            "text_zh": "把酒瓶放到柜顶",
+            "task_id": 2,
+            "instruction_binding": {
+              "type": "literal_span",
+              "start": 45,
+              "end": 86
+            }
+          },
+          {
+            "id": "order_close_target",
+            "kind": "completion_order",
+            "text_en": "Completion order",
+            "text_zh": "按指令顺序完成",
+            "before": "close",
+            "after": "target",
+            "early_motion": "diagnostic_only",
+            "instruction_binding": {
+              "type": "ordered_subgoals",
+              "ids": [
+                "close",
+                "target"
+              ]
+            }
+          }
+        ],
+        "contract_scope": "same physical obligations as V0",
+        "physical_eligible": true
+      },
+      "readiness": "Existing current audio, user-authorized five-condition development evaluation; no new human acceptance claimed",
+      "source_task": 0,
+      "target_task": 2,
+      "phase": "D1",
+      "family": "FR",
+      "source_text": "Open the middle drawer of the cabinet.",
+      "task_text": "First, please close the middle drawer. Then, Put the wine bottle on top of the cabinet.",
+      "spoken_text": "Stop. First, please close the middle drawer. Then, Put the wine bottle on top of the cabinet.",
+      "source_audio_id": "T3S50_U0_S01",
+      "switch_audio_id": "T3S50_CL_S01",
+      "acoustic_group": "CL",
+      "script_number": 1,
+      "reference_case_id": "T3R2_S00_V1_I00",
+      "explicit_stop_required": true,
+      "audio_version": "audio_switch_T3_60_v1_20261102 original waveforms",
+      "worker_id": 0,
+      "fixture": {
+        "state_id": "LIVE8787_I00",
+        "layout": "native_goal_task0_init0",
+        "init_index": 0,
+        "scene_seed": 7,
+        "assets": {
+          "source_hdf": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T3/releases/t3_v3_40_20261107/assets/states/LIVE8787_I00/initial_state.hdf5",
+            "sha256": "1f41e6b66ec04851d73f9ff118c3ae812af7ca6db0545feca84cbd63a208ab68"
+          },
+          "bddl_file": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T3/releases/t3_v3_40_20261107/assets/states/LIVE8787_I00/layout.bddl",
+            "sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b"
+          },
+          "reference_image": {
+            "path": "/mnt/disk_4/geyi/audio_switch_benchmark/T3/releases/t3_v3_40_20261107/assets/states/LIVE8787_I00/initial.png",
+            "sha256": "d4ea1f6b0897b4497bc5c51c8b5d3c0d5fb7227a8e76b25cd4111cecf01101b1"
+          }
+        },
+        "source": "official LIBERO-Goal task0 init state; same BDDL/cameras as live8787",
+        "initial_mode": "idle",
+        "memory": "M1 initialized from actual observation",
+        "training_overlap": "not independently audited"
+      },
+      "run_scope": "c3r_pi05_preflight32",
+      "context_turns": [
+        "Open the middle drawer of the cabinet."
+      ],
+      "serve_live": false,
+      "reset_count": 1,
+      "initial_version": 0,
+      "task_control_budget": 1200,
+      "task_wall_budget": 600,
+      "audio_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T3/data/audio.json",
+      "protocol": {
+        "version": "T3-final-v3-40-English-3noStop-20261104",
+        "status": "completed_development_reference_round_packaged_20261107",
+        "executor": "SmolVLA E3 v4",
+        "language": "en",
+        "physical": {
+          "version": "2.5.0-candidate",
+          "file": "private/physical_rules.json",
+          "sha256": "4a1349af4bdcd60cfe78267a15ddb1cd69938042455514f335160286d5af3dcc",
+          "target": "ever_target_in_policy_steps_after_valid_authorization",
+          "instruction": "all_user_physical_obligations_in_allowed_order_and_hold_at_case_end",
+          "hold_control_steps": 40,
+          "control_hz": 20,
+          "missing_evidence": "unknown_counted_as_not_pass"
+        },
+        "metrics": {
+          "interaction": {
+            "numerator": "all_required_interaction_events_pass_no_forbidden_events_within_deadlines",
+            "denominator": "all_preregistered_cases"
+          },
+          "target": {
+            "numerator": "final_non_cancelled_physical_goal_ever_achieved_after_its_valid_authorization",
+            "denominator": "preregistered_physical_eligible_cases"
+          },
+          "instruction": {
+            "numerator": "target_and_all_explicit_physical_clauses_and_terminal_hold_pass",
+            "denominator": "same_as_target"
+          },
+          "joint": {
+            "numerator": "interaction_and_instruction_for_physical_cases_else_interaction",
+            "denominator": "all_preregistered_cases"
+          }
+        },
+        "budgets": {
+          "pause_from_decisive_audio_end_s": 5.0,
+          "pause_fallback_from_audio_end_s": 5.0,
+          "pause_hold_s": 1.0,
+          "pause_max_eef_translation_m": 0.005,
+          "pause_max_eef_rotation_rad": 0.05,
+          "pause_max_gripper_width_change_m": 0.003,
+          "ack_from_audio_end_s": 10.0,
+          "clarification_question_from_audio_end_s": 20.0,
+          "valid_command_accept_from_audio_end_s": 20.0,
+          "first_new_action_from_audio_end_s": 45.0,
+          "qa_first_informative_audio_from_audio_end_s": 20.0,
+          "qa_complete_answer_from_audio_end_s": 40.0,
+          "waiting_handoff_from_independent_predecessor_success_s": 10.0,
+          "automatic_phase_transition_s": 20.0,
+          "max_clarification_questions_per_request": 3,
+          "max_unnecessary_confirmations": 1,
+          "user_reply_delay_after_question_s": 1.5,
+          "per_physical_goal_action_steps": 1200,
+          "per_physical_goal_wall_s": 600,
+          "case_action_steps": 3600,
+          "case_wall_s": 1800,
+          "precondition_wall_s": 180,
+          "precondition_action_steps": 1200,
+          "negative_observation_s": 5.0,
+          "terminal_hold_steps": 40
+        },
+        "accounting": {
+          "action_steps": "all_non_hold_executor_steps_including_wrong_and_stale_actions; no_reset_on_pause_or_retry",
+          "wall_clock": "monotonic; includes_audio_API_wait_QA_pause_retries; never_freeze_world_for_model",
+          "latency_timeouts": "count_fail_and_right_censor; report_response_coverage_and_success_conditional_p50_p95",
+          "precondition_failure": "natural_lifecycle_fail_in_denominator; common_fixture_failure_abort_entire_paired_block",
+          "errors": "method_timeouts_missing_points_format_errors_disconnects_count_fail; declared_external_infrastructure_failure_rerun_whole_paired_block_keep_all_attempts",
+          "aggregation": "report_counts_micro_and_T1_to_T8_equal_weight_macro; eligible_only_macro_for_physical; no_NA_as_zero_or_one; unknown_reported_separately_and_not_pass"
+        },
+        "release_gates": [
+          "Validate 40 unique cases and 50 WAV SHA256",
+          "Bind LIVE8787_I00 assets and same camera",
+          "Record runtime identity and scoring source before evaluation",
+          "Human word timing and held-out/human validation required before stronger public claims"
+        ],
+        "change_reason": "User authorized moderate deadline relaxation before rerun; physical thresholds/action budgets unchanged",
+        "setup": {
+          "method": "fresh native initial state; U0 through direct text tool only in text baseline, real waveform in audio; early causal trigger; no evaluator pause tool in audio",
+          "setup_failure": "retain all preregistered cases in denominator; no selective retry",
+          "camera": "same 8787 scene family; exact initialization image hash check"
+        },
+        "repetitions": 1,
+        "audio_revision": "final_v3_drop_MX_keep_other_waveforms_exact",
+        "task_scope": "10 scripts x CL/NS/EM/OV x LIVE8787_I00 x one attempt",
+        "denominators": {
+          "interaction": 40,
+          "target": 40,
+          "instruction": 40
+        },
+        "no_answer_hint": "Private goals/subgoals/reference text not supplied to model; waveform only",
+        "stage_feedback": "C3r four Agent, image-only YOLO/M1 references; simulator-assisted M1 validity and final physical acceptance disclosed",
+        "t1_contracts": [
+          {
+            "task_id": 0,
+            "goal": "open_middle",
+            "title": "打开中间抽屉",
+            "object": null,
+            "benchmark_language": "open the middle drawer of the cabinet",
+            "native_predicates": [
+              [
+                "open",
+                "wooden_cabinet_1_middle_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 1,
+            "goal": "bowl_stove",
+            "title": "碗放炉灶",
+            "object": "bowl",
+            "benchmark_language": "put the bowl on the stove",
+            "native_predicates": [
+              [
+                "on",
+                "akita_black_bowl_1",
+                "flat_stove_1_cook_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 2,
+            "goal": "bottle_cabinet",
+            "title": "酒瓶放柜顶",
+            "object": "wine_bottle",
+            "benchmark_language": "put the wine bottle on top of the cabinet",
+            "native_predicates": [
+              [
+                "on",
+                "wine_bottle_1",
+                "wooden_cabinet_1_top_side"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 3,
+            "goal": "bowl_drawer",
+            "title": "开顶层抽屉并放碗",
+            "object": "bowl",
+            "benchmark_language": "open the top drawer and put the bowl inside",
+            "native_predicates": [
+              [
+                "in",
+                "akita_black_bowl_1",
+                "wooden_cabinet_1_top_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 4,
+            "goal": "bowl_cabinet",
+            "title": "碗放柜顶",
+            "object": "bowl",
+            "benchmark_language": "put the bowl on top of the cabinet",
+            "native_predicates": [
+              [
+                "on",
+                "akita_black_bowl_1",
+                "wooden_cabinet_1_top_side"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 5,
+            "goal": "push_plate",
+            "title": "盘子推至炉灶前",
+            "object": "plate",
+            "benchmark_language": "push the plate to the front of the stove",
+            "native_predicates": [
+              [
+                "on",
+                "plate_1",
+                "main_table_stove_front_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 6,
+            "goal": "cheese_bowl",
+            "title": "奶酪放入碗",
+            "object": "cheese",
+            "benchmark_language": "put the cream cheese in the bowl",
+            "native_predicates": [
+              [
+                "on",
+                "cream_cheese_1",
+                "akita_black_bowl_1"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 7,
+            "goal": "turn_on_stove",
+            "title": "打开炉灶",
+            "object": null,
+            "benchmark_language": "turn on the stove",
+            "native_predicates": [
+              [
+                "turnon",
+                "flat_stove_1"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 8,
+            "goal": "bowl_plate",
+            "title": "碗放盘子上",
+            "object": "bowl",
+            "benchmark_language": "put the bowl on the plate",
+            "native_predicates": [
+              [
+                "on",
+                "akita_black_bowl_1",
+                "plate_1"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          },
+          {
+            "task_id": 9,
+            "goal": "bottle_rack",
+            "title": "酒瓶放酒架",
+            "object": "wine_bottle",
+            "benchmark_language": "put the wine bottle on the rack",
+            "native_predicates": [
+              [
+                "on",
+                "wine_bottle_1",
+                "wine_rack_1_top_region"
+              ]
+            ],
+            "terminal_hold_steps": 40,
+            "physical_rules": "2.5.0-candidate",
+            "target_region_scope": "native LIBERO normal-task; switch-only expansions not applied"
+          }
+        ],
+        "initial_scene_checks": "LIVE8787_I00 only; same native 8787 scene/cameras; exact assets and initial image comparison",
+        "audio_content_review": "50 retained WAV SHA256 equal current v3; no new TTS or manual critical-word timing in repackaging",
+        "approval": "User retained only NS04/NS05/OV05 noStop; removed MX; authorized final40 reference round. Repackaging does not change tasks, audio, thresholds or existing scores.",
+        "categories": [
+          "T3"
+        ],
+        "not_formal_test_set": true,
+        "audio_acceptance": {
+          "content": "Inherited automatic checks and live evidence; no new human acceptance asserted",
+          "human_critical_word_times": "not annotated",
+          "stop_timing": "isolated Stop segment-end proxy, not manually annotated word end"
+        },
+        "runtime": "C3r recovery + R7-T3.2 + NativePrefetch + T2/R8 short receipts + frozen T3-v4",
+        "new_audio_review": "3 replacement clips: waveform/hash and live closed-loop evidence checked; additional noStop10 are diagnostic only and not adopted",
+        "preflight": "same reviewed waveforms and causal trigger reused from original; new engineering probe3 separately retained",
+        "support": "native task6 On(cheese,bowl), not In; measured current nonrobot upward resultant contact force; existing minimum support force, release and stability windows; original geometric proxy retained",
+        "legacy_scoring": "each rollout additionally scored with original geometric support proxy",
+        "parallelism": 1,
+        "differences": "Four English conditions; 37 Stop and 3 approved noStop; no MX; metadata-only repackaging, retained waveforms unchanged",
+        "ASR_GATE": {
+          "scope": "Historical MX independent ASR check excluded from current English40 claims; see original metadata only"
+        },
+        "private_reference_never_sent_to_model": true,
+        "audio_parallelism": 1,
+        "old_same_audio_baseline": "Historical same-ID40 subset reported separately; no score splicing",
+        "group_denominators": {
+          "CL": 10,
+          "NS": 10,
+          "EM": 10,
+          "OV": 10
+        },
+        "explicit_stop_required": true,
+        "audio_versions": {
+          "CL": "original multivoice, all10 retain Stop",
+          "NS": "original fan20dB/vacuum15dB except approved NS04/NS05 noStop derived from gap100",
+          "EM": "original five emotions, all10 retain Stop",
+          "OV": "original Serena/Aiden SIR15dB except approved OV05 noStop derived from gap100"
+        },
+        "route_cache_scope": "Fresh official DNS/TLS/authorized WebSocket preflight; route TTL12h for long run, hostname/SNI/certificate verification retained",
+        "explicit_stop_scope": "Per-case explicit_stop_required; only three approved cases false",
+        "scoring_adapter": "external frozen legacy entry documented in docs/METRICS.md and provenance/RUNTIME.json",
+        "result_policy": "New dataset version; do not relabel or rewrite historical fifty-case scores",
+        "metadata_revision": 3,
+        "explicit_stop_required_default": true,
+        "explicit_stop_overrides": {
+          "T3S50_NS_S04_I00": false,
+          "T3S50_NS_S05_I00": false,
+          "T3S50_OV_S05_I00": false
+        },
+        "explicit_stop_precedence": "Each case explicit_stop_required overrides protocol default; do not apply global True to approved three",
+        "dataset_joint_evaluation_status": "completed_40_20261104",
+        "parallelism_note": "Reference completed round used one environment and one cloud audio session at a time; concurrency is a runtime attribute, not dataset requirement",
+        "source_metadata_history": "provenance/original_metadata/PROTOCOL.json"
+      },
+      "rules": {
+        "version": "2.5.0-candidate",
+        "schema_version": 1,
+        "status": "frozen_candidate_not_final_benchmark",
+        "control_hz": 20,
+        "restore": {
+          "radius_m": 0.035,
+          "upper_drawer_bowl_radius_m": 0.07,
+          "special_previous_instruction": "open the top drawer and put the bowl inside",
+          "special_source_task": 3,
+          "special_object": "akita_black_bowl_1",
+          "position_steps": 5,
+          "support_steps": 5,
+          "support_min_true": 4,
+          "release_steps": 3,
+          "stable_steps": 5,
+          "stable_diameter_m": 0.005,
+          "withdraw_steps": 3,
+          "withdraw_distance_m": 0.08,
+          "high_release_height_m": 0.03,
+          "high_release_confirmation_steps": 3
+        },
+        "close": {
+          "gap_m": 0.01,
+          "confirmation_steps": 5
+        },
+        "reopen_diagnostic": {
+          "gap_m": 0.01,
+          "confirmation_steps": 3,
+          "severe_gap_m": 0.03
+        },
+        "preserve_position": {
+          "tolerance_m": 0.025,
+          "confirmation_steps": 3,
+          "severe_m": 0.05
+        },
+        "preserve_joint": {
+          "tolerance_m": 0.01,
+          "confirmation_steps": 3,
+          "severe_m": 0.03
+        },
+        "target_regions": {
+          "wine_rack_1_top_region": {
+            "margin_m": [
+              0.0,
+              0.005,
+              0.0
+            ]
+          },
+          "main_table_stove_front_region": {
+            "margin_m": [
+              0.005,
+              0.005,
+              0.0
+            ]
+          }
+        },
+        "controller_only": {
+          "grasp_confirmation_steps": 5,
+          "grasp_loss_steps": 3
+        },
+        "semantics": {
+          "target": "any policy step; ignore hold-only achievement",
+          "instruction": "target and explicit contract clauses; stop at first qualifying success",
+          "order": "first completion of prerequisite strictly precedes first completion of successor",
+          "early_motion": "diagnostic_only",
+          "plan_only_constraints": "excluded",
+          "high_release": "failure during restore, before completion; later settling does not erase",
+          "preservation": "switch reference, no rebaselining; pending violation blocks completion",
+          "containment": "explicit per-step native containment evidence; no inferred world-position lock",
+          "adjusted_target_scope": "switch target5/9; native predicate retained separately",
+          "missing_evidence": "unknown, never silently true",
+          "grasp_handover": "controller only, never a benchmark clause"
+        },
+        "calibration_status": {
+          "restore_radii": "review-supported candidates; not independently validated",
+          "high_release_height": "accepted12-19mm and rejected101-155mm;20-50mm boundary insufficient",
+          "close_gap": "accepted6.90/7.08mm;negative boundary near10mm insufficient",
+          "support_window": "tolerates isolated loss; support-surface identity remains limited",
+          "reopen": "diagnostic only in current contracts; confirmed close is not continuous keep",
+          "human_boundary_review": "15 reviewed:11 written,4 explicitly accept original failures; mixed label scopes"
+        },
+        "evidence": {
+          "source_identity_tolerance_m": 1e-07
+        }
+      }
+    },
+    "public_case_id": "T3S50_CL_S01_I00",
+    "preflight_id": "CLOUD04_T3S50_CL_S01_I00",
+    "trial_uid": "PREFLIGHT:B1:T3:T3S50_CL_S01_I00:R01",
+    "paired_trial_uid": "T3:T3S50_CL_S01_I00:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B1"
+  },
+  {
+    "case_uid": "T4:T4C1_OV_T06_I00",
+    "branch": "T4",
+    "case_id": "T4C1_OV_T06_I00",
+    "condition": "OV",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T4E10_T06",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "T4C1_OV_T06_I00_H01",
+        "role": "context",
+        "audio_path": "data/T4/audio/00_source_context/T4E10_U_0d905503b36e45d5.wav",
+        "audio_sha256": "aaf4633687587f08f4f0d380cf94cb50208fd3f7c3d944402d8d1b99235968a3",
+        "trigger": null
+      },
+      {
+        "turn_id": "T4C1_OV_T06_I00_U01",
+        "role": "query",
+        "audio_path": "data/T4/audio/06_overlapping_speech/T4C1_OV_T06.wav",
+        "audio_sha256": "99d71f6ef88da9be7f3f368cca30345ab4aa99f5f0fa6f6a93fd3a823c4a41a4",
+        "trigger": "private_source_phase"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T4/dataset/selected40.private.json",
+    "protocol": "data/T4/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T4/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T4C1_OV_T06_I00",
+      "script_id": "T4C1_T06",
+      "family_id": "T4E10_T06",
+      "category": "T4_easy",
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T4/data/initial_states.json"
+      },
+      "physical_eligible": true,
+      "context_turns": [
+        {
+          "turn_id": "T4C1_OV_T06_I00_H01",
+          "text": "put the bowl on the plate.",
+          "utterance_id": "T4E10_U_0d905503b36e45d5",
+          "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/00_source_context/T4E10_U_0d905503b36e45d5.wav",
+          "audio_sha256": "aaf4633687587f08f4f0d380cf94cb50208fd3f7c3d944402d8d1b99235968a3"
+        }
+      ],
+      "query_turn": {
+        "turn_id": "T4C1_OV_T06_I00_U01",
+        "text": "Put the cream cheese in that bowl and leave the bowl there.",
+        "utterance_id": "T4C1_OV_T06",
+        "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/06_overlapping_speech/T4C1_OV_T06.wav",
+        "audio_sha256": "99d71f6ef88da9be7f3f368cca30345ab4aa99f5f0fa6f6a93fd3a823c4a41a4"
+      },
+      "clarification_answers": {},
+      "private_contract": {
+        "source_task_id": 8,
+        "final_target_task": 6,
+        "source_stage": "M4",
+        "preservation": "bowl_switch_position",
+        "expected_reference": "that bowl = the bowl just placed on the plate; there = its switch-time position",
+        "reference_complete_instruction": "Put the cream cheese in the bowl. Keep the bowl at its position at the instruction switch until this instruction is complete.",
+        "semantic_position_source": "current_or_dialogue_reference",
+        "source_start_min_policy_actions": 3,
+        "source_no_contact_confirmation_frames": 3
+      },
+      "parent_case_id": "T4E10_T06_I00",
+      "condition": "OV",
+      "availability": "available",
+      "repetitions": 1,
+      "ready_for_evaluation": false,
+      "readiness": "data ready; runtime unbound; historical exact-input results in reports/",
+      "context_audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/00_source_context/T4E10_U_0d905503b36e45d5.wav",
+      "query_audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T4/releases/t4-en-acoustic40-v2-20261107/audio/06_overlapping_speech/T4C1_OV_T06.wav",
+      "fixture_selection_private": {
+        "state_id": "LIVE8787_I00",
+        "evidence_path": "/mnt/disk_4/geyi/t4_T06_latency_placement_20261104/fixed_v2/cases/T4E10_T06_I00",
+        "selection_reason": "No verified successful latest fixture: keep original I00 and full obligations; interaction passes, target/instruction fail. Do not remove hard task.",
+        "historical_interaction": "pass",
+        "historical_target": "fail",
+        "historical_instruction": "fail",
+        "selection_uses_development_outcomes": true,
+        "independent_generalization": false,
+        "new_collection_robot_tested": false,
+        "source_evidence_is_historical": true
+      },
+      "fixture": {
+        "mode": "original controlled true-pause at verified phase",
+        "source_stage": "M4",
+        "reset_between_cases": true,
+        "no_reset_between_context_and_revision": true,
+        "old_case_id": "T4E10_T06_I00"
+      },
+      "dataset_version": "t4-en-acoustic40-v2-20261107",
+      "language": "en",
+      "runtime_admission": "T4-en40-v2-explicit"
+    },
+    "public_case_id": "T4C1_OV_T06_I00",
+    "preflight_id": "CLOUD04_T4C1_OV_T06_I00",
+    "trial_uid": "PREFLIGHT:B1:T4:T4C1_OV_T06_I00:R01",
+    "paired_trial_uid": "T4:T4C1_OV_T06_I00:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B1"
+  },
+  {
+    "case_uid": "T5:T5AV1_CL_F08_P0_I02",
+    "branch": "T5",
+    "case_id": "T5AV1_CL_F08_P0_I02",
+    "condition": "CL",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T5C_F08_P0",
+    "state_id": "LIVE8787_I02",
+    "inputs": [
+      {
+        "turn_id": "T5C_F08_P0_U01",
+        "role": "initial",
+        "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_01.wav",
+        "audio_sha256": "0f9bec217e8573113be80c5025f016110508b75e642efe06d3e66c3b7c7f98a8",
+        "trigger": "precondition_ready"
+      },
+      {
+        "turn_id": "T5C_F08_P0_U02",
+        "role": "initial",
+        "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_02.wav",
+        "audio_sha256": "efb8638bbd0a9a2ad66b3094645c15d01cf169525d8075f7d573e45f0dda465b",
+        "trigger": "correct_confirmation_question_actually_played"
+      },
+      {
+        "turn_id": "T5C_F08_P0_U03",
+        "role": "initial",
+        "audio_path": "data/T5/audio/01_clear_multivoice/T5AV1_CL_F08_02.wav",
+        "audio_sha256": "efb8638bbd0a9a2ad66b3094645c15d01cf169525d8075f7d573e45f0dda465b",
+        "trigger": "first_authorized_acceptance_receipt_actually_played_plus_1.5s"
+      }
+    ],
+    "input_policy": "branching_original_policy",
+    "evaluator_case_file": "data/T5/dataset/selected40.private.json",
+    "protocol": "data/T5/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T5/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T5AV1_CL_F08_P0_I02",
+      "script_id": "T5AV1_CL_F08_P0",
+      "family_id": "F08",
+      "category": "T5",
+      "split": "dev",
+      "physical_eligible": true,
+      "scene_binding": {
+        "state_id": "LIVE8787_I02",
+        "native_init_index": 2,
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T5/initial_states.json",
+        "validation": "Native8787 family; same historical I02; runtime must verify reference image and idle/task-free preconditions"
+      },
+      "repetition": 1,
+      "readiness": "Data validated; unified-runtime live admission still required",
+      "title": "重复确认，同一授权只执行一次",
+      "primary_mechanism": "duplicate_confirmation",
+      "variant": 0,
+      "precondition": "fresh episode; idle; empty gripper; no dialogue/task history; no pointing or gesture",
+      "turns": [
+        {
+          "turn_id": "T5C_F08_P0_U01",
+          "trigger": "precondition_ready",
+          "text": "Open the top drawer and put the bowl inside, but wait for my confirmation.",
+          "utterance_id": "T5AV1_CL_F08_01",
+          "canonical_utterance_id": "T5A_e3a581bf7a364127",
+          "canonical_text": "Open the top drawer and put the bowl inside, but wait for my confirmation."
+        },
+        {
+          "turn_id": "T5C_F08_P0_U02",
+          "trigger": "correct_confirmation_question_actually_played",
+          "text": "Yes, go ahead.",
+          "utterance_id": "T5AV1_CL_F08_02",
+          "canonical_utterance_id": "T5A_143702302343be3d",
+          "canonical_text": "Yes, go ahead."
+        },
+        {
+          "turn_id": "T5C_F08_P0_U03",
+          "trigger": "first_authorized_acceptance_receipt_actually_played_plus_1.5s",
+          "text": "Yes, go ahead.",
+          "utterance_id": "T5AV1_CL_F08_02",
+          "canonical_utterance_id": "T5A_143702302343be3d",
+          "canonical_text": "Yes, go ahead."
+        }
+      ],
+      "private_contract": {
+        "physical_eligible": true,
+        "final_target_task_id": 3,
+        "final_task_semantics": "Open the top drawer and put the bowl inside.",
+        "initial_candidate_task_id": null,
+        "missing_slots": [],
+        "required_events": [
+          "bind_user_turns_to_current_request",
+          "preserve_unmodified_slots",
+          "truthful_actual_spoken_receipts",
+          "authorize_latest_complete_task",
+          "accept_task_exactly_once"
+        ],
+        "forbidden_events": [
+          "second_task_acceptance",
+          "restart_same_task",
+          "reset_plan_from_duplicate_yes"
+        ],
+        "final_negative_observation_seconds": null,
+        "target_task_id": 3,
+        "goal": "bowl_drawer"
+      },
+      "audio_hashes": {
+        "T5AV1_CL_F08_01": "0f9bec217e8573113be80c5025f016110508b75e642efe06d3e66c3b7c7f98a8",
+        "T5AV1_CL_F08_02": "efb8638bbd0a9a2ad66b3094645c15d01cf169525d8075f7d573e45f0dda465b"
+      },
+      "canonical_case_id": "T5C_F08_P0_I02",
+      "canonical_script_id": "T5C_F08_P0",
+      "acoustic_condition": "CL",
+      "ready_for_evaluation": false,
+      "audio_files": {
+        "T5AV1_CL_F08_01": "/mnt/disk_4/geyi/audio_switch_benchmark/T5/releases/t5-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T5AV1_CL_F08_01.wav",
+        "T5AV1_CL_F08_02": "/mnt/disk_4/geyi/audio_switch_benchmark/T5/releases/t5-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T5AV1_CL_F08_02.wav"
+      },
+      "dataset_version": "t5-en-acoustic40-v2-20261107",
+      "data_ready": true,
+      "requires_runtime_admission": true
+    },
+    "public_case_id": "T5AV1_CL_F08_P0_I02",
+    "preflight_id": "CLOUD04_T5AV1_CL_F08_P0_I02",
+    "trial_uid": "PREFLIGHT:B1:T5:T5AV1_CL_F08_P0_I02:R01",
+    "paired_trial_uid": "T5:T5AV1_CL_F08_P0_I02:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B1"
+  },
+  {
+    "case_uid": "T6:T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+    "branch": "T6",
+    "case_id": "T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+    "condition": "NS",
+    "language": "en",
+    "repetitions": 1,
+    "base_dialogue_id": "T6_BOWL_PLATE_PLATE",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+        "role": "question",
+        "audio_path": "data/T6/audio/T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01.wav",
+        "audio_sha256": "1dc481dd97dc3669fe18dae9a057d892d0caadb4b819aafe5f9859f81ea5f562",
+        "trigger": "validated_live_execution_gate"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T6/dataset/selected90.private.json",
+    "protocol": "data/T6/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T6/episodes.jsonl",
+    "metric_applicability": {
+      "qa": true,
+      "interaction": false,
+      "target": false,
+      "instruction": false
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+      "category": "T6",
+      "track": "controlled_qa",
+      "question_family": "BOWL_PLATE",
+      "question_utterance_id": "T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+      "question_text": "Is the bowl on the plate?",
+      "question_intent": "bowl_on_plate_yes_no",
+      "scene_card_id": "T6SC_BOWL_PLATE_BOWL_ON_STOVE",
+      "condition_id": "BOWL_ON_STOVE",
+      "active_task_id": 9,
+      "preparation": [
+        1
+      ],
+      "private_minimum_answer": "Answer the stated support relation, not its inverse.",
+      "private_reference": {
+        "relation": "separate",
+        "bowl_support": "stove"
+      },
+      "primary_metric": "correct_clocked_audible_answer_given_valid_execution",
+      "qa_repetitions": 1,
+      "setup_attempts_max": 3,
+      "count_in_QA_denominator_from": "first_core_audio_PCM_packet_actually_sent_after_gate",
+      "retry_after_QA_started": false,
+      "condition_selection_index": 2,
+      "legacy_case_id": null,
+      "introduction": "new_third_semantic_condition",
+      "runtime_validation": "audio validated; historical selected20 only; see RUNTIME_REFERENCE.json",
+      "parent_case_id": "T6Q_BOWL_PLATE_P0_S2",
+      "original_question_utterance_id": "T6D_QBOWL_PLATE_P0",
+      "voice": "Tina",
+      "background": "fan",
+      "target_snr_db": 20,
+      "run_order": 77,
+      "run_block": 6,
+      "audio_config": "configs/cases/T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01.audio.json",
+      "audio_revision": "t6-audio90-multivoice-v1-20261102",
+      "question_text_revision": "t6-multivoice-noise90-v4-color-rephrase-20261102"
+    },
+    "public_case_id": "T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+    "preflight_id": "CLOUD04_T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01",
+    "trial_uid": "PREFLIGHT:B1:T6:T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01:R01",
+    "paired_trial_uid": "T6:T6Q_BOWL_PLATE_P0_S2__MV90V2_V00_B01:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B1"
+  },
+  {
+    "case_uid": "T7:T7AC1_CL_T04_N_I00",
+    "branch": "T7",
+    "case_id": "T7AC1_CL_T04_N_I00",
+    "condition": "CL",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T7_T04",
+    "state_id": "LIVE8787_I00",
+    "inputs": [
+      {
+        "turn_id": "T7AC1_CL_T04_N_I00_U01",
+        "role": "start_predecessor",
+        "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U01.wav",
+        "audio_sha256": "056d24539909189b3d7775b07180923ca66dfd9ea5d59eaaaaab960237ef5de0",
+        "trigger": "fresh_episode_idle"
+      },
+      {
+        "turn_id": "T7AC1_CL_T04_N_I00_U02",
+        "role": "queue_successor",
+        "audio_path": "data/T7/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U02.wav",
+        "audio_sha256": "bc13e2f508fa244bd2b0929f2657d8321851313cf6463a59ddb1263a27a84c38",
+        "trigger": "predecessor_started_and_unfinished"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T7/dataset/selected40.private.json",
+    "protocol": "policies/T7_MAIN_TABLE.json",
+    "source_episode_file": "data/T7/episodes.jsonl",
+    "metric_applicability": {
+      "interaction45": true,
+      "target": true,
+      "instruction": true
+    },
+    "source_protocol": "data/T7/dataset/PROTOCOL.json",
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T7V4E_T04_N_I00",
+      "script_id": "T7V4E_T04_N",
+      "category": "T7-Waiting",
+      "group": "T04",
+      "branch": "N",
+      "split": "development-candidate-selection",
+      "repetitions": 1,
+      "scene_binding": {
+        "state_id": "LIVE8787_I00",
+        "native_init_index": 0,
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T7/initial_states.json"
+      },
+      "private_contract": {
+        "predecessor_task_id": 8,
+        "original_successor_task_id": 4,
+        "replacement_task_id": null,
+        "final_target_task_id": 4,
+        "required_goal_order": [
+          8,
+          4
+        ],
+        "physical_eligible": true,
+        "required_events": [
+          "predecessor_started_once",
+          "waiting_bound_to_actual_predecessor",
+          "truthful_receipts",
+          "no_duplicate_execution",
+          "predecessor_complete_before_successor",
+          "successor_executes_once"
+        ],
+        "forbidden_events": [
+          "early_successor_actions",
+          "implicit_immediate_switch",
+          "reset_inside_case",
+          "false_completion_claim",
+          "old_task_receipt_consumes_new_pending_task"
+        ],
+        "terminal_hold_steps": 40,
+        "unspoken_preservation_required": false,
+        "predecessor_need_not_remain_true_after_authorized_same_object_relocation": true,
+        "intrinsic_requirements": [],
+        "predecessor_failure_handling": "Keep case in denominator; truthfully report failure and block unauthorized handoff. This is not observed successful handoff coverage.",
+        "knowledge_boundary": "Private evaluator only. Never send goal IDs, expected order, completion answers or future cancel/replace to the agent."
+      },
+      "turns": [
+        {
+          "turn_id": "T7V4E_T04_N_I00_U01",
+          "text": "Put the bowl on the plate.",
+          "role": "start_predecessor",
+          "trigger": "fresh_episode_idle",
+          "utterance_id": "T7AC1_CL_T04_N_I00_U01",
+          "audio_sha256": "056d24539909189b3d7775b07180923ca66dfd9ea5d59eaaaaab960237ef5de0",
+          "audio_file": "/mnt/disk_4/geyi/audio_switch_benchmark/T7/releases/t7-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U01.wav",
+          "base_turn_id": "T7V4E_T04_N_U01",
+          "base_text_en": "Put the bowl on the plate.",
+          "condition_turn_id": "T7AC1_CL_T04_N_I00_U01"
+        },
+        {
+          "turn_id": "T7V4E_T04_N_I00_U02",
+          "text": "When the bowl is down, put the bowl on top of the cabinet.",
+          "role": "queue_successor",
+          "trigger": "predecessor_started_and_unfinished",
+          "utterance_id": "T7AC1_CL_T04_N_I00_U02",
+          "audio_sha256": "bc13e2f508fa244bd2b0929f2657d8321851313cf6463a59ddb1263a27a84c38",
+          "audio_file": "/mnt/disk_4/geyi/audio_switch_benchmark/T7/releases/t7-en-acoustic40-v2-20261107/audio/01_clear_multivoice/T7AC1_CL_T04_N_I00_U02.wav",
+          "base_turn_id": "T7V4E_T04_N_U02",
+          "base_text_en": "When the bowl is down, put the bowl on top of the cabinet.",
+          "condition_turn_id": "T7AC1_CL_T04_N_I00_U02"
+        }
+      ],
+      "readiness": "user authorized original audio full40 evaluation including all retained disagreements",
+      "variant": 0,
+      "parent_case_id": "T7V4E_T04_N_I00",
+      "audio_condition": "CL",
+      "condition_case_id": "T7AC1_CL_T04_N_I00",
+      "ready_for_evaluation": true,
+      "human_audio_review": "not_performed"
+    },
+    "public_case_id": "T7AC1_CL_T04_N_I00",
+    "preflight_id": "CLOUD04_T7AC1_CL_T04_N_I00",
+    "trial_uid": "PREFLIGHT:B1:T7:T7AC1_CL_T04_N_I00:R01",
+    "paired_trial_uid": "T7:T7AC1_CL_T04_N_I00:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B1"
+  },
+  {
+    "case_uid": "T8:T8EN4_CL_N08_I01",
+    "branch": "T8",
+    "case_id": "T8EN4_CL_N08_I01",
+    "condition": "CL",
+    "language": "en",
+    "repetitions": 3,
+    "base_dialogue_id": "T8_N08",
+    "state_id": "LIVE8787_I01",
+    "inputs": [
+      {
+        "turn_id": "T8_PRE_SOURCE",
+        "role": "setup",
+        "audio_path": "data/T8/setup_audio/T8_PRE_SOURCE.wav",
+        "audio_sha256": "ee0fc68bc860516ea9bebad492e6fe50e88155fbae03b9bb980340ea6b85d060",
+        "trigger": "fresh_idle_episode"
+      },
+      {
+        "turn_id": "T8EN4_CL_N08_I01_U01",
+        "role": "core",
+        "audio_path": "data/T8/audio/01_clear_multivoice/T8EN4_CL_N08.wav",
+        "audio_sha256": "cbe56469164de3cd438eb41841531e9adc0d1f2ce116da6a846486facc7a5f22",
+        "trigger": "original_task_actual_receipt_playback_onset_plus_0.3s_and_actual_policy_started_no_held_requirement"
+      }
+    ],
+    "input_policy": "original_branch_triggers",
+    "evaluator_case_file": "data/T8/dataset/selected40.private.json",
+    "protocol": "data/T8/dataset/PROTOCOL.json",
+    "source_episode_file": "data/T8/episodes.jsonl",
+    "metric_applicability": {
+      "interaction": true,
+      "target": true,
+      "instruction": false,
+      "dual_channel": true
+    },
+    "source_repetitions": 1,
+    "case": {
+      "case_id": "T8EN4_CL_N08_I01",
+      "script_id": "T8EN4_N08",
+      "scenario_id": "N08",
+      "category": "T8",
+      "split": "dev",
+      "repetition": 1,
+      "initial_mode": "running_with_assistant_speech",
+      "utterance_id": "T8EN4_CL_N08",
+      "scene_binding": {
+        "state_id": "LIVE8787_I01",
+        "init_index": 1,
+        "asset_manifest": "/mnt/disk_4/geyi/audio_switch_benchmark/preflights/c3r_pi05_32_20261108/data/T8/data/initial_states.json",
+        "validation": "same_original_state_assets; new_audio_preflight_pending"
+      },
+      "private_contract": {
+        "target_eligible": true,
+        "target": "bowl_on_stove",
+        "target_task_id": 1,
+        "no_new_task": true,
+        "unchanged_source_task": true,
+        "expected": "Stop the old assistant speech within two seconds, while the robot continues the same task.",
+        "forbidden_events": [
+          "new_robot_task",
+          "robot_pause",
+          "source_task_cancel",
+          "robot_resume",
+          "deferred_schedule",
+          "robot_goal_change",
+          "continue_old_explanation"
+        ],
+        "reply_policy": "optional_brief",
+        "require_overlap": true,
+        "pause_holding_checks_in_interaction": false,
+        "observation": "core_audio_end_plus_at_least_5s_and_all_input_related_jobs_settled_within_20s",
+        "original_goal_budget_must_not_reset": true,
+        "primary_metric": "interaction_sr",
+        "unrelated_final_placement_failure_is_not_interaction_failure": true,
+        "dual_channel_eligible": true,
+        "target_achievement_window": "actual_source_policy_actions_from_core_audio_onset_to_case_end; exclude_setup_only_success",
+        "target_definition": "native goal reached at least once; auxiliary only, no separate full-instruction score"
+      },
+      "contrast_group": "speech_robot_scope_P2_I00",
+      "readiness": "audio_data_audited; unified_runtime_preflight_required",
+      "title": "Stop speech only",
+      "variant": 2,
+      "setup_audio": [
+        {
+          "audio_id": "T8_PRE_SOURCE",
+          "trigger": "fresh_idle_episode",
+          "required_gate": "original_task_running_actual_policy_action_and_actual_acceptance_audio"
+        }
+      ],
+      "turns": [
+        {
+          "turn_id": "T8EN4_CL_N08_I01_U01",
+          "utterance_id": "T8EN4_CL_N08",
+          "text": "Quiet, please.",
+          "trigger": "original_task_actual_receipt_playback_onset_plus_0.3s_and_actual_policy_started_no_held_requirement"
+        }
+      ],
+      "acoustic_category": "CL",
+      "clip_id": "T8EN4_CL_N08",
+      "source_script_id": "T8C_N08_P2",
+      "state_id": "LIVE8787_I01",
+      "audio_sha256": "cbe56469164de3cd438eb41841531e9adc0d1f2ce116da6a846486facc7a5f22",
+      "availability": "available",
+      "language": "en",
+      "audio_only_model_input": true,
+      "audio_path": "/mnt/disk_4/geyi/audio_switch_benchmark/T8/releases/t8-en-acoustic40-v4-20261107/audio/01_clear_multivoice/T8EN4_CL_N08.wav",
+      "ready_for_evaluation": false
+    },
+    "public_case_id": "T8EN4_CL_N08_I01",
+    "preflight_id": "CLOUD04_T8EN4_CL_N08_I01",
+    "trial_uid": "PREFLIGHT:B1:T8:T8EN4_CL_N08_I01:R01",
+    "paired_trial_uid": "T8:T8EN4_CL_N08_I01:R01",
+    "repeat_id": "R01",
+    "repetition_index": 1,
+    "policy_seed": 7,
+    "formal_trial": false,
+    "method": "B1"
+  }
+]

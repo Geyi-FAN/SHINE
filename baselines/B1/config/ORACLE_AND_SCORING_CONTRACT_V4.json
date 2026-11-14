@@ -1,0 +1,58 @@
+{
+  "schema": "audio-switch-oracle-boundary-scoring-v4",
+  "applies_to": [
+    "ASR_Agent_pi05",
+    "Ours"
+  ],
+  "planning_owner": "Agent",
+  "oracle_outputs": {
+    "point": "only the Agent-selected entity/K/time_source in MAIN224 y,x; historical points frozen at episode initialization or actual instruction takeover",
+    "selected_stage": "operation selected by Agent, status running/completed/failed, causal event time/frame, matching real task/version"
+  },
+  "ordinary_non_oracle_inputs": [
+    "actual ASR transcript",
+    "actual causal conversation and tool receipts",
+    "current MAIN and WRIST images",
+    "robot proprioception8",
+    "Agent-owned persistent memory",
+    "public trained operator catalog"
+  ],
+  "forbidden": [
+    "all native_goal_relations",
+    "whole object ground-truth poses",
+    "privileged held-object/drawer-state vector",
+    "private evaluator contract/invariants",
+    "standard next stage or benchmark plan",
+    "reference transcripts",
+    "future completion history"
+  ],
+  "selected_stage_only": true,
+  "standard_next_stage_provided": false,
+  "scoring": {
+    "version": "audio-logical-goal-attribution-v4-20261109",
+    "actor_attribution": "actual authorizing audio + real episode/task action cohort",
+    "instruction_text_matching": false,
+    "geometric_thresholds": "unchanged frozen category predicates",
+    "legacy_results": "immutable; regrade separately",
+    "all_three_methods_required": true,
+    "implementation": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/actors/B1/scoring_v4/score.py",
+    "logical_goal_persistence": "For T2, T7 cancellation-only, and T8 non-command input, retain the already authorized source physical goal despite host task-ID changes. Require real same-episode policy actions in unchanged scoring window. No T8 robustness credit if core audio never delivered.",
+    "T5_authorization": "No action credit before real confirmation; same-task updates exclude actions before actual authorization.",
+    "actual_agent_words_do_not_select_goal": "Private evaluator task goal fixed by case, independent of pronoun/canonical names in transcripts or task metadata."
+  },
+  "deployment_note": "Implemented and audited in B1; original B0 trajectories regraded read-only. Ours must explicitly adopt and validate before new paired comparison. No automatic deployment claim.",
+  "client_compatibility": {
+    "t8_launcher": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/actors/B1/tools/run_t8_compat.py",
+    "t8_clocked_client": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/actors/B1/tools/t8_client_compat.mjs",
+    "protocol_numeric_limits_unchanged": true,
+    "independent_audio_cadence_gate": {
+      "frame_ms": 20,
+      "ratio_bounds": [
+        0.95,
+        1.05
+      ],
+      "max_gap_ms": 100
+    },
+    "score_vs_admission": "Preserve frozen interaction score separately from independent audio admission; disclose cases failing either. No release if exposure or delivery invalid."
+  }
+}

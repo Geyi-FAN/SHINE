@@ -1,0 +1,6 @@
+{
+  "commit": "98bcb048d6e61b42125d8027b59f8fda197e6d02",
+  "tree": "ca78f4194e5c571f1adf8f730a32574d55adaec3",
+  "history": "single shallow source snapshot; parent commits intentionally not distributed",
+  "source_export": "git archive HEAD; exact tracked file bytes/modes"
+}

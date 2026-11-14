@@ -24,3 +24,11 @@ Do not publish `.env`, `private`, API keys or model weights. No credentials are 
 ## New common-scoring comparison
 
 The requested rerun preserves the old ASR+Agent Oracle-assisted definition and the old pure-ASR definition. It does not adopt the previous proposed non-Oracle replacement baseline. New common-scoring exports and rerun results will be separately versioned; existing numbers above remain unchanged.
+
+## Review entries
+
+- [Current paper draft table](results/paper_current/TABLE_CURRENT.md) (historical baselines, explicitly not a harmonized final comparison).
+- [Common scoring and Oracle baseline definition](docs/EVALUATION_ALIGNMENT.md).
+- `python3 scripts/restore_runtime_git.py` reconstructs the exact original shallow runtime commit in a fresh clone; original source bytes, tree and commit identity were verified in a disposable copy. External models/environments and site paths must still be configured.
+
+Common-scoring rerun status:15/15 engineering preflights completed without infrastructure/scoring errors; new1770 registered baseline first attempts started on server240 (four GPU lanes). This is a collection in progress, not a new final score. See evaluation/common_v1/deployment_audit/FORMAL_LAUNCH_STATUS.json.

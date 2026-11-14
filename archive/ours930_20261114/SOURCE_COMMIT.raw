@@ -1,0 +1,6 @@
+tree ca78f4194e5c571f1adf8f730a32574d55adaec3
+parent 5fccda030e6b8b5770f8546bb279373eea48cd60
+author Codex <codex@local.invalid> 1794599009 +0800
+committer Codex <codex@local.invalid> 1794599009 +0800
+
+Acknowledge only identity-proven scheduled queues across verified predecessor completion and Native release waiting

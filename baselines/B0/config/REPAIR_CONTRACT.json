@@ -1,0 +1,15 @@
+{
+  "revision": "transport-scoring-r2-20261109",
+  "registered_at": "2026-11-09T02:22:55.335243+08:00",
+  "old_results_immutable": true,
+  "supplemental_criteria": "all original PCM admission or technical failures; plus entire non-speech-overlap T8 cohort; no physical-success-based selection",
+  "supplemental_count": 193,
+  "T8_supported": 72,
+  "T8_speech_overlap_not_supported": 48,
+  "model_checkpoint_and_ASR_parameters": "unchanged; official token truncation replaces custom overlength rejection",
+  "scoring_version": "audio-logical-goal-attribution-v4-20261109",
+  "T6_excluded": true,
+  "live_io_root": "/home/geyi/.local/state/audio_asr_repair_20261109",
+  "archive_root": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/actors/B0/archived",
+  "speech_overlap": "No artificial output/TTS supplied. Mark unsupported explicitly; never count unplayed core as actual successful robustness."
+}

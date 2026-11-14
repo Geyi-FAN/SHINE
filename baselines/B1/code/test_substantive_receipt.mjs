@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {isSubstantiveCompletion as ok} from './substantive_receipt.mjs';
+const event={direction:'sent',type:'host.playback_completed',replyKind:'execute',outputId:5};
+assert(ok(event));
+assert(!ok({...event,replyKind:'processing'}));
+assert(!ok({...event,replyKind:undefined}));
+assert(!ok({...event,type:'host.playback_started'}));
+assert(!ok({...event,type:'host.playback_cancelled'}));
+assert(!ok({...event,direction:'received'}));
+assert(ok({...event,replyKind:'propose'}));
+assert(ok({...event,replyKind:'defer'}));
+assert(ok({...event,replyKind:'cancel_deferred'}));
+console.log('9 substantive receipt checks passed; no audio/model calls');
