@@ -1,0 +1,11 @@
+{
+  "test_suite": "test_admission.py",
+  "executed_on": "240 host Python3.11",
+  "tests_run": 23,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_s": 7.066,
+  "source": "Observed unittest output in this recovery session",
+  "actor_scorer_changed": false,
+  "retained_outcomes": 1598
+}

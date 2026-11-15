@@ -1,12 +1,12 @@
 {
-  "template": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/recovery/network_admission_v3_20261115",
+  "template": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/recovery/network_admission_v5_20261115",
   "template_sources": {
-    "services.py": "1f9ba958fc4b6bbd716033a9186519793be0232485362f97a06ea0c330279224",
-    "test_admission.py": "7fe4cf17023f54fec40a67c572f70b67d03207a283a368772e698a0391e70d94",
+    "services.py": "cd71df303b1e771129978b65edb238dc5fe48db5be98f5a593524671ba8873bf",
+    "test_admission.py": "6edcf04a04b975c0778563568bb1978ea164f6e4ee81a59192c6b0f09da50f99",
     "network_health.py": "2f765b4e90ea4eadafcf08e8026a50a36c473182fcddb95b6ab82d5e765dfcea",
-    "coordinator.py": "5d4263e930eb051a1763dc4d676777e83c37ebfd0ddfa41929fff335da4961aa"
+    "coordinator.py": "bad965b349ca4f84e49ec4b8a2067fd6cbd8639b1b496f5db30dadd59ae401c0"
   },
-  "initial_manifest_sha256": "1d0e3004901301feddd6f0f6f38ac8e06d0b9569906173b1be2281f1972481a8",
+  "initial_manifest_sha256": "0eda96419493f55df243347659746f80d1ade2166843df974753b82b34adb566",
   "dns_patch_sha256": "0c1d764130e0bccc6bfb94ea75c3bd2036c95eace40cdefe3194bf443cc9445d",
   "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
   "frozen_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",

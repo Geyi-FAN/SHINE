@@ -1,0 +1,49 @@
+{
+  "completed": 1598,
+  "planned": 1770,
+  "remaining": 172,
+  "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
+  "source_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "reviewed_faults": {
+    "B1:T7:T7AC1_CL_T07_N_I00:R01": "upstream_timeout",
+    "B0:T7:T7AC1_OV_T04_N_I00:R03": "reviewed_audio_pacing_failure_retained",
+    "B1:T2:T2COL1_EM_G01:R01": "upstream_timeout",
+    "B1:T3:T3S50_OV_S10_I00:R03": "reviewed_audio_pacing_failure_retained",
+    "B1:T4:T4C1_OV_T08_I00:R03": "upstream_http_error",
+    "B1:T8:T8EN4_CL_N08_I01:R02": "upstream_timeout",
+    "B1:T2:T2COL1_NS_G01:R03": "dns_failure",
+    "B1:T1:T1COL1_NS_G03_I00:R03": "upstream_http_error",
+    "B1:T8:T8EN4_CL_N06_I02:R02": "upstream_timeout",
+    "B1:T8:T8EN4_CL_N07_I00:R03": "upstream_timeout",
+    "B1:T4:T4C1_CL_T02_I00:R01": "upstream_timeout",
+    "B1:T1:T1COL1_CL_G05_I02:R03": "dns_failure",
+    "B1:T2:T2COL1_NS_G01:R02": "upstream_http_error",
+    "B1:T8:T8EN4_CL_N07_I00:R02": "upstream_timeout",
+    "B1:T3:T3S50_EM_S03_I00:R01": "unfinished_agent_request_at_client_deadline",
+    "B1:T4:T4C1_CL_T09_I00:R03": "reviewed_audio_pacing_failure_retained",
+    "B1:T5:T5AV1_CL_F06_P1_I02:R03": "unfinished_agent_request_at_client_deadline",
+    "B1:T2:T2COL1_CL_G02:R02": "upstream_http_error"
+  },
+  "reviewed_audio_failures": {
+    "B0:T7:T7AC1_OV_T04_N_I00:R03": {
+      "audit_sha256": "2456b026251784e8b0e1f6975608a4e2f2601527ff9c160c9ab282d140bd0917",
+      "outcome_sha256": "fb610c7a56d914f6f461618dbc672b6e433533e0b97b02f9d839d0f3f6c27481"
+    },
+    "B1:T3:T3S50_OV_S10_I00:R03": {
+      "audit_sha256": "9187827a9a8fef44753d09d847b0e1334a2b36672f3e82fa71ef6a9ce1909762",
+      "outcome_sha256": "f4aace0625d43213d816f8500f0ea070f7a90576cdde211baa6d1d2941d88457"
+    },
+    "B1:T4:T4C1_CL_T09_I00:R03": {
+      "audit_sha256": "18c29beb5aa2ed890225ebeb7a9e3f38e8c221f980ca84fa249506b43521f92f",
+      "outcome_sha256": "ec99430e7f4de4e24fdd9b832bedf656a1c371e2e122db978765d73f5dadbcdc"
+    }
+  },
+  "actor_scorer_changed": false,
+  "active_evaluation_lanes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "reason": "Retain exact three audio pacing failures; reduce operational concurrency from seven to four; no thresholds changed."
+}

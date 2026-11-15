@@ -1,0 +1,32 @@
+{
+  "source_sha256": {
+    "services.py": "cd71df303b1e771129978b65edb238dc5fe48db5be98f5a593524671ba8873bf",
+    "test_admission.py": "6edcf04a04b975c0778563568bb1978ea164f6e4ee81a59192c6b0f09da50f99",
+    "network_health.py": "2f765b4e90ea4eadafcf08e8026a50a36c473182fcddb95b6ab82d5e765dfcea",
+    "coordinator.py": "bad965b349ca4f84e49ec4b8a2067fd6cbd8639b1b496f5db30dadd59ae401c0"
+  },
+  "registered": 1770,
+  "retained": 1598,
+  "remaining": 172,
+  "max_recovery_cycles": 128,
+  "max_health_attempts_per_cycle": 3,
+  "max_concurrent_cloud_requests": 4,
+  "physical_gpus": [
+    1,
+    2,
+    3,
+    4,
+    0,
+    5,
+    6
+  ],
+  "actor_or_scorer_changed": false,
+  "formal_request_retries": 0,
+  "active_evaluation_lanes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "at": 1794710990.6522486
+}

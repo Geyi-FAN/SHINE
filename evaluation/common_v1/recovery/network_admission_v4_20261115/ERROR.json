@@ -1,0 +1,6 @@
+{
+  "type": "AssertionError",
+  "reason": "Model readiness failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/recovery/network_admission_v4_20261115/coordinator.py\", line 271, in <module>\n    main()\n  File \"/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/recovery/network_admission_v4_20261115/coordinator.py\", line 175, in main\n    assert time.monotonic() < deadline and all(p.poll() is None for p in processes), 'Model readiness failed'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Model readiness failed\n",
+  "at": 1794710934.351636
+}
