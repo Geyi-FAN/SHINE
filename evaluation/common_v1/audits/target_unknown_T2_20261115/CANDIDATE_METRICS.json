@@ -1,0 +1,551 @@
+[
+  {
+    "method": "B0",
+    "task": "T1",
+    "metric": "interaction",
+    "success": 0,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T1",
+    "metric": "target",
+    "success": 120,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 100.0
+  },
+  {
+    "method": "B0",
+    "task": "T2",
+    "metric": "interaction",
+    "success": 0,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T2",
+    "metric": "target",
+    "success": 103,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 85.83333333333333
+  },
+  {
+    "method": "B0",
+    "task": "T2",
+    "metric": "instruction",
+    "success": 74,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 61.666666666666664
+  },
+  {
+    "method": "B0",
+    "task": "T3",
+    "metric": "interaction",
+    "success": 0,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T3",
+    "metric": "target",
+    "success": 109,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 90.83333333333333
+  },
+  {
+    "method": "B0",
+    "task": "T3",
+    "metric": "instruction",
+    "success": 82,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 68.33333333333333
+  },
+  {
+    "method": "B0",
+    "task": "T4",
+    "metric": "interaction",
+    "success": 0,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T4",
+    "metric": "target",
+    "success": 105,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 87.5
+  },
+  {
+    "method": "B0",
+    "task": "T4",
+    "metric": "instruction",
+    "success": 90,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 75.0
+  },
+  {
+    "method": "B0",
+    "task": "T5",
+    "metric": "interaction",
+    "success": 0,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T5",
+    "metric": "target",
+    "success": 0,
+    "total": 108,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T5",
+    "metric": "instruction",
+    "success": 0,
+    "total": 108,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T7",
+    "metric": "interaction",
+    "success": 0,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T7",
+    "metric": "target",
+    "success": 59,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 49.166666666666664
+  },
+  {
+    "method": "B0",
+    "task": "T7",
+    "metric": "instruction",
+    "success": 16,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 13.333333333333334
+  },
+  {
+    "method": "B0",
+    "task": "T8",
+    "metric": "interaction",
+    "success": 0,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 0.0
+  },
+  {
+    "method": "B0",
+    "task": "T8",
+    "metric": "target",
+    "success": 36,
+    "total": 84,
+    "unknown": 0,
+    "rate_percent": 42.857142857142854
+  },
+  {
+    "method": "B1",
+    "task": "T1",
+    "metric": "interaction",
+    "success": 99,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 82.5
+  },
+  {
+    "method": "B1",
+    "task": "T1",
+    "metric": "target",
+    "success": 108,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 90.0
+  },
+  {
+    "method": "B1",
+    "task": "T2",
+    "metric": "interaction",
+    "success": 65,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 54.166666666666664
+  },
+  {
+    "method": "B1",
+    "task": "T2",
+    "metric": "target",
+    "success": 106,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 88.33333333333333
+  },
+  {
+    "method": "B1",
+    "task": "T2",
+    "metric": "instruction",
+    "success": 78,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 65.0
+  },
+  {
+    "method": "B1",
+    "task": "T3",
+    "metric": "interaction",
+    "success": 8,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 6.666666666666667
+  },
+  {
+    "method": "B1",
+    "task": "T3",
+    "metric": "target",
+    "success": 64,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 53.333333333333336
+  },
+  {
+    "method": "B1",
+    "task": "T3",
+    "metric": "instruction",
+    "success": 62,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 51.666666666666664
+  },
+  {
+    "method": "B1",
+    "task": "T4",
+    "metric": "interaction",
+    "success": 79,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 65.83333333333333
+  },
+  {
+    "method": "B1",
+    "task": "T4",
+    "metric": "target",
+    "success": 77,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 64.16666666666667
+  },
+  {
+    "method": "B1",
+    "task": "T4",
+    "metric": "instruction",
+    "success": 73,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 60.833333333333336
+  },
+  {
+    "method": "B1",
+    "task": "T5",
+    "metric": "interaction",
+    "success": 63,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 52.5
+  },
+  {
+    "method": "B1",
+    "task": "T5",
+    "metric": "target",
+    "success": 76,
+    "total": 108,
+    "unknown": 0,
+    "rate_percent": 70.37037037037037
+  },
+  {
+    "method": "B1",
+    "task": "T5",
+    "metric": "instruction",
+    "success": 75,
+    "total": 108,
+    "unknown": 0,
+    "rate_percent": 69.44444444444444
+  },
+  {
+    "method": "B1",
+    "task": "T7",
+    "metric": "interaction",
+    "success": 41,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 34.166666666666664
+  },
+  {
+    "method": "B1",
+    "task": "T7",
+    "metric": "target",
+    "success": 57,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 47.5
+  },
+  {
+    "method": "B1",
+    "task": "T7",
+    "metric": "instruction",
+    "success": 50,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 41.666666666666664
+  },
+  {
+    "method": "B1",
+    "task": "T8",
+    "metric": "interaction",
+    "success": 104,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 86.66666666666667
+  },
+  {
+    "method": "B1",
+    "task": "T8",
+    "metric": "target",
+    "success": 80,
+    "total": 84,
+    "unknown": 0,
+    "rate_percent": 95.23809523809524
+  },
+  {
+    "method": "B1",
+    "task": "T8",
+    "metric": "speech_action_separation",
+    "success": 23,
+    "total": 24,
+    "unknown": 0,
+    "rate_percent": 95.83333333333333
+  },
+  {
+    "method": "B1",
+    "task": "T6",
+    "metric": "QA_success",
+    "success": 70,
+    "total": 90,
+    "unknown": 1,
+    "rate_percent": 77.77777777777777
+  },
+  {
+    "method": "Ours",
+    "task": "T1",
+    "metric": "interaction",
+    "success": 120,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 100.0
+  },
+  {
+    "method": "Ours",
+    "task": "T1",
+    "metric": "target",
+    "success": 120,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 100.0
+  },
+  {
+    "method": "Ours",
+    "task": "T2",
+    "metric": "interaction",
+    "success": 111,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 92.5
+  },
+  {
+    "method": "Ours",
+    "task": "T2",
+    "metric": "target",
+    "success": 117,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 97.5
+  },
+  {
+    "method": "Ours",
+    "task": "T2",
+    "metric": "instruction",
+    "success": 102,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 85.0
+  },
+  {
+    "method": "Ours",
+    "task": "T3",
+    "metric": "interaction",
+    "success": 114,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 95.0
+  },
+  {
+    "method": "Ours",
+    "task": "T3",
+    "metric": "target",
+    "success": 106,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 88.33333333333333
+  },
+  {
+    "method": "Ours",
+    "task": "T3",
+    "metric": "instruction",
+    "success": 106,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 88.33333333333333
+  },
+  {
+    "method": "Ours",
+    "task": "T4",
+    "metric": "interaction",
+    "success": 114,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 95.0
+  },
+  {
+    "method": "Ours",
+    "task": "T4",
+    "metric": "target",
+    "success": 103,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 85.83333333333333
+  },
+  {
+    "method": "Ours",
+    "task": "T4",
+    "metric": "instruction",
+    "success": 103,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 85.83333333333333
+  },
+  {
+    "method": "Ours",
+    "task": "T5",
+    "metric": "interaction",
+    "success": 118,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 98.33333333333333
+  },
+  {
+    "method": "Ours",
+    "task": "T5",
+    "metric": "target",
+    "success": 107,
+    "total": 108,
+    "unknown": 0,
+    "rate_percent": 99.07407407407408
+  },
+  {
+    "method": "Ours",
+    "task": "T5",
+    "metric": "instruction",
+    "success": 107,
+    "total": 108,
+    "unknown": 0,
+    "rate_percent": 99.07407407407408
+  },
+  {
+    "method": "Ours",
+    "task": "T7",
+    "metric": "interaction",
+    "success": 108,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 90.0
+  },
+  {
+    "method": "Ours",
+    "task": "T7",
+    "metric": "target",
+    "success": 109,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 90.83333333333333
+  },
+  {
+    "method": "Ours",
+    "task": "T7",
+    "metric": "instruction",
+    "success": 99,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 82.5
+  },
+  {
+    "method": "Ours",
+    "task": "T8",
+    "metric": "interaction",
+    "success": 120,
+    "total": 120,
+    "unknown": 0,
+    "rate_percent": 100.0
+  },
+  {
+    "method": "Ours",
+    "task": "T8",
+    "metric": "target",
+    "success": 84,
+    "total": 84,
+    "unknown": 0,
+    "rate_percent": 100.0
+  },
+  {
+    "method": "Ours",
+    "task": "T8",
+    "metric": "speech_action_separation",
+    "success": 24,
+    "total": 24,
+    "unknown": 0,
+    "rate_percent": 100.0
+  },
+  {
+    "method": "Ours",
+    "task": "T6",
+    "metric": "QA_success",
+    "success": 87,
+    "total": 90,
+    "unknown": 0,
+    "rate_percent": 96.66666666666667
+  }
+]

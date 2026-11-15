@@ -1,0 +1,18 @@
+{
+  "Ours": {
+    "n": 120,
+    "old_pass": 111,
+    "candidate_pass": 111,
+    "changed_cases": 0,
+    "remaining_failures": {
+      "three_authored_audio_turns": 8,
+      "remain_hard_paused_and_preserve_grasp_3s": 3,
+      "resume_same_task_once": 3,
+      "actual_resume_action_within_45s": 3,
+      "no_unrequested_pause_after_resume": 3,
+      "verified_task_specific_trigger": 5,
+      "formal_enrollment_recorded": 5,
+      "audio_pcm_content_and_cadence": 1
+    }
+  }
+}

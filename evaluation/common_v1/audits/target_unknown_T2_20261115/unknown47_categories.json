@@ -1,0 +1,338 @@
+{
+  "counts": {
+    "reply_after_case_finished": 29,
+    "incorrect_defer": 17,
+    "transport_error": 1
+  },
+  "rows": [
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S08_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 24.86662179295672,
+      "reply_minus_case_finish_s": 6.361901521682739
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_EM_T07_I00:R01",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 4.88980460097082,
+      "reply_minus_case_finish_s": -77.04798650741577
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S07_I00:R01",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 21.070594126009382,
+      "reply_minus_case_finish_s": 7.565573453903198
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_NS_S04_I00:R01",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 17.355064728006255,
+      "reply_minus_case_finish_s": 1.6001954078674316
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S04_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 8.118553383043036,
+      "reply_minus_case_finish_s": 8.07450246810913
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_OV_S08_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 21.49755707901204,
+      "reply_minus_case_finish_s": 3.009875535964966
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S10_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 20.391510999004822,
+      "reply_minus_case_finish_s": 1.6763949394226074
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S07_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 14.044108945992775,
+      "reply_minus_case_finish_s": 0.479351282119751
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_OV_S10_I00:R01",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 22.663043457025196,
+      "reply_minus_case_finish_s": 4.030811309814453
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_NS_S08_I00:R01",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 7.193476764019579,
+      "reply_minus_case_finish_s": -11.260889291763306
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_NS_T07_I00:R02",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 5.366848720004782,
+      "reply_minus_case_finish_s": -77.21067214012146
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S03_I00:R02",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 17.79464229400037,
+      "reply_minus_case_finish_s": -0.7635276317596436
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_NS_S06_I00:R02",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 2.2572890520095825,
+      "reply_minus_case_finish_s": -16.49465012550354
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S10_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 23.283710959018208,
+      "reply_minus_case_finish_s": 4.285037040710449
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S07_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 20.31394497596193,
+      "reply_minus_case_finish_s": 17.579214811325073
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_EM_T07_I00:R02",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 30.79000335902674,
+      "reply_minus_case_finish_s": -77.08008623123169
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S01_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 10.756911248958204,
+      "reply_minus_case_finish_s": 2.5749566555023193
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_NS_S03_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 18.713568137027323,
+      "reply_minus_case_finish_s": 0.18773484230041504
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_CL_T07_I00:R03",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 3.032031878014095,
+      "reply_minus_case_finish_s": -76.94314980506897
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_NS_S10_I00:R01",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 14.441588087007403,
+      "reply_minus_case_finish_s": -4.649935960769653
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S07_I00:R01",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 6.254967974033207,
+      "reply_minus_case_finish_s": 1.8921234607696533
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_CL_T07_I00:R02",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 3.074331348994747,
+      "reply_minus_case_finish_s": -77.06447672843933
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_EM_T07_I00:R03",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 2.1058067730045877,
+      "reply_minus_case_finish_s": -77.11170148849487
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_OV_T07_I00:R02",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 4.502355031028856,
+      "reply_minus_case_finish_s": -77.83336067199707
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_NS_S04_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 14.943619495956227,
+      "reply_minus_case_finish_s": 2.996774435043335
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S04_I00:R01",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 25.948462472006213,
+      "reply_minus_case_finish_s": 7.369640827178955
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_OV_S05_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 21.941478419990744,
+      "reply_minus_case_finish_s": 2.992422342300415
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S04_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 26.346692415012512,
+      "reply_minus_case_finish_s": 7.735735893249512
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_NS_S01_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 17.282739761983976,
+      "reply_minus_case_finish_s": 3.228595495223999
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S10_I00:R01",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 21.473053366004024,
+      "reply_minus_case_finish_s": 2.2916362285614014
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S06_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 6.137756498996168,
+      "reply_minus_case_finish_s": 3.480942726135254
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_OV_T07_I00:R03",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 5.07804736396065,
+      "reply_minus_case_finish_s": -77.05524110794067
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_NS_T07_I00:R01",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 7.877409363980405,
+      "reply_minus_case_finish_s": -76.8569164276123
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_OV_T07_I00:R01",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 3.264294949010946,
+      "reply_minus_case_finish_s": -77.00418329238892
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_OV_S04_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 27.49443425796926,
+      "reply_minus_case_finish_s": 8.873579740524292
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S10_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 19.898327547998633,
+      "reply_minus_case_finish_s": 0.8126990795135498
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_NS_S04_I00:R02",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 21.605761968006846,
+      "reply_minus_case_finish_s": 2.3671717643737793
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S07_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 6.324060230981559,
+      "reply_minus_case_finish_s": 6.041029453277588
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S05_I00:R02",
+      "category": "transport_error",
+      "intent": null,
+      "elapsed_s": 19.537998898944352,
+      "reply_minus_case_finish_s": 0.47864723205566406
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S03_I00:R03",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 2.6870232420042157,
+      "reply_minus_case_finish_s": -15.916002750396729
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S05_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 20.50688318099128,
+      "reply_minus_case_finish_s": 1.4765994548797607
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_CL_T07_I00:R01",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 8.02549278998049,
+      "reply_minus_case_finish_s": -76.97812676429749
+    },
+    {
+      "trial_uid": "B1:T4:T4C1_NS_T07_I00:R03",
+      "category": "incorrect_defer",
+      "intent": "defer",
+      "elapsed_s": 3.367728711978998,
+      "reply_minus_case_finish_s": -77.0785071849823
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S10_I00:R01",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 20.819418318977114,
+      "reply_minus_case_finish_s": 2.2214627265930176
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_EM_S09_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 19.73220104398206,
+      "reply_minus_case_finish_s": 0.7300467491149902
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S06_I00:R03",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 22.229941130965017,
+      "reply_minus_case_finish_s": 3.565656900405884
+    },
+    {
+      "trial_uid": "B1:T3:T3S50_CL_S01_I00:R01",
+      "category": "reply_after_case_finished",
+      "intent": "revise",
+      "elapsed_s": 14.55325798195554,
+      "reply_minus_case_finish_s": 8.884891748428345
+    }
+  ]
+}

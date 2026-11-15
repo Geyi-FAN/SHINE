@@ -1,0 +1,17 @@
+{
+  "at": 1794719047.4414556,
+  "raw_first_outcomes_verified": 1770,
+  "raw_outcomes_changed": 0,
+  "frozen_source_verified": true,
+  "registered_sha256": "d7aaa867642bd53df767989e1bb392343b176771fdd5aae83bc8db422f7f976a",
+  "original_freeze_sha256": "c0b30b970101de0205552d38b022b0786feacbfd37a3667d7c0ee0b1d553a710",
+  "candidate_source_sha256": {
+    "receipt_enrichment.py": "5cf46be63ac10281744b2e81172fff15cf670332e1d05be6646ed9172d6efa49",
+    "diagnose_t2.py": "6cb75be68edbe8d5e09b74361d40579f0669344217f79c4ca3248d0ce1eb346b",
+    "diagnose_t2_ours.py": "bd24c1033e2eb4ccfb37fde3a54741964de73164b797f7d6bd4367030c090e4a",
+    "test_receipt_enrichment.py": "3d2a6bcf64b5d1679d6b5720811024b4626e02119444f81ec716e7ed27b8720b"
+  },
+  "new_rollouts": 0,
+  "new_model_calls": 0,
+  "source_compatibility_only": true
+}

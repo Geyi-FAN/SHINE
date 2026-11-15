@@ -1,0 +1,38 @@
+{
+  "version": "measurement-audit-candidate-v1.1-20261115",
+  "original_scores_overwritten": false,
+  "new_rollouts": 0,
+  "new_model_calls": 0,
+  "unknown47_categories": {
+    "reply_after_case_finished": 29,
+    "incorrect_defer": 17,
+    "transport_error": 1
+  },
+  "ours_same_rule_known_nonexecution": 4,
+  "t2_regrade_count": 360,
+  "t2_by_method": {
+    "B0": {
+      "original": 0,
+      "candidate": 0,
+      "denominator": 120
+    },
+    "B1": {
+      "original": 0,
+      "candidate": 65,
+      "denominator": 120
+    },
+    "Ours": {
+      "original": 111,
+      "candidate": 111,
+      "denominator": 120
+    }
+  },
+  "t2_b1_exclusive_failure_groups": {
+    "pass": 65,
+    "resume_commit": 6,
+    "speech_receipt": 20,
+    "physical_pause_deadline": 22,
+    "preparation_or_missing_turns": 7
+  },
+  "tests": 10
+}

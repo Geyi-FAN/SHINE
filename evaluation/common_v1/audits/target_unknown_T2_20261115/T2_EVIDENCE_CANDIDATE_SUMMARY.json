@@ -1,0 +1,39 @@
+{
+  "B0": {
+    "n": 120,
+    "old_pass": 0,
+    "candidate_pass": 0,
+    "changed_cases": 0,
+    "remaining_failures": {
+      "three_authored_audio_turns": 120,
+      "no_wrong_task_actions": 107,
+      "hard_physical_pause_within_5s": 41,
+      "pause_committed_for_original_task": 41,
+      "remain_hard_paused_and_preserve_grasp_3s": 41,
+      "resume_same_task_once": 41,
+      "actual_resume_action_within_45s": 41,
+      "no_unrequested_pause_after_resume": 41,
+      "pause": 120,
+      "early_completion_physically_verified": 50,
+      "no_repeat_after_completed": 79
+    }
+  },
+  "B1": {
+    "n": 120,
+    "old_pass": 0,
+    "candidate_pass": 65,
+    "changed_cases": 111,
+    "remaining_failures": {
+      "resume_same_task_once": 7,
+      "resume": 31,
+      "hard_physical_pause_within_5s": 22,
+      "remain_hard_paused_and_preserve_grasp_3s": 22,
+      "actual_resume_action_within_45s": 11,
+      "no_unrequested_pause_after_resume": 10,
+      "verified_task_specific_trigger": 7,
+      "three_authored_audio_turns": 7,
+      "formal_enrollment_recorded": 7,
+      "pause": 2
+    }
+  }
+}
