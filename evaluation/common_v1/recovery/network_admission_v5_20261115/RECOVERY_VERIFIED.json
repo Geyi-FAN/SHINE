@@ -1,0 +1,25 @@
+{
+  "at": 1794711157.7084982,
+  "retained_count": 1598,
+  "retained_all_unchanged": true,
+  "new_first_attempts": [
+    {
+      "trial_uid": "B1:T5:T5AV1_OV_F07_P0_I02:R03",
+      "status": "client_finished",
+      "audio_quality_passed": true,
+      "engine_error": false,
+      "scoring_returncode": 0
+    },
+    {
+      "trial_uid": "B1:T8:T8EN4_OV_N07_I00:R03",
+      "status": "client_finished",
+      "audio_quality_passed": true,
+      "engine_error": false,
+      "scoring_returncode": 0
+    }
+  ],
+  "completed": 1600,
+  "planned": 1770,
+  "active_deployment": "/mnt/disk_4/geyi/audio_switch_benchmark/deployments/common_scoring_oracle_baselines_20261114/recovery/network_admission_v5_20261115",
+  "frozen_actor_scorer_unchanged": true
+}
